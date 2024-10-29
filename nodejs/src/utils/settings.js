@@ -24,6 +24,15 @@ const DEFAULT_USER_DATA_DIR = process.env.DEFAULT_USER_DATA_DIR;
 
 const NOTION_API_KEY = process.env.NOTION_API_KEY;
 
+// * ilmac
+const ILMAC_DB = {
+  host: process.env.ILMAC_DB_HOST,
+  port: process.env.ILMAC_DB_PORT ? parseInt(process.env.ILMAC_DB_PORT, 10) : undefined,
+  user: process.env.ILMAC_DB_USER,
+  password: process.env.ILMAC_DB_PASS,
+  database: process.env.ILMAC_DB_SCHEMA,
+};
+
 export {
   API_KEY,
   API_URL,
@@ -34,4 +43,5 @@ export {
   DEFAULT_EXE_PATH,
   DEFAULT_USER_DATA_DIR,
   NOTION_API_KEY,
+  ILMAC_DB,
 };

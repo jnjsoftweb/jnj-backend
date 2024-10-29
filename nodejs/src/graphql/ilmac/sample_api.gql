@@ -1,0 +1,288 @@
+# 모든 설정 조회
+query GetAllSettings {
+  getAllSettings {
+    orgName
+    url
+    iframe
+    rowXpath
+    paging
+    startPage
+    endPage
+    login
+    title
+    detailUrl
+    writeDate
+    writer
+    excludeKeywords
+    use
+    region
+    registered
+  }
+}
+
+# 특정 기관 설정 조회
+query GetSettingsByOrg {
+  getSettingsByOrg(orgName: "중구청") {
+    orgName
+    url
+    iframe
+    use
+    region
+  }
+}
+
+# 지역별 설정 조회
+query GetSettingsByRegion {
+  getSettingsByRegion(region: "서울") {
+    orgName
+    url
+    use
+    region
+  }
+}
+
+# 새로운 설정 생성
+mutation CreateSettings {
+  createSettings(input: {
+    orgName: "새로운기관"
+    url: "http://example.com"
+    iframe: "iframe-test"
+    use: true
+    region: "서울"
+  }) {
+    orgName
+    url
+    use
+    region
+  }
+}
+
+# 설정 업데이트
+mutation UpdateSettings {
+  updateSettings(
+    orgName: "테스트기관"
+    input: {
+      url: "http://updated-example.com"
+      use: false
+    }
+  ) {
+    orgName
+    url
+    use
+  }
+}
+
+# 설정 삭제
+mutation DeleteSettings {
+  deleteSettings(orgName: "테스트기관")
+}
+
+# use 토글
+mutation ToggleUseSettings {
+  toggleUseSettings(orgName: "테스트기관", use: true) {
+    orgName
+    use
+  }
+}
+
+# 모든 공지사항 조회
+query GetAllNotices {
+  getAllNotices {
+    nid
+    sn
+    orgName
+    title
+    detailUrl
+    writeDate
+    writer
+    scrapedAt
+    createdAt
+    updatedAt
+  }
+}
+
+# 특정 공지사항 조회
+query GetNoticeById {
+  getNoticeById(nid: 1) {
+    nid
+    orgName
+    title
+    detailUrl
+    writeDate
+  }
+}
+
+# 기관별 공지사항 조회
+query GetNoticesByOrg {
+  getNoticesByOrg(orgName: "중구청") {
+    nid
+    title
+    writeDate
+    writer
+  }
+}
+
+# 날짜 범위로 공지사항 조회
+query GetNoticesByDateRange {
+  getNoticesByDateRange(
+    startDate: "2024-01-01"
+    endDate: "2024-12-31"
+  ) {
+    nid
+    orgName
+    title
+    writeDate
+  }
+}
+
+# 새 공지사항 생성
+mutation CreateNotice {
+  createNotice(input: {
+    sn: 1
+    orgName: "중구청"
+    title: "테스트 공지사항"
+    detailUrl: "http://example.com/notice/1"
+    writeDate: "2024-03-19"
+    writer: "관리자"
+  }) {
+    nid
+    title
+    writeDate
+  }
+}
+
+# 공지사항 수정
+mutation UpdateNotice {
+  updateNotice(
+    nid: 1
+    input: {
+      sn: 1
+      orgName: "중구청"
+      title: "수정된 공지사항"
+      writer: "수정자"
+    }
+  ) {
+    nid
+    title
+    writer
+    updatedAt
+  }
+}
+
+# 공지사항 삭제
+mutation DeleteNotice {
+  deleteNotice(nid: 1)
+}
+
+# 기관의 모든 공지사항 삭제
+mutation DeleteNoticesByOrg {
+  deleteNoticesByOrg(orgName: "중구청")
+}
+
+# 모든 키워드 설정 조회
+query GetAllKeywords {
+  getAllKeywords {
+    searchName
+    searchKeywords
+    excludeKeywords
+    minScore
+    category
+    targetOrg
+    targetRegion
+    use
+    writer
+    memo
+    createdAt
+    updatedAt
+  }
+}
+
+# 특정 키워드 설정 조회
+query GetKeywordByName {
+  getKeywordByName(searchName: "테스트키워드") {
+    searchName
+    searchKeywords
+    excludeKeywords
+    use
+  }
+}
+
+# 분야별 키워드 설정 조회
+query GetKeywordsByCategory {
+  getKeywordsByCategory(category: "IT") {
+    searchName
+    searchKeywords
+    category
+    use
+  }
+}
+
+# 기관별 키워드 설정 조회
+query GetKeywordsByOrg {
+  getKeywordsByOrg(targetOrg: "중구청") {
+    searchName
+    searchKeywords
+    targetOrg
+    use
+  }
+}
+
+# 지역별 키워드 설정 조회
+query GetKeywordsByRegion {
+  getKeywordsByRegion(targetRegion: "서울") {
+    searchName
+    searchKeywords
+    targetRegion
+    use
+  }
+}
+
+# 새 키워드 설정 생성
+mutation CreateKeyword {
+  createKeyword(input: {
+    searchName: "새키워드"
+    searchKeywords: "키워드1, 키워드2"
+    excludeKeywords: "제외어1, 제외어2"
+    minScore: 80
+    category: "IT"
+    targetOrg: "중구청"
+    targetRegion: "서울"
+    use: true
+    writer: "관리자"
+    memo: "테스트용 키워드"
+  }) {
+    searchName
+    searchKeywords
+    use
+  }
+}
+
+# 키워드 설정 수정
+mutation UpdateKeyword {
+  updateKeyword(
+    searchName: "테스트키워드"
+    input: {
+      searchName: "테스트키워드"
+      searchKeywords: "수정된키워드1, 수정된키워드2"
+      use: false
+    }
+  ) {
+    searchName
+    searchKeywords
+    use
+    updatedAt
+  }
+}
+
+# 키워드 설정 삭제
+mutation DeleteKeyword {
+  deleteKeyword(searchName: "테스트키워드")
+}
+
+# 키워드 use 토글
+mutation ToggleKeywordUse {
+  toggleKeywordUse(searchName: "테스트키워드", use: true) {
+    searchName
+    use
+  }
+}

@@ -42,3 +42,11 @@ cd C:\JnJ-soft\Projects\internal\jnj-backend
 
 github -e pushRepo -n jnj-backend -u jnjsoftweb -d "backend in nodejs, python by jnjsoft"
 ```
+
+
+## ilmac
+
+```sh
+cd C:\JnJ-soft\Projects\internal\jnj-backend\nodejs
+npm i mysql2
+```

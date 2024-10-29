@@ -19,6 +19,7 @@
     "hangul-js": "^0.2.6",
     "jnj-lib-base": "^0.0.44",
     "jnj-lib-google": "^0.0.14",
+    "mysql2": "^3.11.3",
     "playwright": "^1.48.1",
     "youtube-captions-scraper": "^2.0.3"
   },
