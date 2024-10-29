@@ -1,0 +1,205 @@
+[
+  {
+    "kind": "youtube#playlist",
+    "etag": "QxBYSoQk_y1GLYYRZqyp534rxTU",
+    "id": "PLRelmAiS-uqrEXkqLtRsmcRVuMAc9sxqN",
+    "snippet": {
+      "publishedAt": "2024-10-01T15:09:16Z",
+      "channelId": "UCJIlfUISLIj9DODAQJWGHfA",
+      "title": "Shorts",
+      "description": "",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/sGu3mP0X29E/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/sGu3mP0X29E/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/sGu3mP0X29E/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/sGu3mP0X29E/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/sGu3mP0X29E/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "AI시대의창작",
+      "localized": {
+        "title": "Shorts",
+        "description": ""
+      }
+    },
+    "status": {
+      "privacyStatus": "public"
+    },
+    "contentDetails": {
+      "itemCount": 12
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"640\" height=\"360\" src=\"http://www.youtube.com/embed/videoseries?list=PLRelmAiS-uqrEXkqLtRsmcRVuMAc9sxqN\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#playlist",
+    "etag": "xdFLAvo3Qkidn5mMJr4J9V2XHno",
+    "id": "PLRelmAiS-uqpQP36n0e3dO_Nd2XHx3yd1",
+    "snippet": {
+      "publishedAt": "2024-09-30T13:43:13Z",
+      "channelId": "UCJIlfUISLIj9DODAQJWGHfA",
+      "title": "Stable Diffusion 사용법 기초와 공간디자인 시리즈",
+      "description": "WebUI Forge와 ComfyUI 동시 학습으로 기본기를 탄탄하게~공간디자인(건축, 인테리어, 가구, 환경, 공공디자인 등) 분야를 위주로 다룹니다.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/obhYIJMs4fU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/obhYIJMs4fU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/obhYIJMs4fU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/obhYIJMs4fU/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/obhYIJMs4fU/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "AI시대의창작",
+      "localized": {
+        "title": "Stable Diffusion 사용법 기초와 공간디자인 시리즈",
+        "description": "WebUI Forge와 ComfyUI 동시 학습으로 기본기를 탄탄하게~공간디자인(건축, 인테리어, 가구, 환경, 공공디자인 등) 분야를 위주로 다룹니다."
+      }
+    },
+    "status": {
+      "privacyStatus": "public"
+    },
+    "contentDetails": {
+      "itemCount": 13
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"640\" height=\"360\" src=\"http://www.youtube.com/embed/videoseries?list=PLRelmAiS-uqpQP36n0e3dO_Nd2XHx3yd1\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#playlist",
+    "etag": "pSqrtwAN7PipzKCK7zt4i55hxbE",
+    "id": "PLRelmAiS-uqoSDLmEyIy-Ypb31K0D72Oo",
+    "snippet": {
+      "publishedAt": "2024-08-16T14:16:39Z",
+      "channelId": "UCJIlfUISLIj9DODAQJWGHfA",
+      "title": "생성형 AI 활용 가이드",
+      "description": "새로운 소식, 기능, 정보을 다룹니다.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/7yU2MotcpAQ/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/7yU2MotcpAQ/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/7yU2MotcpAQ/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/7yU2MotcpAQ/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        }
+      },
+      "channelTitle": "AI시대의창작",
+      "localized": {
+        "title": "생성형 AI 활용 가이드",
+        "description": "새로운 소식, 기능, 정보을 다룹니다."
+      }
+    },
+    "status": {
+      "privacyStatus": "public"
+    },
+    "contentDetails": {
+      "itemCount": 9
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"640\" height=\"360\" src=\"http://www.youtube.com/embed/videoseries?list=PLRelmAiS-uqoSDLmEyIy-Ypb31K0D72Oo\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#playlist",
+    "etag": "WcvfkYbk5fh5Vl3ZsWCao-Hs5M8",
+    "id": "PLRelmAiS-uqqc8mOAPuSYPkVBUvVUDGgP",
+    "snippet": {
+      "publishedAt": "2024-07-21T16:12:50Z",
+      "channelId": "UCJIlfUISLIj9DODAQJWGHfA",
+      "title": "인간지능+인공지능 챌린지",
+      "description": "인간의 능력 계발과 인공지능 활용력 향상을 동시에 진행하는 챌린지입니다.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/0cZPMeWeSeg/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/0cZPMeWeSeg/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/0cZPMeWeSeg/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/0cZPMeWeSeg/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/0cZPMeWeSeg/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "AI시대의창작",
+      "localized": {
+        "title": "인간지능+인공지능 챌린지",
+        "description": "인간의 능력 계발과 인공지능 활용력 향상을 동시에 진행하는 챌린지입니다."
+      }
+    },
+    "status": {
+      "privacyStatus": "public"
+    },
+    "contentDetails": {
+      "itemCount": 5
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"640\" height=\"360\" src=\"http://www.youtube.com/embed/videoseries?list=PLRelmAiS-uqqc8mOAPuSYPkVBUvVUDGgP\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  }
+]

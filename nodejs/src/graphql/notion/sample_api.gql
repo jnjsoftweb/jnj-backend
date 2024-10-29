@@ -1,0 +1,78 @@
+# 페이지 조회
+query notionGetPage {
+  notionGetPage(id: "78c1f2ac6a934a6cab8ec3480483c2e8") {
+    id
+    created_time
+    last_edited_time
+    archived
+    properties
+    url
+    parent {
+      type
+      page_id
+      database_id
+      workspace
+    }
+  }
+}
+
+# 데이터베이스 조회
+query notionGetDatabase {
+  notionGetDatabase(id: "c477220bb6d34e20ae0ea288427c2c97") {
+    id
+    title {
+      type
+      text {
+        content
+        link {
+          url
+        }
+      }
+      annotations {
+        bold
+        italic
+        strikethrough
+        underline
+        code
+        color
+      }
+      plain_text
+      href
+    }
+    properties
+    url
+  }
+}
+
+# 블록 조회
+query notionGetBlock {
+  notionGetBlock(id: "700b1f53f419431ba0098170c37e9def") {
+    id
+    type
+    created_time
+    last_edited_time
+    archived
+    has_children
+  }
+}
+
+# 데이터베이스 쿼리
+query notionQueryDatabase {
+  notionQueryDatabase(
+    database_id: "c477220bb6d34e20ae0ea288427c2c97"
+    filter: {
+      property: "Status"
+      select: {
+        equals: "Done"
+      }
+    }
+    sorts: [{
+      property: "Last edited time"
+      direction: "descending"
+    }]
+  ) {
+    id
+    properties
+    url
+  }
+}

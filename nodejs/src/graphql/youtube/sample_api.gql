@@ -1,0 +1,324 @@
+# * channels
+
+# 채널 ID로 채널 정보 가져오기
+query GetChannelById {
+  youtubeGetChannels(
+    part: "snippet,statistics"
+    id: "UCUpJs89fSBXNolQGOYKn0YQ"
+  ) {
+    id
+    snippet {
+      title
+      description
+      thumbnails {
+        default {
+          url
+        }
+      }
+    }
+    statistics {
+      viewCount
+      subscriberCount
+      videoCount
+    }
+  }
+}
+
+# 사용자 이름으로 채널 정보 가져오기
+query GetChannelById {
+  youtubeGetChannels(
+    part: "snippet,statistics"
+    forUsername: "GoogleDevelopers"
+  ) {
+    id
+    snippet {
+      title
+      description
+      thumbnails {
+        default {
+          url
+        }
+      }
+    }
+    statistics {
+      viewCount
+      subscriberCount
+      videoCount
+    }
+  }
+}
+
+# 나의 채널 정보 가져오기
+# "message": "YouTube API 요청 중 오류가 발생했습니다."
+query GetChannelById {
+  youtubeGetChannels(part: "snippet,statistics", mine: true) {
+    id
+    snippet {
+      title
+      description
+      thumbnails {
+        default {
+          url
+        }
+      }
+    }
+    statistics {
+      viewCount
+      subscriberCount
+      videoCount
+    }
+  }
+}
+
+# customUrl로 채널 정보 가져오기
+query GetChannelByCustomUrl {
+  youtubeGetChannelByCustomUrl(customUrl: "jtbc_news") {
+    id
+    snippet {
+      title
+      description
+      customUrl
+      publishedAt
+      thumbnails {
+        default {
+          url
+        }
+        medium {
+          url
+        }
+        high {
+          url
+        }
+      }
+    }
+    statistics {
+      viewCount
+      subscriberCount
+      videoCount
+    }
+    contentDetails {
+      relatedPlaylists {
+        uploads
+        likes
+      }
+    }
+  }
+}
+
+# * playlists
+
+# ID로 재생목록 가져오기
+query GetPlaylistById {
+  youtubeGetPlaylists(
+    part: "snippet,status"
+    id: "PL7jH19IHhOLNiUmS1s_4gKfWU43r8c-0p"
+  ) {
+    id
+    snippet {
+      title
+      description
+      publishedAt
+    }
+    status {
+      privacyStatus
+    }
+  }
+}
+
+# 채널 ID로 재생목록 가져오기
+query GetPlaylistsByChannelId {
+  youtubeGetPlaylists(
+    part: "snippet,contentDetails"
+    channelId: "UCsU-I-vHLiaMfV_ceaYz5rQ"
+  ) {
+    id
+    snippet {
+      title
+      description
+      thumbnails {
+        default {
+          url
+        }
+      }
+    }
+  }
+}
+
+# customUrl로 재생목록 가져오기
+query GetPlaylistsByCustomUrl {
+  youtubeGetPlaylistsByCustomUrl(customUrl: "jtbc_news") {
+    id
+    snippet {
+      title
+      description
+      thumbnails {
+        default {
+          url
+        }
+      }
+    }
+  }
+}
+
+# * playlistItems
+# 재생목록 ID로 재생목록 항목 가져오기
+query GetPlaylistItems {
+  youtubeGetPlaylistItems(playlistId: "PL7jH19IHhOLNiUmS1s_4gKfWU43r8c-0p") {
+    id
+    snippet {
+      title
+      description
+      thumbnails {
+        default {
+          url
+        }
+      }
+      position
+      resourceId {
+        kind
+        videoId
+      }
+    }
+    contentDetails {
+      videoId
+      videoPublishedAt
+    }
+  }
+}
+
+# 특정 재생목록 항목 ID로 정보 가져오기
+query GetPlaylistItemById {
+  youtubeGetPlaylistItems(
+    part: "snippet,status"
+    id: "UEw3akgxOUlIaE9MTmlVbVMxc180Z0tmV1U0M3I4Yy0wcC4yODlGNEE0NkRGMEEzMEQy"
+  ) {
+    id
+    snippet {
+      title
+      description
+      playlistId
+      position
+      resourceId {
+        videoId
+      }
+    }
+  }
+}
+
+# 재생목록에서 특정 동영상 ID로 항목 찾기
+query GetPlaylistItemByVideoId {
+  youtubeGetPlaylistItems(
+    playlistId: "PL7jH19IHhOLNiUmS1s_4gKfWU43r8c-0p"
+    videoId: "Jm5v-dZnYCs"
+  ) {
+    snippet {
+      title
+      position
+    }
+    contentDetails {
+      videoId
+    }
+  }
+}
+
+# * search
+
+# 키워드로 동영상 검색
+query SearchVideos {
+  youtubeSearch(q: "GraphQL tutorial", type: "video") {
+    id {
+      videoId
+      playlistId
+      channelId
+    }
+    snippet {
+      title
+      description
+      thumbnails {
+        medium {
+          url
+        }
+      }
+      channelTitle
+      publishedAt
+    }
+  }
+}
+
+# 특정 채널의 동영상 검색
+query SearchChannelVideos {
+  youtubeSearch(
+    part: "snippet"
+    channelId: "UCUpJs89fSBXNolQGOYKn0YQ"
+    type: "video"
+    order: "date"
+  ) {
+    id {
+      videoId
+    }
+    snippet {
+      title
+      description
+      publishedAt
+    }
+  }
+}
+
+# 라이브 스트림 검색
+query SearchLiveStreams {
+  youtubeSearch(part: "snippet", eventType: "live", type: "video") {
+    id {
+      videoId
+    }
+    snippet {
+      title
+      channelTitle
+    }
+  }
+}
+
+# 채널 검색
+query SearchChannels {
+  youtubeSearch(part: "snippet", q: "tech news", type: "channel") {
+    id {
+      channelId
+    }
+    snippet {
+      title
+      description
+      thumbnails {
+        default {
+          url
+        }
+      }
+    }
+  }
+}
+
+# * videos
+query {
+  youtubeGetVideos(
+    part: "snippet,statistics"
+    chart: "mostPopular"
+    regionCode: "US"
+    maxResults: 10
+  ) {
+    id
+    snippet {
+      title
+      channelTitle
+      publishedAt
+      thumbnails {
+        medium {
+          url
+        }
+      }
+    }
+    statistics {
+      viewCount
+      likeCount
+    }
+  }
+}
+
+# * subscriptions
