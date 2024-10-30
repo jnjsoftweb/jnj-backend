@@ -221,6 +221,17 @@ query GetPlaylistItemByVideoId {
   }
 }
 
+query GetSimplePlaylistItems {
+  youtubeGetSimplePlaylistItems(
+    playlistId: "PL7jH19IHhOLNiUmS1s_4gKfWU43r8c-0p"
+  ) {
+    title
+    videoId
+    description
+    thumbnail
+  }
+}
+
 # * search
 
 # 키워드로 동영상 검색
@@ -322,3 +333,58 @@ query {
 }
 
 # * subscriptions
+query GetSimpleMySubscriptions {
+  youtubeSimpleMySubscriptions(userId: "mooninlearn") {
+    title
+    channelId
+    thumbnail
+  }
+}
+
+# * CHROME 사용(playwright)
+
+query GetMyWatchLaterVideos {
+  youtubeMyWatchLaterVideos(userId: "bigwhitekmc") {
+    id
+    snippet {
+      title
+    }
+  }
+}
+
+query GetMyHistoryVideos {
+  youtubeMyHistoryVideos(userId: "mooninlearn") {
+    id
+    snippet {
+      title
+    }
+  }
+}
+
+query GetShortsVideos {
+  youtubeShortsVideos(userId: "mooninlearn") {
+    id
+    snippet {
+      title
+    }
+  }
+}
+
+# * DOWNLOAD
+query DownloadYoutube {
+  youtubeDownloadYoutube(videoIds: "fFIlEGnziMg", resolution: "720")
+}
+
+query DownloadPlaylist {
+  youtubeDownloadPlaylist(
+    args: { playlistId: "PL7jH19IHhOLNiUmS1s_4gKfWU43r8c-0p" }
+  )
+}
+
+query GetIdsInDir {
+  youtubeIdsInDir(dir: "") {
+    # 빈 문자열이면 기본 디렉토리 사용
+    videoIds
+    playlistIds
+  }
+}

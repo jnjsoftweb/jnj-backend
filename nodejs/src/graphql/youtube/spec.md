@@ -1,3 +1,5 @@
+> https://developers.google.com/youtube/v3/docs
+
 # Channels: list
 > https://developers.google.com/youtube/v3/docs/channels/list?hl=ko
 

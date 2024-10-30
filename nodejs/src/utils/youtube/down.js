@@ -1,20 +1,18 @@
 import fs from 'fs';
+import path from 'path';
 import cp from 'child_process';
-import Hangul from 'hangul-js';
 
 import youtubeSubtitlesScraper from 'youtube-captions-scraper';
 
 import { BASE_DOWN_DIR } from '../settings.js';
-import {
-  getAllResponses,
-  getVideoTitle,
-  getPlaylistTitle,
-} from './rest.js';
+import { getAllResponses, getVideoTitle, getPlaylistTitle } from './rest.js';
 
-console.log('BASE_DOWN_DIR: ', BASE_DOWN_DIR);
+// console.log('BASE_DOWN_DIR: ', BASE_DOWN_DIR);
 
+// * utils
 const composeHangul = (str) => {
-  return Hangul.assemble(str);
+  // return Hangul.assemble(str);
+  return str.normalize('NFKC');
 };
 
 const sanitizeFileName = (str) => {
@@ -46,6 +44,55 @@ const removeDuplicates = (str) => {
   return [...new Set(str.split(','))].join(',');
 };
 
+const filterVideo = (file) => {
+  return file.endsWith('.mp4');
+};
+
+const extractId = (src) => {
+  return src.split('_').pop().split('.').shift();
+};
+
+// * listFiles
+const listFilesInDir = (directory = BASE_DOWN_DIR) => {
+  const result = {
+    files: [],
+    folders: [],
+  };
+
+  try {
+    const items = fs.readdirSync(directory);
+
+    for (const item of items) {
+      const fullPath = path.join(directory, item);
+      const stat = fs.statSync(fullPath);
+
+      if (stat.isDirectory()) {
+        result.folders.push(item);
+      } else {
+        if (filterVideo(item)) {
+          result.files.push(item);
+        }
+      }
+    }
+
+    return result;
+  } catch (error) {
+    console.error('디렉토리 읽기 오류:', error.message);
+    return {
+      files: [],
+      folders: [],
+    };
+  }
+};
+
+const listIdsInDir = (directory = BASE_DOWN_DIR) => {
+  const { files, folders } = listFilesInDir(directory);
+  const videoIds = files.map((file) => extractId(file));
+  const playlistIds = folders.map((folder) => extractId(folder));
+  return { videoIds, playlistIds };
+};
+
+// * download
 const srtFromSubtitles = (Subtitles) => {
   return Subtitles.map((Subtitle, index) => {
     const start = parseFloat(Subtitle.start);
@@ -193,25 +240,43 @@ const downloadYoutubeAll = async ({
   formatType = 'srt',
   outputDir = BASE_DOWN_DIR,
 }) => {
-  const filePaths = [];
+  // const filePaths = [];
+  const downloaded = {
+    resolution,
+    bitrate,
+    languages,
+    formatType,
+    outputDir,
+    downs: [],
+  };
   for (const videoId of videoIds.split(',')) {
+    const down = {};
     try {
-      filePaths.push(
-        ...(await downloadSubtitles({
-          videoId,
-          languages,
-          formatType,
-          outputDir,
-        }))
-      );
-      filePaths.push(
-        ...(await downloadYoutube({ videoId, resolution, bitrate, outputDir }))
-      );
+      const subtitles = await downloadSubtitles({
+        videoId,
+        languages,
+        formatType,
+        outputDir,
+      });
+      if (subtitles) {
+        down.subtitles = subtitles.map((s) => s.split('/').pop()).join('|');
+      }
+      const video = await downloadYoutube({
+        videoId,
+        resolution,
+        bitrate,
+        outputDir,
+      });
+      if (video) {
+        down.video = video.split('/').pop();
+        downloaded.downs.push(down);
+      }
     } catch (error) {
       console.error('An error occurred:', error.message);
+      return [];
     }
   }
-  return filePaths;
+  return downloaded;
 };
 
 // downloadPlaylist 함수 수정
@@ -257,15 +322,24 @@ export {
   downloadYoutube,
   downloadYoutubeAll,
   downloadPlaylist,
+  listFilesInDir,
+  listIdsInDir,
   BASE_DOWN_DIR,
 };
 
-// const videoId = 'fFIlEGnziMg';
-// await downloadYoutubeAll({ videoIds: videoId });
-// await downloadYoutube({ videoId: 'fFIlEGnziMg' });
+// // const videoId = 'fFIlEGnziMg';
+// const videoId = 'zgGSy0seeYc';
+// const response = await downloadYoutubeAll({ videoIds: videoId });
+// console.table(response);
 
 // // const playlistId = 'PLa67URrD8G_iSqfCFlw0683wH0TPFV5ys';
 // // const playlistId = 'PL8vH7pXTpMi1byn3s2yj2vNw1gV4Qse1l';
 // const playlistId = 'PL8vH7pXTpMi1byn3s2yj2vNw1gV4Qse1l';
 // const playlistId = 'PL7jH19IHhOLNiUmS1s_4gKfWU43r8c-0p';
 // await downloadPlaylist({ playlistId });
+
+// const files = listFiles();
+// console.log(files);
+
+// const ids = listIdsInDir();
+// console.log(ids);

@@ -280,6 +280,40 @@ export const typeDefs = `#graphql
     activeLiveChatId: String
   }
 
+  type Downloaded {
+    resolution: String
+    bitrate: String
+    languages: String
+    formatType: String
+    outputDir: String
+    downs: [Down]
+  }
+
+  type Down {
+    subtitles: String
+    video: String
+  }
+
+  type IdsInDir {
+    videoIds: [String]
+    playlistIds: [String]
+  }
+
+  type SimplePlaylistItem {
+    title: String
+    channelId: String
+    playlistId: String
+    videoId: String
+    description: String
+    thumbnail: String
+  }
+
+  type SimpleMySubscription {
+    title: String
+    channelId: String
+    thumbnail: String
+  }
+
   type Query {
     youtubeGetChannels(
       part: String
@@ -302,6 +336,9 @@ export const typeDefs = `#graphql
       playlistId: String
       videoId: String
     ): [YouTubePlaylistItem]
+    youtubeGetSimplePlaylistItems(
+      playlistId: String
+    ): [SimplePlaylistItem]
     youtubeSearch(
       part: String
       q: String
@@ -318,5 +355,37 @@ export const typeDefs = `#graphql
       myRating: String
       regionCode: String
     ): [YouTubeVideo]
+    # * GOOGLE CLOUD(JNJ-LIB-GOOGLE) 사용 jnj-lib-google
+    youtubeMySubscriptions(userId: String!): [YouTubeSubscription]
+    youtubeSimpleMySubscriptions(userId: String!): [SimpleMySubscription]
+    youtubeMyLikeVideos(userId: String!): [YouTubePlaylistItem]
+    # * CHROME 사용(playwright)
+    youtubeMyWatchLaterVideos(userId: String!): [YouTubeVideo]
+    youtubeMyHistoryVideos(userId: String!): [YouTubeVideo]
+    youtubeShortsVideos(userId: String!): [YouTubeVideo]
+    # * DOWNLOAD
+    youtubeDownloadYoutube(
+      videoIds: String
+      resolution: String
+      bitrate: String
+      languages: String
+      formatType: String
+      outputDir: String
+    ): Downloaded
+    youtubeDownloadPlaylist(
+      playlistId: String
+      resolution: String
+      bitrate: String
+      languages: String
+      formatType: String
+      outputDir: String
+    ): Downloaded
+    # youtubeIdsInDir: IdsInDir
+    youtubeIdsInDir(
+      dir: String
+    ): IdsInDir
+    # youtubeIdsInDir(
+    #   directory: String = "C:\\JnJ-soft\\Projects\\internal\\jnj-backend\\downloads"
+    # ): IdsInDir
   }
 `;

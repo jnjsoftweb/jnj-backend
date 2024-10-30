@@ -16,7 +16,6 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "hangul-js": "^0.2.6",
     "jnj-lib-base": "^0.0.44",
     "jnj-lib-google": "^0.0.14",
     "mysql2": "^3.11.3",
