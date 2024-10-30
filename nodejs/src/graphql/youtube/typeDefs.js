@@ -5,6 +5,47 @@ export const typeDefs = `#graphql
     statistics: Statistics
     contentDetails: ContentDetails
   }
+  
+  type ChannelDetail {
+    title: String
+    description: String
+    thumbnail: String
+    viewCount: String
+    subscriberCount: String
+    videoCount: String
+  }
+
+  type PlaylistDetail {
+    id: String
+    title: String
+    description: String
+    thumbnail: String
+    channelTitle: String
+    publishedAt: String
+    itemCount: Int
+    privacyStatus: String
+  }
+
+  type VideoDetail {
+    videoId: String
+    channelId: String
+    title: String
+    description: String
+    thumbnail: String
+    channelTitle: String
+    publishedAt: String
+    duration: String
+    caption: String
+    tags: [String]
+    viewCount: String
+    likeCount: String
+    dislikeCount: String
+    favoriteCount: String
+    commentCount: String
+    embedHtml: String
+    embedHeight: Int
+    embedWidth: Int
+  }
 
   type Snippet {
     publishedAt: String
@@ -56,6 +97,7 @@ export const typeDefs = `#graphql
     contentRating: ContentRating
     projection: String
     hasCustomThumbnail: Boolean
+    itemCount: Int
   }
 
   type RegionRestriction {
@@ -314,6 +356,16 @@ export const typeDefs = `#graphql
     thumbnail: String
   }
 
+  type SimplePlaylist {
+    id: String!
+    title: String!
+    description: String
+    thumbnail: String
+    channelTitle: String
+    publishedAt: String
+    privacyStatus: String
+  }
+
   type Query {
     youtubeGetChannels(
       part: String
@@ -321,15 +373,17 @@ export const typeDefs = `#graphql
       forUsername: String
       mine: Boolean
     ): [YouTubeChannel]
+    youtubeChannelDetail(id: String!): ChannelDetail
     youtubeGetChannelIdByCustomUrl(customUrl: String!): String
-    youtubeGetChannelByCustomUrl(customUrl: String!): [YouTubeChannel]
+    youtubeChannelDetailByCustomUrl(customUrl: String!): ChannelDetail
     youtubeGetPlaylists(
       part: String
       id: String
       channelId: String
       mine: Boolean
     ): [YouTubePlaylist]
-    youtubeGetPlaylistsByCustomUrl(customUrl: String!): [YouTubePlaylist]
+    youtubeGetPlaylistsByChannelId(channelId: String!): [PlaylistDetail]
+    youtubeGetPlaylistsByCustomUrl(customUrl: String!): [PlaylistDetail]
     youtubeGetPlaylistItems(
       part: String
       id: String
@@ -339,6 +393,7 @@ export const typeDefs = `#graphql
     youtubeGetSimplePlaylistItems(
       playlistId: String
     ): [SimplePlaylistItem]
+    youtubeGetVideoDetailsByPlaylistId(playlistId: String!): [VideoDetail]
     youtubeSearch(
       part: String
       q: String
@@ -347,6 +402,7 @@ export const typeDefs = `#graphql
       eventType: String
       order: String
     ): [YouTubeSearchResult]
+    youtubeMostPopularVideos(maxItems: Int): [VideoDetail]
     youtubeGetSubscriptions(args: JSON): [YouTubeSubscription!]!
     youtubeGetVideos(
       part: String
@@ -380,12 +436,8 @@ export const typeDefs = `#graphql
       formatType: String
       outputDir: String
     ): Downloaded
-    # youtubeIdsInDir: IdsInDir
     youtubeIdsInDir(
       dir: String
     ): IdsInDir
-    # youtubeIdsInDir(
-    #   directory: String = "C:\\JnJ-soft\\Projects\\internal\\jnj-backend\\downloads"
-    # ): IdsInDir
   }
 `;

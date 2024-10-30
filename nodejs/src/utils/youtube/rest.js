@@ -68,6 +68,7 @@ const getChannelIdByCustomUrl = async (customUrl) => {
     if (!customUrl) {
       return '';
     }
+    customUrl = customUrl.startsWith('@') ? customUrl.slice(1) : customUrl;
     const searchResponse = await getResponse('search', {
       part: 'id',
       type: 'channel',

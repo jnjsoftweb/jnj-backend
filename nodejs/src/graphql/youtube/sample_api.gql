@@ -24,6 +24,18 @@ query GetChannelById {
   }
 }
 
+# 채널 ID로 채널 상세 정보 가져오기
+query GetChannelDetailById {
+  youtubeChannelDetail(id: "UCUpJs89fSBXNolQGOYKn0YQ") {
+    title
+    description
+    thumbnail
+    viewCount
+    subscriberCount
+    videoCount
+  }
+}
+
 # 사용자 이름으로 채널 정보 가져오기
 query GetChannelById {
   youtubeGetChannels(
@@ -126,11 +138,8 @@ query GetPlaylistById {
 }
 
 # 채널 ID로 재생목록 가져오기
-query GetPlaylistsByChannelId {
-  youtubeGetPlaylists(
-    part: "snippet,contentDetails"
-    channelId: "UCsU-I-vHLiaMfV_ceaYz5rQ"
-  ) {
+query GetPlaylistsByChannelId0 {
+  youtubeGetPlaylists(channelId: "UCUpJs89fSBXNolQGOYKn0YQ") {
     id
     snippet {
       title
@@ -139,8 +148,36 @@ query GetPlaylistsByChannelId {
         default {
           url
         }
+        medium {
+          url
+        }
+        high {
+          url
+        }
       }
+      channelTitle
+      publishedAt
     }
+    contentDetails {
+      itemCount
+    }
+    status {
+      privacyStatus
+    }
+  }
+}
+
+# 채널 ID로 재생목록 가져오기
+query GetPlaylistsByChannelId {
+  youtubeGetPlaylistsByChannelId(channelId: "UCUpJs89fSBXNolQGOYKn0YQ") {
+    id
+    title
+    description
+    thumbnail
+    channelTitle
+    publishedAt
+    itemCount
+    privacyStatus
   }
 }
 
@@ -148,17 +185,16 @@ query GetPlaylistsByChannelId {
 query GetPlaylistsByCustomUrl {
   youtubeGetPlaylistsByCustomUrl(customUrl: "jtbc_news") {
     id
-    snippet {
-      title
-      description
-      thumbnails {
-        default {
-          url
-        }
-      }
-    }
+    title
+    description
+    thumbnail
+    channelTitle
+    publishedAt
+    itemCount
+    privacyStatus
   }
 }
+
 
 # * playlistItems
 # 재생목록 ID로 재생목록 항목 가져오기
@@ -231,6 +267,43 @@ query GetSimplePlaylistItems {
     thumbnail
   }
 }
+
+# 재생목록의 모든 비디오 상세 정보 가져오기
+query GetVideoDetailsByPlaylistId {
+  youtubeGetVideoDetailsByPlaylistId(playlistId: "PL7jH19IHhOLNiUmS1s_4gKfWU43r8c-0p") {
+    videoId
+    title
+    description
+    thumbnail
+    channelTitle
+    publishedAt
+    duration
+    caption
+    tags
+    viewCount
+    likeCount
+    dislikeCount
+    favoriteCount
+    commentCount
+    embedHtml
+    embedHeight
+    embedWidth
+  }
+}
+
+# 재생목록의 비디오 기본 정보만 가져오기
+query GetVideoBasicDetailsByPlaylistId {
+  youtubeGetVideoDetailsByPlaylistId(playlistId: "PL7jH19IHhOLNiUmS1s_4gKfWU43r8c-0p") {
+    videoId
+    title
+    thumbnail
+    channelTitle
+    duration
+    viewCount
+    publishedAt
+  }
+}
+
 
 # * search
 
@@ -332,6 +405,25 @@ query {
   }
 }
 
+# 인기 동영상 가져오기
+query GetMostPopularVideos {
+  youtubeMostPopularVideos(maxItems: 30) {
+    videoId
+    channelId
+    title
+    description
+    thumbnail
+    channelTitle
+    publishedAt
+    duration
+    caption
+    tags
+    viewCount
+    likeCount
+    commentCount
+  }
+}
+
 # * subscriptions
 query GetSimpleMySubscriptions {
   youtubeSimpleMySubscriptions(userId: "mooninlearn") {
@@ -388,3 +480,30 @@ query GetIdsInDir {
     playlistIds
   }
 }
+
+# 채널 ID로 간단한 재생목록 정보 가져오기
+query GetPlaylistsByChannelId {
+  youtubeGetPlaylistsByChannelId(channelId: "UCUpJs89fSBXNolQGOYKn0YQ") {
+    id
+    title
+    description
+    thumbnail
+    channelTitle
+    publishedAt
+    privacyStatus
+  }
+}
+
+# 커스텀 URL로 간단한 재생목록 정보 가져오기
+query GetPlaylistsByCustomUrl {
+  youtubeGetPlaylistsByCustomUrl(customUrl: "GoogleDevelopers") {
+    id
+    title
+    description
+    thumbnail
+    channelTitle
+    publishedAt
+    privacyStatus
+  }
+}
+

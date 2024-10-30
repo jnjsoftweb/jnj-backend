@@ -21,6 +21,88 @@ import {
   listIdsInDir,
 } from '../../utils/youtube/down.js';
 
+
+const _channelDetail = async (channelId) => {
+  const response = await getAllResponses('channels', {
+    part: 'snippet,statistics', id: channelId
+  });
+  if (!response || response.length === 0) {
+    return {};
+  }
+  const detail = response[0];
+  return {
+    title: detail.snippet.title,
+    description: detail.snippet.description,
+    thumbnail:
+      detail.snippet.thumbnails.medium?.url ||
+      detail.snippet.thumbnails.default?.url,
+    viewCount: detail.statistics.viewCount,
+    subscriberCount: detail.statistics.subscriberCount,
+    videoCount: detail.statistics.videoCount,
+  };
+};
+
+const _getPlaylistsByChannelId = async (channelId) => {
+  const response = await getAllResponses('playlists', {
+    part: 'id,snippet,contentDetails,status',
+    channelId,
+  });
+  if (!response || response.length === 0) {
+    return [];
+  }
+  const playlists = response.map((playlist) => ({
+    id: playlist.id,
+    title: playlist.snippet.title,
+    description: playlist.snippet.description,
+    thumbnail: playlist.snippet.thumbnails.medium?.url || playlist.snippet.thumbnails.default?.url,
+    channelTitle: playlist.snippet.channelTitle,
+    publishedAt: playlist.snippet.publishedAt,
+    itemCount: playlist.contentDetails.itemCount,
+    privacyStatus: playlist.status.privacyStatus,
+  }));
+  return playlists;
+};
+
+const _getVideoIdsByPlaylistId = async (playlistId) => {
+  const response = await getAllResponses('playlistItems', {
+    part: 'contentDetails',
+    playlistId,
+  });
+  return response.map((item) => item.contentDetails.videoId);
+};
+
+const _getVideoDetailByVideoId = async (videoId) => {
+  const response = await getAllResponses('videos', {
+    part: 'snippet,contentDetails,statistics,player',
+    id: videoId,
+  });
+  if (!response || response.length === 0) {
+    return {};
+  }
+  const detail = response[0];
+  return {
+    videoId: detail.id,
+    channelId: detail.snippet.channelId,
+    title: detail.snippet.title,
+    description: detail.snippet.description,
+    thumbnail: detail.snippet.thumbnails.medium?.url || detail.snippet.thumbnails.default?.url,
+    channelTitle: detail.snippet.channelTitle,
+    publishedAt: detail.snippet.publishedAt,
+    duration: detail.contentDetails.duration,
+    caption: detail.contentDetails.caption,
+    tags: detail.snippet.tags || [],
+    viewCount: detail.statistics.viewCount,
+    likeCount: detail.statistics.likeCount,
+    dislikeCount: detail.statistics.dislikeCount,
+    favoriteCount: detail.statistics.favoriteCount,
+    commentCount: detail.statistics.commentCount,
+    embedHtml: detail.player?.embedHtml,
+    embedHeight: detail.player?.embedHeight,
+    embedWidth: detail.player?.embedWidth,
+  };
+};
+
+
 export const resolvers = {
   Query: {
     youtubeGetChannels: async (_, args) => {
@@ -40,16 +122,15 @@ export const resolvers = {
         throw new Error('YouTube API 요청 중 오류가 발생했습니다.');
       }
     },
+    youtubeChannelDetail: async (_, { id }) => {
+      return await _channelDetail(id);
+    },
     youtubeGetChannelIdByCustomUrl: async (_, { customUrl }) => {
       return await getChannelIdByCustomUrl(customUrl);
     },
-    youtubeGetChannelByCustomUrl: async (_, { customUrl }) => {
+    youtubeChannelDetailByCustomUrl: async (_, { customUrl }) => {
       const channelId = await getChannelIdByCustomUrl(customUrl);
-      const response = await getAllResponses('channels', {
-        part: 'snippet,statistics,contentDetails',
-        id: channelId,
-      });
-      return response;
+      return await _channelDetail(channelId);
     },
     youtubeGetPlaylists: async (_, args) => {
       try {
@@ -71,15 +152,12 @@ export const resolvers = {
         throw new Error('YouTube API 요청 중 오류가 발생했습니다.');
       }
     },
+    youtubeGetPlaylistsByChannelId: async (_, { channelId }) => {
+      return await _getPlaylistsByChannelId(channelId);
+    },
     youtubeGetPlaylistsByCustomUrl: async (_, { customUrl }) => {
       const channelId = await getChannelIdByCustomUrl(customUrl);
-      console.log(`youtubeGetPlaylistsByCustomUrl:${channelId}`);
-      // return {};
-      const response = await getAllResponses('playlists', {
-        part: 'snippet,contentDetails',
-        channelId,
-      });
-      return response;
+      return await _getPlaylistsByChannelId(channelId);
     },
     youtubeGetPlaylistItems: async (_, args) => {
       try {
@@ -124,6 +202,11 @@ export const resolvers = {
         throw new Error('YouTube API 요청 중 오류가 발생했습니다.');
       }
     },
+    youtubeGetVideoDetailsByPlaylistId: async (_, { playlistId }) => {
+      const videoIds = await _getVideoIdsByPlaylistId(playlistId);
+      const videoDetails = await Promise.all(videoIds.map((videoId) => _getVideoDetailByVideoId(videoId)));
+      return videoDetails;
+    },
     youtubeSearch: async (_, args) => {
       try {
         const { part = 'snippet', ...otherArgs } = args;
@@ -140,6 +223,11 @@ export const resolvers = {
         );
         throw new Error('YouTube API 요청 중 오류가 발생했습니다.');
       }
+    },
+    youtubeMostPopularVideos: async (_, { maxItems = 50 }) => {
+      const videoIds = await mostPopularVideoIds(maxItems);
+      const videoDetails = await Promise.all(videoIds.map((videoId) => _getVideoDetailByVideoId(videoId)));
+      return videoDetails;
     },
     youtubeGetSubscriptions: async (_, args) => {
       try {
