@@ -21,17 +21,21 @@ import {
   listIdsInDir,
 } from '../../utils/youtube/down.js';
 
-
 const _channelDetail = async (channelId) => {
   const response = await getAllResponses('channels', {
-    part: 'snippet,statistics', id: channelId
+    part: 'snippet,statistics,contentDetails',
+    id: channelId,
   });
   if (!response || response.length === 0) {
     return {};
   }
   const detail = response[0];
   return {
+    id: channelId,
     title: detail.snippet.title,
+    customUrl: detail.snippet.customUrl,
+    uploadsPlaylistId: detail.contentDetails.relatedPlaylists.uploads,
+    publishedAt: detail.snippet.publishedAt,
     description: detail.snippet.description,
     thumbnail:
       detail.snippet.thumbnails.medium?.url ||
@@ -54,7 +58,9 @@ const _getPlaylistsByChannelId = async (channelId) => {
     id: playlist.id,
     title: playlist.snippet.title,
     description: playlist.snippet.description,
-    thumbnail: playlist.snippet.thumbnails.medium?.url || playlist.snippet.thumbnails.default?.url,
+    thumbnail:
+      playlist.snippet.thumbnails.medium?.url ||
+      playlist.snippet.thumbnails.default?.url,
     channelTitle: playlist.snippet.channelTitle,
     publishedAt: playlist.snippet.publishedAt,
     itemCount: playlist.contentDetails.itemCount,
@@ -63,12 +69,43 @@ const _getPlaylistsByChannelId = async (channelId) => {
   return playlists;
 };
 
-const _getVideoIdsByPlaylistId = async (playlistId) => {
-  const response = await getAllResponses('playlistItems', {
-    part: 'contentDetails',
-    playlistId,
-  });
-  return response.map((item) => item.contentDetails.videoId);
+const _getVideoIdsByPlaylistId = async (playlistId, maxItems = 50) => {
+  try {
+    const response = await getAllResponses('playlistItems', {
+      part: 'contentDetails',
+      playlistId,
+    });
+
+    if (!response || response.length === 0) {
+      console.log(
+        `재생목록 ID ${playlistId}에 대한 동영상을 찾을 수 없습니다.`
+      );
+      return [];
+    }
+
+    return response
+      .slice(0, maxItems)
+      .map((item) => item.contentDetails.videoId);
+  } catch (error) {
+    console.error('재생목록 동영상 가져오기 실패:', error);
+    throw new Error('재생목록을 찾을 수 없거나 접근할 수 없습니다.');
+  }
+};
+
+// uploadsPlaylistId
+const _getVideoIdsByChannelId = async (channelId, maxItems = 50) => {
+  try {
+    const response = await getAllResponses('channels', {
+      part: 'contentDetails',
+      id: channelId,
+    });
+    const uploadsPlaylistId =
+      response[0].contentDetails.relatedPlaylists.uploads;
+    return await _getVideoIdsByPlaylistId(uploadsPlaylistId, maxItems);
+  } catch (error) {
+    console.error('채널 동영상 가져오기 실패:', error);
+    throw new Error('채널을 찾을 수 없거나 접근할 수 없습니다.');
+  }
 };
 
 const _getVideoDetailByVideoId = async (videoId) => {
@@ -80,13 +117,17 @@ const _getVideoDetailByVideoId = async (videoId) => {
     return {};
   }
   const detail = response[0];
+  const channelDetail = await _channelDetail(detail.snippet.channelId);
   return {
-    videoId: detail.id,
-    channelId: detail.snippet.channelId,
+    id: detail.id,
     title: detail.snippet.title,
     description: detail.snippet.description,
-    thumbnail: detail.snippet.thumbnails.medium?.url || detail.snippet.thumbnails.default?.url,
+    thumbnail:
+      detail.snippet.thumbnails.medium?.url ||
+      detail.snippet.thumbnails.default?.url,
+    channelId: detail.snippet.channelId,
     channelTitle: detail.snippet.channelTitle,
+    channelThumbnail: channelDetail.thumbnail,
     publishedAt: detail.snippet.publishedAt,
     duration: detail.contentDetails.duration,
     caption: detail.contentDetails.caption,
@@ -101,7 +142,6 @@ const _getVideoDetailByVideoId = async (videoId) => {
     embedWidth: detail.player?.embedWidth,
   };
 };
-
 
 export const resolvers = {
   Query: {
@@ -202,10 +242,48 @@ export const resolvers = {
         throw new Error('YouTube API 요청 중 오류가 발생했습니다.');
       }
     },
-    youtubeGetVideoDetailsByPlaylistId: async (_, { playlistId }) => {
-      const videoIds = await _getVideoIdsByPlaylistId(playlistId);
-      const videoDetails = await Promise.all(videoIds.map((videoId) => _getVideoDetailByVideoId(videoId)));
-      return videoDetails;
+    youtubeGetVideoDetailsByPlaylistId: async (
+      _,
+      { playlistId, maxItems = 50 }
+    ) => {
+      try {
+        const videoIds = await _getVideoIdsByPlaylistId(playlistId, maxItems);
+
+        if (videoIds.length === 0) {
+          return [];
+        }
+
+        const videoDetails = await Promise.all(
+          videoIds.map((videoId) => _getVideoDetailByVideoId(videoId))
+        );
+        return videoDetails;
+      } catch (error) {
+        console.error('재생목록 동영상 상세정보 가져오기 실패:', error);
+        throw error;
+      }
+    },
+    youtubeGetVideoIdsByChannelId: async (_, { channelId, maxItems = 50 }) => {
+      return await _getVideoIdsByChannelId(channelId, { maxItems });
+    },
+    youtubeGetVideoDetailsByChannelId: async (
+      _,
+      { channelId, maxItems = 50 }
+    ) => {
+      try {
+        const videoIds = await _getVideoIdsByChannelId(channelId, maxItems);
+
+        if (videoIds.length === 0) {
+          return [];
+        }
+
+        const videoDetails = await Promise.all(
+          videoIds.map((videoId) => _getVideoDetailByVideoId(videoId))
+        );
+        return videoDetails;
+      } catch (error) {
+        console.error('채널 동영상 상세정보 가져오기 실패:', error);
+        throw error;
+      }
     },
     youtubeSearch: async (_, args) => {
       try {
@@ -226,7 +304,9 @@ export const resolvers = {
     },
     youtubeMostPopularVideos: async (_, { maxItems = 50 }) => {
       const videoIds = await mostPopularVideoIds(maxItems);
-      const videoDetails = await Promise.all(videoIds.map((videoId) => _getVideoDetailByVideoId(videoId)));
+      const videoDetails = await Promise.all(
+        videoIds.map((videoId) => _getVideoDetailByVideoId(videoId))
+      );
       return videoDetails;
     },
     youtubeGetSubscriptions: async (_, args) => {
@@ -262,7 +342,13 @@ export const resolvers = {
     },
     // * GOOGLE CLOUD(JNJ-LIB-GOOGLE) 사용 jnj-lib-google
     youtubeMySubscriptions: async (_, args) => {
-      return await mySubscriptions(args.userId);
+      const subscriptions = await mySubscriptions(args.userId);
+      const channelDetails = await Promise.all(
+        subscriptions.map((subscription) =>
+          _channelDetail(subscription.snippet.resourceId.channelId)
+        )
+      );
+      return channelDetails;
     },
     youtubeSimpleMySubscriptions: async (_, args) => {
       const subscriptions = await mySubscriptions(args.userId);

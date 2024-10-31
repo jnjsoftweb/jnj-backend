@@ -29,7 +29,10 @@ query GetChannelDetailById {
   youtubeChannelDetail(id: "UCUpJs89fSBXNolQGOYKn0YQ") {
     title
     description
+    customUrl
+    publishedAt
     thumbnail
+    uploadsPlaylistId
     viewCount
     subscriberCount
     videoCount
@@ -195,7 +198,6 @@ query GetPlaylistsByCustomUrl {
   }
 }
 
-
 # * playlistItems
 # 재생목록 ID로 재생목록 항목 가져오기
 query GetPlaylistItems {
@@ -270,12 +272,16 @@ query GetSimplePlaylistItems {
 
 # 재생목록의 모든 비디오 상세 정보 가져오기
 query GetVideoDetailsByPlaylistId {
-  youtubeGetVideoDetailsByPlaylistId(playlistId: "PL7jH19IHhOLNiUmS1s_4gKfWU43r8c-0p") {
-    videoId
+  youtubeGetVideoDetailsByPlaylistId(
+    playlistId: "PL7jH19IHhOLNiUmS1s_4gKfWU43r8c-0p"
+  ) {
+    id
     title
     description
     thumbnail
+    channelId
     channelTitle
+    channelThumbnail
     publishedAt
     duration
     caption
@@ -293,7 +299,9 @@ query GetVideoDetailsByPlaylistId {
 
 # 재생목록의 비디오 기본 정보만 가져오기
 query GetVideoBasicDetailsByPlaylistId {
-  youtubeGetVideoDetailsByPlaylistId(playlistId: "PL7jH19IHhOLNiUmS1s_4gKfWU43r8c-0p") {
+  youtubeGetVideoDetailsByPlaylistId(
+    playlistId: "PL7jH19IHhOLNiUmS1s_4gKfWU43r8c-0p"
+  ) {
     videoId
     title
     thumbnail
@@ -304,6 +312,29 @@ query GetVideoBasicDetailsByPlaylistId {
   }
 }
 
+query GetVideoDetailsByChannelId {
+  youtubeGetVideoDetailsByChannelId(
+    channelId: "UCUpJs89fSBXNolQGOYKn0YQ"
+    maxItems: 5
+  ) {
+    id
+    title
+    description
+    thumbnail
+    channelId
+    channelTitle
+    channelThumbnail
+    publishedAt
+    duration
+    caption
+    tags
+    viewCount
+    likeCount
+    dislikeCount
+    favoriteCount
+    commentCount
+  }
+}
 
 # * search
 
@@ -385,7 +416,6 @@ query {
     part: "snippet,statistics"
     chart: "mostPopular"
     regionCode: "US"
-    maxResults: 10
   ) {
     id
     snippet {
@@ -408,12 +438,14 @@ query {
 # 인기 동영상 가져오기
 query GetMostPopularVideos {
   youtubeMostPopularVideos(maxItems: 30) {
-    videoId
+    id
     channelId
     title
     description
     thumbnail
+    channelId
     channelTitle
+    channelThumbnail
     publishedAt
     duration
     caption
@@ -430,6 +462,20 @@ query GetSimpleMySubscriptions {
     title
     channelId
     thumbnail
+  }
+}
+
+query GetMySubscriptions {
+  youtubeMySubscriptions(userId: "bigwhitekmc") {
+    id
+    title
+    customUrl
+    publishedAt
+    description
+    thumbnail
+    viewCount
+    subscriberCount
+    videoCount
   }
 }
 
@@ -506,4 +552,3 @@ query GetPlaylistsByCustomUrl {
     privacyStatus
   }
 }
-

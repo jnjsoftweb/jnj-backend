@@ -7,9 +7,13 @@ export const typeDefs = `#graphql
   }
   
   type ChannelDetail {
+    id: String
     title: String
+    customUrl: String
+    publishedAt: String
     description: String
     thumbnail: String
+    uploadsPlaylistId: String
     viewCount: String
     subscriberCount: String
     videoCount: String
@@ -27,12 +31,13 @@ export const typeDefs = `#graphql
   }
 
   type VideoDetail {
-    videoId: String
-    channelId: String
+    id: String
     title: String
     description: String
     thumbnail: String
+    channelId: String
     channelTitle: String
+    channelThumbnail: String
     publishedAt: String
     duration: String
     caption: String
@@ -393,7 +398,9 @@ export const typeDefs = `#graphql
     youtubeGetSimplePlaylistItems(
       playlistId: String
     ): [SimplePlaylistItem]
-    youtubeGetVideoDetailsByPlaylistId(playlistId: String!): [VideoDetail]
+    youtubeGetVideoDetailsByPlaylistId(playlistId: String!, maxItems: Int): [VideoDetail]
+    youtubeGetVideoIdsByChannelId(channelId: String!, maxItems: Int): [String]
+    youtubeGetVideoDetailsByChannelId(channelId: String!, maxItems: Int): [VideoDetail]
     youtubeSearch(
       part: String
       q: String
@@ -412,7 +419,7 @@ export const typeDefs = `#graphql
       regionCode: String
     ): [YouTubeVideo]
     # * GOOGLE CLOUD(JNJ-LIB-GOOGLE) 사용 jnj-lib-google
-    youtubeMySubscriptions(userId: String!): [YouTubeSubscription]
+    youtubeMySubscriptions(userId: String!): [ChannelDetail]
     youtubeSimpleMySubscriptions(userId: String!): [SimpleMySubscription]
     youtubeMyLikeVideos(userId: String!): [YouTubePlaylistItem]
     # * CHROME 사용(playwright)
