@@ -460,46 +460,46 @@ export const resolvers = {
       const dir = args.dir.length > 2 ? args.dir : BASE_DOWN_DIR;
       return listIdsInDir(dir);
     },
-    // * save json
-    youtubeSavePlaylistsInChannel: async (_, args) => {
-      const channelIds = loadJson(jsonPath(CHANNELS_IN_SUBSCRIPTIONS))
-        [args.userId].map((subscription) => subscription.id)
-        .slice(0, 1);
-      const playlists = await Promise.all(
-        channelIds.map((id) => _getPlaylistsByChannelId(id))
-      );
-      // try {
-      //   saveYoutubeJson(PLAYLISTS_IN_SUBSCRIPTIONS, playlists, {
-      //     key: args.userId,
-      //   });
-      // } catch (error) {
-      //   console.error('플레이리스트 저장 중 오류 발생:', error);
-      //   throw error;
-      // }
-      return playlists;
-    },
+    // // * save json
+    // youtubeSavePlaylistsInChannel: async (_, args) => {
+    //   const channelIds = loadJson(jsonPath(CHANNELS_IN_SUBSCRIPTIONS))
+    //     [args.userId].map((subscription) => subscription.id)
+    //     .slice(0, 1);
+    //   const playlists = await Promise.all(
+    //     channelIds.map((id) => _getPlaylistsByChannelId(id))
+    //   );
+    //   // try {
+    //   //   saveYoutubeJson(PLAYLISTS_IN_SUBSCRIPTIONS, playlists, {
+    //   //     key: args.userId,
+    //   //   });
+    //   // } catch (error) {
+    //   //   console.error('플레이리스트 저장 중 오류 발생:', error);
+    //   //   throw error;
+    //   // }
+    //   return playlists;
+    // },
   },
 };
 
-const args = { userId: 'mooninlearn' };
-const userId = args.userId;
-const channelIds = loadJson(jsonPath(CHANNELS_IN_SUBSCRIPTIONS))
-  [userId].map((subscription) => subscription.id)
-  .slice(0, 1);
-console.log(channelIds);
-const playlists = await Promise.all(
-  channelIds.map((id) => {
-    const _playlists = _getPlaylistsByChannelId(id);
-    return { [id]: _playlists };
-  })
-);
+// const args = { userId: 'mooninlearn' };
+// const userId = args.userId;
+// const channelIds = loadJson(jsonPath(CHANNELS_IN_SUBSCRIPTIONS))
+//   [userId].map((subscription) => subscription.id)
+//   .slice(0, 1);
+// console.log(channelIds);
+// const playlists = await Promise.all(
+//   channelIds.map((id) => {
+//     const _playlists = _getPlaylistsByChannelId(id);
+//     return { [id]: _playlists };
+//   })
+// );
 
-console.log(playlists);
-try {
-  saveYoutubeJson(PLAYLISTS_IN_SUBSCRIPTIONS, playlists, {
-    key: userId,
-  });
-} catch (error) {
-  console.error('플레이리스트 저장 중 오류 발생:', error);
-  throw error;
-}
+// console.log(playlists);
+// try {
+//   saveYoutubeJson(PLAYLISTS_IN_SUBSCRIPTIONS, playlists, {
+//     key: userId,
+//   });
+// } catch (error) {
+//   console.error('플레이리스트 저장 중 오류 발생:', error);
+//   throw error;
+// }

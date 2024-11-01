@@ -1,5 +1,6 @@
 import PocketBase from 'pocketbase';
 import {
+  APP_ROOT,
   APP_URL_ROOT,
   POCKETBASE_PORT,
   POCKETBASE_ADMIN_EMAIL,
@@ -10,8 +11,12 @@ import {
 import { loadJson } from 'jnj-lib-base';
 
 const jsonPath = (fileName) => `${JSON_DB_DIR}/youtube/${fileName}.json`;
+const schemaPbPath = (fileName) => `${APP_ROOT}/db/pocketbase/schema/${fileName}.json`;
 
-const youtubeSchema = loadJson(jsonPath('youtubeSchema'))['youtube'];
+const youtubeSchema = loadJson(schemaPbPath('youtube'));
+
+// console.log(schemaPbPath('youtube'));
+// console.log(youtubeSchema);
 
 const url = `${APP_URL_ROOT}:${POCKETBASE_PORT}`;
 const pb = new PocketBase(url);
@@ -77,7 +82,52 @@ const populateYoutubeChannel = async (
   }
 };
 
-export { createCollection, createCollectionAll, populateYoutubeChannel };
+const pbFindOne = async (collectionName, filter) => {
+  try{
+    const data = await pb.collection(collectionName).getFirstListItem(filter);
+    return data;
+  } catch (error) {
+    console.error('조회 실패:', {
+      status: error.status,
+      message: error.message,
+      response: error.response,
+      data: error.response?.data,
+    });
+    return {};
+  }
+};
+
+const pbFind = async (collectionName, options = {}) => {
+  const { filter, sort, expand, fields, skipTotal, page, perPage } = options;
+  
+  const queryOptions = {
+    ...(filter && { filter }),
+    ...(sort && { sort }),
+    ...(expand && { expand }),
+    ...(fields && { fields }),
+    ...(skipTotal && { skipTotal }),
+    ...(page && { page }),
+    ...(perPage && { perPage })
+  };
+
+  return await pb.collection(collectionName).getFullList(queryOptions);
+};
+
+const pbInsertOne = async (collectionName, data) => {
+  await pb.collection(collectionName).create(data);
+};
+
+const pbInsert = async (collectionName, datas) => {
+  for (let data of datas) {
+    await pb.collection(collectionName).create(data);
+  }
+};
+
+const pbUpdate = async (collectionName, id, data) => {
+  await pb.collection(collectionName).update(id, data);
+};
+
+export { pb, pbFindOne, pbFind, pbInsertOne, pbInsert, pbUpdate, createCollection, createCollectionAll, populateYoutubeChannel };
 
 // createCollectionAll(youtubeSchema);
-populateYoutubeChannel();
+// populateYoutubeChannel();

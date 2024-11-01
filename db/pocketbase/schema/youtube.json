@@ -20,7 +20,7 @@
       },
       {
         "name": "publishedAt",
-        "type": "text"
+        "type": "date"
       },
       {
         "name": "description",
@@ -36,15 +36,15 @@
       },
       {
         "name": "viewCount",
-        "type": "text"
+        "type": "number"
       },
       {
         "name": "subscriberCount",
-        "type": "text"
+        "type": "number"
       },
       {
         "name": "videoCount",
-        "type": "text"
+        "type": "number"
       }
     ]
   },
@@ -78,7 +78,7 @@
       },
       {
         "name": "publishedAt",
-        "type": "text"
+        "type": "date"
       },
       {
         "name": "itemCount",
@@ -122,7 +122,7 @@
       },
       {
         "name": "publishedAt",
-        "type": "text"
+        "type": "date"
       },
       {
         "name": "duration",
@@ -134,19 +134,22 @@
       },
       {
         "name": "tags",
-        "type": "text"
+        "type": "json",
+        "options": {
+          "maxSize": 1000
+        }
       },
       {
         "name": "viewCount",
-        "type": "text"
+        "type": "number"
       },
       {
         "name": "likeCount",
-        "type": "text"
+        "type": "number"
       },
       {
         "name": "commentCount",
-        "type": "text"
+        "type": "number"
       }
     ]
   },
@@ -162,8 +165,7 @@
       },
       {
         "name": "email",
-        "type": "text",
-        "required": true
+        "type": "email"
       },
       {
         "name": "apiKey",
@@ -200,8 +202,7 @@
       },
       {
         "name": "subscribed",
-        "type": "text",
-        "required": true
+        "type": "date"
       }
     ]
   },
@@ -241,7 +242,7 @@
       },
       {
         "name": "downloaded",
-        "type": "text"
+        "type": "date"
       },
       {
         "name": "review",

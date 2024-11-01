@@ -8,13 +8,13 @@ const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, '../../../.env') });
 
 // const 설정
+const APP_ROOT = process.env.APP_ROOT;
 const API_KEY = process.env.GOOGLE_API_KEY;
 const API_URL = process.env.GOOGLE_API_URL;
 
 const APP_URL_ROOT = process.env.NEXT_PUBLIC_APP_URL_ROOT;
 const EXPRESS_PORT = process.env.NEXT_PUBLIC_EXPRESS_PORT || 3006;
 const GRAPHQL_PORT = process.env.NEXT_PUBLIC_GRAPHQL_PORT || 3007;
-const APP_ROOT = process.env.APP_ROOT;
 const DB_FOLDER = process.env.DB_FOLDER;
 const JSON_DB_DIR = `${APP_ROOT}/${DB_FOLDER}/json`;
 
@@ -43,6 +43,7 @@ const ILMAC_DB = {
 };
 
 export {
+  APP_ROOT,
   API_KEY,
   API_URL,
   APP_URL_ROOT,
