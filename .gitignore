@@ -16,4 +16,8 @@ _temp/
 backups/
 downloads/
 
+pb_migrations/
+data.db
+logs.db
+
 .cursorrules

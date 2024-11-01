@@ -20,6 +20,7 @@
     "jnj-lib-google": "^0.0.14",
     "mysql2": "^3.11.3",
     "playwright": "^1.48.1",
+    "pocketbase": "^0.21.5",
     "youtube-captions-scraper": "^2.0.3"
   },
   "devDependencies": {

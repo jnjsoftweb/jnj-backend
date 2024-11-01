@@ -466,13 +466,14 @@ query GetSimpleMySubscriptions {
 }
 
 query GetMySubscriptions {
-  youtubeMySubscriptions(userId: "bigwhitekmc") {
+  youtubeMySubscriptions(userId: "mooninlearn") {
     id
     title
     customUrl
     publishedAt
     description
     thumbnail
+    uploadsPlaylistId
     viewCount
     subscriberCount
     videoCount

@@ -7,7 +7,7 @@ export const typeDefs = `#graphql
   }
   
   type ChannelDetail {
-    id: String
+    channelId: String
     title: String
     customUrl: String
     publishedAt: String
@@ -19,8 +19,10 @@ export const typeDefs = `#graphql
     videoCount: String
   }
 
+
   type PlaylistDetail {
-    id: String
+    playlistId: String
+    channelId: String
     title: String
     description: String
     thumbnail: String
@@ -31,13 +33,12 @@ export const typeDefs = `#graphql
   }
 
   type VideoDetail {
-    id: String
+    videoId: String
+    playlistId: String
+    channelId: String
     title: String
     description: String
     thumbnail: String
-    channelId: String
-    channelTitle: String
-    channelThumbnail: String
     publishedAt: String
     duration: String
     caption: String
@@ -420,6 +421,7 @@ export const typeDefs = `#graphql
     ): [YouTubeVideo]
     # * GOOGLE CLOUD(JNJ-LIB-GOOGLE) 사용 jnj-lib-google
     youtubeMySubscriptions(userId: String!): [ChannelDetail]
+    # youtubeMySubscriptions(userId: String!): [SimpleMySubscription]
     youtubeSimpleMySubscriptions(userId: String!): [SimpleMySubscription]
     youtubeMyLikeVideos(userId: String!): [YouTubePlaylistItem]
     # * CHROME 사용(playwright)
@@ -446,5 +448,6 @@ export const typeDefs = `#graphql
     youtubeIdsInDir(
       dir: String
     ): IdsInDir
+    youtubeSavePlaylistsInChannel(userId: String!): [PlaylistDetail]
   }
 `;

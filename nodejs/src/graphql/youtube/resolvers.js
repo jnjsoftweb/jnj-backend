@@ -1,3 +1,5 @@
+import { loadJson, saveJson } from 'jnj-lib-base';
+
 import {
   getAllResponses,
   getChannelIdByCustomUrl,
@@ -20,6 +22,25 @@ import {
   BASE_DOWN_DIR,
   listIdsInDir,
 } from '../../utils/youtube/down.js';
+
+import { JSON_DB_DIR } from '../../utils/settings.js';
+
+const PLAYLISTS_IN_SUBSCRIPTIONS = 'playlistsInSubscriptions';
+const CHANNELS_IN_SUBSCRIPTIONS = 'channelsInSubscriptions';
+const VIDEOS_IN_PLAYLISTS = 'videosInPlaylists';
+const VIDEOS_MOST_POPULAR = 'videosMostPopular';
+
+const jsonPath = (fileName) => `${JSON_DB_DIR}/youtube/${fileName}.json`;
+
+const saveYoutubeJson = (name, data, { key = undefined }) => {
+  const jsonData = loadJson(jsonPath(name)) || {};
+  if (key) {
+    jsonData[key] = data;
+  } else {
+    jsonData = data;
+  }
+  saveJson(jsonPath(name), jsonData);
+};
 
 const _channelDetail = async (channelId) => {
   const response = await getAllResponses('channels', {
@@ -54,6 +75,7 @@ const _getPlaylistsByChannelId = async (channelId) => {
   if (!response || response.length === 0) {
     return [];
   }
+
   const playlists = response.map((playlist) => ({
     id: playlist.id,
     title: playlist.snippet.title,
@@ -341,14 +363,62 @@ export const resolvers = {
       }
     },
     // * GOOGLE CLOUD(JNJ-LIB-GOOGLE) 사용 jnj-lib-google
-    youtubeMySubscriptions: async (_, args) => {
-      const subscriptions = await mySubscriptions(args.userId);
-      const channelDetails = await Promise.all(
-        subscriptions.map((subscription) =>
-          _channelDetail(subscription.snippet.resourceId.channelId)
-        )
-      );
-      return channelDetails;
+    youtubeMySubscriptions: async (_, { userId }) => {
+      try {
+        if (!userId) {
+          throw new Error('userId가 필요합니다.');
+        }
+
+        const subscriptions = await mySubscriptions(userId);
+
+        if (!subscriptions || !Array.isArray(subscriptions)) {
+          console.error('구독 정보를 가져오는데 실패했습니다.');
+          return [];
+        }
+
+        const channelDetails = await Promise.all(
+          subscriptions.map(async (subscription) => {
+            try {
+              if (!subscription?.snippet?.resourceId?.channelId) {
+                console.warn(
+                  '채널 ID가 없는 구독 항목이 있습니다:',
+                  subscription
+                );
+                return null;
+              }
+              return await _channelDetail(
+                subscription.snippet.resourceId.channelId
+              );
+            } catch (error) {
+              console.error('채널 상세 정보 가져오기 실패:', error);
+              return null;
+            }
+          })
+        );
+
+        // null 값 제거
+        const filteredChannelDetails = channelDetails.filter(Boolean);
+
+        // JSON 저장 시도
+        try {
+          const save = true;
+          if (save) {
+            const mySubs = loadJson(jsonPath(PLAYLISTS_IN_SUBSCRIPTIONS)) || {};
+            mySubs[userId] = filteredChannelDetails;
+            saveJson(jsonPath(PLAYLISTS_IN_SUBSCRIPTIONS), mySubs);
+          }
+        } catch (saveError) {
+          console.error('JSON 저장 중 오류 발생:', saveError);
+          // JSON 저장 실패는 전체 작업을 실패시키지 않음
+        }
+
+        return filteredChannelDetails;
+      } catch (error) {
+        console.error('구독 정보 가져오기 실패:', error);
+        throw new Error(
+          error.message || '구독 정보를 가져오는데 실패했습니다.'
+        );
+      }
     },
     youtubeSimpleMySubscriptions: async (_, args) => {
       const subscriptions = await mySubscriptions(args.userId);
@@ -362,7 +432,6 @@ export const resolvers = {
     youtubeMyLikeVideos: async (_, args) => {
       return await myPlaylistItems(args.userId, 'LL');
     },
-
     // * CHROME 사용(playwright)
     youtubeMyWatchLaterVideos: async (_, args) => {
       const videoIds = await watchLaterVideoIds(args.userId);
@@ -391,5 +460,46 @@ export const resolvers = {
       const dir = args.dir.length > 2 ? args.dir : BASE_DOWN_DIR;
       return listIdsInDir(dir);
     },
+    // * save json
+    youtubeSavePlaylistsInChannel: async (_, args) => {
+      const channelIds = loadJson(jsonPath(CHANNELS_IN_SUBSCRIPTIONS))
+        [args.userId].map((subscription) => subscription.id)
+        .slice(0, 1);
+      const playlists = await Promise.all(
+        channelIds.map((id) => _getPlaylistsByChannelId(id))
+      );
+      // try {
+      //   saveYoutubeJson(PLAYLISTS_IN_SUBSCRIPTIONS, playlists, {
+      //     key: args.userId,
+      //   });
+      // } catch (error) {
+      //   console.error('플레이리스트 저장 중 오류 발생:', error);
+      //   throw error;
+      // }
+      return playlists;
+    },
   },
 };
+
+const args = { userId: 'mooninlearn' };
+const userId = args.userId;
+const channelIds = loadJson(jsonPath(CHANNELS_IN_SUBSCRIPTIONS))
+  [userId].map((subscription) => subscription.id)
+  .slice(0, 1);
+console.log(channelIds);
+const playlists = await Promise.all(
+  channelIds.map((id) => {
+    const _playlists = _getPlaylistsByChannelId(id);
+    return { [id]: _playlists };
+  })
+);
+
+console.log(playlists);
+try {
+  saveYoutubeJson(PLAYLISTS_IN_SUBSCRIPTIONS, playlists, {
+    key: userId,
+  });
+} catch (error) {
+  console.error('플레이리스트 저장 중 오류 발생:', error);
+  throw error;
+}

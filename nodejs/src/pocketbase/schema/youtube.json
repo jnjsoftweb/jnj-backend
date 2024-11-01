@@ -1,0 +1,256 @@
+[
+  {
+    "name": "youtubeChannel",
+    "type": "base",
+    "description": "YouTube Channel Information",
+    "schema": [
+      {
+        "name": "channelId",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "customUrl",
+        "type": "text"
+      },
+      {
+        "name": "publishedAt",
+        "type": "text"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "thumbnail",
+        "type": "text"
+      },
+      {
+        "name": "uploadsPlaylistId",
+        "type": "text"
+      },
+      {
+        "name": "viewCount",
+        "type": "text"
+      },
+      {
+        "name": "subscriberCount",
+        "type": "text"
+      },
+      {
+        "name": "videoCount",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "youtubePlaylist",
+    "type": "base",
+    "description": "YouTube Playlist Information",
+    "schema": [
+      {
+        "name": "playlistId",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "channelId",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "title",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "thumbnail",
+        "type": "text"
+      },
+      {
+        "name": "publishedAt",
+        "type": "text"
+      },
+      {
+        "name": "itemCount",
+        "type": "number"
+      },
+      {
+        "name": "privacyStatus",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "youtubeVideo",
+    "type": "base",
+    "description": "YouTube Video Information",
+    "schema": [
+      {
+        "name": "videoId",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "channelId",
+        "type": "text"
+      },
+      {
+        "name": "playlistId",
+        "type": "text"
+      },
+      {
+        "name": "title",
+        "type": "text"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "thumbnail",
+        "type": "text"
+      },
+      {
+        "name": "publishedAt",
+        "type": "text"
+      },
+      {
+        "name": "duration",
+        "type": "text"
+      },
+      {
+        "name": "caption",
+        "type": "text"
+      },
+      {
+        "name": "tags",
+        "type": "text"
+      },
+      {
+        "name": "viewCount",
+        "type": "text"
+      },
+      {
+        "name": "likeCount",
+        "type": "text"
+      },
+      {
+        "name": "commentCount",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "youtubeUser",
+    "type": "base",
+    "description": "YouTube User Information",
+    "schema": [
+      {
+        "name": "userlId",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "apiKey",
+        "type": "text"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "text"
+      },
+      {
+        "name": "thumbnail",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "youtubeSubscription",
+    "type": "base",
+    "description": "YouTube Subscription Information",
+    "schema": [
+      {
+        "name": "userId",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "channelId",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "subscribed",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "youtubeDownload",
+    "type": "base",
+    "description": "YouTube Download Information",
+    "schema": [
+      {
+        "name": "videoId",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "channelId",
+        "type": "text"
+      },
+      {
+        "name": "playlistId",
+        "type": "text"
+      },
+      {
+        "name": "fileName",
+        "type": "text"
+      },
+      {
+        "name": "webUrl",
+        "type": "text"
+      },
+      {
+        "name": "localUrl",
+        "type": "text"
+      },
+      {
+        "name": "localPath",
+        "type": "text"
+      },
+      {
+        "name": "downloaded",
+        "type": "text"
+      },
+      {
+        "name": "review",
+        "type": "text"
+      },
+      {
+        "name": "like",
+        "type": "text"
+      }
+    ]
+  }
+]
