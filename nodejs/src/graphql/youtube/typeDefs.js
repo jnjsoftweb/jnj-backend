@@ -446,14 +446,6 @@ export const typeDefs = `#graphql
     youtubeIdsInDir(
       dir: String
     ): IdsInDir
-    youtubeGetChannelsPB(
-      filter: String
-      sort: String
-      expand: String
-      fields: String
-      skipTotal: Boolean
-      page: Int
-      perPage: Int
-    ): [ChannelDetail]
   }
+
 `;

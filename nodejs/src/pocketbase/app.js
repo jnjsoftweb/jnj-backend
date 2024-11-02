@@ -11,7 +11,8 @@ import {
 import { loadJson } from 'jnj-lib-base';
 
 const jsonPath = (fileName) => `${JSON_DB_DIR}/youtube/${fileName}.json`;
-const schemaPbPath = (fileName) => `${APP_ROOT}/db/pocketbase/schema/${fileName}.json`;
+const schemaPbPath = (fileName) =>
+  `${APP_ROOT}/db/pocketbase/schema/${fileName}.json`;
 
 const youtubeSchema = loadJson(schemaPbPath('youtube'));
 
@@ -83,7 +84,7 @@ const populateYoutubeChannel = async (
 };
 
 const pbFindOne = async (collectionName, filter) => {
-  try{
+  try {
     const data = await pb.collection(collectionName).getFirstListItem(filter);
     return data;
   } catch (error) {
@@ -99,7 +100,7 @@ const pbFindOne = async (collectionName, filter) => {
 
 const pbFind = async (collectionName, options = {}) => {
   const { filter, sort, expand, fields, skipTotal, page, perPage } = options;
-  
+
   const queryOptions = {
     ...(filter && { filter }),
     ...(sort && { sort }),
@@ -107,7 +108,7 @@ const pbFind = async (collectionName, options = {}) => {
     ...(fields && { fields }),
     ...(skipTotal && { skipTotal }),
     ...(page && { page }),
-    ...(perPage && { perPage })
+    ...(perPage && { perPage }),
   };
 
   return await pb.collection(collectionName).getFullList(queryOptions);
@@ -127,7 +128,130 @@ const pbUpdate = async (collectionName, id, data) => {
   await pb.collection(collectionName).update(id, data);
 };
 
-export { pb, pbFindOne, pbFind, pbInsertOne, pbInsert, pbUpdate, createCollection, createCollectionAll, populateYoutubeChannel };
+const pbUpsertOne = async (collectionName, data, uniqueFields) => {
+  try {
+    // 쉼표로 구분된 uniqueFields를 배열로 변환
+    const fields = uniqueFields.split(',').map((field) => field.trim());
+
+    // 각 필드에 대한 필터 조건 생성
+    const filterConditions = fields.map((field) => `${field}="${data[field]}"`);
+
+    // 모든 조건을 AND로 결합
+    const filter = filterConditions.join(' && ');
+
+    let existingRecord;
+    try {
+      existingRecord = await pb
+        .collection(collectionName)
+        .getFirstListItem(filter);
+    } catch (error) {
+      // 레코드가 없는 경우 error가 발생하므로 무시
+      existingRecord = null;
+    }
+
+    if (existingRecord) {
+      // 레코드가 존재하면 업데이트
+      console.log(
+        `Updating record in ${collectionName} with conditions: ${filter}`
+      );
+      return await pb
+        .collection(collectionName)
+        .update(existingRecord.id, data);
+    } else {
+      // 레코드가 없으면 새로 생성
+      console.log(
+        `Creating new record in ${collectionName} with conditions: ${filter}`
+      );
+      return await pb.collection(collectionName).create(data);
+    }
+  } catch (error) {
+    console.error('Upsert failed:', {
+      status: error.status,
+      message: error.message,
+      response: error.response,
+      data: error.response?.data,
+    });
+    throw error;
+  }
+};
+
+// 여러 레코드에 대한 upsert
+const pbUpsert = async (collectionName, dataArray, uniqueField) => {
+  const results = [];
+  for (const data of dataArray) {
+    try {
+      const result = await pbUpsertOne(collectionName, data, uniqueField);
+      results.push(result);
+    } catch (error) {
+      console.error(
+        `Failed to upsert record with ${uniqueField}: ${data[uniqueField]}`,
+        error
+      );
+      results.push(null);
+    }
+  }
+  return results;
+};
+
+const pbDelete = async (collectionName, filter) => {
+  try {
+    // 필터 조건에 맞는 모든 레코드 조회
+    const records = await pb.collection(collectionName).getFullList({
+      filter: filter,
+    });
+
+    // 조회된 레코드가 없으면 종료
+    if (!records || records.length === 0) {
+      console.log(
+        `No records found in ${collectionName} with filter: ${filter}`
+      );
+      return [];
+    }
+
+    // 각 레코드 삭제
+    const results = await Promise.all(
+      records.map(async (record) => {
+        try {
+          await pb.collection(collectionName).delete(record.id);
+          return { id: record.id, success: true };
+        } catch (error) {
+          console.error(`Failed to delete record ${record.id}:`, error);
+          return { id: record.id, success: false, error };
+        }
+      })
+    );
+
+    console.log(
+      `Deleted ${
+        results.filter((r) => r.success).length
+      } records from ${collectionName}`
+    );
+    return results;
+  } catch (error) {
+    console.error('Delete operation failed:', {
+      status: error.status,
+      message: error.message,
+      response: error.response,
+      data: error.response?.data,
+    });
+    throw error;
+  }
+};
+
+export {
+  pb,
+  pbFindOne,
+  pbFind,
+  pbInsertOne,
+  pbInsert,
+  pbUpdate,
+  pbUpsertOne,
+  pbUpsert,
+  createCollection,
+  createCollectionAll,
+  populateYoutubeChannel,
+  pbDelete,
+};
 
 // createCollectionAll(youtubeSchema);
 // populateYoutubeChannel();
