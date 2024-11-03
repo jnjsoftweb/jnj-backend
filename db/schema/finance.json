@@ -1,0 +1,60 @@
+[
+    {
+        "title": "BankAccounts",
+        "description": "Bank account record.",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier for the bank account record."
+          },
+          "accNum": {
+            "type": "string",
+            "description": "Account number.",
+            "minLength": 1,
+            "unique": true
+          },
+          "userName": {
+            "type": "string",
+            "description": "Name of the account holder.",
+            "minLength": 1
+          },
+          "bankName": {
+            "type": "string",
+            "description": "Name of the bank.",
+            "minLength": 1
+          },
+          "depositeType": {
+            "type": "string",
+            "description": "Type of deposit (e.g., savings, checking).",
+            "minLength": 1
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date and time when the account was created.",
+            "default": "CURRENT_TIMESTAMP"
+          },
+          "expiredAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date and time when the account expires."
+          },
+          "active": {
+            "type": "boolean",
+            "description": "Indicates if the account is active.",
+            "default": true
+          },
+          "purpose": {
+            "type": "string",
+            "description": "Purpose of the bank account."
+          },
+          "remark": {
+            "type": "string",
+            "description": "Additional remarks about the account."
+          }
+        },
+        "required": ["accNum", "userName", "bankName", "depositeType", "active"],
+        "additionalProperties": false
+    }
+]

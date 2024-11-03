@@ -1,0 +1,317 @@
+[
+  {
+    "title": "youtubeChannels",
+    "description": "YouTube channel record.",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "Unique identifier for the channel record."
+      },
+      "channelId": {
+        "type": "string",
+        "description": "YouTube channel ID.",
+        "minLength": 1,
+        "unique": true
+      },
+      "title": {
+        "type": "string",
+        "description": "Channel title.",
+        "minLength": 1
+      },
+      "customUrl": {
+        "type": "string",
+        "description": "Custom URL of the channel."
+      },
+      "publishedAt": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date and time when the channel was published."
+      },
+      "description": {
+        "type": "string",
+        "description": "Channel description."
+      },
+      "thumbnail": {
+        "type": "string",
+        "description": "URL of channel thumbnail."
+      },
+      "uploadsPlaylistId": {
+        "type": "string",
+        "description": "ID of the uploads playlist."
+      },
+      "viewCount": {
+        "type": "integer",
+        "description": "Total view count of the channel.",
+        "default": 0
+      },
+      "subscriberCount": {
+        "type": "integer",
+        "description": "Number of subscribers.",
+        "default": 0
+      },
+      "videoCount": {
+        "type": "integer",
+        "description": "Number of videos.",
+        "default": 0
+      }
+    },
+    "required": ["channelId", "title"],
+    "additionalProperties": false
+  },
+  {
+    "title": "youtubePlaylists",
+    "description": "YouTube playlist record.",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "Unique identifier for the playlist record."
+      },
+      "playlistId": {
+        "type": "string",
+        "description": "YouTube playlist ID.",
+        "minLength": 1,
+        "unique": true
+      },
+      "channelId": {
+        "type": "string",
+        "description": "Channel ID that owns this playlist.",
+        "minLength": 1
+      },
+      "title": {
+        "type": "string",
+        "description": "Playlist title.",
+        "minLength": 1
+      },
+      "description": {
+        "type": "string",
+        "description": "Playlist description."
+      },
+      "thumbnail": {
+        "type": "string",
+        "description": "URL of playlist thumbnail."
+      },
+      "publishedAt": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date and time when the playlist was published."
+      },
+      "itemCount": {
+        "type": "integer",
+        "description": "Number of items in playlist.",
+        "default": 0
+      },
+      "privacyStatus": {
+        "type": "string",
+        "description": "Privacy status of the playlist."
+      }
+    },
+    "required": ["playlistId", "channelId", "title"],
+    "additionalProperties": false
+  },
+  {
+    "title": "youtubeVideos",
+    "description": "YouTube video record.",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "Unique identifier for the video record."
+      },
+      "videoId": {
+        "type": "string",
+        "description": "YouTube video ID.",
+        "minLength": 1,
+        "unique": true
+      },
+      "channelId": {
+        "type": "string",
+        "description": "Channel ID that owns this video."
+      },
+      "playlistId": {
+        "type": "string",
+        "description": "Playlist ID if video belongs to a playlist."
+      },
+      "title": {
+        "type": "string",
+        "description": "Video title."
+      },
+      "description": {
+        "type": "string",
+        "description": "Video description."
+      },
+      "thumbnail": {
+        "type": "string",
+        "description": "URL of video thumbnail."
+      },
+      "publishedAt": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date and time when the video was published."
+      },
+      "duration": {
+        "type": "string",
+        "description": "Duration of the video."
+      },
+      "caption": {
+        "type": "string",
+        "description": "Caption status of the video."
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Video tags."
+      },
+      "viewCount": {
+        "type": "integer",
+        "description": "View count of the video.",
+        "default": 0
+      },
+      "likeCount": {
+        "type": "integer",
+        "description": "Like count of the video.",
+        "default": 0
+      },
+      "commentCount": {
+        "type": "integer",
+        "description": "Comment count of the video.",
+        "default": 0
+      }
+    },
+    "required": ["videoId"],
+    "additionalProperties": false
+  },
+  {
+    "title": "youtubeUsers",
+    "description": "YouTube user record.",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "Unique identifier for the user record."
+      },
+      "userId": {
+        "type": "string",
+        "description": "User ID.",
+        "minLength": 1,
+        "unique": true
+      },
+      "email": {
+        "type": "string",
+        "format": "email",
+        "description": "User email address."
+      },
+      "apiKey": {
+        "type": "string",
+        "description": "API key for the user."
+      },
+      "name": {
+        "type": "string",
+        "description": "User name."
+      },
+      "description": {
+        "type": "string",
+        "description": "User description."
+      },
+      "thumbnail": {
+        "type": "string",
+        "description": "URL of user thumbnail."
+      }
+    },
+    "required": ["userId"],
+    "additionalProperties": false
+  },
+  {
+    "title": "youtubeSubscriptions",
+    "description": "YouTube subscription record.",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "Unique identifier for the subscription record."
+      },
+      "subscriptionId": {
+        "type": "string",
+        "description": "Subscription ID <userId>_<channelId>.",
+        "minLength": 1,
+        "unique": true
+      },
+      "userId": {
+        "type": "string",
+        "description": "User ID who subscribed.",
+        "minLength": 1
+      },
+      "channelId": {
+        "type": "string",
+        "description": "Channel ID being subscribed to.",
+        "minLength": 1
+      },
+      "subscribed": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date and time of subscription.",
+        "default": "CURRENT_TIMESTAMP"
+      }
+    },
+    "required": ["userId", "channelId"],
+    "additionalProperties": false
+  },
+  {
+    "title": "youtubeDownloads",
+    "description": "YouTube download record.",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "Unique identifier for the download record."
+      },
+      "videoId": {
+        "type": "string",
+        "description": "YouTube video ID.",
+        "minLength": 1
+      },
+      "channelId": {
+        "type": "string",
+        "description": "Channel ID of the video."
+      },
+      "playlistId": {
+        "type": "string",
+        "description": "Playlist ID if video belongs to a playlist."
+      },
+      "fileName": {
+        "type": "string",
+        "description": "Name of the downloaded file."
+      },
+      "webUrl": {
+        "type": "string",
+        "description": "Web URL of the video."
+      },
+      "localUrl": {
+        "type": "string",
+        "description": "Local URL path to the video."
+      },
+      "localPath": {
+        "type": "string",
+        "description": "Local file system path to the video."
+      },
+      "downloaded": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date and time of download."
+      },
+      "review": {
+        "type": "string",
+        "description": "Review or notes about the download."
+      },
+      "like": {
+        "type": "string",
+        "description": "Like status of the download."
+      }
+    },
+    "required": ["videoId"],
+    "additionalProperties": false
+  }
+]

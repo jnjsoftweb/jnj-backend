@@ -27,8 +27,6 @@ async function showTableStructure() {
 }
 
 showTableStructure();
-
-
 // [
 //     {
 //       Field: 'nid',
@@ -219,3 +217,5 @@ showTableStructure();
 //   - settings_keyword의 테이블 구조를 참고하여,
 
 // @ilmac 폴더에 @typeDefs.js @resolvers.js @sample_api.gql 파일을 수정(settings_keyword 추가)해주세요
+
+

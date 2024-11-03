@@ -1,16 +1,22 @@
 export const typeDefs = `#graphql
-  type ChannelUpsertResult {
-    channelIds: [String!]!
-    success: Boolean!
-    error: String
+  # Input Types
+  input UserInput {
+    userId: String!
+    email: String
+    apiKey: String
+    name: String
+    description: String
+    thumbnail: String
   }
 
-  type ChannelUpsertOneResult {
+  input SubscriptionInput {
+    userId: String!
     channelId: String!
+    subscribed: String
   }
 
-  input ChannelDetailInput {
-    id: String!
+  input ChannelInput {
+    channelId: String!
     title: String
     customUrl: String
     publishedAt: String
@@ -22,8 +28,29 @@ export const typeDefs = `#graphql
     videoCount: String
   }
 
+  # Result Types
+  type UserUpsertResult {
+    userId: String!
+    success: Boolean!
+    error: String
+  }
+
+  type SubscriptionUpsertResult {
+    userId: String!
+    channelId: String!
+    success: Boolean!
+    error: String
+  }
+
+  type ChannelUpsertResult {
+    channelId: String!
+    success: Boolean!
+    error: String
+  }
+
+  # Queries
   type Query {
-    youtubeGetChannelsPB(
+    youtubeGetUsers(
       filter: String
       sort: String
       expand: String
@@ -31,11 +58,30 @@ export const typeDefs = `#graphql
       skipTotal: Boolean
       page: Int
       perPage: Int
-    ): [ChannelDetail]
+    ): [User]
+    
+    youtubeGetUserById(userId: String!): User
+    
+    youtubeGetSubscriptions(
+      filter: String
+      sort: String
+      expand: String
+      fields: String
+      skipTotal: Boolean
+      page: Int
+      perPage: Int
+    ): [Subscription]
+    
+    youtubeGetSubscriptionsByUserId(userId: String!): [Subscription]
   }
 
+  # Mutations
   type Mutation {
-    youtubeUpsertChannelsPB(channels: [ChannelDetailInput!]!): ChannelUpsertResult!
-    youtubeUpsertOneChannelPB(channel: ChannelDetailInput!): ChannelUpsertOneResult!
+    youtubeUpsertUser(user: UserInput!): UserUpsertResult!
+    youtubeUpsertUsers(users: [UserInput!]!): [UserUpsertResult!]!
+    youtubeUpsertSubscription(subscription: SubscriptionInput!): SubscriptionUpsertResult!
+    youtubeUpsertSubscriptions(subscriptions: [SubscriptionInput!]!): [SubscriptionUpsertResult!]!
+    youtubeUpsertChannel(channel: ChannelInput!): ChannelUpsertResult!
+    youtubeUpsertChannels(channels: [ChannelInput!]!): [ChannelUpsertResult!]!
   }
-`;
+`; 

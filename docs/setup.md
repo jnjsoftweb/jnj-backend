@@ -64,6 +64,12 @@ http://localhost:8090/_/
 
 moondevnode@gmail.com
 
+## sqlite
+
+C:\Program Files\DB Browser for SQLite\
+
+
+
 
 ## ilmac
 
