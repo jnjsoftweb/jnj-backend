@@ -218,76 +218,49 @@ const _videosByChannelId = async (channelId, maxItems = MAX_VIDEO_ITEMS_IN_CHANN
   }
 };
 
-// * API -> JSON
-// * subscriptions
-const upsertSubscriptionsJson = async (userId) => {
-  const subscriptionPath = `${JSON_DB_DIR}/youtube/youtubeSubscriptions.json`;
-  const _subscriptions = await _youtubeApiSubscriptions(userId);
-  const subscriptions = loadJson(subscriptionPath) || [];
-  const ids = subscriptions.map(s => s.subscriptionId);
-  const addSubscriptions = _subscriptions.filter(s => !ids.includes(s.subscriptionId));
-  subscriptions.push(...addSubscriptions);
-  saveJson(subscriptionPath, subscriptions);
-  return addSubscriptions;
-};
+// // * API -> JSON
+// // * subscriptions
+// const userId = "mooninlearn";
+// const subscriptions = await _youtubeApiSubscriptions(userId);
+// saveJson(`${JSON_DB_DIR}/youtube/youtubeSubscriptions.json`, subscriptions);
 
-// * channels
-const upsertChannelsJson = async (channelIds) => {
-  const channelPath = `${JSON_DB_DIR}/youtube/youtubeChannels.json`;
-  const channels = loadJson(channelPath) || [];
-  const ids = channels.map(c => c.channelId);
-  
-  let addChannels = [];
-  for (const channelId of channelIds) {
-    if (!ids.includes(channelId)) {
-      const channel = await _youtubeApiChannelById(channelId);
-      addChannels.push(channel);
-    }
-  }
-  
-  channels.push(...addChannels);
-  saveJson(channelPath, channels);
-  return addChannels;
-};
+// // * channels
+// const _channels = loadJson(`${JSON_DB_DIR}/youtube/youtubeSubscriptions.json`);
+// const channelIds = _channels.map((channel) => channel.channelId);
+// console.log(channelIds);
 
-// * playlists
-const upsertPlaylistsJson = async (channelIds) => {
-  const playlistPath = `${JSON_DB_DIR}/youtube/youtubePlaylists.json`;
-  const playlists = loadJson(playlistPath) || [];
-  const ids = playlists.map(p => p.playlistId);
-  
-  let addPlaylists = [];
-  for (const channelId of channelIds) {
-    const _playlists = await _playlistsByChannelId(channelId);
-    const newPlaylists = _playlists.filter(p => !ids.includes(p.playlistId));
-    addPlaylists.push(...newPlaylists);
-  }
-  
-  playlists.push(...addPlaylists);
-  saveJson(playlistPath, playlists);
-  return addPlaylists;
-};
+// let channels = [];
+// for (const channelId of channelIds) {
+//   const channel = await _youtubeApiChannelById(channelId);
+//   console.log(channel);
+//   channels.push(channel);
+// }
+// saveJson(`${JSON_DB_DIR}/youtube/youtubeChannels.json`, channels);
+
+// // * playlists
+// let playlists = [];
+// for (const channelId of channelIds) {
+//   const _playlists = await _playlistsByChannelId(channelId);
+//   playlists = [...playlists, ..._playlists];
+// }
+// saveJson(`${JSON_DB_DIR}/youtube/youtubePlaylists.json`, playlists);
 
 // * videos
-const upsertVideosJson = async (channelIds, startIdx = 0, endIdx = channelIds.length) => {
-  const videoPath = `${JSON_DB_DIR}/youtube/youtubeVideos.json`;
-  const videos = loadJson(videoPath) || [];
-  const ids = videos.map(v => v.videoId);
-  
-  let addVideos = [];
-  for (const channelId of channelIds.slice(startIdx, endIdx)) {
-    console.log(`Fetching videos for channel: ${channelId}`);
-    const _videos = await _videosByChannelId(channelId);
-    const newVideos = _videos.filter(v => !ids.includes(v.videoId));
-    console.log(`Found ${newVideos.length} new videos for channel ${channelId}`);
-    addVideos.push(...newVideos);
-  }
-  
-  videos.push(...addVideos);
-  saveJson(videoPath, videos);
-  console.log(`Total new videos added: ${addVideos.length}`);
-  return addVideos;
-};
+let videos = [];
+for (const channelId of channelIds.slice(11, 15)) {
+  const _videos = await _videosByChannelId(channelId);
+  console.log('Channel videos:', _videos.length);  // 디버깅용
+  videos = [...videos, ..._videos];
+}
+console.log('Total videos:', videos.length);  // 디버깅용
+saveJson(`${JSON_DB_DIR}/youtube/youtubeVideos.json`, videos);
+
+// !!! 추가 성공: 0 ~ 9 
+// !!! Channel videos: 756 (channelIds[10])
+// 재생목록 ID PLWKjhJtqVAbmfeXEWjfX3PmcMPVeGEc-0에 대한 동영상을 찾을 수 없습니다.
+
+
+
 
 // * JSON -> DB
 
