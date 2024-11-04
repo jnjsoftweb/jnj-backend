@@ -1,6 +1,5 @@
 export const typeDefs = `#graphql
-  # Input Types
-  input UserInput {
+  type UserSqlite {
     userId: String!
     email: String
     apiKey: String
@@ -9,48 +8,107 @@ export const typeDefs = `#graphql
     thumbnail: String
   }
 
-  input SubscriptionInput {
+  type SubscriptionSqlite {
+    subscriptionId: String!
     userId: String!
     channelId: String!
     subscribed: String
   }
 
-  input ChannelInput {
-    channelId: String!
+  type ChannelSqlite {
+    channelId: String
     title: String
     customUrl: String
     publishedAt: String
     description: String
     thumbnail: String
     uploadsPlaylistId: String
-    viewCount: String
-    subscriberCount: String
-    videoCount: String
+    viewCount: Int
+    subscriberCount: Int
+    videoCount: Int
   }
 
-  # Result Types
-  type UserUpsertResult {
+  type PlaylistSqlite {
+    playlistId: String
+    channelId: String
+    title: String
+    description: String
+    thumbnail: String
+    publishedAt: String
+    itemCount: Int
+    privacyStatus: String
+  }
+
+  type VideoSqlite {
+    videoId: String
+    channelId: String
+    playlistId: String
+    title: String
+    description: String
+    thumbnail: String
+    publishedAt: String
+    duration: String
+    caption: String
+    tags: String
+    viewCount: Int
+    likeCount: Int
+    commentCount: Int
+  }
+
+  input UserSqliteInput {
     userId: String!
-    success: Boolean!
-    error: String
+    email: String
+    apiKey: String
+    name: String
+    description: String
+    thumbnail: String
   }
 
-  type SubscriptionUpsertResult {
+  input SubscriptionSqliteInput {
+    subscriptionId: String!
     userId: String!
     channelId: String!
-    success: Boolean!
-    error: String
+    subscribed: String
   }
 
-  type ChannelUpsertResult {
-    channelId: String!
-    success: Boolean!
-    error: String
+  input ChannelSqliteInput {
+    channelId: String
+    title: String
+    customUrl: String
+    publishedAt: String
+    description: String
+    thumbnail: String
+  }
+
+  input PlaylistSqliteInput {
+    playlistId: String
+    channelId: String
+    title: String
+    description: String
+    thumbnail: String
+  }
+
+  input VideoSqliteInput {
+    videoId: String
+    channelId: String
+    playlistId: String
+    title: String
+    description: String
+    thumbnail: String
+    publishedAt: String
+    duration: String
+    caption: String
+    tags: String
+    viewCount: Int
+    likeCount: Int
+    commentCount: Int
   }
 
   # Queries
   type Query {
-    youtubeGetUsers(
+    youtubeAllUsersSqlite : [UserSqlite]
+
+    youtubeUsersSqlite(
       filter: String
       sort: String
       expand: String
@@ -58,11 +116,11 @@ export const typeDefs = `#graphql
       skipTotal: Boolean
       page: Int
       perPage: Int
-    ): [User]
+    ): [UserSqlite]
     
-    youtubeGetUserById(userId: String!): User
+    youtubeUserOneByIdSqlite(userId: String!): UserSqlite
     
-    youtubeGetSubscriptions(
+    youtubeSubscriptionsSqlite(
       filter: String
       sort: String
       expand: String
@@ -70,18 +128,47 @@ export const typeDefs = `#graphql
       skipTotal: Boolean
       page: Int
       perPage: Int
-    ): [Subscription]
+    ): [SubscriptionSqlite]
     
-    youtubeGetSubscriptionsByUserId(userId: String!): [Subscription]
+    youtubeSubscriptionsByUserIdSqlite(userId: String!): [SubscriptionSqlite]
+
+    youtubeChannelsSqlite(
+      filter: String
+      sort: String
+      expand: String
+      fields: String
+      skipTotal: Boolean
+      page: Int
+      perPage: Int
+    ): [ChannelSqlite]
+
+    youtubeChannelOneByIdSqlite(channelId: String!): ChannelSqlite
+
+    youtubePlaylistsSqlite(
+      filter: String
+      sort: String
+      expand: String
+      fields: String
+      skipTotal: Boolean
+      page: Int
+      perPage: Int
+    ): [PlaylistSqlite]
+
+    youtubePlaylistOneByIdSqlite(playlistId: String!): PlaylistSqlite
+
+    youtubeVideosSqlite(
+      filter: String
+      sort: String
+      expand: String
+    ): [VideoSqlite]
   }
 
   # Mutations
   type Mutation {
-    youtubeUpsertUser(user: UserInput!): UserUpsertResult!
-    youtubeUpsertUsers(users: [UserInput!]!): [UserUpsertResult!]!
-    youtubeUpsertSubscription(subscription: SubscriptionInput!): SubscriptionUpsertResult!
-    youtubeUpsertSubscriptions(subscriptions: [SubscriptionInput!]!): [SubscriptionUpsertResult!]!
-    youtubeUpsertChannel(channel: ChannelInput!): ChannelUpsertResult!
-    youtubeUpsertChannels(channels: [ChannelInput!]!): [ChannelUpsertResult!]!
+    youtubeUpsertUsersSqlite(users: [UserSqliteInput!]!): [UserSqlite]
+    youtubeUpsertSubscriptionsSqlite(subscriptions: [SubscriptionSqliteInput!]!): [SubscriptionSqlite]
+    youtubeUpsertChannelsSqlite(channels: [ChannelSqliteInput!]!): [ChannelSqlite]
+    youtubeUpsertPlaylistsSqlite(playlists: [PlaylistSqliteInput!]!): [PlaylistSqlite]
+    youtubeUpsertVideosSqlite(videos: [VideoSqliteInput!]!): [VideoSqlite]
   }
 `; 

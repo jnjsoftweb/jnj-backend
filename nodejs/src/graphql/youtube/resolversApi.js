@@ -218,110 +218,68 @@ const _videosByChannelId = async (channelId, maxItems = MAX_VIDEO_ITEMS_IN_CHANN
   }
 };
 
-// * API -> JSON
-// * subscriptions
-const upsertSubscriptionsJson = async (userId) => {
-  const subscriptionPath = `${JSON_DB_DIR}/youtube/youtubeSubscriptions.json`;
-  const _subscriptions = await _youtubeApiSubscriptions(userId);
-  const subscriptions = loadJson(subscriptionPath) || [];
-  const ids = subscriptions.map(s => s.subscriptionId);
-  const addSubscriptions = _subscriptions.filter(s => !ids.includes(s.subscriptionId));
-  subscriptions.push(...addSubscriptions);
-  saveJson(subscriptionPath, subscriptions);
-  return addSubscriptions;
-};
+export const resolvers = {
+  Query: {
+    youtubeAllSubscriptionsApi: async (_, args) => {
+      return await _youtubeApiSubscriptions(args.userId);
+    },
+    youtubeSubscriptionByIdApi: async (_, args) => {
+      return await _youtubeApiChannelById(args.channelId);
+    },
+    youtubeChannelByIdApi: async (_, args) => {
+      return await _youtubeApiChannelById(args.channelId);
+    },
+    youtubePlaylistsByChannelIdApi: async (_, args) => {
+      return await _playlistsByChannelId(args.channelId);
+    },
+    youtubeAllVideosApi: async (_, args) => {
+      return await _videosByChannelId(args.channelId);
+    },
+    youtubeVideoByIdApi: async (_, args) => {
+      return await _videoById(args.videoId);
+    },
+  }
+}
+
+// // * API -> JSON
+// // * subscriptions
+// const userId = "mooninlearn";
+// const subscriptions = await _youtubeApiSubscriptions(userId);
+// saveJson(`${JSON_DB_DIR}/youtube/youtubeSubscriptions.json`, subscriptions);
 
 // * channels
-const upsertChannelsJson = async (channelIds) => {
-  const channelPath = `${JSON_DB_DIR}/youtube/youtubeChannels.json`;
-  const channels = loadJson(channelPath) || [];
-  const ids = channels.map(c => c.channelId);
-  
-  let addChannels = [];
-  for (const channelId of channelIds) {
-    if (!ids.includes(channelId)) {
-      const channel = await _youtubeApiChannelById(channelId);
-      addChannels.push(channel);
-    }
-  }
-  
-  channels.push(...addChannels);
-  saveJson(channelPath, channels);
-  return addChannels;
-};
+const _channels = loadJson(`${JSON_DB_DIR}/youtube/youtubeSubscriptions.json`);
+const channelIds = _channels.map((channel) => channel.channelId);
+console.log(channelIds);
 
-// * playlists
-const upsertPlaylistsJson = async (channelIds) => {
-  const playlistPath = `${JSON_DB_DIR}/youtube/youtubePlaylists.json`;
-  const playlists = loadJson(playlistPath) || [];
-  const ids = playlists.map(p => p.playlistId);
-  
-  let addPlaylists = [];
-  for (const channelId of channelIds) {
-    const _playlists = await _playlistsByChannelId(channelId);
-    const newPlaylists = _playlists.filter(p => !ids.includes(p.playlistId));
-    addPlaylists.push(...newPlaylists);
-  }
-  
-  playlists.push(...addPlaylists);
-  saveJson(playlistPath, playlists);
-  return addPlaylists;
-};
+// let channels = [];
+// for (const channelId of channelIds) {
+//   const channel = await _youtubeApiChannelById(channelId);
+//   console.log(channel);
+//   channels.push(channel);
+// }
+// saveJson(`${JSON_DB_DIR}/youtube/youtubeChannels.json`, channels);
+
+// // * playlists
+// let playlists = [];
+// for (const channelId of channelIds) {
+//   const _playlists = await _playlistsByChannelId(channelId);
+//   playlists = [...playlists, ..._playlists];
+// }
+// saveJson(`${JSON_DB_DIR}/youtube/youtubePlaylists.json`, playlists);
 
 // * videos
-const upsertVideosJson = async (channelIds, startIdx = 0, endIdx = channelIds.length) => {
-  const videoPath = `${JSON_DB_DIR}/youtube/youtubeVideos.json`;
-  const videos = loadJson(videoPath) || [];
-  const ids = videos.map(v => v.videoId);
-  
-  let addVideos = [];
-  for (const channelId of channelIds.slice(startIdx, endIdx)) {
-    console.log(`Fetching videos for channel: ${channelId}`);
-    const _videos = await _videosByChannelId(channelId);
-    const newVideos = _videos.filter(v => !ids.includes(v.videoId));
-    console.log(`Found ${newVideos.length} new videos for channel ${channelId}`);
-    addVideos.push(...newVideos);
-  }
-  
-  videos.push(...addVideos);
-  saveJson(videoPath, videos);
-  console.log(`Total new videos added: ${addVideos.length}`);
-  return addVideos;
-};
-
-// * JSON -> DB
-
-// * API -> DB
-// * subscriptions
-const upsertSubscriptionsSqlite = async (userId) => {
-    const subscriptions = await _youtubeApiSubscriptions(userId);
-    const _subscriptions = subscriptions
-      .map(s => ({...s, subscriptionId: `${userId}_${s.channelId}`}))
-      .filter(s => !sqlite.find('youtubeSubscriptions')
-        .map(s => s.subscriptionId)
-        .includes(s.subscriptionId)
-      );
-  
-    sqlite.upsert('youtubeSubscriptions', _subscriptions, 'subscriptionId');
+let videos = [];
+for (const channelId of channelIds.slice(20, 25)) {
+  const _videos = await _videosByChannelId(channelId);
+  console.log('Channel videos:', _videos.length);  // 디버깅용
+  videos = [...videos, ..._videos];
 }
+console.log('Total videos:', videos.length);  // 디버깅용
+saveJson(`${JSON_DB_DIR}/youtube/youtubeVideos.json`, videos);
 
-// * channels
-const upsertChannelsSqlite = async (channels) => {
-    const ids = sqlite.find('youtubeChannels').map(channel => channel.channelId)
-    const _channels = channels.filter(c => !ids.includes(c.channelId))
-    sqlite.upsert('youtubeChannels', _channels, 'channelId');
-}
+// 재생목록 ID PLWKjhJtqVAbmfeXEWjfX3PmcMPVeGEc-0에 대한 동영상을 찾을 수 없습니다.
 
-// * playlists
-const upsertPlaylistsSqlite = async (channels) => {
-    const ids = sqlite.find('youtubePlaylists').map(p => p.playlistId)
-    const _playlists = channels.filter(p => !ids.includes(p.playlistId))
-    sqlite.upsert('youtubePlaylists', _playlists, 'playlistId');
-}
-
-// * videos
-const upsertVideosSqlite = async (channels) => {
-    const ids = sqlite.find('youtubeVideos').map(v => v.videoId)
-    const _videos = channels.filter(v => !ids.includes(v.videoId))
-    sqlite.upsert('youtubeVideos', _videos, 'videoId');
-}
+// !!! 추가 성공: 0 ~ 9 
+// !!! Channel videos: 756 (channelIds[10])
+// 재생목록 ID PLWKjhJtqVAbmfeXEWjfX3PmcMPVeGEc-0에 대한 동영상을 찾을 수 없습니다.
