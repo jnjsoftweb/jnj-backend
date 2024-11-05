@@ -104,6 +104,35 @@ const _upsertVideosSqlite = async (videos) => {
   return await sqlite.upsert('videos', videos, 'videoId');
 };
 
+// * 기타
+// * playlistId에 포함된 videoIds 조회(sqlite 기준)
+const _videoIdsInPlaylistSqlite = async (playlistId) => {
+  const playlist = await _playlistOneByIdSqlite(playlistId);
+  const videoIds = await sqlite.find('videos', {filter: `playlistId="${playlistId}"`}).map((v) => v.videoId);
+};
+
+const _notMatchPlaylistItemsInPlaylistSqlite = async (playlistId) => {
+  const playlist = await _playlistOneByIdSqlite(playlistId);
+  const videoIds = await sqlite.find('videos', {filter: `playlistId="${playlistId}"`}).map((v) => v.videoId);
+  const itemsCount = playlist.itemCount;
+  if (videoIds.length !== itemsCount) {
+    return {
+      playlistId,
+      videoIds: videoIds.join(','),
+      videosCount: videoIds.length,
+      itemsCount,
+    };
+  }
+  return null
+};
+
+const _upsertNotMatchPlaylistItemsSqlite = async (playlistId) => {
+  const item = await _notMatchPlaylistItemsInPlaylistSqlite(playlistId);
+  if (item) {
+    return await sqlite.upsertOne('notMatchPlaylistItems', item, 'playlistId');
+  }
+};
+
 const resolvers = {
   Query: {
     youtubeAllUsersSqlite: async (_, args) => await _allUsersSqlite(args),
@@ -168,5 +197,8 @@ export {
   _upsertChannelsSqlite,
   _upsertPlaylistsSqlite,
   _upsertVideosSqlite,
+  _videoIdsInPlaylistSqlite,
+  _notMatchPlaylistItemsInPlaylistSqlite,
+  _upsertNotMatchPlaylistItemsSqlite,
   resolvers,
 };

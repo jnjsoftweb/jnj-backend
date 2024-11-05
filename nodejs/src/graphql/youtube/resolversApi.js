@@ -224,13 +224,14 @@ const _videoByIdApi = async (videoId, playlistId = '') => {
   const detail = response[0];
   return {
     videoId: detail.id,
-    playlistId,
+    playlistId, // mostPopularVideos에서는 삭제
     title: detail.snippet.title,
     description: detail.snippet.description,
     thumbnail:
       detail.snippet.thumbnails.medium?.url ||
       detail.snippet.thumbnails.default?.url,
     channelId: detail.snippet.channelId,
+    channelTitle: detail.snippet.channelTitle, // 추가(mostPopularVideos)
     publishedAt: detail.snippet.publishedAt,
     duration: detail.contentDetails.duration,
     caption: detail.contentDetails.caption,
@@ -257,6 +258,18 @@ const _videosByChannelIdApi = async (
     console.error('Error fetching videos:', error);
     throw error;
   }
+};
+
+const _mostPopularVideosApi = async () => {
+  const videoIds = await mostPopularVideoIds();
+  const videos = await Promise.all(
+    videoIds.map(async (videoId) => {
+      const video = await _videoByIdApi(videoId);
+      delete video.playlistId;
+      return video;
+    })
+  );
+  return videos;
 };
 
 const resolvers = {
@@ -295,6 +308,7 @@ export {
   _videoByIdApi,
   _videoIdsByPlaylistIdApi,
   _videoIdsByChannelIdApi,
+  _mostPopularVideosApi,
   resolvers,
 };
 

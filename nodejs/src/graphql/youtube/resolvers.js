@@ -1,5 +1,5 @@
-import { loadJson } from 'jnj-lib-base';
-import { SQLITE_DB_DIR } from '../../env.js';
+import { loadJson, saveJson } from 'jnj-lib-base';
+import { SQLITE_DB_DIR, JSON_DB_DIR } from '../../env.js';
 import {
   _videoOneByIdSqlite,
   _playlistOneByIdSqlite,
@@ -17,6 +17,9 @@ import {
   _upsertChannelsSqlite,
   _upsertPlaylistsSqlite,
   _upsertVideosSqlite,
+  _videoIdsInPlaylistSqlite,
+  _notMatchPlaylistItemsInPlaylistSqlite,
+  _upsertNotMatchPlaylistItemsSqlite,
 } from './resolversSqlite.js';
 
 import {
@@ -27,21 +30,22 @@ import {
   _videoByIdApi,
   _videoIdsByPlaylistIdApi,
   _videoIdsByChannelIdApi,
+  _mostPopularVideosApi,
 } from './resolversApi.js';
 
 const JSON_ROOT = `${SQLITE_DB_DIR}/youtube`;
+const JSON_DB_ROOT = `${JSON_DB_DIR}/youtube`;
 
 const _videoById = async (videoId) => {
   const video = await _videoOneByIdSqlite(videoId);
-  const playlist = await _playlistOneByIdSqlite(video.playlistId);
+  delete video.channelTitle;  // channelTitle(mostPopularVideos에서만 사용) 제거
   const channel = await _channelOneByIdSqlite(video.channelId);
-  return { video, playlist, channel };
+  return { video, channel };
 };
 
 const _videoByVideoSqlite = async (video) => {
-  const playlist = await _playlistOneByIdSqlite(video.playlistId);
   const channel = await _channelOneByIdSqlite(video.channelId);
-  return { video, playlist, channel };
+  return { video, channel };
 };
 
 const _videosByPlaylistId = async (playlistId) => {
@@ -103,6 +107,9 @@ export const resolvers = {
     },
     youtubeVideosByChannelId: async (_, { channelId }) => {
       return await _videosByChannelIdSqlite(channelId);
+    },
+    youtubeMostPopularVideos: async (_, args) => {
+      return await _mostPopularVideosApi(args);
     },
   },
 
@@ -168,6 +175,12 @@ export const resolvers = {
     youtubeUpsertVideosFromApi: async (_, args) => {
       const videos = await _videosByChannelIdApi(args.channelId);
       await _upsertVideosSqlite(videos);
+      return { success: true };
+    },
+    // * API -> JSON
+    youtubeMostPopularVideosToJson: async (_, args) => {
+      const videos = await _mostPopularVideosApi();
+      saveJson(`${JSON_DB_ROOT}/mostPopularVideos.json`, videos);
       return { success: true };
     },
   },

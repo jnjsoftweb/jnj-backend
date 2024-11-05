@@ -239,3 +239,11 @@ mutation upsertUsersFromJsonFull {
     count
   }
 }
+
+
+# * 기타
+mutation youtubeMostPopularVideosToJson {
+  youtubeMostPopularVideosToJson {
+    success
+  }
+}
