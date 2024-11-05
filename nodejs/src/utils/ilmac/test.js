@@ -1,29 +1,29 @@
-import mysql from 'mysql2/promise'
-import { ILMAC_DB } from '../settings.js';
+import mysql from 'mysql2/promise';
+import { ILMAC_DB } from '../../env.js';
 
-const pool = mysql.createPool({...ILMAC_DB, waitForConnections: true});
+const pool = mysql.createPool({ ...ILMAC_DB, waitForConnections: true });
 
 async function showTableStructure() {
-    const db = await pool.getConnection();
-    try {
-        // 테이블 구조 조회
-        // const table = 'settings_list';
-        // const table = 'notices';
-        const table = 'settings_keyword';
-        const [describeResults] = await db.execute(`DESCRIBE ${table}`);
-        console.log(`\n=== ${table} 테이블 구조 ===`);
-        console.table(describeResults);
-        console.info(describeResults);
+  const db = await pool.getConnection();
+  try {
+    // 테이블 구조 조회
+    // const table = 'settings_list';
+    // const table = 'notices';
+    const table = 'settings_keyword';
+    const [describeResults] = await db.execute(`DESCRIBE ${table}`);
+    console.log(`\n=== ${table} 테이블 구조 ===`);
+    console.table(describeResults);
+    console.info(describeResults);
 
-        // // 데이터 조회
-        // const [rows] = await db.execute('SELECT * FROM settings_list');
-        // console.log('\n=== settings_list 데이터 ===');
-        // console.table(rows);
-    } catch (error) {
-        console.error('Error:', error);
-    } finally {
-        db.release();
-    }
+    // // 데이터 조회
+    // const [rows] = await db.execute('SELECT * FROM settings_list');
+    // console.log('\n=== settings_list 데이터 ===');
+    // console.table(rows);
+  } catch (error) {
+    console.error('Error:', error);
+  } finally {
+    db.release();
+  }
 }
 
 showTableStructure();
@@ -113,7 +113,6 @@ showTableStructure();
 //   - notices의 테이블 구조를 참고하여,
 
 // @ilmac 폴더에 @typeDefs.js @resolvers.js @sample_api.gql 파일을 수정(notices 추가)해주세요
-
 
 // [
 //     {
@@ -217,5 +216,3 @@ showTableStructure();
 //   - settings_keyword의 테이블 구조를 참고하여,
 
 // @ilmac 폴더에 @typeDefs.js @resolvers.js @sample_api.gql 파일을 수정(settings_keyword 추가)해주세요
-
-

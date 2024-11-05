@@ -1,6 +1,6 @@
 // [API Reference](https://developers.google.com/youtube/v3/docs?hl=ko)
 import axios from 'axios';
-import { API_KEY, API_URL } from '../settings.js';
+import { API_KEY, API_URL } from '../../env.js';
 
 // console.log(API_KEY, API_URL);
 

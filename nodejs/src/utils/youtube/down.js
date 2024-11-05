@@ -4,7 +4,7 @@ import cp from 'child_process';
 
 import youtubeSubtitlesScraper from 'youtube-captions-scraper';
 
-import { BASE_DOWN_DIR } from '../settings.js';
+import { BASE_DOWN_DIR } from '../../env.js';
 import { getAllResponses, getVideoTitle, getPlaylistTitle } from './rest.js';
 
 // console.log('BASE_DOWN_DIR: ', BASE_DOWN_DIR);

@@ -1,6 +1,6 @@
 import sqlite3 from 'sqlite3';
 import fs from 'fs';
-import { DB_SCHEMA_DIR, SQLITE_DB_DIR } from '../utils/settings.js';
+import { DB_SCHEMA_DIR, SQLITE_DB_DIR } from '../../env.js';
 import { getAllSchemas, getSchema } from './common.js';
 
 const BATCH_SIZE = 1000;

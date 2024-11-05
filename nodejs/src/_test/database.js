@@ -1,5 +1,5 @@
 import { loadJson } from 'jnj-lib-base';
-import { DB_SCHEMA_DIR, JSON_DB_DIR } from '../utils/settings.js';
+import { DB_SCHEMA_DIR, JSON_DB_DIR } from '../../env.js';
 import pocketbaseDB from '../database/pocketbase.js';
 
 // 또는 특정 URL 사용
@@ -10,7 +10,7 @@ import pocketbaseDB from '../database/pocketbase.js';
 // const pb = await createPocketBaseDB();
 // console.log(await pocketbaseDB.findOne('youtubeChannel', { filter: 'channelId="UC-9-kyTW8ZkZNDHQJ6FgpwQ__"' }));
 
-// console.log(await pocketbaseDB.find('youtubeChannel', { 
+// console.log(await pocketbaseDB.find('youtubeChannel', {
 //     filter: 'channelId = "UC-9-kyTW8ZkZNDHQJ6FgpwQ__"'
 // }));
 
@@ -19,17 +19,16 @@ import pocketbaseDB from '../database/pocketbase.js';
 // await pocketbaseDB.createCollectionsFromSchema(schemaPath);
 
 // * insert data to collections
-const getJsonData = (colName, dbName='youtube') => {
-    const dataPath = `${JSON_DB_DIR}/${dbName}/${colName}.json`;
-    return loadJson(dataPath);
-}
+const getJsonData = (colName, dbName = 'youtube') => {
+  const dataPath = `${JSON_DB_DIR}/${dbName}/${colName}.json`;
+  return loadJson(dataPath);
+};
 
-const populateData = async (colName, dbName='youtube') => {
-    await pocketbaseDB.insert(colName, getJsonData(colName, dbName));
-}
+const populateData = async (colName, dbName = 'youtube') => {
+  await pocketbaseDB.insert(colName, getJsonData(colName, dbName));
+};
 
-const colName = 'youtubeUsers'
+const colName = 'youtubeUsers';
 populateData(colName);
 
 // await pocketbaseDB.insert(colName, getJsonData(colName));
-

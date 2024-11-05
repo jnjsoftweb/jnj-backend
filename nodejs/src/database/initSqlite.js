@@ -1,47 +1,47 @@
 import { Sqlite, createDatabase } from './sqlite.js';
 import { loadJson, saveJson } from 'jnj-lib-base';
 import { getAllSchemas } from './common.js';
-import { JSON_DB_DIR } from '../utils/settings.js';
-import { mapYoutubePbCollection } from '../graphql/youtube/mapsTypeDb.js'
+import { JSON_DB_DIR } from '../../env.js';
+import { mapYoutubePbCollection } from '../graphql/youtube/mapsTypeDb.js';
 
 const idFromType = (typeName) => {
   return mapYoutubePbCollection[typeName].id;
-}
+};
 
 const collectionFromType = (typeName) => {
   return mapYoutubePbCollection[typeName].collection;
-}
+};
 
 const dataFromDb = (typeName, data) => {
   return {
     ...data,
     id: data[idFromType(typeName)],
   };
-}
+};
 
 const dataFromType = (type, data) => {
   const { [idFromType(type)]: id, ...rest } = data;
   return { [idFromType(type)]: id, ...rest };
-}
+};
 
-const createDatabaseSqlite = async (dbs=['youtube']) => {
+const createDatabaseSqlite = async (dbs = ['youtube']) => {
   for (const db of dbs) {
     await createDatabase(db);
   }
-}
+};
 
-const createTables = async (dbName='youtube') => {
+const createTables = async (dbName = 'youtube') => {
   const schemas = getAllSchemas(dbName);
   console.log(schemas);
   for (const schema of schemas) {
     sqlite.createTableFromSchema(schema);
   }
-}
+};
 
-const populateDatabase = async (dbName='youtube') => {
+const populateDatabase = async (dbName = 'youtube') => {
   sqlite.upsert(tableName, data, uniqueFields);
   console.log(schemas);
-}
+};
 
 // const schemas = getSchema('youtube', 'youtube');
 // sqlite.createTableFromSchema(schema);
@@ -90,4 +90,3 @@ const sqlite = new Sqlite(dbName);
 //     return { channelId: id, ...rest }
 // });
 // sqlite.upsert(tableName, data2, uniqueFields);
-

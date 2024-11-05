@@ -3,7 +3,7 @@
 import express from 'express';
 import cors from 'cors';
 
-import { EXPRESS_PORT } from '../utils/settings.js';
+import { EXPRESS_PORT } from '../../env.js';
 import {
   getAllResponses,
   getChannelIdByCustomUrl,

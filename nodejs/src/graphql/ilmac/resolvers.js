@@ -1,7 +1,7 @@
 import mysql from 'mysql2/promise';
-import { ILMAC_DB } from '../../utils/settings.js';
+import { ILMAC_DB } from '../../../env.js';
 
-const pool = mysql.createPool({...ILMAC_DB, waitForConnections: true});
+const pool = mysql.createPool({ ...ILMAC_DB, waitForConnections: true });
 
 const mapDBToGraphQL = (row) => ({
   orgName: row['기관명'],
@@ -19,26 +19,26 @@ const mapDBToGraphQL = (row) => ({
   excludeKeywords: row['제외항목'],
   use: row.use === 1,
   region: row['지역'],
-  registered: row['등록']
+  registered: row['등록'],
 });
 
 const mapGraphQLToDB = (input) => ({
-  '기관명': input.orgName,
-  'url': input.url,
-  'iframe': input.iframe,
-  'rowXpath': input.rowXpath,
-  'paging': input.paging,
-  'startPage': input.startPage,
-  'endPage': input.endPage,
-  'login': input.login,
-  '제목': input.title,
-  '상세페이지주소': input.detailUrl,
-  '작성일': input.writeDate,
-  '작성자': input.writer,
-  '제외항목': input.excludeKeywords,
-  'use': input.use ? 1 : 0,
-  '지역': input.region,
-  '등록': input.registered
+  기관명: input.orgName,
+  url: input.url,
+  iframe: input.iframe,
+  rowXpath: input.rowXpath,
+  paging: input.paging,
+  startPage: input.startPage,
+  endPage: input.endPage,
+  login: input.login,
+  제목: input.title,
+  상세페이지주소: input.detailUrl,
+  작성일: input.writeDate,
+  작성자: input.writer,
+  제외항목: input.excludeKeywords,
+  use: input.use ? 1 : 0,
+  지역: input.region,
+  등록: input.registered,
 });
 
 const mapNoticeDBToGraphQL = (row) => ({
@@ -51,17 +51,17 @@ const mapNoticeDBToGraphQL = (row) => ({
   writer: row['작성자'],
   scrapedAt: row.scraped_at?.toISOString(),
   createdAt: row.created_at?.toISOString(),
-  updatedAt: row.updated_at?.toISOString()
+  updatedAt: row.updated_at?.toISOString(),
 });
 
 const mapNoticeGraphQLToDB = (input) => ({
-  'sn': input.sn,
-  '기관명': input.orgName,
-  '제목': input.title,
-  '상세페이지주소': input.detailUrl,
-  '작성일': input.writeDate,
-  '작성자': input.writer,
-  'scraped_at': input.scrapedAt
+  sn: input.sn,
+  기관명: input.orgName,
+  제목: input.title,
+  상세페이지주소: input.detailUrl,
+  작성일: input.writeDate,
+  작성자: input.writer,
+  scraped_at: input.scrapedAt,
 });
 
 const mapKeywordDBToGraphQL = (row) => ({
@@ -76,20 +76,20 @@ const mapKeywordDBToGraphQL = (row) => ({
   writer: row['작성자'],
   memo: row['메모'],
   createdAt: row.created_at?.toISOString(),
-  updatedAt: row.updated_at?.toISOString()
+  updatedAt: row.updated_at?.toISOString(),
 });
 
 const mapKeywordGraphQLToDB = (input) => ({
-  'use': input.use ? 1 : 0,
-  '검색명': input.searchName,
-  '검색어': input.searchKeywords,
-  '배제어': input.excludeKeywords,
-  '최소점수': input.minScore,
-  '적용분야': input.category,
-  '적용기관': input.targetOrg,
-  '적용지역': input.targetRegion,
-  '작성자': input.writer,
-  '메모': input.memo
+  use: input.use ? 1 : 0,
+  검색명: input.searchName,
+  검색어: input.searchKeywords,
+  배제어: input.excludeKeywords,
+  최소점수: input.minScore,
+  적용분야: input.category,
+  적용기관: input.targetOrg,
+  적용지역: input.targetRegion,
+  작성자: input.writer,
+  메모: input.memo,
 });
 
 export const resolvers = {
@@ -110,7 +110,10 @@ export const resolvers = {
     getSettingsByOrg: async (_, { orgName }) => {
       const db = await pool.getConnection();
       try {
-        const [rows] = await db.execute('SELECT * FROM settings_list WHERE 기관명 = ?', [orgName]);
+        const [rows] = await db.execute(
+          'SELECT * FROM settings_list WHERE 기관명 = ?',
+          [orgName]
+        );
         if (rows.length === 0) return null;
         return mapDBToGraphQL(rows[0]);
       } catch (error) {
@@ -124,7 +127,10 @@ export const resolvers = {
     getSettingsByRegion: async (_, { region }) => {
       const db = await pool.getConnection();
       try {
-        const [rows] = await db.execute('SELECT * FROM settings_list WHERE 지역 = ?', [region]);
+        const [rows] = await db.execute(
+          'SELECT * FROM settings_list WHERE 지역 = ?',
+          [region]
+        );
         return rows.map(mapDBToGraphQL);
       } catch (error) {
         console.error('Error:', error);
@@ -137,7 +143,9 @@ export const resolvers = {
     getAllNotices: async () => {
       const db = await pool.getConnection();
       try {
-        const [rows] = await db.execute('SELECT * FROM notices ORDER BY nid DESC');
+        const [rows] = await db.execute(
+          'SELECT * FROM notices ORDER BY nid DESC'
+        );
         return rows.map(mapNoticeDBToGraphQL);
       } catch (error) {
         console.error('Error:', error);
@@ -150,7 +158,9 @@ export const resolvers = {
     getNoticeById: async (_, { nid }) => {
       const db = await pool.getConnection();
       try {
-        const [rows] = await db.execute('SELECT * FROM notices WHERE nid = ?', [nid]);
+        const [rows] = await db.execute('SELECT * FROM notices WHERE nid = ?', [
+          nid,
+        ]);
         if (rows.length === 0) return null;
         return mapNoticeDBToGraphQL(rows[0]);
       } catch (error) {
@@ -164,7 +174,10 @@ export const resolvers = {
     getNoticesByOrg: async (_, { orgName }) => {
       const db = await pool.getConnection();
       try {
-        const [rows] = await db.execute('SELECT * FROM notices WHERE 기관명 = ? ORDER BY nid DESC', [orgName]);
+        const [rows] = await db.execute(
+          'SELECT * FROM notices WHERE 기관명 = ? ORDER BY nid DESC',
+          [orgName]
+        );
         return rows.map(mapNoticeDBToGraphQL);
       } catch (error) {
         console.error('Error:', error);
@@ -193,7 +206,9 @@ export const resolvers = {
     getAllKeywords: async () => {
       const db = await pool.getConnection();
       try {
-        const [rows] = await db.execute('SELECT * FROM settings_keyword ORDER BY 검색명');
+        const [rows] = await db.execute(
+          'SELECT * FROM settings_keyword ORDER BY 검색명'
+        );
         return rows.map(mapKeywordDBToGraphQL);
       } catch (error) {
         console.error('Error:', error);
@@ -206,7 +221,10 @@ export const resolvers = {
     getKeywordByName: async (_, { searchName }) => {
       const db = await pool.getConnection();
       try {
-        const [rows] = await db.execute('SELECT * FROM settings_keyword WHERE 검색명 = ?', [searchName]);
+        const [rows] = await db.execute(
+          'SELECT * FROM settings_keyword WHERE 검색명 = ?',
+          [searchName]
+        );
         if (rows.length === 0) return null;
         return mapKeywordDBToGraphQL(rows[0]);
       } catch (error) {
@@ -220,7 +238,10 @@ export const resolvers = {
     getKeywordsByCategory: async (_, { category }) => {
       const db = await pool.getConnection();
       try {
-        const [rows] = await db.execute('SELECT * FROM settings_keyword WHERE 적용분야 = ?', [category]);
+        const [rows] = await db.execute(
+          'SELECT * FROM settings_keyword WHERE 적용분야 = ?',
+          [category]
+        );
         return rows.map(mapKeywordDBToGraphQL);
       } catch (error) {
         console.error('Error:', error);
@@ -233,7 +254,10 @@ export const resolvers = {
     getKeywordsByOrg: async (_, { targetOrg }) => {
       const db = await pool.getConnection();
       try {
-        const [rows] = await db.execute('SELECT * FROM settings_keyword WHERE 적용기관 = ?', [targetOrg]);
+        const [rows] = await db.execute(
+          'SELECT * FROM settings_keyword WHERE 적용기관 = ?',
+          [targetOrg]
+        );
         return rows.map(mapKeywordDBToGraphQL);
       } catch (error) {
         console.error('Error:', error);
@@ -246,7 +270,10 @@ export const resolvers = {
     getKeywordsByRegion: async (_, { targetRegion }) => {
       const db = await pool.getConnection();
       try {
-        const [rows] = await db.execute('SELECT * FROM settings_keyword WHERE 적용지역 = ?', [targetRegion]);
+        const [rows] = await db.execute(
+          'SELECT * FROM settings_keyword WHERE 적용지역 = ?',
+          [targetRegion]
+        );
         return rows.map(mapKeywordDBToGraphQL);
       } catch (error) {
         console.error('Error:', error);
@@ -265,12 +292,12 @@ export const resolvers = {
         const columns = Object.keys(dbInput).join(', ');
         const values = Object.values(dbInput);
         const placeholders = values.map(() => '?').join(', ');
-        
+
         await db.execute(
           `INSERT INTO settings_list (${columns}) VALUES (${placeholders})`,
           values
         );
-        
+
         return input;
       } catch (error) {
         console.error('Error:', error);
@@ -326,12 +353,12 @@ export const resolvers = {
           'UPDATE settings_list SET `use` = ? WHERE 기관명 = ?',
           [use ? 1 : 0, orgName]
         );
-        
+
         const [rows] = await db.execute(
           'SELECT * FROM settings_list WHERE 기관명 = ?',
           [orgName]
         );
-        
+
         return mapDBToGraphQL(rows[0]);
       } catch (error) {
         console.error('Error:', error);
@@ -348,17 +375,17 @@ export const resolvers = {
         const columns = Object.keys(dbInput).join(', ');
         const values = Object.values(dbInput);
         const placeholders = values.map(() => '?').join(', ');
-        
+
         const [result] = await db.execute(
           `INSERT INTO notices (${columns}) VALUES (${placeholders})`,
           values
         );
-        
+
         const [newNotice] = await db.execute(
           'SELECT * FROM notices WHERE nid = ?',
           [result.insertId]
         );
-        
+
         return mapNoticeDBToGraphQL(newNotice[0]);
       } catch (error) {
         console.error('Error:', error);
@@ -377,16 +404,13 @@ export const resolvers = {
           .join(', ');
         const values = [...Object.values(dbInput), nid];
 
-        await db.execute(
-          `UPDATE notices SET ${updates} WHERE nid = ?`,
-          values
-        );
+        await db.execute(`UPDATE notices SET ${updates} WHERE nid = ?`, values);
 
         const [updatedNotice] = await db.execute(
           'SELECT * FROM notices WHERE nid = ?',
           [nid]
         );
-        
+
         return mapNoticeDBToGraphQL(updatedNotice[0]);
       } catch (error) {
         console.error('Error:', error);
@@ -399,10 +423,9 @@ export const resolvers = {
     deleteNotice: async (_, { nid }) => {
       const db = await pool.getConnection();
       try {
-        const [result] = await db.execute(
-          'DELETE FROM notices WHERE nid = ?',
-          [nid]
-        );
+        const [result] = await db.execute('DELETE FROM notices WHERE nid = ?', [
+          nid,
+        ]);
         return result.affectedRows > 0;
       } catch (error) {
         console.error('Error:', error);
@@ -435,17 +458,17 @@ export const resolvers = {
         const columns = Object.keys(dbInput).join(', ');
         const values = Object.values(dbInput);
         const placeholders = values.map(() => '?').join(', ');
-        
+
         await db.execute(
           `INSERT INTO settings_keyword (${columns}) VALUES (${placeholders})`,
           values
         );
-        
+
         const [newKeyword] = await db.execute(
           'SELECT * FROM settings_keyword WHERE 검색명 = ?',
           [input.searchName]
         );
-        
+
         return mapKeywordDBToGraphQL(newKeyword[0]);
       } catch (error) {
         console.error('Error:', error);
@@ -473,7 +496,7 @@ export const resolvers = {
           'SELECT * FROM settings_keyword WHERE 검색명 = ?',
           [input.searchName]
         );
-        
+
         return mapKeywordDBToGraphQL(updatedKeyword[0]);
       } catch (error) {
         console.error('Error:', error);
@@ -506,12 +529,12 @@ export const resolvers = {
           'UPDATE settings_keyword SET `use` = ? WHERE 검색명 = ?',
           [use ? 1 : 0, searchName]
         );
-        
+
         const [rows] = await db.execute(
           'SELECT * FROM settings_keyword WHERE 검색명 = ?',
           [searchName]
         );
-        
+
         return mapKeywordDBToGraphQL(rows[0]);
       } catch (error) {
         console.error('Error:', error);

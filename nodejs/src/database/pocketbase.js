@@ -5,7 +5,7 @@ import {
   POCKETBASE_PORT,
   POCKETBASE_ADMIN_EMAIL,
   POCKETBASE_ADMIN_PASSWORD,
-} from '../utils/settings.js';
+} from '../../env.js';
 
 class PocketBaseDB {
   static instances = new Map();
@@ -18,20 +18,20 @@ class PocketBaseDB {
 
     this.url = url;
     this.pb = new PocketBase(this.url);
-    
+
     // 새 인스턴스를 Map에 저장
     PocketBaseDB.instances.set(url, this);
   }
 
   static async getInstance(url) {
     const instanceUrl = url || `${APP_URL_ROOT}:${POCKETBASE_PORT}`;
-    
+
     if (!PocketBaseDB.instances.has(instanceUrl)) {
       const instance = new PocketBaseDB(instanceUrl);
       await instance.initialize();
       PocketBaseDB.instances.set(instanceUrl, instance);
     }
-    
+
     return PocketBaseDB.instances.get(instanceUrl);
   }
 
@@ -51,7 +51,10 @@ class PocketBaseDB {
 
   async createCollection(schema) {
     try {
-      console.log('Creating collection with schema:', JSON.stringify(schema, null, 2));
+      console.log(
+        'Creating collection with schema:',
+        JSON.stringify(schema, null, 2)
+      );
       const collection = await this.pb.collections.create(schema);
       console.log(`컬렉션 ${collection.name} 생성 완료`);
       return collection;
@@ -96,17 +99,18 @@ class PocketBaseDB {
   async findOne(collectionName, options) {
     try {
       let filterStr;
-      
+
       if (typeof options === 'string') {
         filterStr = options;
       } else if (typeof options === 'object') {
         if (options.filter) {
           // options.filter가 문자열이면 그대로 사용
-          filterStr = typeof options.filter === 'string' 
-            ? options.filter 
-            : Object.entries(options.filter)
-                .map(([key, value]) => `${key}='${value}'`)
-                .join(' && ');
+          filterStr =
+            typeof options.filter === 'string'
+              ? options.filter
+              : Object.entries(options.filter)
+                  .map(([key, value]) => `${key}='${value}'`)
+                  .join(' && ');
         } else {
           // options 자체가 필터 조건인 경우
           filterStr = Object.entries(options)
@@ -116,7 +120,9 @@ class PocketBaseDB {
       }
 
       console.log('findOne filter string:', filterStr); // 디버깅용
-      return await this.pb.collection(collectionName).getFirstListItem(filterStr);
+      return await this.pb
+        .collection(collectionName)
+        .getFirstListItem(filterStr);
     } catch (error) {
       if (error.status === 404) {
         console.log('Record not found');
@@ -130,7 +136,7 @@ class PocketBaseDB {
   async find(collectionName, options = {}) {
     try {
       const { filter, ...restOptions } = options;
-      
+
       let filterStr;
       if (typeof filter === 'string') {
         filterStr = filter;
@@ -144,7 +150,7 @@ class PocketBaseDB {
 
       const queryOptions = {
         ...restOptions,
-        ...(filterStr && { filter: filterStr })
+        ...(filterStr && { filter: filterStr }),
       };
 
       return await this.pb.collection(collectionName).getFullList(queryOptions);
@@ -173,17 +179,23 @@ class PocketBaseDB {
 
   async upsertOne(collectionName, data, uniqueFields) {
     try {
-      const fields = uniqueFields.split(',').map(field => field.trim());
-      const filterConditions = fields.map(field => `${field}="${data[field]}"`);
+      const fields = uniqueFields.split(',').map((field) => field.trim());
+      const filterConditions = fields.map(
+        (field) => `${field}="${data[field]}"`
+      );
       const filter = filterConditions.join(' && ');
 
       let existingRecord = await this.findOne(collectionName, filter);
 
       if (existingRecord) {
-        console.log(`Updating record in ${collectionName} with conditions: ${filter}`);
+        console.log(
+          `Updating record in ${collectionName} with conditions: ${filter}`
+        );
         return await this.update(collectionName, existingRecord.id, data);
       } else {
-        console.log(`Creating new record in ${collectionName} with conditions: ${filter}`);
+        console.log(
+          `Creating new record in ${collectionName} with conditions: ${filter}`
+        );
         return await this.insertOne(collectionName, data);
       }
     } catch (error) {
@@ -199,7 +211,10 @@ class PocketBaseDB {
         const result = await this.upsertOne(collectionName, data, uniqueFields);
         results.push(result);
       } catch (error) {
-        console.error(`Failed to upsert record with ${uniqueFields}: ${data[uniqueFields]}`, error);
+        console.error(
+          `Failed to upsert record with ${uniqueFields}: ${data[uniqueFields]}`,
+          error
+        );
         results.push(null);
       }
     }
@@ -209,9 +224,11 @@ class PocketBaseDB {
   async delete(collectionName, filter) {
     try {
       const records = await this.find(collectionName, { filter });
-      
+
       if (!records || records.length === 0) {
-        console.log(`No records found in ${collectionName} with filter: ${filter}`);
+        console.log(
+          `No records found in ${collectionName} with filter: ${filter}`
+        );
         return [];
       }
 
@@ -227,7 +244,11 @@ class PocketBaseDB {
         })
       );
 
-      console.log(`Deleted ${results.filter(r => r.success).length} records from ${collectionName}`);
+      console.log(
+        `Deleted ${
+          results.filter((r) => r.success).length
+        } records from ${collectionName}`
+      );
       return results;
     } catch (error) {
       console.error('Delete operation failed:', error);
@@ -239,36 +260,36 @@ class PocketBaseDB {
     return await this.upsert(collectionName, data, uniqueFields);
   }
 
-//   async populateYoutubeChannel(jsonFileName = 'channelsInSubscriptions', userId = 'mooninlearn', collectionName = 'youtubeChannel') {
-//     const data = loadJson(this.jsonPath(jsonFileName))[userId];
-//     const results = [];
-    
-//     for (let item of data) {
-//       const { id, ...rest } = item;
-//       const newItem = {
-//         channelId: id,
-//         ...rest,
-//       };
-//       const result = await this.insertOne(collectionName, newItem);
-//       results.push(result);
-//     }
-    
-//     return results;
-//   }
+  //   async populateYoutubeChannel(jsonFileName = 'channelsInSubscriptions', userId = 'mooninlearn', collectionName = 'youtubeChannel') {
+  //     const data = loadJson(this.jsonPath(jsonFileName))[userId];
+  //     const results = [];
+
+  //     for (let item of data) {
+  //       const { id, ...rest } = item;
+  //       const newItem = {
+  //         channelId: id,
+  //         ...rest,
+  //       };
+  //       const result = await this.insertOne(collectionName, newItem);
+  //       results.push(result);
+  //     }
+
+  //     return results;
+  //   }
 
   convertSchema(schema) {
     if (!Array.isArray(schema)) {
       throw new Error('Schema must be an array');
     }
 
-    return schema.map(table => {
+    return schema.map((table) => {
       const fields = Object.entries(table.properties)
         .filter(([key]) => key !== 'id') // id 필드 제외
         .map(([name, prop]) => {
           const field = {
             name,
             type: this._convertType(prop.type, prop.format),
-            required: table.required?.includes(name) || false
+            required: table.required?.includes(name) || false,
           };
 
           // 추가 옵션 설정
@@ -281,9 +302,9 @@ class PocketBaseDB {
           }
 
           if (prop.items && prop.type === 'array') {
-            field.options = { 
-              ...field.options, 
-              maxSize: 2000 // JSON 필드의 기본 최대 크기
+            field.options = {
+              ...field.options,
+              maxSize: 2000, // JSON 필드의 기본 최대 크기
             };
           }
 
@@ -294,7 +315,7 @@ class PocketBaseDB {
         name: table.title,
         type: 'base',
         description: table.description || `${table.title} Information`,
-        schema: fields
+        schema: fields,
       };
     });
   }
@@ -342,14 +363,14 @@ export const createPocketBaseDB = async (url) => {
 // console.log(await pocketbaseDB.findOne('youtubeChannel', { filter: 'channelId~"UC-9-kyTW"' }));
 
 // // 또는
-// console.log(await pocketbaseDB.find('youtubeChannel', { 
+// console.log(await pocketbaseDB.find('youtubeChannel', {
 //   filter: 'channelId~"UC-9-kyTW8ZkZNDHQJ6"'
 // }));
 
 // // 테스트 코드
 // if (import.meta.url === url.pathToFileURL(process.argv[1]).href) {
 //   const pocketbaseDB = await PocketBaseDB.getInstance();
-  
+
 //   // 테스트 1: findOne - 객체 형태
 //   console.log(await pocketbaseDB.findOne('youtubeChannel', {
 //     channelId: 'UC-9-kyTW8ZkZNDHQJ6FgpwQ__'

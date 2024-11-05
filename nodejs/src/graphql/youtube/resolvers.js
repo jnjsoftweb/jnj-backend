@@ -1,5 +1,5 @@
 import { loadJson } from 'jnj-lib-base';
-import { SQLITE_DB_DIR } from '../../utils/settings.js';
+import { SQLITE_DB_DIR } from '../../../env.js';
 import {
   _videoOneByIdSqlite,
   _playlistOneByIdSqlite,

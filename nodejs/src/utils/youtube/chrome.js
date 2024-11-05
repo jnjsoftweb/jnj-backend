@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import { saveFile, loadJson } from 'jnj-lib-base';
 
-import { DEFAULT_USER_DATA_DIR, DEFAULT_EXE_PATH } from '../settings.js';
+import { DEFAULT_USER_DATA_DIR, DEFAULT_EXE_PATH } from '../../env.js';
 
 const MAX_SCROLLS = 10;
 const HEADLESS = false;
