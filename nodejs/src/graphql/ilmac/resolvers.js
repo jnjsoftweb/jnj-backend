@@ -1,5 +1,5 @@
 import mysql from 'mysql2/promise';
-import { ILMAC_DB } from '../../../env.js';
+import { ILMAC_DB } from '../../env.js';
 
 const pool = mysql.createPool({ ...ILMAC_DB, waitForConnections: true });
 

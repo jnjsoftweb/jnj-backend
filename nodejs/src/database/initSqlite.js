@@ -1,7 +1,7 @@
 import { Sqlite, createDatabase } from './sqlite.js';
 import { loadJson, saveJson } from 'jnj-lib-base';
 import { getAllSchemas } from './common.js';
-import { JSON_DB_DIR } from '../../env.js';
+import { JSON_DB_DIR } from '../env.js';
 import { mapYoutubePbCollection } from '../graphql/youtube/mapsTypeDb.js';
 
 const idFromType = (typeName) => {

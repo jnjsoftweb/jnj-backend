@@ -5,7 +5,7 @@ import {
   POCKETBASE_PORT,
   POCKETBASE_ADMIN_EMAIL,
   POCKETBASE_ADMIN_PASSWORD,
-} from '../../env.js';
+} from '../env.js';
 
 class PocketBaseDB {
   static instances = new Map();

@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 // .env 파일 로드
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-dotenv.config({ path: path.resolve(__dirname, '../../../.env') });
+dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
 // const 설정
 const APP_ROOT = process.env.APP_ROOT;

@@ -1,5 +1,5 @@
 import { loadJson, saveJson } from 'jnj-lib-base';
-import { JSON_DB_DIR } from '../../../env.js';
+import { JSON_DB_DIR } from '../../env.js';
 
 import {
   getAllResponses,

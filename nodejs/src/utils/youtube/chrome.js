@@ -302,6 +302,7 @@ const shortsVideoIds = async (
 
 export { scrapePage, watchLaterVideoIds, historyVideoIds, shortsVideoIds };
 
+// console.log(DEFAULT_EXE_PATH);
 // // console.log('findFolders:', findFolders());
 
 // console.log('watchLaterVideoIds:', await watchLaterVideoIds('bigwhitekmc'));

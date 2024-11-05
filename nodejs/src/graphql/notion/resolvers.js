@@ -1,6 +1,6 @@
 import { Client } from '@notionhq/client';
 import { GraphQLError } from 'graphql';
-import { NOTION_API_KEY } from '../../../env.js';
+import { NOTION_API_KEY } from '../../env.js';
 
 // console.log(NOTION_API_KEY);
 
