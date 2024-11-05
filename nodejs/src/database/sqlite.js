@@ -393,7 +393,7 @@ export { Sqlite, createDatabase };
 // const dbName = 'youtube';
 // const sqlite = new Sqlite(dbName);
 
-// sqlite.createTableFromSchema(getSchema('youtubeSubscriptions','youtube'));
+// sqlite.createTableFromSchema(getSchema('subscriptions','youtube'));
 
 // const schemas = getAllSchemas(dbName);
 // // console.log(schemas);
@@ -410,7 +410,7 @@ export { Sqlite, createDatabase };
 // sqlite.upsert('BankAccounts', [{ id: 1, accNum: '123456', userName: 'John Doe', ... }, { id: 2, accNum: '654321', userName: 'Jane Doe', ... }]); // 다중 레코드 upsert
 
 // // * upsert
-// const tableName = 'youtubeSubscriptions';
+// const tableName = 'subscriptions';
 // const data = {
 //   userId: 'mooninlearn',
 //   channelId: 'UCcfz-8gGDYJfaRHYD7kkQpw______',

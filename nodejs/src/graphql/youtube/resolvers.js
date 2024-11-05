@@ -111,7 +111,7 @@ export const resolvers = {
     // * JSON -> SQLite
     youtubeUpsertUsersFromJson: async (
       _,
-      { path = `${JSON_ROOT}/youtubeUsers.json` }
+      { path = `${JSON_ROOT}/users.json` }
     ) => {
       const users = loadJson(path);
       await _upsertUsersSqlite(users);
@@ -119,7 +119,7 @@ export const resolvers = {
     },
     youtubeUpsertSubscriptionsFromJson: async (
       _,
-      { path = `${JSON_ROOT}/youtubeSubscriptions.json` }
+      { path = `${JSON_ROOT}/subscriptions.json` }
     ) => {
       const subscriptions = loadJson(path);
       await _upsertSubscriptionsSqlite(subscriptions);
@@ -127,7 +127,7 @@ export const resolvers = {
     },
     youtubeUpsertChannelsFromJson: async (
       _,
-      { path = `${JSON_ROOT}/youtubeChannels.json` }
+      { path = `${JSON_ROOT}/channels.json` }
     ) => {
       const channels = loadJson(path);
       await _upsertChannelsSqlite(channels);
@@ -135,7 +135,7 @@ export const resolvers = {
     },
     youtubeUpsertPlaylistsFromJson: async (
       _,
-      { path = `${JSON_ROOT}/youtubePlaylists.json` }
+      { path = `${JSON_ROOT}/playlists.json` }
     ) => {
       const playlists = loadJson(path);
       await _upsertPlaylistsSqlite(playlists);
@@ -143,7 +143,7 @@ export const resolvers = {
     },
     youtubeUpsertVideosFromJson: async (
       _,
-      { path = `${JSON_ROOT}/youtubeVideos.json` }
+      { path = `${JSON_ROOT}/videos.json` }
     ) => {
       const videos = loadJson(path);
       await _upsertVideosSqlite(videos);

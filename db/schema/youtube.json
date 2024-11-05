@@ -1,6 +1,6 @@
 [
   {
-    "title": "youtubeChannels",
+    "title": "channels",
     "description": "YouTube channel record.",
     "type": "object",
     "properties": {
@@ -60,7 +60,7 @@
     "additionalProperties": false
   },
   {
-    "title": "youtubePlaylists",
+    "title": "playlists",
     "description": "YouTube playlist record.",
     "type": "object",
     "properties": {
@@ -118,7 +118,7 @@
     "additionalProperties": false
   },
   {
-    "title": "youtubeVideos",
+    "title": "videos",
     "description": "YouTube video record.",
     "type": "object",
     "properties": {
@@ -192,7 +192,7 @@
     "additionalProperties": false
   },
   {
-    "title": "youtubeUsers",
+    "title": "users",
     "description": "YouTube user record.",
     "type": "object",
     "properties": {
@@ -232,7 +232,7 @@
     "additionalProperties": false
   },
   {
-    "title": "youtubeSubscriptions",
+    "title": "subscriptions",
     "description": "YouTube subscription record.",
     "type": "object",
     "properties": {
@@ -267,7 +267,7 @@
     "additionalProperties": false
   },
   {
-    "title": "youtubeDownloads",
+    "title": "downloads",
     "description": "YouTube download record.",
     "type": "object",
     "properties": {

@@ -1,5 +1,5 @@
 {
-  "title": "youtubePlaylists",
+  "title": "playlists",
   "properties": {
     "playlistId": {
       "type": "string"

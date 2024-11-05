@@ -1,9 +1,9 @@
 const mapCollectons = {
-    users: "youtubeUsers",
-    subscriptions: "youtubeSubscriptions",
-    channels: "youtubeChannels",
-    playlists: "youtubePlaylists",
-    videos: "youtubeVideos"
+    users: "users",
+    subscriptions: "subscriptions",
+    channels: "channels",
+    playlists: "playlists",
+    videos: "videos"
 }
 
 const mapFields = {

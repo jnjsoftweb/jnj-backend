@@ -28,7 +28,7 @@ const populateData = async (colName, dbName = 'youtube') => {
   await pocketbaseDB.insert(colName, getJsonData(colName, dbName));
 };
 
-const colName = 'youtubeUsers';
+const colName = 'users';
 populateData(colName);
 
 // await pocketbaseDB.insert(colName, getJsonData(colName));

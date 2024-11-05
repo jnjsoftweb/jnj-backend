@@ -56,9 +56,9 @@ const sqlite = new Sqlite(dbName);
 // await createTables('youtube')
 
 // // * populate database
-// const tableName = 'youtubeUsers';
+// const tableName = 'users';
 // const uniqueFields = 'userId';
-// const data = loadJson(`${JSON_DB_DIR}/youtube/youtubeUsers.json`);
+// const data = loadJson(`${JSON_DB_DIR}/youtube/users.json`);
 // const data2 = data.map(item => {
 //     const { id, ...rest } = item;
 //     return { userId: id, ...rest }
@@ -67,23 +67,23 @@ const sqlite = new Sqlite(dbName);
 // sqlite.upsert(tableName, data2, uniqueFields);
 
 // * populate youtubeSubscriptions
-// const tableName = 'youtubeSubscriptions';
+// const tableName = 'subscriptions';
 // // const uniqueFields = ['userId', 'channelId'];
 // const userId = 'mooninlearn';
-// const data = loadJson(`${JSON_DB_DIR}/youtube/youtubeChannels.json`)[userId];
+// const data = loadJson(`${JSON_DB_DIR}/youtube/channels.json`)[userId];
 // console.log(data);
 // const data2 = data.map(item => {
 //     const { id } = item;
 //     return { subscriptionId: `${userId}_${id}`, userId, channelId: id }
 // });
 // // console.log(data2);
-// saveJson(`${JSON_DB_DIR}/youtube/youtubeSubscriptions.json`, data2);
+// saveJson(`${JSON_DB_DIR}/youtube/subscriptions.json`, data2);
 // sqlite.upsert(tableName, data2, 'subscriptionId');
 
 // // * populate youtubeChannels
-// const tableName = 'youtubeChannels';
+// const tableName = 'channels';
 // const uniqueFields = 'channelId';
-// const data = loadJson(`${JSON_DB_DIR}/youtube/youtubeChannels.json`);
+// const data = loadJson(`${JSON_DB_DIR}/youtube/channels.json`);
 // console.log(data);
 // const data2 = data.map(item => {
 //     const { id, ...rest } = item;

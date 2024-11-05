@@ -4,58 +4,58 @@ const sqlite = new Sqlite('youtube');
 
 // Users
 const _allUsersSqlite = async (args) => {
-  return await sqlite.find('youtubeUsers', args);
+  return await sqlite.find('users', args);
 };
 
 const _usersSqlite = async (args) => {
-  return await sqlite.find('youtubeUsers', args);
+  return await sqlite.find('users', args);
 };
 
 const _userOneByIdSqlite = async (userId) => {
-  return await sqlite.findOne('youtubeUsers', `userId='${userId}'`);
+  return await sqlite.findOne('users', `userId='${userId}'`);
 };
 
 // Subscriptions
 const _subscriptionsSqlite = async (args) => {
-  return await sqlite.find('youtubeSubscriptions', args);
+  return await sqlite.find('subscriptions', args);
 };
 
 const _subscriptionsByUserIdSqlite = async (userId) => {
-  return await sqlite.find('youtubeSubscriptions', { userId });
+  return await sqlite.find('subscriptions', { userId });
 };
 
 const _subscriptionOneByIdSqlite = async (subscriptionId) => {
   return await sqlite.findOne(
-    'youtubeSubscriptions',
+    'subscriptions',
     `subscriptionId='${subscriptionId}'`
   );
 };
 
 // Channels
 const _channelsSqlite = async (args) => {
-  return await sqlite.find('youtubeChannels', args);
+  return await sqlite.find('channels', args);
 };
 
 const _channelOneByIdSqlite = async (channelId) => {
-  return await sqlite.findOne('youtubeChannels', `channelId='${channelId}'`);
+  return await sqlite.findOne('channels', `channelId='${channelId}'`);
 };
 
 // Playlists
 const _playlistsSqlite = async (args) => {
-  return await sqlite.find('youtubePlaylists', args);
+  return await sqlite.find('playlists', args);
 };
 
 const _playlistOneByIdSqlite = async (playlistId) => {
-  return await sqlite.findOne('youtubePlaylists', `playlistId='${playlistId}'`);
+  return await sqlite.findOne('playlists', `playlistId='${playlistId}'`);
 };
 
 // Videos
 const _videosSqlite = async (args) => {
-  return await sqlite.find('youtubeVideos', args);
+  return await sqlite.find('videos', args);
 };
 
 const _videoOneByIdSqlite = async (videoId) => {
-  return await sqlite.findOne('youtubeVideos', `videoId='${videoId}'`);
+  return await sqlite.findOne('videos', `videoId='${videoId}'`);
 };
 
 const _videoIdsByPlaylistIdSqlite = async (playlistId) => {
@@ -68,40 +68,40 @@ const _videosByPlaylistIdSqlite = async (playlistId) => {
   const videoIds = playlist.videoIds.split(',');
   return await Promise.all(
     videoIds.map((videoId) =>
-      sqlite.find('youtubeVideos', { filter: `videoId="${videoId}"` })
+      sqlite.find('videos', { filter: `videoId="${videoId}"` })
     )
   );
 };
 
 const _videosByChannelIdSqlite = async (channelId) => {
-  return await sqlite.find('youtubeVideos', {
+  return await sqlite.find('videos', {
     filter: `channelId='${channelId}'`,
   });
 };
 
 // Mutations
 const _upsertUsersSqlite = async (users) => {
-  return await sqlite.upsert('youtubeUsers', users, 'userId');
+  return await sqlite.upsert('users', users, 'userId');
 };
 
 const _upsertSubscriptionsSqlite = async (subscriptions) => {
   return await sqlite.upsert(
-    'youtubeSubscriptions',
+    'subscriptions',
     subscriptions,
     'subscriptionId'
   );
 };
 
 const _upsertChannelsSqlite = async (channels) => {
-  return await sqlite.upsert('youtubeChannels', channels, 'channelId');
+  return await sqlite.upsert('channels', channels, 'channelId');
 };
 
 const _upsertPlaylistsSqlite = async (playlists) => {
-  return await sqlite.upsert('youtubePlaylists', playlists, 'playlistId');
+  return await sqlite.upsert('playlists', playlists, 'playlistId');
 };
 
 const _upsertVideosSqlite = async (videos) => {
-  return await sqlite.upsert('youtubeVideos', videos, 'videoId');
+  return await sqlite.upsert('videos', videos, 'videoId');
 };
 
 const resolvers = {

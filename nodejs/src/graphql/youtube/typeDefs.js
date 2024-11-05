@@ -18,7 +18,6 @@ export const typeDefs = `#graphql
   type Video {
     video: VideoSqlite
     channel: ChannelSqlite
-    playlist: PlaylistSqlite
   }
 
   # Queries

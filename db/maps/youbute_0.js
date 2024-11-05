@@ -1,26 +1,26 @@
 const mapYoutubePbCollection = {
     users: {
-      collection: 'youtubeUsers',
+      collection: 'users',
       id: 'userId',
       uniqueFields: 'userId'
     },
     subscriptions: {
-      collection: 'youtubeSubscriptions',
+      collection: 'subscriptions',
       id: 'subscriptionId',
       uniqueFields: 'subscriptionId'
     },
     channels: {
-      collection: 'youtubeChannels',
+      collection: 'channels',
       id: 'channelId',
       uniqueFields: 'channelId'
     },
     playlists: {
-      collection: 'youtubePlaylists',
+      collection: 'playlists',
       id: 'playlistId',
       uniqueFields: 'playlistId'
     },
     videos: {
-      collection: 'youtubeVideos',
+      collection: 'videos',
       id: 'videoId',
       uniqueFields: 'videoId'
     }

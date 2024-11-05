@@ -302,10 +302,10 @@ export {
 // // // * subscriptions
 // // const userId = "mooninlearn";
 // // const subscriptions = await _youtubeApiSubscriptionsApi(userId);
-// // saveJson(`${JSON_DB_DIR}/youtube/youtubeSubscriptions.json`, subscriptions);
+// // saveJson(`${JSON_DB_DIR}/youtube/subscriptions.json`, subscriptions);
 
 // // * channels
-// const channels_ = loadJson(`${JSON_DB_DIR}/youtube/youtubeSubscriptions.json`);
+// const channels_ = loadJson(`${JSON_DB_DIR}/youtube/subscriptions.json`);
 // const channelIds = channels_.map((channel) => channel.channelId);
 // console.log(channelIds);
 
@@ -315,7 +315,7 @@ export {
 // //   console.log(channel);
 // //   channels.push(channel);
 // // }
-// // saveJson(`${JSON_DB_DIR}/youtube/youtubeChannels.json`, channels);
+// // saveJson(`${JSON_DB_DIR}/youtube/channels.json`, channels);
 
 // // // * playlists
 // // let playlists = [];
@@ -323,7 +323,7 @@ export {
 // //   const _playlistsApi = await _playlistsByChannelIdApi(channelId);
 // //   playlists = [...playlists, ..._playlists];
 // // }
-// // saveJson(`${JSON_DB_DIR}/youtube/youtubePlaylists.json`, playlists);
+// // saveJson(`${JSON_DB_DIR}/youtube/playlists.json`, playlists);
 
 // // * videos
 // let videos = [];
@@ -333,7 +333,7 @@ export {
 //   videos = [...videos, ..._videos];
 // }
 // console.log('Total videos:', videos.length); // 디버깅용
-// saveJson(`${JSON_DB_DIR}/youtube/youtubeVideos.json`, videos);
+// saveJson(`${JSON_DB_DIR}/youtube/videos.json`, videos);
 
 // // 재생목록 ID PLWKjhJtqVAbmfeXEWjfX3PmcMPVeGEc-0에 대한 동영상을 찾을 수 없습니다.
 
