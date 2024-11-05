@@ -1,0 +1,241 @@
+# * 유저 관련 쿼리
+mutation upsertUsersFromJson {
+  youtubeUpsertUsersFromJson {
+    success
+  }
+}
+
+mutation upsertUsersFromJson {
+  youtubeUpsertUsersFromJson(path: "C:/JnJ-soft/Projects/internal/jnj-backend/db/json/youtube/youtubeUsers1.json") {
+    success
+  }
+}
+
+
+
+# * 구독 관련 쿼리
+
+query getYoutubeAllSubscriptions {
+  youtubeAllSubscriptions {
+    userId
+    channel {
+      channelId
+      title
+      thumbnail
+    }
+  }
+}
+
+query getYoutubeSubscriptionById($subscriptionId: String!) {
+  youtubeSubscriptionById(subscriptionId: $subscriptionId) {
+    userId
+    channel {
+      channelId
+      title
+      thumbnail
+    }
+  }
+}
+
+{
+  "subscriptionId": "mooninlearn_UCcfz-8gGDYJfaRHYD7kkQpw"
+}
+
+# * 채널 관련 쿼리
+query getYoutubeAllChannels {
+  youtubeAllChannels {
+    channelId
+    title
+    customUrl
+    publishedAt
+    description
+    thumbnail
+    uploadsPlaylistId
+    viewCount
+    subscriberCount
+    videoCount
+  }
+}
+
+query getYoutubeChannelById($channelId: String!) {
+  youtubeChannelById(channelId: $channelId) {
+    channelId
+    title
+    customUrl
+    publishedAt
+    description
+    thumbnail
+    uploadsPlaylistId
+    viewCount
+    subscriberCount
+    videoCount
+  }
+}
+
+{
+  "channelId": "UCcfz-8gGDYJfaRHYD7kkQpw"
+}
+
+
+# 재생목록 관련 쿼리
+query getYoutubeAllPlaylists {
+  youtubeAllPlaylists {
+    channel {
+      channelId
+      title
+      thumbnail
+    }
+    playlist {
+      playlistId
+    }
+  }
+}
+
+query getYoutubePlaylistById($playlistId: String!) {
+  youtubePlaylistById(playlistId: $playlistId) {
+    playlistId
+    title
+    description
+    thumbnail
+    channelId
+    channelTitle
+    publishedAt
+    itemCount
+    privacyStatus
+  }
+}
+
+query getYoutubePlaylistByChannelId($channelId: String!) {
+  youtubePlaylistByChannelId(channelId: $channelId) {
+    playlistId
+    title
+    description
+    thumbnail
+    channelId
+    channelTitle
+    publishedAt
+    itemCount
+    privacyStatus
+  }
+}
+
+{
+  "channelId": "UCcfz-8gGDYJfaRHYD7kkQpw"
+}
+
+
+# * 비디오 관련 쿼리
+
+query getYoutubeAllVideos {
+  youtubeAllVideos {
+    video {
+      videoId
+      title
+      description
+      thumbnail
+      publishedAt
+    }
+    channel {
+      channelId
+      title
+      thumbnail
+    }
+    playlist {
+      playlistId
+      title
+    }
+  }
+}
+
+query getYoutubeVideoById($videoId: String!) {
+  youtubeVideoById(videoId: $videoId) {
+    video {
+      videoId
+      title
+      description
+      thumbnail
+      publishedAt
+      viewCount
+      likeCount
+      commentCount
+    }
+    channel {
+      channelId
+      title
+      thumbnail
+    }
+    playlist {
+      playlistId
+      title
+      description
+    }
+  }
+}
+
+
+mutation upsertYoutubeChannel($channel: ChannelDetailInput!) {
+  youtubeUpsertOneChannelPB(channel: $channel) {
+    channelId
+  }
+}
+
+mutation upsertYoutubeChannels($channels: [ChannelDetailInput!]!) {
+  youtubeUpsertChannelsPB(channels: $channels) {
+    channelIds
+    success
+    error
+  }
+}
+
+
+
+
+
+# 비디오 관련 추가 쿼리
+query getYoutubeVideosByPlaylistId($playlistId: String!) {
+  youtubeVideosByPlaylistId(playlistId: $playlistId) {
+    videoId
+    title
+    description
+    thumbnail
+    channelId
+    channelTitle
+    publishedAt
+    duration
+    viewCount
+    likeCount
+    commentCount
+  }
+}
+
+query getYoutubeVideosByChannelId($channelId: String!) {
+  youtubeVideosByChannelId(channelId: $channelId) {
+    videoId
+    title
+    description
+    thumbnail
+    channelId
+    channelTitle
+    publishedAt
+    duration
+    viewCount
+    likeCount
+    commentCount
+  }
+}
+
+# JSON 파일에서 데이터 업데이트 mutations
+mutation upsertUsersFromJson {
+  youtubeUpsertUsersFromJson {
+    success
+  }
+}
+
+# 필요한 경우 전체 필드 조회
+mutation upsertUsersFromJsonFull {
+  youtubeUpsertUsersFromJson {
+    success
+    message
+    count
+  }
+}

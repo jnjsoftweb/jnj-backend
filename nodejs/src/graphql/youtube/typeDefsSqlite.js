@@ -37,6 +37,7 @@ export const typeDefs = `#graphql
     publishedAt: String
     itemCount: Int
     privacyStatus: String
+    videoIds: String
   }
 
   type VideoSqlite {
@@ -78,6 +79,10 @@ export const typeDefs = `#graphql
     publishedAt: String
     description: String
     thumbnail: String
+    uploadsPlaylistId: String
+    viewCount: Int
+    subscriberCount: Int
+    videoCount: Int
   }
 
   input PlaylistSqliteInput {
@@ -86,6 +91,10 @@ export const typeDefs = `#graphql
     title: String
     description: String
     thumbnail: String
+    publishedAt: String
+    itemCount: Int
+    privacyStatus: String
+    videoIds: String
   }
 
   input VideoSqliteInput {
@@ -171,4 +180,4 @@ export const typeDefs = `#graphql
     youtubeUpsertPlaylistsSqlite(playlists: [PlaylistSqliteInput!]!): [PlaylistSqlite]
     youtubeUpsertVideosSqlite(videos: [VideoSqliteInput!]!): [VideoSqlite]
   }
-`; 
+`;

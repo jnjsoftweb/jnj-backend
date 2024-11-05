@@ -1,0 +1,37 @@
+{
+  "title": "youtubePlaylists",
+  "properties": {
+    "playlistId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "channelId": {
+      "type": "string"
+    },
+    "channelTitle": {
+      "type": "string"
+    },
+    "publishedAt": {
+      "type": "string"
+    },
+    "itemCount": {
+      "type": "integer"
+    },
+    "privacyStatus": {
+      "type": "string"
+    },
+    "videoIds": {
+      "type": "string"
+    }
+  },
+  "required": ["playlistId"],
+  "unique": ["playlistId"]
+}

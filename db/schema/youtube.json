@@ -88,6 +88,13 @@
         "type": "string",
         "description": "Playlist description."
       },
+      "videoIds": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Video IDs in the playlist."
+      },
       "thumbnail": {
         "type": "string",
         "description": "URL of playlist thumbnail."
