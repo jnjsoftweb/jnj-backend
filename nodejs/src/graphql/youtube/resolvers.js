@@ -10,6 +10,7 @@ import {
   _subscriptionsSqlite,
   _subscriptionOneByIdSqlite,
   _channelsSqlite,
+  _channelsByUserIdSqlite,
   _playlistsSqlite,
   _videosByChannelIdSqlite,
   _upsertUsersSqlite,
@@ -33,12 +34,13 @@ import {
   _mostPopularVideosApi,
 } from './resolversApi.js';
 
-const JSON_ROOT = `${SQLITE_DB_DIR}/youtube`;
-const JSON_DB_ROOT = `${JSON_DB_DIR}/youtube`;
+// const JSON_ROOT = `${SQLITE_DB_DIR}/youtube`;
+const JSON_ROOT = `${JSON_DB_DIR}/youtube`;
 
 const _videoById = async (videoId) => {
   const video = await _videoOneByIdSqlite(videoId);
-  delete video.channelTitle;  // channelTitle(mostPopularVideos에서만 사용) 제거
+  delete video.channelTitle; // channelTitle(mostPopularVideos에서만 사용) 제거
+  delete video.channelThumbnail; // channelThumbnail(mostPopularVideos에서만 사용) 제거
   const channel = await _channelOneByIdSqlite(video.channelId);
   return { video, channel };
 };
@@ -78,6 +80,9 @@ export const resolvers = {
     youtubeAllChannels: async (_, args) => {
       return await _channelsSqlite(args);
     },
+    youtubeChannelsByUserId: async (_, { userId }) => {
+      return await _channelsByUserIdSqlite(userId);
+    },
     youtubeChannelById: async (_, { channelId }) => {
       return await _channelOneByIdSqlite(channelId);
     },
@@ -103,10 +108,16 @@ export const resolvers = {
       return await _videoById(videoId);
     },
     youtubeVideosByPlaylistId: async (_, { playlistId }) => {
-      return await _videosByPlaylistIdSqlite(playlistId);
+      const videos = await _videosByPlaylistIdSqlite(playlistId);
+      return Promise.all(
+        videos.map(async (video) => await _videoByVideoSqlite(video))
+      );
     },
     youtubeVideosByChannelId: async (_, { channelId }) => {
-      return await _videosByChannelIdSqlite(channelId);
+      const videos = await _videosByChannelIdSqlite(channelId);
+      return Promise.all(
+        videos.map(async (video) => await _videoByVideoSqlite(video))
+      );
     },
     youtubeMostPopularVideos: async (_, args) => {
       return await _mostPopularVideosApi(args);
@@ -180,7 +191,7 @@ export const resolvers = {
     // * API -> JSON
     youtubeMostPopularVideosToJson: async (_, args) => {
       const videos = await _mostPopularVideosApi();
-      saveJson(`${JSON_DB_ROOT}/mostPopularVideos.json`, videos);
+      saveJson(`${JSON_ROOT}/mostPopularVideos.json`, videos);
       return { success: true };
     },
   },

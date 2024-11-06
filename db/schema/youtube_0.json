@@ -338,11 +338,15 @@
       },
       "channelId": {
         "type": "string",
-        "description": "Channel ID that owns this video."
+        "description": "Channel ID if video belongs to a playlist."
       },
-      "playlistId": {
+      "channelTitle": {
         "type": "string",
-        "description": "Playlist ID if video belongs to a playlist."
+        "description": "Channel Titlet hat owns this video."
+      },
+      "channelThumbnail": {
+        "type": "string",
+        "description": "Channel thumbnail."
       },
       "title": {
         "type": "string",

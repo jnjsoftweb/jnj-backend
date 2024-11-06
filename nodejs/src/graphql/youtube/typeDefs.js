@@ -20,22 +20,6 @@ export const typeDefs = `#graphql
     channel: ChannelSqlite
   }
 
-  type MostPopularVideo {
-    videoId: String
-    channelId: String
-    channelTitle: String
-    title: String
-    description: String
-    thumbnail: String
-    publishedAt: String
-    duration: String
-    caption: String
-    tags: String
-    viewCount: Int
-    likeCount: Int
-    commentCount: Int
-  }
-
   type NotMatchPlaylistItem {
     playlistId: String!
     videoIds: String!
@@ -48,6 +32,7 @@ export const typeDefs = `#graphql
     youtubeAllSubscriptions: [Subscription]  # 모든 구독 가져오기
     youtubeSubscriptionById(subscriptionId: String!): Subscription  # ID로 구독 가져오기
     youtubeAllChannels: [ChannelSqlite]  # 모든 채널 가져오기
+    youtubeChannelsByUserId(userId: String!): [ChannelSqlite]  # 사용자 ID로 채널 가져오기
     youtubeChannelById(channelId: String!): ChannelSqlite  # ID로 채널 가져오기
     youtubeAllPlaylists: [PlaylistSqlite]  # 모든 재생목록 가져오기
     youtubePlaylistById(playlistId: String!): PlaylistSqlite  # ID로 재생목록 가져오기
@@ -56,7 +41,7 @@ export const typeDefs = `#graphql
     youtubeVideoById(videoId: String!): Video  # ID로 비디오 가져오기
     youtubeVideosByPlaylistId(playlistId: String!): [Video]  # 재생목록 ID로 비디오 가져오기
     youtubeVideosByChannelId(channelId: String!): [Video]  # 채널 ID로 비디오 가져오기
-    youtubeMostPopularVideos: [MostPopularVideo]  # 인기 비디오 가져오기
+    youtubeMostPopularVideos: [Video]  # 인기 비디오 가져오기
   }
 
   # Mutations

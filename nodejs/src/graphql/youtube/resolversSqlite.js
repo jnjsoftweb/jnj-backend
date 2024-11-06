@@ -21,7 +21,7 @@ const _subscriptionsSqlite = async (args) => {
 };
 
 const _subscriptionsByUserIdSqlite = async (userId) => {
-  return await sqlite.find('subscriptions', { userId });
+  return await sqlite.find('subscriptions', { filter: `userId='${userId}'` });
 };
 
 const _subscriptionOneByIdSqlite = async (subscriptionId) => {
@@ -34,6 +34,23 @@ const _subscriptionOneByIdSqlite = async (subscriptionId) => {
 // Channels
 const _channelsSqlite = async (args) => {
   return await sqlite.find('channels', args);
+};
+
+const _channelsByUserIdSqlite = async (userId) => {
+  const subscriptions = await sqlite.find('subscriptions', {
+    filter: `userId='${userId}'`,
+  });
+  const channelIds = subscriptions.map((s) => s.channelId);
+  return await Promise.all(
+    channelIds.map(async (channelId) => {
+      const channel = await sqlite.findOne(
+        'channels',
+        `channelId='${channelId}'`
+      );
+      delete channel.id;
+      return channel;
+    })
+  );
 };
 
 const _channelOneByIdSqlite = async (channelId) => {
@@ -67,9 +84,13 @@ const _videosByPlaylistIdSqlite = async (playlistId) => {
   const playlist = await _playlistOneByIdSqlite(playlistId);
   const videoIds = playlist.videoIds.split(',');
   return await Promise.all(
-    videoIds.map((videoId) =>
-      sqlite.find('videos', { filter: `videoId="${videoId}"` })
-    )
+    videoIds.map((videoId) => {
+      const video = sqlite.findOne('videos', `videoId="${videoId}"`);
+      delete video.id;
+      return video;
+      // const { id, ...rest } = video;
+      // return { ...rest };
+    })
   );
 };
 
@@ -85,11 +106,7 @@ const _upsertUsersSqlite = async (users) => {
 };
 
 const _upsertSubscriptionsSqlite = async (subscriptions) => {
-  return await sqlite.upsert(
-    'subscriptions',
-    subscriptions,
-    'subscriptionId'
-  );
+  return await sqlite.upsert('subscriptions', subscriptions, 'subscriptionId');
 };
 
 const _upsertChannelsSqlite = async (channels) => {
@@ -108,12 +125,16 @@ const _upsertVideosSqlite = async (videos) => {
 // * playlistId에 포함된 videoIds 조회(sqlite 기준)
 const _videoIdsInPlaylistSqlite = async (playlistId) => {
   const playlist = await _playlistOneByIdSqlite(playlistId);
-  const videoIds = await sqlite.find('videos', {filter: `playlistId="${playlistId}"`}).map((v) => v.videoId);
+  const videoIds = await sqlite
+    .find('videos', { filter: `playlistId="${playlistId}"` })
+    .map((v) => v.videoId);
 };
 
 const _notMatchPlaylistItemsInPlaylistSqlite = async (playlistId) => {
   const playlist = await _playlistOneByIdSqlite(playlistId);
-  const videoIds = await sqlite.find('videos', {filter: `playlistId="${playlistId}"`}).map((v) => v.videoId);
+  const videoIds = await sqlite
+    .find('videos', { filter: `playlistId="${playlistId}"` })
+    .map((v) => v.videoId);
   const itemsCount = playlist.itemCount;
   if (videoIds.length !== itemsCount) {
     return {
@@ -123,7 +144,7 @@ const _notMatchPlaylistItemsInPlaylistSqlite = async (playlistId) => {
       itemsCount,
     };
   }
-  return null
+  return null;
 };
 
 const _upsertNotMatchPlaylistItemsSqlite = async (playlistId) => {
@@ -184,6 +205,7 @@ export {
   _subscriptionsByUserIdSqlite,
   _subscriptionOneByIdSqlite,
   _channelsSqlite,
+  _channelsByUserIdSqlite,
   _channelOneByIdSqlite,
   _playlistsSqlite,
   _playlistOneByIdSqlite,
@@ -202,3 +224,11 @@ export {
   _upsertNotMatchPlaylistItemsSqlite,
   resolvers,
 };
+
+// const userId = 'mooninlearn';
+// const channels = await _channelsByUserIdSqlite(userId);
+// console.log(channels);
+
+const playlistId = 'PLwt0kothbrpdAlGrzPwjSxbkxZXqrfL5k';
+const videos = await _videosByPlaylistIdSqlite(playlistId);
+console.log(videos);
