@@ -421,10 +421,19 @@ export {
 // // const subscriptions = await _youtubeApiSubscriptionsApi(userId);
 // // saveJson(`${JSON_DB_DIR}/youtube/subscriptions.json`, subscriptions);
 
-// * channels
-const channels_ = loadJson(`${JSON_DB_DIR}/youtube/subscriptions.json`);
-const channelIds = channels_.map((channel) => channel.channelId);
-console.log(channelIds);
+// // * channels
+// const channels_ = loadJson(`${JSON_DB_DIR}/youtube/subscriptions.json`);
+// const channelIds = channels_.map((channel) => channel.channelId);
+
+// // * videos
+// let videos = [];
+// for (const channelId of channelIds.slice(20, 21)) {
+//   const videos_ = await _videoSqlitesByChannelIdApi(channelId);
+//   console.log('Channel videos:', videos_.length); // 디버깅용
+//   videos = [...videos, ...videos_];
+// }
+// console.log('Total videos:', videos.length); // 디버깅용
+// saveJson(`${JSON_DB_DIR}/youtube/videos.json`, videos);
 
 // // let channels = [];
 // // for (const channelId of channelIds) {
@@ -442,15 +451,7 @@ console.log(channelIds);
 // // }
 // // saveJson(`${JSON_DB_DIR}/youtube/playlists.json`, playlists);
 
-// * videos
-let videos = [];
-for (const channelId of channelIds.slice(20, 21)) {
-  const videos_ = await _videoSqlitesByChannelIdApi(channelId);
-  console.log('Channel videos:', videos_.length); // 디버깅용
-  videos = [...videos, ...videos_];
-}
-console.log('Total videos:', videos.length); // 디버깅용
-saveJson(`${JSON_DB_DIR}/youtube/videos.json`, videos);
+
 
 // // 재생목록 ID PLWKjhJtqVAbmfeXEWjfX3PmcMPVeGEc-0에 대한 동영상을 찾을 수 없습니다.
 

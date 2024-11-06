@@ -21,8 +21,8 @@ for /f "tokens=1* delims==" %%i in (%ENV_FILE%) do (
 @REM echo %APP_ROOT%/db/pocketbase/sqlite
 @REM echo "cd %APP_ROOT%/nodejs/src/graphql && nodemon ."
 
-REM Start PocketBase server in a new window
-start cmd /k "pocketbase.exe serve --dir=%APP_ROOT%/db/pocketbase/sqlite --http=0.0.0.0:8090"
+@REM REM Start PocketBase server in a new window
+@REM start cmd /k "pocketbase.exe serve --dir=%APP_ROOT%/db/pocketbase/sqlite --http=0.0.0.0:8090"
 
 REM Start GraphQL server in a new window
 start cmd /k "cd %APP_ROOT%/nodejs/src/graphql && nodemon ."
