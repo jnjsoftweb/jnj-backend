@@ -102,3 +102,47 @@ const getNotMatchPlaylistItems = () => {
 // await populateJsonToSqlite("notMatchPlaylistItems");
 
 
+// * * youtube/resolversApi.js
+// // // * API -> JSON
+// // // * subscriptions
+// // const userId = "mooninlearn";
+// // const subscriptions = await _youtubeApiSubscriptionsApi(userId);
+// // saveJson(`${JSON_DB_DIR}/youtube/subscriptions.json`, subscriptions);
+
+// // * channels
+// const channels_ = loadJson(`${JSON_DB_DIR}/youtube/subscriptions.json`);
+// const channelIds = channels_.map((channel) => channel.channelId);
+// console.log(channelIds);
+
+// // let channels = [];
+// // for (const channelId of channelIds) {
+// //   const channel = await _youtubeApiChannelByIdApi(channelId);
+// //   console.log(channel);
+// //   channels.push(channel);
+// // }
+// // saveJson(`${JSON_DB_DIR}/youtube/channels.json`, channels);
+
+// // // * playlists
+// // let playlists = [];
+// // for (const channelId of channelIds) {
+// //   const _playlistsApi = await _playlistsByChannelIdApi(channelId);
+// //   playlists = [...playlists, ..._playlists];
+// // }
+// // saveJson(`${JSON_DB_DIR}/youtube/playlists.json`, playlists);
+
+// // * videos
+// let videos = [];
+// for (const channelId of channelIds.slice(20, 21)) {
+//   const videos_ = await _videoSqlitesByChannelIdApi(channelId);
+//   console.log('Channel videos:', videos_.length); // 디버깅용
+//   videos = [...videos, ...videos_];
+// }
+// console.log('Total videos:', videos.length); // 디버깅용
+// saveJson(`${JSON_DB_DIR}/youtube/videos.json`, videos);
+
+// // 재생목록 ID PLWKjhJtqVAbmfeXEWjfX3PmcMPVeGEc-0에 대한 동영상을 찾을 수 없습니다.
+
+// // !!! 추가 성공: 0 ~ 9
+// // !!! Channel videos: 756 (channelIds[10])
+// // 재생목록 ID PLWKjhJtqVAbmfeXEWjfX3PmcMPVeGEc-0에 대한 동영상을 찾을 수 없습니다.
+
