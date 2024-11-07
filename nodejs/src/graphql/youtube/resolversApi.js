@@ -286,6 +286,36 @@ const _videoByIdApi = async (videoId, playlistId = '') => {
   };
 };
 
+
+const _videoSqliteByIdApi = async (videoId, playlistId = '') => {
+  const response = await getAllResponses('videos', {
+    part: 'snippet,contentDetails,statistics,player',
+    id: videoId,
+  });
+  if (!response || response.length === 0) {
+    return {};
+  }
+  const detail = response[0];
+  return {
+    videoId: detail.id,
+    channelId: detail.snippet.channelId,
+    playlistId, // mostPopularVideos에서는 삭제
+    title: detail.snippet.title,
+    description: detail.snippet.description,
+    thumbnail:
+      detail.snippet.thumbnails.medium?.url ||
+      detail.snippet.thumbnails.default?.url,
+    publishedAt: detail.snippet.publishedAt,
+    duration: detail.contentDetails.duration,
+    caption: detail.contentDetails.caption,
+    tags: detail.snippet.tags ? detail.snippet.tags.join(',') : '',
+    viewCount: detail.statistics.viewCount,
+    likeCount: detail.statistics.likeCount,
+    commentCount: detail.statistics.commentCount,
+  };
+};
+
+
 const _videosByChannelIdApi = async (
   channelId,
   maxItems = MAX_VIDEO_ITEMS_IN_CHANNEL
@@ -295,6 +325,24 @@ const _videosByChannelIdApi = async (
     const videos = await Promise.all(
       videoIds.map(async ({ videoId, playlistId }) => {
         return await _videoByIdApi(videoId, playlistId);
+      })
+    );
+    return videos;
+  } catch (error) {
+    console.error('Error fetching videos:', error);
+    throw error;
+  }
+};
+
+const _videoSqlitesByChannelIdApi = async (
+  channelId,
+  maxItems = MAX_VIDEO_ITEMS_IN_CHANNEL
+) => {
+  try {
+    const videoIds = await _videoIdsByChannelIdApi(channelId, maxItems);
+    const videos = await Promise.all(
+      videoIds.map(async ({ videoId, playlistId }) => {
+        return await _videoSqliteByIdApi(videoId, playlistId);
       })
     );
     return videos;
@@ -373,7 +421,16 @@ export {
 // // * channels
 // const channels_ = loadJson(`${JSON_DB_DIR}/youtube/subscriptions.json`);
 // const channelIds = channels_.map((channel) => channel.channelId);
-// console.log(channelIds);
+
+// // * videos
+// let videos = [];
+// for (const channelId of channelIds.slice(20, 21)) {
+//   const videos_ = await _videoSqlitesByChannelIdApi(channelId);
+//   console.log('Channel videos:', videos_.length); // 디버깅용
+//   videos = [...videos, ...videos_];
+// }
+// console.log('Total videos:', videos.length); // 디버깅용
+// saveJson(`${JSON_DB_DIR}/youtube/videos.json`, videos);
 
 // // let channels = [];
 // // for (const channelId of channelIds) {
@@ -391,15 +448,7 @@ export {
 // // }
 // // saveJson(`${JSON_DB_DIR}/youtube/playlists.json`, playlists);
 
-// // * videos
-// let videos = [];
-// for (const channelId of channelIds.slice(20, 25)) {
-//   const videos_ = await _videosByChannelIdApi(channelId);
-//   console.log('Channel videos:', videos_.length); // 디버깅용
-//   videos = [...videos, ..._videos];
-// }
-// console.log('Total videos:', videos.length); // 디버깅용
-// saveJson(`${JSON_DB_DIR}/youtube/videos.json`, videos);
+
 
 // // 재생목록 ID PLWKjhJtqVAbmfeXEWjfX3PmcMPVeGEc-0에 대한 동영상을 찾을 수 없습니다.
 
