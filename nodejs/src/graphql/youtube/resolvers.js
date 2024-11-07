@@ -1,6 +1,7 @@
 import { loadJson, saveJson } from 'jnj-lib-base';
 import { SQLITE_DB_DIR, JSON_DB_DIR } from '../../env.js';
 import {
+  _allUsersSqlite,
   _userOneByIdSqlite,
   _subscriptionsByUserIdSqlite,
   _videoOneByIdSqlite,
@@ -36,6 +37,13 @@ import {
   _mostPopularVideosApi,
 } from './resolversApi.js';
 
+import {
+  downloadYoutubeAll,
+  downloadPlaylist,
+  BASE_DOWN_DIR,
+  listIdsInDir,
+} from '../../utils/youtube/down.js';
+
 // const JSON_ROOT = `${SQLITE_DB_DIR}/youtube`;
 const JSON_ROOT = `${JSON_DB_DIR}/youtube`;
 
@@ -61,6 +69,9 @@ const _videosByPlaylistId = async (playlistId) => {
 
 export const resolvers = {
   Query: {
+    youtubeAllUsers: async (_, args) => {
+      return await _allUsersSqlite();
+    },
     youtubeUserById: async (_, { userId }) => {
       return await _userOneByIdSqlite(userId);
     },
@@ -220,6 +231,19 @@ export const resolvers = {
       saveJson(`${JSON_ROOT}/mostPopularVideos.json`, videos);
       return { success: true };
     },
+
+    youtubeDownloadVideos: async (_, args) => {
+      const { videoIds, resolution = '720', bitrate = '128', languages = 'en,ko', formatType = 'srt', outputDir = BASE_DOWN_DIR } =
+        args;
+      await downloadYoutubeAll({ videoIds, resolution, bitrate, languages, formatType, outputDir });
+      return { success: true };
+    },
+    youtubeDownloadPlaylist: async (_, args) => {
+      const { playlistId, resolution = '720', bitrate = '128', languages = 'en,ko', formatType = 'srt', outputDir = BASE_DOWN_DIR } =
+        args;
+      await downloadPlaylist({ playlistId, resolution, bitrate, languages, formatType, outputDir });
+      return { success: true };
+    },
   },
 };
 
@@ -241,7 +265,7 @@ export const resolvers = {
 // const videos = await _videosByPlaylistId(playlistId);
 // console.log(videos);
 
-const args = { userId: 'bigwhitekmc' };
+// const args = { userId: 'bigwhitekmc' };
 // const subscriptions = await _subscriptionsByUserIdSqlite(args.userId);
 // const channelIds = subscriptions.map((subscription) => subscription.channelId);
 // const channels = await Promise.all(

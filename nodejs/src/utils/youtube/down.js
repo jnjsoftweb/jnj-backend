@@ -413,6 +413,9 @@ export {
 
 // convertSrtFileToVtt(srtPath, vttPath);
 
-const srtDir = 'C:/JnJ-soft/Projects/internal/jnj-backend/downloads';
-const vttDir = 'C:/JnJ-soft/Projects/internal/jnj-backend/downloads';
-convertSrtToVttInFolder(srtDir, vttDir);
+// const srtDir = 'C:/JnJ-soft/Projects/internal/jnj-backend/downloads';
+// const vttDir = 'C:/JnJ-soft/Projects/internal/jnj-backend/downloads';
+// convertSrtToVttInFolder(srtDir, vttDir);
+
+// await downloadYoutubeAll({ videoIds: 'zcjTErUqvxM,kdt5J2bpchM' });
+// await downloadPlaylist({ playlistId: 'PLOI8xpLfBsbvljNN-Dy37vBvZA33aa_6W' });

@@ -3,8 +3,8 @@ import { Sqlite } from '../../database/sqlite.js';
 const sqlite = new Sqlite('youtube');
 
 // Users
-const _allUsersSqlite = async (args) => {
-  return await sqlite.find('users', args);
+const _allUsersSqlite = async () => {
+  return await sqlite.find('users');
 };
 
 const _usersSqlite = async (args) => {
@@ -156,7 +156,7 @@ const _upsertNotMatchPlaylistItemsSqlite = async (playlistId) => {
 
 const resolvers = {
   Query: {
-    youtubeAllUsersSqlite: async (_, args) => await _allUsersSqlite(args),
+    youtubeAllUsersSqlite: async (_, args) => await _allUsersSqlite(),
     youtubeUsersSqlite: async (_, args) => await _usersSqlite(args),
     youtubeUserOneByIdSqlite: async (_, { userId }) =>
       await _userOneByIdSqlite(userId),
