@@ -1,6 +1,7 @@
 export const typeDefs = `#graphql
   type UserSqlite {
     userId: String!
+    password: String
     email: String
     apiKey: String
     name: String

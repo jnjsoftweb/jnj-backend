@@ -317,6 +317,66 @@ const downloadPlaylist = async ({
   }
 };
 
+// * 자막 변환
+const srtToVtt = (srtContent) => {
+  // 줄 단위로 분리
+  const lines = srtContent.split('\n');
+
+  // 숫자만 있는 줄 제거
+  const filteredLines = lines.filter((line) => {
+    const trimmed = line.trim();
+    return !(trimmed !== '' && !isNaN(Number(trimmed)));
+  });
+
+  // 콤마를 점으로 변경
+  const content = filteredLines.join('\n').replace(/,/g, '.');
+
+  // WEBVTT 헤더 추가
+  return `WEBVTT\n\n${content}`;
+};
+
+// 파일 시스템 작업을 위한 함수 (Node.js 환경에서 사용)
+const convertSrtFileToVtt = (srtPath, vttPath) => {
+  try {
+    // SRT 파일 읽기
+    const srtContent = fs.readFileSync(srtPath, 'utf-8');
+
+    // VTT로 변환
+    const vttContent = srtToVtt(srtContent);
+
+    // VTT 파일 저장
+    fs.writeFileSync(vttPath, vttContent, 'utf-8');
+
+    console.log('변환이 완료되었습니다.');
+  } catch (error) {
+    console.error('변환 중 오류가 발생했습니다:', error);
+    throw error;
+  }
+};
+
+// 폴더 내의 모든 자막 변환(하위 폴더 포함 recursive)
+const convertSrtToVttInFolder = (srtDir, vttDir) => {
+  const files = fs.readdirSync(srtDir);
+
+  for (const file of files) {
+    const srtPath = path.join(srtDir, file);
+    const vttPath = path.join(vttDir, file.replace('.srt', '.vtt'));
+
+    // 디렉토리인 경우 재귀적으로 처리
+    if (fs.statSync(srtPath).isDirectory()) {
+      // vtt 디렉토리가 없으면 생성
+      if (!fs.existsSync(vttPath)) {
+        fs.mkdirSync(vttPath, { recursive: true });
+      }
+      convertSrtToVttInFolder(srtPath, vttPath);
+    }
+    // srt 파일인 경우에만 변환
+    else if (file.endsWith('.srt')) {
+      convertSrtFileToVtt(srtPath, vttPath);
+    }
+  }
+};
+
 export {
   downloadSubtitles,
   downloadYoutube,
@@ -324,6 +384,8 @@ export {
   downloadPlaylist,
   listFilesInDir,
   listIdsInDir,
+  convertSrtFileToVtt,
+  convertSrtToVttInFolder,
   BASE_DOWN_DIR,
 };
 
@@ -343,3 +405,14 @@ export {
 
 // const ids = listIdsInDir();
 // console.log(ids);
+
+// const srtPath =
+//   'C:/JnJ-soft/Projects/internal/jnj-backend/downloads/[SEF2024] AI 어디까지 왔나, 앞으로 어떻게 될까ᅵ박태웅(녹서포럼 의장)_fFIlEGnziMg.srt';
+// const vttPath =
+//   'C:/JnJ-soft/Projects/internal/jnj-backend/downloads/[SEF2024] AI 어디까지 왔나, 앞으로 어떻게 될까ᅵ박태웅(녹서포럼 의장)_fFIlEGnziMg.vtt';
+
+// convertSrtFileToVtt(srtPath, vttPath);
+
+const srtDir = 'C:/JnJ-soft/Projects/internal/jnj-backend/downloads';
+const vttDir = 'C:/JnJ-soft/Projects/internal/jnj-backend/downloads';
+convertSrtToVttInFolder(srtDir, vttDir);

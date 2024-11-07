@@ -206,6 +206,10 @@
         "minLength": 1,
         "unique": true
       },
+      "password": {
+        "type": "string",
+        "description": "User password."
+      },
       "email": {
         "type": "string",
         "format": "email",
@@ -316,84 +320,6 @@
       "like": {
         "type": "string",
         "description": "Like status of the download."
-      }
-    },
-    "required": ["videoId"],
-    "additionalProperties": false
-  },
-  {
-    "title": "mostPopularVideos",
-    "description": "YouTube most popular video record.",
-    "type": "object",
-    "properties": {
-      "id": {
-        "type": "integer",
-        "description": "Unique identifier for the video record."
-      },
-      "videoId": {
-        "type": "string",
-        "description": "YouTube video ID.",
-        "minLength": 1,
-        "unique": true
-      },
-      "channelId": {
-        "type": "string",
-        "description": "Channel ID if video belongs to a playlist."
-      },
-      "channelTitle": {
-        "type": "string",
-        "description": "Channel Titlet hat owns this video."
-      },
-      "channelThumbnail": {
-        "type": "string",
-        "description": "Channel thumbnail."
-      },
-      "title": {
-        "type": "string",
-        "description": "Video title."
-      },
-      "description": {
-        "type": "string",
-        "description": "Video description."
-      },
-      "thumbnail": {
-        "type": "string",
-        "description": "URL of video thumbnail."
-      },
-      "publishedAt": {
-        "type": "string",
-        "format": "date-time",
-        "description": "Date and time when the video was published."
-      },
-      "duration": {
-        "type": "string",
-        "description": "Duration of the video."
-      },
-      "caption": {
-        "type": "string",
-        "description": "Caption status of the video."
-      },
-      "tags": {
-        "type": "array",
-        "items": {
-          "type": "string"
-        },
-        "description": "Video tags."
-      },
-      "viewCount": {
-        "type": "integer",
-        "description": "View count of the video.",
-        "default": 0
-      },
-      "likeCount": {
-        "type": "integer",
-        "description": "Like count of the video.",
-        "default": 0
-      },
-      "commentCount": {
-        "type": "integer",
-        "description": "Comment count of the video.",
-        "default": 0
       }
     },
     "required": ["videoId"],

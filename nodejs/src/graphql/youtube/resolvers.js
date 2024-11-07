@@ -1,6 +1,8 @@
 import { loadJson, saveJson } from 'jnj-lib-base';
 import { SQLITE_DB_DIR, JSON_DB_DIR } from '../../env.js';
 import {
+  _userOneByIdSqlite,
+  _subscriptionsByUserIdSqlite,
   _videoOneByIdSqlite,
   _playlistOneByIdSqlite,
   _channelOneByIdSqlite,
@@ -59,6 +61,9 @@ const _videosByPlaylistId = async (playlistId) => {
 
 export const resolvers = {
   Query: {
+    youtubeUserById: async (_, { userId }) => {
+      return await _userOneByIdSqlite(userId);
+    },
     youtubeAllSubscriptions: async (_, args) => {
       const subscriptions = await _subscriptionsSqlite(args);
       return Promise.all(
@@ -174,12 +179,33 @@ export const resolvers = {
       return { success: true };
     },
     youtubeUpsertChannelsFromApi: async (_, args) => {
-      const channels = await _channelsApi(args.userId);
+      const subscriptions = await _subscriptionsByUserIdSqlite(args.userId);
+      const channelIds = subscriptions.map(
+        (subscription) => subscription.channelId
+      );
+      const channels = await Promise.all(
+        channelIds.map(async (channelId) => await _channelByIdApi(channelId))
+      );
+      console.log(channels);
       await _upsertChannelsSqlite(channels);
       return { success: true };
     },
     youtubeUpsertPlaylistsFromApi: async (_, args) => {
       const playlists = await _playlistsByChannelIdApi(args.channelId);
+      await _upsertPlaylistsSqlite(playlists);
+      return { success: true };
+    },
+    youtubeUpsertPlaylistsByUserIdFromApi: async (_, args) => {
+      const subscriptions = await _subscriptionsByUserIdSqlite(args.userId);
+      const channelIds = subscriptions.map(
+        (subscription) => subscription.channelId
+      );
+      const playlists = [];
+      for (const channelId of channelIds) {
+        const _playlists = await _playlistsByChannelIdApi(channelId);
+        playlists.push(..._playlists);
+      }
+      console.log(`playlists.length: ${playlists.length}`);
       await _upsertPlaylistsSqlite(playlists);
       return { success: true };
     },
@@ -214,3 +240,24 @@ export const resolvers = {
 // const playlistId = 'PLs8gZ5b9piXU5Ymi6SjQWulZCkDDFuQfe';
 // const videos = await _videosByPlaylistId(playlistId);
 // console.log(videos);
+
+const args = { userId: 'bigwhitekmc' };
+// const subscriptions = await _subscriptionsByUserIdSqlite(args.userId);
+// const channelIds = subscriptions.map((subscription) => subscription.channelId);
+// const channels = await Promise.all(
+//   channelIds.map(async (channelId) => await _channelByIdApi(channelId))
+// );
+// console.log(channels);
+
+// const subscriptions = await _subscriptionsByUserIdSqlite(args.userId);
+// const channelIds = subscriptions.map((subscription) => subscription.channelId);
+
+// const playlists = [];
+// for (const channelId of channelIds.slice(1, 3)) {
+//   const _playlists = await _playlistsByChannelIdApi(channelId);
+//   playlists.push(..._playlists);
+// }
+// console.log(playlists);
+// console.log(channelIds.length);
+// console.log(playlists.length);
+// await _upsertPlaylistsSqlite(playlists);

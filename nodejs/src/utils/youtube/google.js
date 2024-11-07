@@ -63,3 +63,5 @@ const myPlaylistItems = async (userId, playlistId = 'LL') => {
 // };
 
 export { getRelatedPlaylists, mySubscriptions, myPlaylistItems };
+
+// await mySubscriptions('bigwhitekmc');

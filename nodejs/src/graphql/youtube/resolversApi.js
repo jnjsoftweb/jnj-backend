@@ -95,8 +95,6 @@ const _playlistsByChannelIdApi = async (channelId) => {
     return [];
   }
 
-  const videoIds = await _videoIdsByPlaylistIdStr(playlist.id);
-
   return response.map((playlist) => ({
     playlistId: playlist.id,
     channelId,
@@ -108,7 +106,6 @@ const _playlistsByChannelIdApi = async (channelId) => {
     publishedAt: playlist.snippet.publishedAt,
     itemCount: playlist.contentDetails.itemCount,
     privacyStatus: playlist.status.privacyStatus,
-    videoIds,
   }));
 };
 
@@ -409,3 +406,6 @@ export {
 // // !!! 추가 성공: 0 ~ 9
 // // !!! Channel videos: 756 (channelIds[10])
 // // 재생목록 ID PLWKjhJtqVAbmfeXEWjfX3PmcMPVeGEc-0에 대한 동영상을 찾을 수 없습니다.
+
+// const playlists = await _playlistsByChannelIdApi('UC9PB9nKYqKEx_N3KM-JVTpg');
+// console.log(playlists);

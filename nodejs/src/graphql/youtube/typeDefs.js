@@ -29,6 +29,7 @@ export const typeDefs = `#graphql
 
   # Queries
   type Query {
+    youtubeUserById(userId: String!): UserSqlite  # ID로 사용자 가져오기
     youtubeAllSubscriptions: [Subscription]  # 모든 구독 가져오기
     youtubeSubscriptionById(subscriptionId: String!): Subscription  # ID로 구독 가져오기
     youtubeAllChannels: [ChannelSqlite]  # 모든 채널 가져오기
@@ -54,6 +55,7 @@ export const typeDefs = `#graphql
     youtubeUpsertSubscriptionsFromApi(userId: String!): Response  # API에서 구독 추가/업데이트
     youtubeUpsertChannelsFromApi(userId: String!): Response  # API에서 채널 추가/업데이트
     youtubeUpsertPlaylistsFromApi(channelId: String!): Response  # API에서 재생목록 추가/업데이트
+    youtubeUpsertPlaylistsByUserIdFromApi(userId: String!): Response  # API에서 재생목록 추가/업데이트  
     youtubeUpsertVideosFromApi(channelId: String!): Response  # API에서 비디오 추가/업데이트
     youtubeMostPopularVideosToJson: Response  # API에서 인기 비디오 가져오기
   }
