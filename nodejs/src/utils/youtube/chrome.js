@@ -111,8 +111,8 @@ const getChromePaths = (userDataDir, exePath) => ({
 
 const scrapePage = async ({
   url = 'https://www.google.com',
-  email = 'jnjsoft.one@gmail.com',
-  // email = 'bigwhitekmc@gmail.com',
+  // email = 'jnjsoft.one@gmail.com',
+  email = 'bigwhitekmc@gmail.com',
   callBack = async ({ browser, page }) => {
     saveFile('google.html', await page.content());
   },
@@ -303,7 +303,9 @@ const shortsVideoIds = async (
 export { scrapePage, watchLaterVideoIds, historyVideoIds, shortsVideoIds };
 
 // console.log(DEFAULT_EXE_PATH);
-// // console.log('findFolders:', findFolders());
+// console.log('findFolders:', findFolders());
+// console.log(getProfileByEmail('bigwhitekmc@gmail.com'))
+await scrapePage({});
 
 // console.log('watchLaterVideoIds:', await watchLaterVideoIds('bigwhitekmc'));
 // console.log('watchLaterVideoIds:', await watchLaterVideoIds('bigwhitekmc'));

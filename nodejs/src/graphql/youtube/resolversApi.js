@@ -286,7 +286,6 @@ const _videoByIdApi = async (videoId, playlistId = '') => {
   };
 };
 
-
 const _videoSqliteByIdApi = async (videoId, playlistId = '') => {
   const response = await getAllResponses('videos', {
     part: 'snippet,contentDetails,statistics,player',
@@ -314,7 +313,6 @@ const _videoSqliteByIdApi = async (videoId, playlistId = '') => {
     commentCount: detail.statistics.commentCount,
   };
 };
-
 
 const _videosByChannelIdApi = async (
   channelId,
@@ -418,19 +416,19 @@ export {
 // // const subscriptions = await _youtubeApiSubscriptionsApi(userId);
 // // saveJson(`${JSON_DB_DIR}/youtube/subscriptions.json`, subscriptions);
 
-// * channels
-const channels_ = loadJson(`${JSON_DB_DIR}/youtube/subscriptions.json`);
-const channelIds = channels_.map((channel) => channel.channelId);
+// // * channels
+// const channels_ = loadJson(`${JSON_DB_DIR}/youtube/subscriptions.json`);
+// const channelIds = channels_.map((channel) => channel.channelId);
 
-// * videos
-let videos = [];
-for (const channelId of channelIds.slice(30)) {
-  const videos_ = await _videoSqlitesByChannelIdApi(channelId);
-  console.log('Channel videos:', videos_.length); // 디버깅용
-  videos = [...videos, ...videos_];
-}
-console.log('Total videos:', videos.length); // 디버깅용
-saveJson(`${JSON_DB_DIR}/youtube/videos.json`, videos);
+// // * videos
+// let videos = [];
+// for (const channelId of channelIds.slice(30)) {
+//   const videos_ = await _videoSqlitesByChannelIdApi(channelId);
+//   console.log('Channel videos:', videos_.length); // 디버깅용
+//   videos = [...videos, ...videos_];
+// }
+// console.log('Total videos:', videos.length); // 디버깅용
+// saveJson(`${JSON_DB_DIR}/youtube/videos.json`, videos);
 
 // // let channels = [];
 // // for (const channelId of channelIds) {
@@ -447,8 +445,6 @@ saveJson(`${JSON_DB_DIR}/youtube/videos.json`, videos);
 // //   playlists = [...playlists, ..._playlists];
 // // }
 // // saveJson(`${JSON_DB_DIR}/youtube/playlists.json`, playlists);
-
-
 
 // // 재생목록 ID PLWKjhJtqVAbmfeXEWjfX3PmcMPVeGEc-0에 대한 동영상을 찾을 수 없습니다.
 
