@@ -64,4 +64,6 @@ const myPlaylistItems = async (userId, playlistId = 'LL') => {
 
 export { getRelatedPlaylists, mySubscriptions, myPlaylistItems };
 
-// await mySubscriptions('bigwhitekmc');
+// const subscriptions = await mySubscriptions('bigwhitekmc');
+// // const subscriptions = await mySubscriptions('mooninlearn');
+// console.log(subscriptions.length);
