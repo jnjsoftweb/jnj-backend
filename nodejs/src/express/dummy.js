@@ -11,10 +11,10 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, '../../../../.env') });
-console.log('NEXT_PUBLIC_EXPRESS_PORT: ', process.env.NEXT_PUBLIC_EXPRESS_PORT);
+console.log('EXPRESS_PORT: ', process.env.EXPRESS_PORT);
 
 // * const 설정
-const PORT = process.env.NEXT_PUBLIC_EXPRESS_PORT || 3006;
+const PORT = process.env.EXPRESS_PORT || 3006;
 const APP_ROOT = process.env.APP_ROOT;
 const DB_FOLDER = process.env.DB_FOLDER;
 const JSON_DB_DIR = `${APP_ROOT}/${DB_FOLDER}/json`;

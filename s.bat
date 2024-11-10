@@ -7,7 +7,7 @@ chcp 65001
 set ENV_FILE=./.env
 
 :: 불러올 환경 변수 목록 설정
-set "VARIABLES=APP_ROOT NEXT_PUBLIC_POCKETBASE_PORT "
+set "VARIABLES=APP_ROOT POCKETBASE_PORT "
 
 :: .env 파일에서 유효한 설정만 읽어 환경 변수로 설정
 for /f "tokens=1* delims==" %%i in (%ENV_FILE%) do (

@@ -1,17 +1,17 @@
 // [API Reference](https://developers.google.com/youtube/v3/docs?hl=ko)
 import axios from 'axios';
-import { API_KEY, API_URL } from '../../env.js';
+import { YOUTUBE_API_KEY, YOUTUBE_API_URL } from '../../env.js';
 
-// console.log(API_KEY, API_URL);
+// console.log(YOUTUBE_API_KEY, YOUTUBE_API_URL);
 
 // * REST API용 함수
 // YouTube API 응답을 가져오는 함수
 const getResponse = async (slug, params) => {
   try {
-    const response = await axios.get(`${API_URL}/${slug}`, {
+    const response = await axios.get(`${YOUTUBE_API_URL}/${slug}`, {
       params: {
         ...params,
-        key: API_KEY,
+        key: YOUTUBE_API_KEY,
       },
     });
     return response.data;
@@ -148,7 +148,7 @@ export {
   getPlaylistTitle,
 };
 
-// const response = await axios.get(`https://youtube.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UCJIlfUISLIj9DODAQJWGHfA&maxResults=25&key=${API_KEY}`);
+// const response = await axios.get(`https://youtube.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UCJIlfUISLIj9DODAQJWGHfA&maxResults=25&key=${YOUTUBE_API_KEY}`);
 // console.log(response.data);
 
 // const videoIds = [

@@ -79,7 +79,7 @@ app.get('/channelByCustomUrl', async (req, res) => {
 });
 
 // Channel Info by Custom URL
-// {{YOUTUBE_API_ROOT}}/videos?part=id,contentDetails&chart=mostPopular&maxResults={{MAX_RESULTS}}&key={{YOUTUBE_API_KEY}}
+// {{YOUTUBE_API_ROOT}}/videos?part=id,contentDetails&chart=mostPopular&maxResults={{MAX_RESULTS}}&key={{YOUTUBE_YOUTUBE_API_KEY}}
 // http://localhost:3006/mostPopularVideos
 app.get('/mostPopularVideos', async (req, res) => {
   const maxItems = req.query.maxItems ?? 50;

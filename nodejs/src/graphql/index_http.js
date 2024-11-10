@@ -50,7 +50,7 @@ console.log(`🚀 Server ready at: ${url}`);
 //   })
 // );
 
-// const PORT = process.env.NEXT_PUBLIC_GRAPHQL_PORT || 3007;
+// const PORT = process.env.GRAPHQL_PORT || 3007;
 
 // app.listen(PORT, () => {
 //   console.log(`🚀 Server ready at http://localhost:${PORT}/graphql`);
