@@ -22,6 +22,16 @@ const server = new ApolloServer({
 
 const { url } = await startStandaloneServer(server, {
   listen: { port: GRAPHQL_PORT },
+  cors: {
+    origin: '*',
+    credentials: true,
+    methods: ['POST', 'GET', 'OPTIONS'],
+    allowedHeaders: [
+      'Content-Type',
+      'x-apollo-operation-name',
+      'apollo-require-preflight',
+    ],
+  },
 });
 
 console.log(`🚀 Server ready at: ${url}`);
