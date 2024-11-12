@@ -1,156 +1,290 @@
 import { Sqlite } from '../../database/sqlite.js';
 
-const sqlite = new Sqlite('youtube');
+// 각 함수에서 새로운 연결 생성
+const createConnection = () => new Sqlite('youtube');
 
 // Users
 const _allUsersSqlite = async () => {
-  return await sqlite.find('users');
+  const sqlite = createConnection();
+  try {
+    return await sqlite.find('users');
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _usersSqlite = async (args) => {
-  return await sqlite.find('users', args);
+  const sqlite = createConnection();
+  try {
+    return await sqlite.find('users', args);
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _userOneByIdSqlite = async (userId) => {
-  return await sqlite.findOne('users', `userId='${userId}'`);
+  const sqlite = createConnection();
+  try {
+    return await sqlite.findOne('users', `userId='${userId}'`);
+  } finally {
+    await sqlite.close();
+  }
 };
 
 // Subscriptions
 const _subscriptionsSqlite = async (args) => {
-  return await sqlite.find('subscriptions', args);
+  const sqlite = createConnection();
+  try {
+    return await sqlite.find('subscriptions', args);
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _subscriptionsByUserIdSqlite = async (userId) => {
-  return await sqlite.find('subscriptions', { filter: `userId='${userId}'` });
+  const sqlite = createConnection();
+  try {
+    return await sqlite.find('subscriptions', { filter: `userId='${userId}'` });
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _subscriptionOneByIdSqlite = async (subscriptionId) => {
-  return await sqlite.findOne(
-    'subscriptions',
-    `subscriptionId='${subscriptionId}'`
-  );
+  const sqlite = createConnection();
+  try {
+    return await sqlite.findOne(
+      'subscriptions',
+      `subscriptionId='${subscriptionId}'`
+    );
+  } finally {
+    await sqlite.close();
+  }
 };
 
 // Channels
 const _channelsSqlite = async (args) => {
-  return await sqlite.find('channels', args);
+  const sqlite = createConnection();
+  try {
+    return await sqlite.find('channels', args);
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _channelsByUserIdSqlite = async (userId) => {
-  const subscriptions = await sqlite.find('subscriptions', {
-    filter: `userId='${userId}'`,
-  });
-  const channelIds = subscriptions.map((s) => s.channelId);
-  return await Promise.all(
-    channelIds.map(async (channelId) => {
-      const channel = await sqlite.findOne(
-        'channels',
-        `channelId='${channelId}'`
-      );
-      delete channel.id;
-      return channel;
-    })
-  );
+  const sqlite = createConnection();
+  try {
+    const subscriptions = await sqlite.find('subscriptions', {
+      filter: `userId='${userId}'`,
+    });
+    const channelIds = subscriptions.map((s) => s.channelId);
+    return await Promise.all(
+      channelIds.map(async (channelId) => {
+        const channel = await sqlite.findOne(
+          'channels',
+          `channelId='${channelId}'`
+        );
+        delete channel.id;
+        return channel;
+      })
+    );
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _channelOneByIdSqlite = async (channelId) => {
-  return await sqlite.findOne('channels', `channelId='${channelId}'`);
+  const sqlite = createConnection();
+  try {
+    return await sqlite.findOne('channels', `channelId='${channelId}'`);
+  } finally {
+    await sqlite.close();
+  }
 };
 
 // Playlists
 const _playlistsSqlite = async (args) => {
-  return await sqlite.find('playlists', args);
+  const sqlite = createConnection();
+  try {
+    return await sqlite.find('playlists', args);
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _playlistOneByIdSqlite = async (playlistId) => {
-  return await sqlite.findOne('playlists', `playlistId='${playlistId}'`);
+  const sqlite = createConnection();
+  try {
+    return await sqlite.findOne('playlists', `playlistId='${playlistId}'`);
+  } finally {
+    await sqlite.close();
+  }
 };
 
 // Videos
 const _videosSqlite = async (args) => {
-  return await sqlite.find('videos', args);
+  const sqlite = createConnection();
+  try {
+    return await sqlite.find('videos', args);
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _videoOneByIdSqlite = async (videoId) => {
-  return await sqlite.findOne('videos', `videoId='${videoId}'`);
+  const sqlite = createConnection();
+  try {
+    return await sqlite.findOne('videos', `videoId='${videoId}'`);
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _videoIdsByPlaylistIdSqlite = async (playlistId) => {
-  const playlist = await _playlistOneByIdSqlite(playlistId);
-  return playlist.videoIds.split(',');
+  const sqlite = createConnection();
+  try {
+    const playlist = await sqlite.findOne('playlists', `playlistId='${playlistId}'`);
+    return playlist.videoIds.split(',');
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _videosByPlaylistIdSqlite = async (playlistId) => {
-  const playlist = await _playlistOneByIdSqlite(playlistId);
-  const videoIds = playlist.videoIds.split(',');
-  return await Promise.all(
-    videoIds.map((videoId) => {
-      const video = sqlite.findOne('videos', `videoId="${videoId}"`);
-      delete video.id;
-      return video;
-      // const { id, ...rest } = video;
-      // return { ...rest };
-    })
-  );
+  const sqlite = createConnection();
+  try {
+    const playlist = await sqlite.findOne('playlists', `playlistId='${playlistId}'`);
+    const videoIds = playlist.videoIds.split(',');
+    const videos = await Promise.all(
+      videoIds.map((videoId) => {
+        const video = sqlite.findOne('videos', `videoId="${videoId}"`);
+        delete video.id;
+        return video;
+        // const { id, ...rest } = video;
+        // return { ...rest };
+      })
+    );
+    return videos;
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _videosByChannelIdSqlite = async (channelId) => {
-  return await sqlite.find('videos', {
-    filter: `channelId='${channelId}'`,
-  });
+  const sqlite = createConnection();
+  try {
+    return await sqlite.find('videos', {
+      filter: `channelId='${channelId}'`,
+    });
+  } finally {
+    await sqlite.close();
+  }
+};
+
+const _specialVideoIdsSqlite  = async (userId, type) => {
+  const sqlite = createConnection();
+  try {
+    const _videos = await sqlite.findOne('specialVideos', `userId='${userId}' && type='${type}'`,
+    );
+    return _videos.videoIds;
+  } finally {
+    await sqlite.close();
+  }
 };
 
 // Mutations
 const _upsertUsersSqlite = async (users) => {
-  return await sqlite.upsert('users', users, 'userId');
+  const sqlite = createConnection();
+  try {
+    return await sqlite.upsert('users', users, 'userId');
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _upsertSubscriptionsSqlite = async (subscriptions) => {
-  return await sqlite.upsert('subscriptions', subscriptions, 'subscriptionId');
+  const sqlite = createConnection();
+  try {
+    return await sqlite.upsert('subscriptions', subscriptions, 'subscriptionId');
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _upsertChannelsSqlite = async (channels) => {
-  return await sqlite.upsert('channels', channels, 'channelId');
+  const sqlite = createConnection();
+  try {
+    return await sqlite.upsert('channels', channels, 'channelId');
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _upsertPlaylistsSqlite = async (playlists) => {
-  return await sqlite.upsert('playlists', playlists, 'playlistId');
+  const sqlite = createConnection();
+  try {
+    return await sqlite.upsert('playlists', playlists, 'playlistId');
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _upsertVideosSqlite = async (videos) => {
-  return await sqlite.upsert('videos', videos, 'videoId');
+  const sqlite = createConnection();
+  try {
+    return await sqlite.upsert('videos', videos, 'videoId');
+  } finally {
+    await sqlite.close();
+  }
 };
 
 // * 기타
 // * playlistId에 포함된 videoIds 조회(sqlite 기준)
 const _videoIdsInPlaylistSqlite = async (playlistId) => {
-  const playlist = await _playlistOneByIdSqlite(playlistId);
-  const videoIds = await sqlite
-    .find('videos', { filter: `playlistId="${playlistId}"` })
-    .map((v) => v.videoId);
+  const sqlite = createConnection();
+  try {
+    const playlist = await sqlite.findOne('playlists', `playlistId='${playlistId}'`);
+    const videoIds = await sqlite
+      .find('videos', { filter: `playlistId="${playlistId}"` })
+      .map((v) => v.videoId);
+    return videoIds;
+  } finally {
+    await sqlite.close();
+  }
 };
 
 const _notMatchPlaylistItemsInPlaylistSqlite = async (playlistId) => {
-  const playlist = await _playlistOneByIdSqlite(playlistId);
-  const videoIds = await sqlite
-    .find('videos', { filter: `playlistId="${playlistId}"` })
-    .map((v) => v.videoId);
-  const itemsCount = playlist.itemCount;
-  if (videoIds.length !== itemsCount) {
-    return {
-      playlistId,
-      videoIds: videoIds.join(','),
-      videosCount: videoIds.length,
-      itemsCount,
-    };
+  const sqlite = createConnection();
+  try {
+    const playlist = await sqlite.findOne('playlists', `playlistId='${playlistId}'`);
+    const videoIds = await sqlite
+      .find('videos', { filter: `playlistId="${playlistId}"` })
+      .map((v) => v.videoId);
+    const itemsCount = playlist.itemCount;
+    if (videoIds.length !== itemsCount) {
+      return {
+        playlistId,
+        videoIds: videoIds.join(','),
+        videosCount: videoIds.length,
+        itemsCount,
+      };
+    }
+    return null;
+  } finally {
+    await sqlite.close();
   }
-  return null;
 };
 
 const _upsertNotMatchPlaylistItemsSqlite = async (playlistId) => {
-  const item = await _notMatchPlaylistItemsInPlaylistSqlite(playlistId);
-  if (item) {
-    return await sqlite.upsertOne('notMatchPlaylistItems', item, 'playlistId');
+  const sqlite = createConnection();
+  try {
+    const item = await sqlite.findOne('notMatchPlaylistItems', `playlistId='${playlistId}'`);
+    if (item) {
+      return await sqlite.upsertOne('notMatchPlaylistItems', item, 'playlistId');
+    }
+  } finally {
+    await sqlite.close();
   }
 };
 
@@ -214,6 +348,7 @@ export {
   _videoIdsByPlaylistIdSqlite,
   _videosByPlaylistIdSqlite,
   _videosByChannelIdSqlite,
+  _specialVideoIdsSqlite,
   _upsertUsersSqlite,
   _upsertSubscriptionsSqlite,
   _upsertChannelsSqlite,
@@ -232,3 +367,9 @@ export {
 // const playlistId = 'PLwt0kothbrpdAlGrzPwjSxbkxZXqrfL5k';
 // const videos = await _videosByPlaylistIdSqlite(playlistId);
 // console.log(videos);
+
+// const userId = 'bigwhitekmc';
+// const type = 'watchLater';
+
+// const videoIds = await _specialVideoIdsSqlite(userId, type);
+// console.log(videoIds);

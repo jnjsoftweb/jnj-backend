@@ -140,16 +140,16 @@ class Sqlite {
       }
     });
 
-    process.on('exit', () => {
-      this.close();
-    });
+    // process.on('exit', () => {
+    //   this.close();
+    // });
 
-    process.on('SIGINT', () => {
-      if (db) {
-        db.close();
-      }
-      process.exit();
-    });
+    // process.on('SIGINT', () => {
+    //   if (db) {
+    //     db.close();
+    //   }
+    //   process.exit();
+    // });
   }
 
   // 데이터베이스 파일이 존재하지 않으면 생성
@@ -418,8 +418,8 @@ export { Sqlite, createDatabase };
 // const data = { id: 1, name: 'John Doe' };
 // console.log(_eqQueryFromObj(data));
 
-const dbName = 'youtube';
-const sqlite = new Sqlite(dbName);
+// const dbName = 'youtube';
+// const sqlite = new Sqlite(dbName);
 
 // sqlite.createTableFromSchema(getSchema('subscriptions','youtube'));
 

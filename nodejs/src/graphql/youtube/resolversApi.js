@@ -12,11 +12,9 @@ import {
   mySubscriptions,
   myPlaylistItems,
 } from '../../utils/youtube/google.js';
-// import {
-//   watchLaterVideoIds,
-//   historyVideoIds,
-//   shortsVideoIds,
-// } from '../../utils/youtube/chrome.js';
+import {
+  watchLaterVideoIds, historyVideoIds, shortsVideoIdsByChannelId
+} from '../../utils/youtube/chrome.js';
 // import {
 //   downloadYoutubeAll,
 //   downloadPlaylist,
@@ -210,38 +208,6 @@ const _videoIdsByChannelIdApi = async (
   return [...videoIds, ...filteredUploadsVideoIds];
 };
 
-// const _videoByIdApi = async (videoId, playlistId = '') => {
-//   const response = await getAllResponses('videos', {
-//     part: 'snippet,contentDetails,statistics,player',
-//     id: videoId,
-//   });
-//   if (!response || response.length === 0) {
-//     return {};
-//   }
-//   const detail = response[0];
-//   const channelId = detail.snippet.channelId;
-//   const channel = await _channelByIdApi(channelId);
-//   const channelThumbnail = channel.thumbnail;
-//   return {
-//     videoId: detail.id,
-//     playlistId, // mostPopularVideos에서는 삭제
-//     title: detail.snippet.title,
-//     description: detail.snippet.description,
-//     thumbnail:
-//       detail.snippet.thumbnails.medium?.url ||
-//       detail.snippet.thumbnails.default?.url,
-//     channelId,
-//     channelTitle: detail.snippet.channelTitle, // 추가(mostPopularVideos)
-//     channelThumbnail,
-//     publishedAt: detail.snippet.publishedAt,
-//     duration: detail.contentDetails.duration,
-//     caption: detail.contentDetails.caption,
-//     tags: detail.snippet.tags ? detail.snippet.tags.join(',') : '',
-//     viewCount: detail.statistics.viewCount,
-//     likeCount: detail.statistics.likeCount,
-//     commentCount: detail.statistics.commentCount,
-//   };
-// };
 
 const _videoByIdApi = async (videoId, playlistId = '') => {
   const response = await getAllResponses('videos', {
@@ -350,18 +316,6 @@ const _videoSqlitesByChannelIdApi = async (
   }
 };
 
-// const _mostPopularVideosApi = async () => {
-//   const videoIds = await mostPopularVideoIds();
-//   const videos = await Promise.all(
-//     videoIds.map(async (videoId) => {
-//       const video = await _videoByIdApi(videoId);
-//       delete video.playlistId;
-//       return video;
-//     })
-//   );
-//   return videos;
-// };
-
 const _mostPopularVideosApi = async () => {
   const videoIds = await mostPopularVideoIds();
   const videos = await Promise.all(
@@ -370,6 +324,33 @@ const _mostPopularVideosApi = async () => {
   return videos;
 };
 
+
+// * chrome
+const _watchLaterVideosApi = async (userId) => {
+  const videoIds = await watchLaterVideoIds(userId);
+  const videos = await Promise.all(
+    videoIds.map(async (videoId) => await _videoByIdApi(videoId))
+  );
+  return videos;
+};
+
+const _historyVideosApi = async (userId) => {
+  const videoIds = await historyVideoIds(userId);
+  const videos = await Promise.all(
+    videoIds.map(async (videoId) => await _videoByIdApi(videoId))
+  );
+  return videos;
+};
+
+const _shortsVideosByChannelIdApi = async (channelId) => {
+  const videoIds = await shortsVideoIdsByChannelId(channelId);
+  const videos = await Promise.all(
+    videoIds.map(async (videoId) => await _videoByIdApi(videoId))
+  );
+  return videos;
+};
+
+// ** Resolvers
 const resolvers = {
   Query: {
     youtubeSubscriptionsApi: async (_, args) => {
@@ -407,6 +388,9 @@ export {
   _videoIdsByPlaylistIdApi,
   _videoIdsByChannelIdApi,
   _mostPopularVideosApi,
+  _watchLaterVideosApi,
+  _historyVideosApi,
+  _shortsVideosByChannelIdApi,
   resolvers,
 };
 

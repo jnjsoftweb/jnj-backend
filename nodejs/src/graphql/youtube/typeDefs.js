@@ -44,6 +44,11 @@ export const typeDefs = `#graphql
     youtubeVideosByPlaylistId(playlistId: String!): [Video]  # 재생목록 ID로 비디오 가져오기
     youtubeVideosByChannelId(channelId: String!): [Video]  # 채널 ID로 비디오 가져오기
     youtubeMostPopularVideos: [Video]  # 인기 비디오 가져오기
+    youtubeWatchLaterVideos(userId: String!): [Video]  # 찜 비디오 가져오기
+    youtubeHistoryVideos(userId: String!): [Video]  # 시청 기록 비디오 가져오기
+    youtubeWatchLaterVideosApi(userId: String!): [Video]  # 찜 비디오 가져오기
+    youtubeHistoryVideosApi(userId: String!): [Video]  # 시청 기록 비디오 가져오기
+    youtubeShortsVideosByChannelIdApi(channelId: String!): [Video]  # 쇼츠 비디오 가져오기
   }
 
   # Mutations

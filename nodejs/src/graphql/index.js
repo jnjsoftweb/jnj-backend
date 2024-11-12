@@ -2,6 +2,7 @@ import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 import { typeDefs } from './typeDefs.js';
 import { resolvers } from './youtube/resolvers.js';
+import { GRAPHQL_PORT } from '../env.js';
 
 const server = new ApolloServer({
   typeDefs,
@@ -20,7 +21,7 @@ const server = new ApolloServer({
 });
 
 const { url } = await startStandaloneServer(server, {
-  listen: { port: 3007 },
+  listen: { port: GRAPHQL_PORT },
 });
 
 console.log(`🚀 Server ready at: ${url}`);

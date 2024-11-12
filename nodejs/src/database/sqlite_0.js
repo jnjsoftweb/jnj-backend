@@ -130,7 +130,7 @@ const _queryCreateTableFromSchema = (schema) => {
 
 // * Sqlite Class
 class Sqlite {
-  constructor(dbName = 'finance') {
+  constructor(dbName = 'youtube') {
     this.dbName = dbName;
     this.dbPath = `${SQLITE_DB_DIR}/${dbName}.db`;
     this._createDatabase(); // 데이터베이스 생성 함수 호출
@@ -138,6 +138,17 @@ class Sqlite {
       if (err) {
         console.error('Database opening error: ', err);
       }
+    });
+
+    process.on('exit', () => {
+      this.close();
+    });
+
+    process.on('SIGINT', () => {
+      if (db) {
+        db.close();
+      }
+      process.exit();
     });
   }
 
@@ -165,7 +176,7 @@ class Sqlite {
 
   runQuery(query, params = []) {
     return this._runQuery(query, params).finally(() => {
-      this.db.close();
+      // this.db.close()
     });
   }
 
@@ -195,7 +206,7 @@ class Sqlite {
           }
         });
       });
-      this.db.close();
+      // this.db.close()
       return result;
     } catch (error) {
       console.error('Find operation failed:', error);
@@ -223,7 +234,7 @@ class Sqlite {
           }
         });
       });
-      this.db.close();
+      // this.db.close()
       return result;
     } catch (error) {
       console.error('Find operation failed:', error);
@@ -242,7 +253,7 @@ class Sqlite {
 
   async insertOne(tableName, data) {
     const results = await this._insertOne(tableName, data);
-    this.db.close();
+    // this.db.close()
     return results;
   }
 
@@ -259,7 +270,7 @@ class Sqlite {
 
   async insert(tableName, dataArray) {
     const results = await this._insert(tableName, dataArray);
-    this.db.close();
+    // this.db.close()
     return results;
   }
 
@@ -274,7 +285,7 @@ class Sqlite {
 
   async updateOne(tableName, data, filter) {
     const results = await this._updateOne(tableName, data, filter);
-    this.db.close();
+    // this.db.close()
     return results;
   }
 
@@ -293,7 +304,7 @@ class Sqlite {
 
   async update(tableName, dataArray, filter) {
     const results = await this._update(tableName, dataArray, filter);
-    this.db.close();
+    // this.db.close()
     return results;
   }
 
@@ -361,7 +372,7 @@ class Sqlite {
 
   async upsertOne(tableName, data, uniqueFields = '') {
     const results = await this._upsertOne(tableName, data, uniqueFields);
-    this.db.close();
+    // this.db.close()
     return results;
   }
 
@@ -382,9 +393,22 @@ class Sqlite {
       results.push(...batchResults);
     }
 
-    this.db.close();
+    // this.db.close()
 
     return results;
+  }
+
+  // close 메서드 추가
+  close() {
+    if (this.db) {
+      this.db.close((err) => {
+        if (err) {
+          console.error('Error closing database:', err);
+        } else {
+          console.log('Database connection closed.');
+        }
+      });
+    }
   }
 }
 
@@ -394,8 +418,8 @@ export { Sqlite, createDatabase };
 // const data = { id: 1, name: 'John Doe' };
 // console.log(_eqQueryFromObj(data));
 
-// const dbName = 'youtube';
-// const sqlite = new Sqlite(dbName);
+const dbName = 'youtube';
+const sqlite = new Sqlite(dbName);
 
 // sqlite.createTableFromSchema(getSchema('subscriptions','youtube'));
 

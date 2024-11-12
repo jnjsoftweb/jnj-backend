@@ -1,10 +1,10 @@
 import { By } from 'selenium-webdriver';
 import { Chrome } from 'jnj-lib-web';
-import { DEFAULT_USER_DATA_DIR } from '../../env.js';
+import { YOUTUBE_DEFAULT_USER_ID, YOUTUBE_DEFAULT_USER_EMAIL, DEFAULT_USER_DATA_DIR } from '../../env.js';
 
 const MAX_SCROLLS = 10;
-const YOUTUBE_DEFAULT_USER_ID = 'bigwhitekmc';
-const YOUTUBE_DEFAULT_USER_EMAIL = 'bigwhitekmc@gmail.com';
+// const YOUTUBE_DEFAULT_USER_ID = 'bigwhitekmc';
+// const YOUTUBE_DEFAULT_USER_EMAIL = 'bigwhitekmc@gmail.com';
 
 const extractVideoId = (url) => {
   const regex =
@@ -15,23 +15,45 @@ const extractVideoId = (url) => {
 
 
 // * 페이지 이동
-const goToUrl = async ({url, email= YOUTUBE_DEFAULT_USER_EMAIL, userDataDir= DEFAULT_USER_DATA_DIR, headless= true}) => {
+const goToUrl = async ({url, email = YOUTUBE_DEFAULT_USER_EMAIL, userDataDir = DEFAULT_USER_DATA_DIR, headless = true}) => {
   // * 초기화
   const chrome = new Chrome({
-    headless,
+    headless: headless ? 'new' : false,  // Chrome 최신 버전 헤드리스 모드 사용
     email,
     userDataDir,
+    arguments: [
+      '--no-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-gpu',
+      '--window-size=1920,1080'
+    ]
   });
-  await chrome.goto(url);
-  await chrome.getFullSize();  // auto scroll
-  return chrome;
+  
+  try {
+    await chrome.goto(url);
+    await chrome.getFullSize();  // auto scroll
+    return chrome;
+  } catch (error) {
+    console.error('Chrome 초기화 중 오류 발생:', error);
+    await chrome.close();
+    throw error;
+  }
 }
 
 // * 요소 추출
-const _getElements = async (url, css, {email= YOUTUBE_DEFAULT_USER_EMAIL, userDataDir = DEFAULT_USER_DATA_DIR, headless = false}) => {
-  const chrome = await goToUrl({url, email, userDataDir, headless});
-  const driver = chrome.driver;
-  return {chrome, elements: await driver.findElements(By.css(css))};
+const _getElements = async (url, css, {email = YOUTUBE_DEFAULT_USER_EMAIL, userDataDir = DEFAULT_USER_DATA_DIR, headless = false}) => {
+  let chrome;
+  try {
+    chrome = await goToUrl({url, email, userDataDir, headless});
+    const driver = chrome.driver;
+    const elements = await driver.findElements(By.css(css));
+    return {chrome, elements};
+  } catch (error) {
+    if (chrome) {
+      await chrome.close();
+    }
+    throw error;
+  }
 }
 
 // * 나중에 볼 동영상 추출

@@ -12,7 +12,7 @@ https://ap.www.namecheap.com/Domains/DomainControlPanel/vastwhite.com/advancedns
 
 
 
-> `sudo nano /etc/nginx/conf.d/react.vastwhite.com.conf`
+> `sudo vi /etc/nginx/conf.d/react.vastwhite.com.conf`
 
 ```
 server {
@@ -75,6 +75,11 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
+```
+
+```sh
+sudo nginx -t
+sudo systemctl restart nginx
 ```
 
 
