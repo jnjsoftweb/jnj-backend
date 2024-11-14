@@ -133,3 +133,33 @@ sudo systemctl status nginx
 sudo nginx -t
 sudo systemctl restart nginx
 ```
+
+
+## n8n.vastwhite.com
+
+> `sudo vi /etc/nginx/conf.d/n8n.vastwhite.com.conf`
+
+```
+server {
+    listen 80;
+    server_name n8n.vastwhite.com;
+
+    location / {
+        proxy_pass http://192.168.0.25:5678;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+```sh
+sudo nginx -t
+sudo systemctl restart nginx
+```
+
+
+```sh
+sudo certbot --nginx -d n8n.vastwhite.com
+```
