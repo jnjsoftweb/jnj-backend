@@ -69,7 +69,22 @@ moondevnode@gmail.com
 C:\Program Files\DB Browser for SQLite\
 
 
+## yt-dlp
 
+### ubuntu
+
+```sh
+sudo apt-get install yt-dlp
+```
+
+### windows
+
+
+### mac
+
+```sh
+brew install yt-dlp
+```
 
 ## ilmac
 
