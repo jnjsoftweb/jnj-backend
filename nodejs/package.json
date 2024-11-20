@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@apollo/server-plugin-landing-page-graphql-playground": "^4.0.1",
     "@distube/ytdl-core": "^4.14.4",
     "@notionhq/client": "^2.2.15",
     "axios": "^1.7.7",
@@ -17,7 +18,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "jnj-lib-base": "^0.0.44",
-    "jnj-lib-google": "^0.0.15",
+    "jnj-lib-google": "^0.0.16",
     "jnj-lib-web": "^0.0.8",
     "mysql2": "^3.11.3",
     "playwright": "^1.48.1",
