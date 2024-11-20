@@ -20,6 +20,7 @@
     "jnj-lib-base": "^0.0.44",
     "jnj-lib-google": "^0.0.16",
     "jnj-lib-web": "^0.0.8",
+    "jsdom": "^25.0.1",
     "mysql2": "^3.11.3",
     "playwright": "^1.48.1",
     "pocketbase": "^0.21.5",

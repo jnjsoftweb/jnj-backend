@@ -15,6 +15,7 @@ _thunder/
 _temp/
 backups/
 downloads/
+drafts/
 
 pb_migrations/
 data.db
