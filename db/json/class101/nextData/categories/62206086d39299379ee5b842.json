@@ -1,0 +1,775 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "62206086d39299379ee5b842"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"62206086d39299379ee5b842\"})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b842"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"62206086d39299379ee5b842\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjExMzdjMDEyYWU3NDcwMDBkMzJiMjAwX19DVVJTT1JfREVMSU1JVEVSX182ODkxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61137c012ae747000d32b200"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY0NzBiYWZiZWQ5MzcwMDFhOWM1YjM2X19DVVJTT1JfREVMSU1JVEVSX18yNTIzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f470bafbed937001a9c5b36"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI1ZjZjMzE1YjIzMDUwMDBlZDRiNzJkX19DVVJTT1JfREVMSU1JVEVSX18yMDE2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:625f6c315b2305000ed4b72d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjNkYTM4MGMxYWE0NWMwMDBlZjRkMDE0X19DVVJTT1JfREVMSU1JVEVSX18xOTc2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:63da380c1aa45c000ef4d014"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI2OGExMjczMjJjOTYwMDBlZmVhZGQzX19DVVJTT1JfREVMSU1JVEVSX18xNzk0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6268a127322c96000efeadd3"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjRhNTNjNDMxZTY5M2MwMDBlOGExZjIyX19DVVJTT1JfREVMSU1JVEVSX18xNjk5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:64a53c431e693c000e8a1f22"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJjZmJlYWUxOTNhMjAwMDBlYjBkOWExX19DVVJTT1JfREVMSU1JVEVSX18xNjcyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62cfbeae193a20000eb0d9a1"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI1ZTFmM2Q1YWZiZjIwMDE1ODM0MWFkX19DVVJTT1JfREVMSU1JVEVSX18xNTYwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:625e1f3d5afbf200158341ad"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM0Y2Y4ZDVhYTgxYTMwMDBlZGRiMTA2X19DVVJTT1JfREVMSU1JVEVSX18xNDY2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:634cf8d5aa81a3000eddb106"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI2OGExNTQ2Nzg5ZTYwMDNjZDg4NGM5X19DVVJTT1JfREVMSU1JVEVSX18xMzYyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6268a1546789e6003cd884c9"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjMyMDAyYThkMmY1ZmYwMDBlY2U5ZDI3X19DVVJTT1JfREVMSU1JVEVSX185MTlfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+                "node": {
+                  "__ref": "ProductV3:632002a8d2f5ff000ece9d27"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjNiZDFmN2IwZTg0ZmYwMDBlNjdjODY1X19DVVJTT1JfREVMSU1JVEVSX185MDdfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+                "node": {
+                  "__ref": "ProductV3:63bd1f7b0e84ff000e67c865"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM3MGU1YzBmYmVkMmUwMDE2Nzk0MzA0X19DVVJTT1JfREVMSU1JVEVSX184ODVfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+                "node": {
+                  "__ref": "ProductV3:6370e5c0fbed2e0016794304"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFlYTVmOGM5NDEwYjIwMDE1MDRjYTM3X19DVVJTT1JfREVMSU1JVEVSX184MjFfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+                "node": {
+                  "__ref": "ProductV3:61ea5f8c9410b2001504ca37"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjIyYWQ2NTg1MjcwMGEwMDEzMGY1MTk4X19DVVJTT1JfREVMSU1JVEVSX184MThfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+                "node": {
+                  "__ref": "ProductV3:622ad65852700a00130f5198"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI1ZTczOTk0Nzk2ZTkwMDE1MzMyOTE4X19DVVJTT1JfREVMSU1JVEVSX183NjhfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+                "node": {
+                  "__ref": "ProductV3:625e73994796e90015332918"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjQ0YjY2ZGZkODRmOTkwMDQ0ZmU5ZTU1X19DVVJTT1JfREVMSU1JVEVSX183NDNfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+                "node": {
+                  "__ref": "ProductV3:644b66dfd84f990044fe9e55"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjQ4ODFjYWEwNjdiODIwMDBlYjIxOGU0X19DVVJTT1JfREVMSU1JVEVSX183MjhfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+                "node": {
+                  "__ref": "ProductV3:64881caa067b82000eb218e4"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjNiZDFjM2E1ZWIwNTEwMDE1NDY5OGM4X19DVVJTT1JfREVMSU1JVEVSX182NzRfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+                "node": {
+                  "__ref": "ProductV3:63bd1c3a5eb05100154698c8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjVkODMyZTBiMDM4MTYwMDBlMTMzZTc4X19DVVJTT1JfREVMSU1JVEVSX182NDBfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+                "node": {
+                  "__ref": "ProductV3:65d832e0b03816000e133e78"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjVkODMyZTBiMDM4MTYwMDBlMTMzZTc4X19DVVJTT1JfREVMSU1JVEVSX182NDBfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+              "startCursor": "NjExMzdjMDEyYWU3NDcwMDBkMzJiMjAwX19DVVJTT1JfREVMSU1JVEVSX182ODkxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:6220606c1cb1cf4841dbdf8f": {
+          "__typename": "CategoryV2",
+          "id": "6220606c1cb1cf4841dbdf8f",
+          "title": "외국어",
+          "depth": 0
+        },
+        "CategoryV2:6220895c9dede0214b0783ea": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783ea",
+          "title": "토익",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b842"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b842"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783eb": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783eb",
+          "title": "토익 스피킹",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b842"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b842"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783ec": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783ec",
+          "title": "오픽",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b842"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b842"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783ee": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783ee",
+          "title": "지텔프",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b842"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783ed": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783ed",
+          "title": "텝스/토플/IELTS",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b842"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b842"
+            }
+          ]
+        },
+        "CategoryV2:6315e7cc8d588c0ac77caded": {
+          "__typename": "CategoryV2",
+          "id": "6315e7cc8d588c0ac77caded",
+          "title": "스페인어 시험",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b842"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783ef": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783ef",
+          "title": "중국어 시험",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b842"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783f0": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783f0",
+          "title": "일본어 시험",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b842"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b842"
+            }
+          ]
+        },
+        "CategoryV2:62206086d39299379ee5b842": {
+          "__typename": "CategoryV2",
+          "id": "62206086d39299379ee5b842",
+          "title": "외국어 시험",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783ea"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783eb"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783ec"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783ee"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783ed"
+            },
+            {
+              "__ref": "CategoryV2:6315e7cc8d588c0ac77caded"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783ef"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783f0"
+            }
+          ]
+        },
+        "User:5e318583b07f263aa4e6e53e": {
+          "__typename": "User",
+          "_id": "5e318583b07f263aa4e6e53e",
+          "displayName": "토익독학길잡이"
+        },
+        "ProductV3:61137c012ae747000d32b200": {
+          "__typename": "ProductV3",
+          "_id": "61137c012ae747000d32b200",
+          "title": "12만 토익 유튜버의 '해석을 위한 문법'",
+          "coverImageUrl": "https://cdn.class101.net/images/6af8c670-27e7-4a45-88b0-d133791b5242",
+          "klassId": "61137c012ae747000d32b1fb",
+          "likedCount": 6891,
+          "firestoreId": "5mciH46dWQMHCRNQffMs",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ea"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:5e318583b07f263aa4e6e53e"
+          }
+        },
+        "User:5f470ba34884ba0013c57dab": {
+          "__typename": "User",
+          "_id": "5f470ba34884ba0013c57dab",
+          "displayName": "고은센세"
+        },
+        "ProductV3:5f470bafbed937001a9c5b36": {
+          "__typename": "ProductV3",
+          "_id": "5f470bafbed937001a9c5b36",
+          "title": "고은센세와 쉽게 공부하는 일본어 자격증 JLPT N4 <문법>",
+          "coverImageUrl": "https://cdn.class101.net/images/26e0c608-5053-468b-8289-5f9a49176692",
+          "klassId": "5f470bafbed937001a9c5b35",
+          "likedCount": 2523,
+          "firestoreId": "xEXghlkONev0nCyWu0O2",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f470ba34884ba0013c57dab"
+          }
+        },
+        "User:60824a8f3b47c2000d85a848": {
+          "__typename": "User",
+          "_id": "60824a8f3b47c2000d85a848",
+          "displayName": "ECK교육"
+        },
+        "ProductV3:625f6c315b2305000ed4b72d": {
+          "__typename": "ProductV3",
+          "_id": "625f6c315b2305000ed4b72d",
+          "title": "The 빠른 오픽 OPIc IH",
+          "coverImageUrl": "https://cdn.class101.net/images/9a477e65-c747-4e7c-93d4-59f0d2ae642a",
+          "klassId": "625f6c315b2305000ed4b72a",
+          "likedCount": 2016,
+          "firestoreId": "JwLRayDM9GNUJWFviJja",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ec"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60824a8f3b47c2000d85a848"
+          }
+        },
+        "User:61f331bf0f9c78001457ff78": {
+          "__typename": "User",
+          "_id": "61f331bf0f9c78001457ff78",
+          "displayName": "길토익"
+        },
+        "ProductV3:63da380c1aa45c000ef4d014": {
+          "__typename": "ProductV3",
+          "_id": "63da380c1aa45c000ef4d014",
+          "title": "[현강 토익 1등 길토익] 단기간 200점 바로 올리는 토익 LC",
+          "coverImageUrl": "https://cdn.class101.net/images/74610cae-76a9-4bba-add6-96b1d183daeb",
+          "klassId": "63da380c1aa45c000ef4d011",
+          "likedCount": 1976,
+          "firestoreId": "PqsKSG60XcNF2X2nZ9HH",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ea"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61f331bf0f9c78001457ff78"
+          }
+        },
+        "User:6268a0ba59fa31000ecfe428": {
+          "__typename": "User",
+          "_id": "6268a0ba59fa31000ecfe428",
+          "displayName": "글로벌21"
+        },
+        "ProductV3:6268a127322c96000efeadd3": {
+          "__typename": "ProductV3",
+          "_id": "6268a127322c96000efeadd3",
+          "title": "TOEIC START RC",
+          "coverImageUrl": "https://cdn.class101.net/images/e2eb1a35-8d5b-4b98-97f9-06a0e302c2a8",
+          "klassId": "6268a127322c96000efeadd0",
+          "likedCount": 1794,
+          "firestoreId": "iNSGVGHmkhCvJwMWtr7j",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ea"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6268a0ba59fa31000ecfe428"
+          }
+        },
+        "User:5ecfc95c724acc42a45892e2": {
+          "__typename": "User",
+          "_id": "5ecfc95c724acc42a45892e2",
+          "displayName": "나가치토익"
+        },
+        "ProductV3:64a53c431e693c000e8a1f22": {
+          "__typename": "ProductV3",
+          "_id": "64a53c431e693c000e8a1f22",
+          "title": "[토익 RC점수 상승 보장!] 입문자를 위한 750+ 해석&문법 올인원 ",
+          "coverImageUrl": "https://cdn.class101.net/images/5ed6ee19-ceb4-4dc8-a9cc-12af00c34da2",
+          "klassId": "64a53c431e693c000e8a1f1f",
+          "likedCount": 1699,
+          "firestoreId": "7808oKu8QcAnBVwAOXN4",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ea"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ecfc95c724acc42a45892e2"
+          }
+        },
+        "User:5f0875e119e366d0b445bdd1": {
+          "__typename": "User",
+          "_id": "5f0875e119e366d0b445bdd1",
+          "displayName": "미나"
+        },
+        "ProductV3:62cfbeae193a20000eb0d9a1": {
+          "__typename": "ProductV3",
+          "_id": "62cfbeae193a20000eb0d9a1",
+          "title": "혼자서도 체계적이고 효율적으로 공부하는 JLPT N3",
+          "coverImageUrl": "https://cdn.class101.net/images/5cf94993-0178-4811-86ab-5f42f6a5f9a8",
+          "klassId": "62cfbeae193a20000eb0d99e",
+          "likedCount": 1672,
+          "firestoreId": "ZCrpgvmdHkiQ50XsSPT4",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f0875e119e366d0b445bdd1"
+          }
+        },
+        "ProductV3:625e1f3d5afbf200158341ad": {
+          "__typename": "ProductV3",
+          "_id": "625e1f3d5afbf200158341ad",
+          "title": "The 빠른 오픽 OPIc AL",
+          "coverImageUrl": "https://cdn.class101.net/images/124f53c4-9656-4e6a-9189-aef65a1f4f69",
+          "klassId": "625e1f3d5afbf20015834199",
+          "likedCount": 1560,
+          "firestoreId": "lm2xq3umyfoibsfLnTpN",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ec"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60824a8f3b47c2000d85a848"
+          }
+        },
+        "User:6347808042698e0015b41447": {
+          "__typename": "User",
+          "_id": "6347808042698e0015b41447",
+          "displayName": "Celina"
+        },
+        "ProductV3:634cf8d5aa81a3000eddb106": {
+          "__typename": "ProductV3",
+          "_id": "634cf8d5aa81a3000eddb106",
+          "title": "1주 만에 토익 [파트5] 벼락치기",
+          "coverImageUrl": "https://cdn.class101.net/images/0014d1c4-c5d6-492f-a757-1cb931407e31",
+          "klassId": "634cf8d5aa81a3000eddb103",
+          "likedCount": 1466,
+          "firestoreId": "xH3jJsy0UTAfINLt5UCx",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ea"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6347808042698e0015b41447"
+          }
+        },
+        "ProductV3:6268a1546789e6003cd884c9": {
+          "__typename": "ProductV3",
+          "_id": "6268a1546789e6003cd884c9",
+          "title": "TOEIC START LC",
+          "coverImageUrl": "https://cdn.class101.net/images/64b74a62-7701-4241-95e3-09127c9e95f9",
+          "klassId": "6268a1546789e6003cd884c6",
+          "likedCount": 1362,
+          "firestoreId": "ptR3Mg8YXGgv4mfk1OBf",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ea"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6268a0ba59fa31000ecfe428"
+          }
+        },
+        "ProductV3:632002a8d2f5ff000ece9d27": {
+          "__typename": "ProductV3",
+          "_id": "632002a8d2f5ff000ece9d27",
+          "title": "고은센세와 쉽게 공부하는 일본어 자격증 JLPT N3 <문법>",
+          "coverImageUrl": "https://cdn.class101.net/images/19af4e6d-dd4a-493a-8d3f-3f054c745a98",
+          "klassId": "632002a8d2f5ff000ece9d24",
+          "likedCount": 919,
+          "firestoreId": "MwkqJdeZrkr1Gs93QYJV",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f470ba34884ba0013c57dab"
+          }
+        },
+        "User:635b995211c62c00155f8e1e": {
+          "__typename": "User",
+          "_id": "635b995211c62c00155f8e1e",
+          "displayName": "Study.365"
+        },
+        "ProductV3:63bd1f7b0e84ff000e67c865": {
+          "__typename": "ProductV3",
+          "_id": "63bd1f7b0e84ff000e67c865",
+          "title": "답이 보이는 토익 900점 RC",
+          "coverImageUrl": "https://cdn.class101.net/images/55423fa5-0c87-4399-943c-074ae482fbf3",
+          "klassId": "63bd1f7b0e84ff000e67c862",
+          "likedCount": 907,
+          "firestoreId": "MpOPjV73zCUdWBR4qvxi",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ea"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:635b995211c62c00155f8e1e"
+          }
+        },
+        "User:6370e59dbae73b000e399a17": {
+          "__typename": "User",
+          "_id": "6370e59dbae73b000e399a17",
+          "displayName": "피터아이엘츠"
+        },
+        "ProductV3:6370e5c0fbed2e0016794304": {
+          "__typename": "ProductV3",
+          "_id": "6370e5c0fbed2e0016794304",
+          "title": "아이엘츠 전문 강사 피터의 Total IELTS [라이팅 에세이]",
+          "coverImageUrl": "https://cdn.class101.net/images/58cda09a-60a8-45e9-afc5-2da82a9c7a5c",
+          "klassId": "6370e5c0fbed2e0016794301",
+          "likedCount": 885,
+          "firestoreId": "4alriDxo83hUB90cdFrc",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ed"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6370e59dbae73b000e399a17"
+          }
+        },
+        "User:6157c30873a2ca0014881906": {
+          "__typename": "User",
+          "_id": "6157c30873a2ca0014881906",
+          "displayName": "Dana 최(핵콕토스)"
+        },
+        "ProductV3:61ea5f8c9410b2001504ca37": {
+          "__typename": "ProductV3",
+          "_id": "61ea5f8c9410b2001504ca37",
+          "title": "토스 IH ~ AL을 위한 토익스피킹 고득점 꿀팁 모음! 핵콕토스 (2022 개편 반영)",
+          "coverImageUrl": "https://cdn.class101.net/images/55d48e73-ba06-4392-b4ec-7e45a0f3d8fe",
+          "klassId": "61ea5f8c9410b2001504ca34",
+          "likedCount": 821,
+          "firestoreId": "EZjkiDG0c",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783eb"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6157c30873a2ca0014881906"
+          }
+        },
+        "User:61ffc8242db6410015b03445": {
+          "__typename": "User",
+          "_id": "61ffc8242db6410015b03445",
+          "displayName": "이지경"
+        },
+        "ProductV3:622ad65852700a00130f5198": {
+          "__typename": "ProductV3",
+          "_id": "622ad65852700a00130f5198",
+          "title": "오픽 IM 벼락치기 : 단어부터 템플릿까지",
+          "coverImageUrl": "https://cdn.class101.net/images/dcbdb5c2-a41c-472c-aab8-8c04df3ce3b4",
+          "klassId": "622ad65852700a00130f5195",
+          "likedCount": 818,
+          "firestoreId": "pNptPlf0jlsALsGf9O4L",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ec"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61ffc8242db6410015b03445"
+          }
+        },
+        "ProductV3:625e73994796e90015332918": {
+          "__typename": "ProductV3",
+          "_id": "625e73994796e90015332918",
+          "title": "The 빠른 오픽 OPIc IM",
+          "coverImageUrl": "https://cdn.class101.net/images/2088b813-b8dc-45b5-9fc0-9e6a6c71db38",
+          "klassId": "625e73994796e90015332915",
+          "likedCount": 768,
+          "firestoreId": "3LhmiX9GFI0k8oJWpOEr",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ec"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60824a8f3b47c2000d85a848"
+          }
+        },
+        "ProductV3:644b66dfd84f990044fe9e55": {
+          "__typename": "ProductV3",
+          "_id": "644b66dfd84f990044fe9e55",
+          "title": "고은센세와 쉽게 공부하는 JLPT N4 문자 어휘",
+          "coverImageUrl": "https://cdn.class101.net/images/bc2add3c-ee8c-4a4b-b45c-78f19d5fb727",
+          "klassId": "644b66dfd84f990044fe9e52",
+          "likedCount": 743,
+          "firestoreId": "KI4OG8BiD9YtdL10175C",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f470ba34884ba0013c57dab"
+          }
+        },
+        "User:61791aafe272a90014121499": {
+          "__typename": "User",
+          "_id": "61791aafe272a90014121499",
+          "displayName": "민혜쌤"
+        },
+        "ProductV3:64881caa067b82000eb218e4": {
+          "__typename": "ProductV3",
+          "_id": "64881caa067b82000eb218e4",
+          "title": "Hi-Bye 토익스피킹 기초 클래스 (IM3~IH 목표반)",
+          "coverImageUrl": "https://cdn.class101.net/images/0baf0ba4-81fc-4eb3-91d0-0de4b9d0c43d",
+          "klassId": "64881caa067b82000eb218d6",
+          "likedCount": 728,
+          "firestoreId": "8yXu8K5xQVgj46rmmRc8",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783eb"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61791aafe272a90014121499"
+          }
+        },
+        "ProductV3:63bd1c3a5eb05100154698c8": {
+          "__typename": "ProductV3",
+          "_id": "63bd1c3a5eb05100154698c8",
+          "title": "답이 들리는 토익 900점 LC",
+          "coverImageUrl": "https://cdn.class101.net/images/b7d9ef32-d373-4ba0-8550-bbc13abdb740",
+          "klassId": "63bd1c3a5eb05100154698c5",
+          "likedCount": 674,
+          "firestoreId": "eiCVZYW9SVqSdLwEJMwW",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ea"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:635b995211c62c00155f8e1e"
+          }
+        },
+        "ProductV3:65d832e0b03816000e133e78": {
+          "__typename": "ProductV3",
+          "_id": "65d832e0b03816000e133e78",
+          "title": "[구독] 12만 토익 유튜버의 '해석을 위한 문법'",
+          "coverImageUrl": "https://cdn.class101.net/images/6af8c670-27e7-4a45-88b0-d133791b5242",
+          "klassId": "65d832e0b03816000e133e6a",
+          "likedCount": 640,
+          "firestoreId": "HylU78fg2gMUkE1gkEEA",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ea"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e318583b07f263aa4e6e53e"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "62206086d39299379ee5b842"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

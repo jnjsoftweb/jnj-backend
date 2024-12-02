@@ -1,0 +1,751 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "62206086d39299379ee5b83e"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"62206086d39299379ee5b83e\"})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83e"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"62206086d39299379ee5b83e\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ4NDNiMzgyY2IxYTEwMWZjOTg4Nzk5X19DVVJTT1JfREVMSU1JVEVSX18yNTI3OV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d843b382cb1a101fc988799"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJmYzVhNzM1OGExMmYwMDBlYWIxZTg5X19DVVJTT1JfREVMSU1JVEVSX18xNTI3NF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:62fc5a7358a12f000eab1e89"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBjZjViM2UxMWYyNTIwMDU3MGYzMGQ2X19DVVJTT1JfREVMSU1JVEVSX185OTYwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60cf5b3e11f25200570f30d6"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJmNzY3Njk5NzA3OWQwMDE1NGFhYzQ4X19DVVJTT1JfREVMSU1JVEVSX183Mzc5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62f7676997079d00154aac48"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZkNzFmZDVmMDk1YjIwMDBkODVhMWRkX19DVVJTT1JfREVMSU1JVEVSX182MTYyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5fd71fd5f095b2000d85a1dd"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBkOGI0NTQ4YzE4Y2MwMDBkYWJhNzJmX19DVVJTT1JfREVMSU1JVEVSX181MDk2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60d8b4548c18cc000daba72f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVkYjZmZThkNjQyNTE1NmE4YWZjNjE2X19DVVJTT1JfREVMSU1JVEVSX180OTg5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5edb6fe8d6425156a8afc616"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJkNzU3N2NkY2IzNDIwMDBlZGI5NjAyX19DVVJTT1JfREVMSU1JVEVSX180NTkzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62d7577cdcb342000edb9602"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZmYzBhNzc4ODUzOTMwMDQzYmY2MjJiX19DVVJTT1JfREVMSU1JVEVSX180NTY5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ffc0a778853930043bf622b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjIxNDQ0YzJkZDE4NGIwMDBkNWNmOWY2X19DVVJTT1JfREVMSU1JVEVSX180NTI3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:621444c2dd184b000d5cf9f6"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjMzY2QwNjFjYTFjMzkwMDBlY2IyMzlkX19DVVJTT1JfREVMSU1JVEVSX180NDcyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:633cd061ca1c39000ecb239d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjMyODYzM2NkODUzMmMwMDBlMzNhOGM3X19DVVJTT1JfREVMSU1JVEVSX18zOTg1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6328633cd8532c000e33a8c7"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI4YjQxMjBjZTM3MzYwMDE1YTFjZTFkX19DVVJTT1JfREVMSU1JVEVSX18zOTIxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:628b4120ce37360015a1ce1d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJkOGZkYTA1YmMyOTYwMDE1YWEwNTYzX19DVVJTT1JfREVMSU1JVEVSX18zOTA5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62d8fda05bc2960015aa0563"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjRhZmNlMGIyYjZjOGEwMDBlN2ViMDJhX19DVVJTT1JfREVMSU1JVEVSX18zODkxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:64afce0b2b6c8a000e7eb02a"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA4M2Q3MDMzMGM4Y2IwMDE1M2FjYjhjX19DVVJTT1JfREVMSU1JVEVSX18zODIzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6083d70330c8cb00153acb8c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBlMmQ5MGI5MjdhMDYwMDE1ZTY2ZTZmX19DVVJTT1JfREVMSU1JVEVSX18zMjgzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60e2d90b927a060015e66e6f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVmNDczMDVmYzhhYTVmZmE2ZTRiMjk2X19DVVJTT1JfREVMSU1JVEVSX18yOTE4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ef47305fc8aa5ffa6e4b296"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBlMzEzNWYyYzgxNGQwMDBkYjBjNTllX19DVVJTT1JfREVMSU1JVEVSX18yODQzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60e3135f2c814d000db0c59e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBmYTgzNzZiNTAyOWYwMDBkZmViODAzX19DVVJTT1JfREVMSU1JVEVSX18yODA5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60fa8376b5029f000dfeb803"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjBmYTgzNzZiNTAyOWYwMDBkZmViODAzX19DVVJTT1JfREVMSU1JVEVSX18yODA5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NWQ4NDNiMzgyY2IxYTEwMWZjOTg4Nzk5X19DVVJTT1JfREVMSU1JVEVSX18yNTI3OV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:6220606c1cb1cf4841dbdf8e": {
+          "__typename": "CategoryV2",
+          "id": "6220606c1cb1cf4841dbdf8e",
+          "title": "직무",
+          "depth": 0
+        },
+        "CategoryV2:6220895c9dede0214b0783d3": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783d3",
+          "title": "디지털마케팅",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83e"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783d4": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783d4",
+          "title": "퍼포먼스마케팅",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83e"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783d5": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783d5",
+          "title": "콘텐츠마케팅",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83e"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783d6": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783d6",
+          "title": "CRM마케팅",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83e"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783d7": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783d7",
+          "title": "브랜드마케팅",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83e"
+            }
+          ]
+        },
+        "CategoryV2:62206086d39299379ee5b83e": {
+          "__typename": "CategoryV2",
+          "id": "62206086d39299379ee5b83e",
+          "title": "마케팅",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783d3"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783d4"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783d5"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783d6"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783d7"
+            }
+          ]
+        },
+        "User:5d843abae82af60c352447e9": {
+          "__typename": "User",
+          "_id": "5d843abae82af60c352447e9",
+          "displayName": "칙스토리 김종영"
+        },
+        "ProductV3:5d843b382cb1a101fc988799": {
+          "__typename": "ProductV3",
+          "_id": "5d843b382cb1a101fc988799",
+          "title": "자영업자를 위한 매출로 이어지는 인스타그램 마케팅",
+          "coverImageUrl": "https://cdn.class101.net/images/6892275c-876e-40e9-a832-20ba067ce500",
+          "klassId": "5d843b37e27cdd5be40fedf7",
+          "likedCount": 25279,
+          "firestoreId": "BXeLjjdAgueyv0WawptA",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d843abae82af60c352447e9"
+          }
+        },
+        "ProductV3:62fc5a7358a12f000eab1e89": {
+          "__typename": "ProductV3",
+          "_id": "62fc5a7358a12f000eab1e89",
+          "title": "60일 안에 1만 팔로워를 만드는 <브랜드 인스타그램> 운영 전략",
+          "coverImageUrl": "https://cdn.class101.net/images/42c0e803-69ab-43bd-b07e-d3b598de5289",
+          "klassId": "62fc5a7358a12f000eab1e86",
+          "likedCount": 15274,
+          "firestoreId": "zpPl8gZ1QFjFc5GJaHyj",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d843abae82af60c352447e9"
+          }
+        },
+        "User:60916dee03496e000ee8f039": {
+          "__typename": "User",
+          "_id": "60916dee03496e000ee8f039",
+          "displayName": "김일리"
+        },
+        "ProductV3:60cf5b3e11f25200570f30d6": {
+          "__typename": "ProductV3",
+          "_id": "60cf5b3e11f25200570f30d6",
+          "title": "현직 브랜드 마케터가 알려주는 「브랜딩을 위한 글쓰기」 ",
+          "coverImageUrl": "https://cdn.class101.net/images/92748428-887f-4bd0-b7c5-e867b0fe92f1",
+          "klassId": "60cf5b3e11f25200570f30d5",
+          "likedCount": 9960,
+          "firestoreId": "ICeRHkIIm3t07z8kucDN",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60916dee03496e000ee8f039"
+          }
+        },
+        "User:62ddfed98bf3fe0015f31080": {
+          "__typename": "User",
+          "_id": "62ddfed98bf3fe0015f31080",
+          "displayName": "NooNB_눈비"
+        },
+        "ProductV3:62f7676997079d00154aac48": {
+          "__typename": "ProductV3",
+          "_id": "62f7676997079d00154aac48",
+          "title": "작은 브랜드가 215억 매출을 낸 비결, <20가지 브랜딩/마케팅 전략>",
+          "coverImageUrl": "https://cdn.class101.net/images/70033b27-ba98-4108-bed2-1411a642c733",
+          "klassId": "62f7676997079d00154aac45",
+          "likedCount": 7379,
+          "firestoreId": "k0mGTWDgZvYroL1gz9ik",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62ddfed98bf3fe0015f31080"
+          }
+        },
+        "User:5fd71fbb2d53c700146ee4d8": {
+          "__typename": "User",
+          "_id": "5fd71fbb2d53c700146ee4d8",
+          "displayName": "마랩민규"
+        },
+        "ProductV3:5fd71fd5f095b2000d85a1dd": {
+          "__typename": "ProductV3",
+          "_id": "5fd71fd5f095b2000d85a1dd",
+          "title": "마케팅 대표가 직접 공개하는 퍼포먼스 마케팅 실무",
+          "coverImageUrl": "https://cdn.class101.net/images/5dea2f81-b7ef-4ac9-806c-f764f31c5f21",
+          "klassId": "5fd71fd2f095b2000d859324",
+          "likedCount": 6162,
+          "firestoreId": "UUPIDrt4wz6kWCrI0ZHx",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fd71fbb2d53c700146ee4d8"
+          }
+        },
+        "User:609bfd73970847001587b68a": {
+          "__typename": "User",
+          "_id": "609bfd73970847001587b68a",
+          "displayName": "제이콥"
+        },
+        "ProductV3:60d8b4548c18cc000daba72f": {
+          "__typename": "ProductV3",
+          "_id": "60d8b4548c18cc000daba72f",
+          "title": "퍼포먼스 마케터의 기본, 구글 애널리틱스 정복 (inc. GA4)",
+          "coverImageUrl": "https://cdn.class101.net/images/192f15c1-b889-4ecb-b419-0c0fffbfd846",
+          "klassId": "60a3eecf58148f001551a590",
+          "likedCount": 5096,
+          "firestoreId": "byRkbbDmDnzibP8pqywn",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:609bfd73970847001587b68a"
+          }
+        },
+        "User:5edb6f95724acc42a44c680b": {
+          "__typename": "User",
+          "_id": "5edb6f95724acc42a44c680b",
+          "displayName": "김찬우"
+        },
+        "ProductV3:5edb6fe8d6425156a8afc616": {
+          "__typename": "ProductV3",
+          "_id": "5edb6fe8d6425156a8afc616",
+          "title": "작은 동네에서 연매출 18억! 손님을 부르는 실전형 <브랜딩 & 마케팅>",
+          "coverImageUrl": "https://cdn.class101.net/images/72c2ed9c-91fc-4cad-a342-4c09a1fd9d6b",
+          "klassId": "5edb6fe8d6425156a8afc615",
+          "likedCount": 4989,
+          "firestoreId": "H8YEsUXd01z01fJx1owJ",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5edb6f95724acc42a44c680b"
+          }
+        },
+        "User:5fb4ba906e9bc0000d023456": {
+          "__typename": "User",
+          "_id": "5fb4ba906e9bc0000d023456",
+          "displayName": "재영"
+        },
+        "ProductV3:62d7577cdcb342000edb9602": {
+          "__typename": "ProductV3",
+          "_id": "62d7577cdcb342000edb9602",
+          "title": "작은 브랜드를 위한 <0에서 시작하는 브랜드 상세페이지 원리>",
+          "coverImageUrl": "https://cdn.class101.net/images/cae2d708-498b-4f69-8ded-67b3c7873f6f",
+          "klassId": "62d7577cdcb342000edb95ff",
+          "likedCount": 4593,
+          "firestoreId": "yagy2r9NJL5aNfjRS8rd",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fb4ba906e9bc0000d023456"
+          }
+        },
+        "User:5fb1fa591b70db00134023de": {
+          "__typename": "User",
+          "_id": "5fb1fa591b70db00134023de",
+          "displayName": "노마드"
+        },
+        "ProductV3:5ffc0a778853930043bf622b": {
+          "__typename": "ProductV3",
+          "_id": "5ffc0a778853930043bf622b",
+          "title": "정답은 세계에 있다! 글로벌 제휴 마케팅으로 대기업 연봉 받기",
+          "coverImageUrl": "https://cdn.class101.net/images/1d62d3e7-70e1-4158-b6ef-4eb95017bff0",
+          "klassId": "5ffc0a768853930043bf622a",
+          "likedCount": 4569,
+          "firestoreId": "M7QbyoAue23dUEutSPtn",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fb1fa591b70db00134023de"
+          }
+        },
+        "User:621444724f72a7000d51f425": {
+          "__typename": "User",
+          "_id": "621444724f72a7000d51f425",
+          "displayName": "이대표"
+        },
+        "ProductV3:621444c2dd184b000d5cf9f6": {
+          "__typename": "ProductV3",
+          "_id": "621444c2dd184b000d5cf9f6",
+          "title": "코로나에서도 살아남은 7배 매출 상승 비책, 종합 마케팅 실전 백과사전",
+          "coverImageUrl": "https://cdn.class101.net/images/fb7e285a-9537-4274-89c0-93d3bb86137d",
+          "klassId": "621444c2dd184b000d5cf9f3",
+          "likedCount": 4527,
+          "firestoreId": "SZLCzfTDjW9v9QkLRdBZ",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:621444724f72a7000d51f425"
+          }
+        },
+        "User:603a81c2e95a720015142338": {
+          "__typename": "User",
+          "_id": "603a81c2e95a720015142338",
+          "displayName": "해라"
+        },
+        "ProductV3:633cd061ca1c39000ecb239d": {
+          "__typename": "ProductV3",
+          "_id": "633cd061ca1c39000ecb239d",
+          "title": "모든 직장인과 마케터에게 필요한 <데이터 활용을 위한 기초 수학·통계>",
+          "coverImageUrl": "https://cdn.class101.net/images/be90af4a-cb73-4774-9b85-8a4bf348eb49",
+          "klassId": "633cd061ca1c39000ecb239a",
+          "likedCount": 4472,
+          "firestoreId": "xRGEJqTISOpy9x42DDAQ",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:603a81c2e95a720015142338"
+          }
+        },
+        "User:61613e64052f2a00144e78cd": {
+          "__typename": "User",
+          "_id": "61613e64052f2a00144e78cd",
+          "displayName": "김종섭"
+        },
+        "ProductV3:6328633cd8532c000e33a8c7": {
+          "__typename": "ProductV3",
+          "_id": "6328633cd8532c000e33a8c7",
+          "title": "한 장으로 훅하게 시선을 사로잡는 광고짤(meme) 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/89616e6d-5ec9-460c-baa7-fb83837df0df",
+          "klassId": "6328633cd8532c000e33a8c4",
+          "likedCount": 3985,
+          "firestoreId": "ZBdSg9CW8m1irwQohCAh",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61613e64052f2a00144e78cd"
+          }
+        },
+        "User:60868c78b9f3b7000ea8855c": {
+          "__typename": "User",
+          "_id": "60868c78b9f3b7000ea8855c",
+          "displayName": "문연이"
+        },
+        "ProductV3:628b4120ce37360015a1ce1d": {
+          "__typename": "ProductV3",
+          "_id": "628b4120ce37360015a1ce1d",
+          "title": "브랜드와 내가 함께 성장하는 브랜드 마케팅",
+          "coverImageUrl": "https://cdn.class101.net/images/e2478961-e428-4b55-a346-c28c5f034420",
+          "klassId": "628b4120ce37360015a1ce1a",
+          "likedCount": 3921,
+          "firestoreId": "47EwTmd9aLTf4xrM4pd9",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60868c78b9f3b7000ea8855c"
+          }
+        },
+        "User:5ffef43509e54e0014b6c9b7": {
+          "__typename": "User",
+          "_id": "5ffef43509e54e0014b6c9b7",
+          "displayName": "김혜인"
+        },
+        "ProductV3:62d8fda05bc2960015aa0563": {
+          "__typename": "ProductV3",
+          "_id": "62d8fda05bc2960015aa0563",
+          "title": "끌리는 콘텐츠, 팔리는 콘텐츠 <고객을 팬으로 만드는 콘텐츠 기획>",
+          "coverImageUrl": "https://cdn.class101.net/images/9d12c795-89c0-4313-9ed6-d106c8ab6a87",
+          "klassId": "62d8fda05bc2960015aa0560",
+          "likedCount": 3909,
+          "firestoreId": "quAc9LxmL5rSll93q8xk",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ffef43509e54e0014b6c9b7"
+          }
+        },
+        "User:5fc30ff8273402000dc1686d": {
+          "__typename": "User",
+          "_id": "5fc30ff8273402000dc1686d",
+          "displayName": "매필녀"
+        },
+        "ProductV3:64afce0b2b6c8a000e7eb02a": {
+          "__typename": "ProductV3",
+          "_id": "64afce0b2b6c8a000e7eb02a",
+          "title": "Chat GPT로 콘텐츠 마케팅 효율 200% 올리기",
+          "coverImageUrl": "https://cdn.class101.net/images/225c677c-6b5c-42d4-bb44-75c455b228bb",
+          "klassId": "64afce0a2b6c8a000e7ead93",
+          "likedCount": 3891,
+          "firestoreId": "5X6DLOIbOoDnaTXKDw0I",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fc30ff8273402000dc1686d"
+          }
+        },
+        "User:607ac6f74cf540000e060546": {
+          "__typename": "User",
+          "_id": "607ac6f74cf540000e060546",
+          "displayName": "남미미"
+        },
+        "ProductV3:6083d70330c8cb00153acb8c": {
+          "__typename": "ProductV3",
+          "_id": "6083d70330c8cb00153acb8c",
+          "title": "콘텐츠 마케터로 살아남기: 데이터 드리븐 콘텐츠 마케팅 기초",
+          "coverImageUrl": "https://cdn.class101.net/images/0d919d64-4894-4044-a536-9b563d4dadaa",
+          "klassId": "6083d70330c8cb00153acb8b",
+          "likedCount": 3823,
+          "firestoreId": "5mhik7VTbJPqEDS87eju",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:607ac6f74cf540000e060546"
+          }
+        },
+        "User:60d05ca08b22a400538f7396": {
+          "__typename": "User",
+          "_id": "60d05ca08b22a400538f7396",
+          "displayName": "다보탑"
+        },
+        "ProductV3:60e2d90b927a060015e66e6f": {
+          "__typename": "ProductV3",
+          "_id": "60e2d90b927a060015e66e6f",
+          "title": "구글애널리틱스부터 구글광고까지! 디지털 퍼포먼스 마케터가 연봉 1억 달성하는 비법",
+          "coverImageUrl": "https://cdn.class101.net/images/5caefc1d-179c-4915-b846-c2044883fdef",
+          "klassId": "60e2d90b927a060015e66d3a",
+          "likedCount": 3283,
+          "firestoreId": "gWaHnQS3lNueJGz8tRTx",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60d05ca08b22a400538f7396"
+          }
+        },
+        "User:5e649fafae4114b4534a67b3": {
+          "__typename": "User",
+          "_id": "5e649fafae4114b4534a67b3",
+          "displayName": "마케터S"
+        },
+        "ProductV3:5ef47305fc8aa5ffa6e4b296": {
+          "__typename": "ProductV3",
+          "_id": "5ef47305fc8aa5ffa6e4b296",
+          "title": "수백억 광고비를 지출해 본 마케터가 알려주는 유튜브 마케팅의 모든 것",
+          "coverImageUrl": "https://cdn.class101.net/images/0e6abeb5-db07-4b1e-be3d-eba160927443",
+          "klassId": "5ef472f5fc8aa5ffa6e4a0e1",
+          "likedCount": 2918,
+          "firestoreId": "1mXV6JBUAstgDtDrs7Fq",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e649fafae4114b4534a67b3"
+          }
+        },
+        "User:5ea54b7367be5d18ed9a7cac": {
+          "__typename": "User",
+          "_id": "5ea54b7367be5d18ed9a7cac",
+          "displayName": "본투비마케터 젬마"
+        },
+        "ProductV3:60e3135f2c814d000db0c59e": {
+          "__typename": "ProductV3",
+          "_id": "60e3135f2c814d000db0c59e",
+          "title": "[워크북증정] ★매출 3배★ 누구나 따라하면 되는 '프로모션 방법론'",
+          "coverImageUrl": "https://cdn.class101.net/images/97864bd5-2b5f-4481-bf54-be6dc858531d",
+          "klassId": "60e3135f2c814d000db0c59d",
+          "likedCount": 2843,
+          "firestoreId": "5SkcqOG5xNimogv5Pm3n",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d6"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ea54b7367be5d18ed9a7cac"
+          }
+        },
+        "User:609f9949642f2e00153b703d": {
+          "__typename": "User",
+          "_id": "609f9949642f2e00153b703d",
+          "displayName": "생각을 파는 사람"
+        },
+        "ProductV3:60fa8376b5029f000dfeb803": {
+          "__typename": "ProductV3",
+          "_id": "60fa8376b5029f000dfeb803",
+          "title": "MZ와 관계를 형성하는 마케팅, 브랜드 저널리즘",
+          "coverImageUrl": "https://cdn.class101.net/images/4dd8fd90-5b1a-4c38-884d-87239a1b318f",
+          "klassId": "60fa8376b5029f000dfeb802",
+          "likedCount": 2809,
+          "firestoreId": "2Fip8DjgDJ9KFDo6cdPT",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:609f9949642f2e00153b703d"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "62206086d39299379ee5b83e"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

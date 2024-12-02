@@ -1,0 +1,709 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "62206086d39299379ee5b83a"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"62206086d39299379ee5b83a\"})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83a"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"62206086d39299379ee5b83a\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI1N2Q0YTM5MThlMzMwMDE1M2JkZDk0X19DVVJTT1JfREVMSU1JVEVSX180NTUwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6257d4a3918e3300153bdd94"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAwZmU3ZjE1ZThmZjgwMDBkYzNkNjcyX19DVVJTT1JfREVMSU1JVEVSX180MTYxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:600fe7f15e8ff8000dc3d672"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYzYjg0MjgyMDNiMTcwMDE0ZDYxNmQyX19DVVJTT1JfREVMSU1JVEVSX18zOTcxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f3b8428203b170014d616d2"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI4NzlhMzNiNGFjYTAwMDBlMzk3YjIwX19DVVJTT1JfREVMSU1JVEVSX18zOTU5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62879a33b4aca0000e397b20"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA2MjNmNzc5YjA5NmMwMDBkMmJjZjQxX19DVVJTT1JfREVMSU1JVEVSX18zNDUxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60623f779b096c000d2bcf41"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJjNmVmNzUzZDFjN2UwMDE1NDc4NDhlX19DVVJTT1JfREVMSU1JVEVSX18zMzQxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62c6ef753d1c7e001547848e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjEyMDZmOGRhZDJjYzIwMDBkZGM4MDZmX19DVVJTT1JfREVMSU1JVEVSX18zMTkxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61206f8dad2cc2000ddc806f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI3YzVjMGJjYzMwMTEwMDE1OTQ5YzkyX19DVVJTT1JfREVMSU1JVEVSX18yNjc1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:627c5c0bcc30110015949c92"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA1YWE5ZTRhYzcwZmMwMDBlNGFhOTNlX19DVVJTT1JfREVMSU1JVEVSX18yNjI1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:605aa9e4ac70fc000e4aa93e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZiMjc5OGFjYTNlNWQwMDBkY2JmNmU1X19DVVJTT1JfREVMSU1JVEVSX18yMzUwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5fb2798aca3e5d000dcbf6e5"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBhOWRiMDY5NTc5YmIwMDE1NzM5MDBlX19DVVJTT1JfREVMSU1JVEVSX18yMjA3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60a9db069579bb001573900e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBiMjAyZmExNmQxNjEwMDE0Zjk1YTk3X19DVVJTT1JfREVMSU1JVEVSX18xOTM5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60b202fa16d1610014f95a97"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI5ZWFjMzE2YTczZGUwMDNjMWFlODcyX19DVVJTT1JfREVMSU1JVEVSX18xOTEzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:629eac316a73de003c1ae872"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAzNjVhY2JkMWM4ODEwMDBlZjk0ZTM0X19DVVJTT1JfREVMSU1JVEVSX18xODcxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60365acbd1c881000ef94e34"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM2OWQ1NDU2OGM4ZDkwMDBlMjVjZWMwX19DVVJTT1JfREVMSU1JVEVSX18xODY5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6369d54568c8d9000e25cec0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjQ1ODRiYjNmYTdlMTYwMDc2MzhkYjcyX19DVVJTT1JfREVMSU1JVEVSX18xNjY5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:64584bb3fa7e16007638db72"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBkZDBhYzhmN2E5NDkwMDE1NmY5Y2E0X19DVVJTT1JfREVMSU1JVEVSX18xNTI3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60dd0ac8f7a94900156f9ca4"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjQ0YjRjYzU5YzMwZmQwMDBmZTRlYjY3X19DVVJTT1JfREVMSU1JVEVSX18xNDI3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:644b4cc59c30fd000fe4eb67"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI4MzRhMzUzMWM2MjgwMDBlMWNlZmE4X19DVVJTT1JfREVMSU1JVEVSX18xNDEwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62834a3531c628000e1cefa8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFhNTBhYTA3NTQzNzQwMDE1ZGVlOWU3X19DVVJTT1JfREVMSU1JVEVSX18xMzY3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61a50aa07543740015dee9e7"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjFhNTBhYTA3NTQzNzQwMDE1ZGVlOWU3X19DVVJTT1JfREVMSU1JVEVSX18xMzY3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NjI1N2Q0YTM5MThlMzMwMDE1M2JkZDk0X19DVVJTT1JfREVMSU1JVEVSX180NTUwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:6220606c1cb1cf4841dbdf8e": {
+          "__typename": "CategoryV2",
+          "id": "6220606c1cb1cf4841dbdf8e",
+          "title": "직무",
+          "depth": 0
+        },
+        "CategoryV2:6220895c9dede0214b0783c3": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783c3",
+          "title": "데이터분석",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83a"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83a"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783c5": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783c5",
+          "title": "AI · 인공지능",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83a"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83a"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783c6": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783c6",
+          "title": "딥러닝 · 머신러닝",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83a"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83a"
+            }
+          ]
+        },
+        "CategoryV2:62206086d39299379ee5b83a": {
+          "__typename": "CategoryV2",
+          "id": "62206086d39299379ee5b83a",
+          "title": "데이터사이언스",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783c5"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783c6"
+            }
+          ]
+        },
+        "User:5c5d769274eabcfdafd294e3": {
+          "__typename": "User",
+          "_id": "5c5d769274eabcfdafd294e3",
+          "displayName": "리송쌤"
+        },
+        "ProductV3:6257d4a3918e3300153bdd94": {
+          "__typename": "ProductV3",
+          "_id": "6257d4a3918e3300153bdd94",
+          "title": "코딩 초심자를 위한 모두의 데이터 분석 & 파이썬 입문",
+          "coverImageUrl": "https://cdn.class101.net/images/4416a5a0-2305-49d8-b88d-6c77ad31ceb6",
+          "klassId": "6257d4a3918e3300153bdd91",
+          "likedCount": 4550,
+          "firestoreId": "M0DVlfzs7t6KK0JO9829",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d769274eabcfdafd294e3"
+          }
+        },
+        "User:600f6dc12cda9a0015573f15": {
+          "__typename": "User",
+          "_id": "600f6dc12cda9a0015573f15",
+          "displayName": "AI코딩-두두등장"
+        },
+        "ProductV3:600fe7f15e8ff8000dc3d672": {
+          "__typename": "ProductV3",
+          "_id": "600fe7f15e8ff8000dc3d672",
+          "title": "세상에서 가장 빠르게 AI 개발자 되기 + 세상에서 가장 쉽게 딥러닝(AI)서비스 런칭하기",
+          "coverImageUrl": "https://cdn.class101.net/images/563359cb-636a-4b24-86b2-f0edc579d5e8",
+          "klassId": "600fe7f05e8ff8000dc3d4ee",
+          "likedCount": 4161,
+          "firestoreId": "sZM8FsbopYLREr3H5Chx",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c6"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:600f6dc12cda9a0015573f15"
+          }
+        },
+        "User:5f239a45a1b9a02eb5a92a95": {
+          "__typename": "User",
+          "_id": "5f239a45a1b9a02eb5a92a95",
+          "displayName": "김경수 컨설턴트"
+        },
+        "ProductV3:5f3b8428203b170014d616d2": {
+          "__typename": "ProductV3",
+          "_id": "5f3b8428203b170014d616d2",
+          "title": "비전공자도 쉽게 배워 바로 써먹는 실무 활용 SQL",
+          "coverImageUrl": "https://cdn.class101.net/images/62694cb4-74f0-4ce4-85dc-1428996bebe9",
+          "klassId": "5f3b8428203b170014d616d1",
+          "likedCount": 3971,
+          "firestoreId": "Rdy01tgOJr6JgM5dTajT",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f239a45a1b9a02eb5a92a95"
+          }
+        },
+        "User:624250e7e6269b0014046288": {
+          "__typename": "User",
+          "_id": "624250e7e6269b0014046288",
+          "displayName": "ExcelBabo(엑셀바보)"
+        },
+        "ProductV3:62879a33b4aca0000e397b20": {
+          "__typename": "ProductV3",
+          "_id": "62879a33b4aca0000e397b20",
+          "title": "<엑셀 중급 활용법> 일잘러가 되기 위한 엑셀 파워피벗, 파워쿼리",
+          "coverImageUrl": "https://cdn.class101.net/images/60e42ec4-342f-426f-ad07-d6d3c59155a7",
+          "klassId": "62879a33b4aca0000e397b1d",
+          "likedCount": 3959,
+          "firestoreId": "TaePgy1fqVPvqeXcffaq",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:624250e7e6269b0014046288"
+          }
+        },
+        "User:6047b46529ff9e0015bf6469": {
+          "__typename": "User",
+          "_id": "6047b46529ff9e0015bf6469",
+          "displayName": "슬기로운통계생활"
+        },
+        "ProductV3:60623f779b096c000d2bcf41": {
+          "__typename": "ProductV3",
+          "_id": "60623f779b096c000d2bcf41",
+          "title": "직접 보고 느끼는 기초 통계 이론 완성",
+          "coverImageUrl": "https://cdn.class101.net/images/073c0e2b-9f91-4967-9da4-e8115ceacfad",
+          "klassId": "60623f779b096c000d2bcf40",
+          "likedCount": 3451,
+          "firestoreId": "KPnf4UUk6KAvPrZSeHza",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6047b46529ff9e0015bf6469"
+          }
+        },
+        "User:60607f8d7277570015df3238": {
+          "__typename": "User",
+          "_id": "60607f8d7277570015df3238",
+          "displayName": "데이터 마케팅 공부방"
+        },
+        "ProductV3:62c6ef753d1c7e001547848e": {
+          "__typename": "ProductV3",
+          "_id": "62c6ef753d1c7e001547848e",
+          "title": "유니콘 기업 데이터 분석가의 <엑셀로 하는 마케팅 데이터 분석>",
+          "coverImageUrl": "https://cdn.class101.net/images/9ca29878-c05f-45ca-943e-ebcc9952967b",
+          "klassId": "62c6ef753d1c7e001547848b",
+          "likedCount": 3341,
+          "firestoreId": "p23HGmHtGLFYCBvIzzE0",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60607f8d7277570015df3238"
+          }
+        },
+        "User:60f1115d7d31890014e5a184": {
+          "__typename": "User",
+          "_id": "60f1115d7d31890014e5a184",
+          "displayName": "윤혜"
+        },
+        "ProductV3:61206f8dad2cc2000ddc806f": {
+          "__typename": "ProductV3",
+          "_id": "61206f8dad2cc2000ddc806f",
+          "title": "기획자/마케터를 위한 실무 SQL, 기초부터 탄탄하게 배우기",
+          "coverImageUrl": "https://cdn.class101.net/images/497c24aa-9c75-4ed4-9d0a-c7b7f592cddc",
+          "klassId": "61206f8dad2cc2000ddc806a",
+          "likedCount": 3191,
+          "firestoreId": "QBtiDaMI9GPPfGbH8sJi",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60f1115d7d31890014e5a184"
+          }
+        },
+        "User:5f35f5b528ebd3002bbb25aa": {
+          "__typename": "User",
+          "_id": "5f35f5b528ebd3002bbb25aa",
+          "displayName": "코리"
+        },
+        "ProductV3:627c5c0bcc30110015949c92": {
+          "__typename": "ProductV3",
+          "_id": "627c5c0bcc30110015949c92",
+          "title": "[SQLD 올인원] 단 하나의 클래스로 끝내는 SQL 개발자(SQLD) 자격 시험",
+          "coverImageUrl": "https://cdn.class101.net/images/aac2949c-06f5-4241-976e-ba4e6293a10f",
+          "klassId": "627c5c0bcc30110015949c8f",
+          "likedCount": 2675,
+          "firestoreId": "eLZQCh5389lYoyEeBLnM",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f35f5b528ebd3002bbb25aa"
+          }
+        },
+        "User:6049c0dfe98b46000e071f4c": {
+          "__typename": "User",
+          "_id": "6049c0dfe98b46000e071f4c",
+          "displayName": "데이터 라떼"
+        },
+        "ProductV3:605aa9e4ac70fc000e4aa93e": {
+          "__typename": "ProductV3",
+          "_id": "605aa9e4ac70fc000e4aa93e",
+          "title": "저자직강, 입문자를 위한 데이터 분석 준전문가(ADsP) 자격증 따기",
+          "coverImageUrl": "https://cdn.class101.net/images/dfbc7484-2cc0-4cef-a9f9-ef1e5a63f2d1",
+          "klassId": "605aa9e4ac70fc000e4aa93d",
+          "likedCount": 2625,
+          "firestoreId": "TZXrPtZXgt5YIo5vQytu",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6049c0dfe98b46000e071f4c"
+          }
+        },
+        "User:5fa9d8f23e563c000d475a15": {
+          "__typename": "User",
+          "_id": "5fa9d8f23e563c000d475a15",
+          "displayName": "알파돌"
+        },
+        "ProductV3:5fb2798aca3e5d000dcbf6e5": {
+          "__typename": "ProductV3",
+          "_id": "5fb2798aca3e5d000dcbf6e5",
+          "title": "서울대 출신 AI 연구직의 세상에서 제일 쉬운 머신러닝 101",
+          "coverImageUrl": "https://cdn.class101.net/images/6461a15e-f56a-4131-80cc-8d8e6c358daf",
+          "klassId": "5fb27988ca3e5d000dcbf6e4",
+          "likedCount": 2350,
+          "firestoreId": "sVojNzLEQ2hHM99g8Qun",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c6"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fa9d8f23e563c000d475a15"
+          }
+        },
+        "User:605d4c127daa30000e8699c7": {
+          "__typename": "User",
+          "_id": "605d4c127daa30000e8699c7",
+          "displayName": "박경아"
+        },
+        "ProductV3:60a9db069579bb001573900e": {
+          "__typename": "ProductV3",
+          "_id": "60a9db069579bb001573900e",
+          "title": "마케터를 위한 데이터 사이언스 입문",
+          "coverImageUrl": "https://cdn.class101.net/images/78272eb2-92ef-4451-8bf1-ce50b51a1e2c",
+          "klassId": "60a9db069579bb001573900d",
+          "likedCount": 2207,
+          "firestoreId": "uwuiopRFpX8bCMkexaGY",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:605d4c127daa30000e8699c7"
+          }
+        },
+        "User:60b2003ac1030500141430df": {
+          "__typename": "User",
+          "_id": "60b2003ac1030500141430df",
+          "displayName": "데이터 스테이션"
+        },
+        "ProductV3:60b202fa16d1610014f95a97": {
+          "__typename": "ProductV3",
+          "_id": "60b202fa16d1610014f95a97",
+          "title": "비전공자를 위한 쉽게 따라하는 파이썬 데이터 분석 기초",
+          "coverImageUrl": "https://cdn.class101.net/images/0d22f550-ec66-4e43-9b47-594c6c88f56a",
+          "klassId": "60b202fa16d1610014f95a96",
+          "likedCount": 1939,
+          "firestoreId": "yFzXJt5lSLawQhex71nt",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60b2003ac1030500141430df"
+          }
+        },
+        "User:620b6f8f5989e800148f7370": {
+          "__typename": "User",
+          "_id": "620b6f8f5989e800148f7370",
+          "displayName": "곽경일 데이터 연구소"
+        },
+        "ProductV3:629eac316a73de003c1ae872": {
+          "__typename": "ProductV3",
+          "_id": "629eac316a73de003c1ae872",
+          "title": "프로그래밍 1위 강사와 함께 <파이썬 기초부터 시작하는 데이터 마이닝>",
+          "coverImageUrl": "https://cdn.class101.net/images/d66ba079-3040-4b3c-a30a-6b9547e9dbbf",
+          "klassId": "629eac316a73de003c1ae86f",
+          "likedCount": 1913,
+          "firestoreId": "FtmqZqJzUADelAoelGFm",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:620b6f8f5989e800148f7370"
+          }
+        },
+        "User:60365a8f40a313000edc1cc9": {
+          "__typename": "User",
+          "_id": "60365a8f40a313000edc1cc9",
+          "displayName": "Bryan"
+        },
+        "ProductV3:60365acbd1c881000ef94e34": {
+          "__typename": "ProductV3",
+          "_id": "60365acbd1c881000ef94e34",
+          "title": "태블로, 설치부터 대시보드까지: 데이터 시각화 올인원 패키지",
+          "coverImageUrl": "https://cdn.class101.net/images/eb87268d-83dc-4ad0-98f5-0fb6e38b0e23",
+          "klassId": "60365acbd1c881000ef94e33",
+          "likedCount": 1871,
+          "firestoreId": "hrdJP4TPbEae4sUrVOxZ",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60365a8f40a313000edc1cc9"
+          }
+        },
+        "User:5e61a5c847d2740da41ba239": {
+          "__typename": "User",
+          "_id": "5e61a5c847d2740da41ba239",
+          "displayName": "잔재미코딩"
+        },
+        "ProductV3:6369d54568c8d9000e25cec0": {
+          "__typename": "ProductV3",
+          "_id": "6369d54568c8d9000e25cec0",
+          "title": "누적 수강생 6만 명, 잔재미코딩의 파이썬 데이터 분석 \b첫출발 - 데이터과학 전과정 입문",
+          "coverImageUrl": "https://cdn.class101.net/images/457513ad-b9f7-45d7-879b-6a3a9e234488",
+          "klassId": "6369d54568c8d9000e25cebd",
+          "likedCount": 1869,
+          "firestoreId": "rgIzJKpr9SNVRyVMyMmI",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e61a5c847d2740da41ba239"
+          }
+        },
+        "User:5cf7837ef48520f37cdc3c74": {
+          "__typename": "User",
+          "_id": "5cf7837ef48520f37cdc3c74",
+          "displayName": "클래스101"
+        },
+        "ProductV3:64584bb3fa7e16007638db72": {
+          "__typename": "ProductV3",
+          "_id": "64584bb3fa7e16007638db72",
+          "title": "ChatGPT 101 : 직장인, 크리에이터, 기업 비즈니스, 아이교육 활용법",
+          "coverImageUrl": "https://cdn.class101.net/images/eea8c87b-ac2a-4461-a5e1-8674753efd18",
+          "klassId": "64584bb3fa7e16007638db6f",
+          "likedCount": 1669,
+          "firestoreId": "JcqpGBdJ9G6dSTcBOMsW",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cf7837ef48520f37cdc3c74"
+          }
+        },
+        "User:5f2cdfe4a1b9a02eb54e4511": {
+          "__typename": "User",
+          "_id": "5f2cdfe4a1b9a02eb54e4511",
+          "displayName": "AISchool X Daniel Park"
+        },
+        "ProductV3:60dd0ac8f7a94900156f9ca4": {
+          "__typename": "ProductV3",
+          "_id": "60dd0ac8f7a94900156f9ca4",
+          "title": " 비전공자·문과생을 위한 주식·마케팅 데이터로 배우는 Python 실전 데이터 분석 입문",
+          "coverImageUrl": "https://cdn.class101.net/images/c41412e0-3cc1-4c92-8af7-6603a9ea10ec",
+          "klassId": "60dd0ac8f7a94900156f9c98",
+          "likedCount": 1527,
+          "firestoreId": "17RuZDmjJL0LGWcXvglH",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f2cdfe4a1b9a02eb54e4511"
+          }
+        },
+        "ProductV3:644b4cc59c30fd000fe4eb67": {
+          "__typename": "ProductV3",
+          "_id": "644b4cc59c30fd000fe4eb67",
+          "title": "IT 전문 기자의 ChatGPT 활용법: AI 세계에 첫 발 딛기",
+          "coverImageUrl": "https://cdn.class101.net/images/a88d1257-34e1-474e-bc12-b02c7fa607f8",
+          "klassId": "644b4cc59c30fd000fe4eb64",
+          "likedCount": 1427,
+          "firestoreId": "meUapVWu7PQzttuilpEJ",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cf7837ef48520f37cdc3c74"
+          }
+        },
+        "User:62834946d72b3c0015a34b33": {
+          "__typename": "User",
+          "_id": "62834946d72b3c0015a34b33",
+          "displayName": "친절한 미정"
+        },
+        "ProductV3:62834a3531c628000e1cefa8": {
+          "__typename": "ProductV3",
+          "_id": "62834a3531c628000e1cefa8",
+          "title": "<친절한 AI> 마이크로소프트 AI MVP 개발자와 함께 인공지능 이해하기",
+          "coverImageUrl": "https://cdn.class101.net/images/e5ca476a-6153-40a2-85e6-adcf25006ad7",
+          "klassId": "62834a3531c628000e1cefa5",
+          "likedCount": 1410,
+          "firestoreId": "9nX65OzkW9Zjn3VvwxmY",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62834946d72b3c0015a34b33"
+          }
+        },
+        "User:618c65e9560e700015798b24": {
+          "__typename": "User",
+          "_id": "618c65e9560e700015798b24",
+          "displayName": "데이터 리차드"
+        },
+        "ProductV3:61a50aa07543740015dee9e7": {
+          "__typename": "ProductV3",
+          "_id": "61a50aa07543740015dee9e7",
+          "title": "datarichard와 데이터 분석가 따라하기! [SQL + Power BI]",
+          "coverImageUrl": "https://cdn.class101.net/images/702149f4-d46b-47f9-af74-5231a41d8b88",
+          "klassId": "61a50aa07543740015dee9e2",
+          "likedCount": 1367,
+          "firestoreId": "yse7gv1a8lmuLKa9v9sX",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:618c65e9560e700015798b24"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "62206086d39299379ee5b83a"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

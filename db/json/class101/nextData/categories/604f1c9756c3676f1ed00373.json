@@ -1,0 +1,821 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed00373"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed00373\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed00373\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVlNzNmMDljMTQ4MzcwZDlkZTRmNTBkX19DVVJTT1JfREVMSU1JVEVSX18yMzc0N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ee73f09c148370d9de4f50d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA1MDRlOTA2OWI0NDQwMDBkNjNjMDc5X19DVVJTT1JfREVMSU1JVEVSX18xNjk5OF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:60504e9069b444000d63c079"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUxMmU3NmZmNjRiY2EwZDk4NWJiMmU5X19DVVJTT1JfREVMSU1JVEVSX18xNDU2OF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e12e76ff64bca0d985bb2e9"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJiMmFkZTE4OTM1OTAwMDE1OWUxMDdmX19DVVJTT1JfREVMSU1JVEVSX18xMzQwOF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:62b2ade189359000159e107f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZjNGJlMDNkNDFjZjkwMDBkOWI0Yjk2X19DVVJTT1JfREVMSU1JVEVSX18xMzIwNl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5fc4be03d41cf9000d9b4b96"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVhOTEyODQ0YzMwZTkyZGFlYmYwMGI0X19DVVJTT1JfREVMSU1JVEVSX18xMjQwOF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ea912844c30e92daebf00b4"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVhZmQ3YzRlNjA5Y2M1OTJmMTM0MzJiX19DVVJTT1JfREVMSU1JVEVSX18xMjA2NV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5eafd7c4e609cc592f13432b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjIxZTU3Yzg3YTc3MjMwMDBkYzcyNGUwX19DVVJTT1JfREVMSU1JVEVSX18xMDQ3Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:621e57c87a7723000dc724e0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjNiY2NkZDlkYmY1YzYwMDE2MjJkOGE2X19DVVJTT1JfREVMSU1JVEVSX185NTEzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:63bccdd9dbf5c6001622d8a6"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MGE3NGVhYmNmZGFmZDM5YzMyX19DVVJTT1JfREVMSU1JVEVSX185MTQzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5c5d780a74eabcfdafd39c32"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVhZmE0YTA4NDg5MjkwZGFhNDU3NmViX19DVVJTT1JfREVMSU1JVEVSX185MDkwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5eafa4a08489290daa4576eb"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjQxMjcyMDkyODgyNzMwMDE1N2UwNTg2X19DVVJTT1JfREVMSU1JVEVSX182OTA4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6412720928827300157e0586"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjQxMjcyMjk5MzRiNWUwMDBlMmYzZmQwX19DVVJTT1JfREVMSU1JVEVSX182MDI2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:64127229934b5e000e2f3fd0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFmNjM3YzlkNjljNzAwMDE0MmJkNTIyX19DVVJTT1JfREVMSU1JVEVSX181OTE2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61f637c9d69c7000142bd522"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjExMjJmMzg5NjkyYjYwMDE0YmVkYmI1X19DVVJTT1JfREVMSU1JVEVSX181NzAwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61122f389692b60014bedbb5"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAyZjAxN2IzM2U5MGUwMDBkZjI3MTMxX19DVVJTT1JfREVMSU1JVEVSX181NDM5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:602f017b33e90e000df27131"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ2MTA4NGYxZjE2OTMwN2U2ZTQzOTMxX19DVVJTT1JfREVMSU1JVEVSX181NDE1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5d61084f1f169307e6e43931"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY1NjBlZTUwMzhlNDQwMDBjNGEyZGFjX19DVVJTT1JfREVMSU1JVEVSX181MzY1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f560ee5038e44000c4a2dac"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY5MDI1OTNiOWE2ODIwMDBkYjUxMmY3X19DVVJTT1JfREVMSU1JVEVSX181MDk0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f902593b9a682000db512f7"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjQxMjcyYjYwNGFhYmYwMDE2MjY0OGU5X19DVVJTT1JfREVMSU1JVEVSX180ODA4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:641272b604aabf00162648e9"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjQxMjcyYjYwNGFhYmYwMDE2MjY0OGU5X19DVVJTT1JfREVMSU1JVEVSX180ODA4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NWVlNzNmMDljMTQ4MzcwZDlkZTRmNTBkX19DVVJTT1JfREVMSU1JVEVSX18yMzc0N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:605c3db737b977e02654405e": {
+          "__typename": "CategoryV2",
+          "id": "605c3db737b977e02654405e",
+          "title": "크리에이티브",
+          "depth": 0
+        },
+        "CategoryV2:604f1c9756c3676f1ed00374": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00374",
+          "title": "요가",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00375": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00375",
+          "title": "필라테스",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00376": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00376",
+          "title": "발레",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00377": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00377",
+          "title": "순환 · 스트레칭",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00378": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00378",
+          "title": "재활 · 자세 개선",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00379": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00379",
+          "title": "피트니스",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0037b": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0037b",
+          "title": "러닝 · 사이클",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0037c": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0037c",
+          "title": "스포츠",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0037d": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0037d",
+          "title": "더 새로운 운동",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00373"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00373": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00373",
+          "title": "운동",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00374"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00375"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00376"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00377"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00378"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00379"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037b"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037c"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037d"
+            }
+          ]
+        },
+        "User:5f0d0f6819e366d0b481dbb1": {
+          "__typename": "User",
+          "_id": "5f0d0f6819e366d0b481dbb1",
+          "displayName": "제이제이살롱드핏"
+        },
+        "ProductV3:5ee73f09c148370d9de4f50d": {
+          "__typename": "ProductV3",
+          "_id": "5ee73f09c148370d9de4f50d",
+          "title": "운동 효과가 눈으로 증명되는 제이제이의 고강도 홈트레이닝 ",
+          "coverImageUrl": "https://cdn.class101.net/images/063d46a8-fd22-4a1a-9715-0f73ed39255c",
+          "klassId": "5ee73f09c148370d9de4f50c",
+          "likedCount": 23747,
+          "firestoreId": "G6cVpi6ydB81rm1P412K",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00379"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f0d0f6819e366d0b481dbb1"
+          }
+        },
+        "User:5eb8113b67be5d18ede61d63": {
+          "__typename": "User",
+          "_id": "5eb8113b67be5d18ede61d63",
+          "displayName": "피지컬갤러리"
+        },
+        "ProductV3:60504e9069b444000d63c079": {
+          "__typename": "ProductV3",
+          "_id": "60504e9069b444000d63c079",
+          "title": "망가진 당신의 몸을 구해드립니다. [피지컬갤러리 체형 교정 클래스]",
+          "coverImageUrl": "https://cdn.class101.net/images/d71dde34-8908-4fc1-9ba9-9bc61b7c8786",
+          "klassId": "60504e9069b444000d63c078",
+          "likedCount": 16998,
+          "firestoreId": "ClwwIYZSELEklIAie7uB",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00378"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5eb8113b67be5d18ede61d63"
+          }
+        },
+        "User:5e0ddbf189df210dafd6751f": {
+          "__typename": "User",
+          "_id": "5e0ddbf189df210dafd6751f",
+          "displayName": "Beaurit"
+        },
+        "ProductV3:5e12e76ff64bca0d985bb2e9": {
+          "__typename": "ProductV3",
+          "_id": "5e12e76ff64bca0d985bb2e9",
+          "title": "체형을 바로잡는 홈필라테스, 뷰릿",
+          "coverImageUrl": "https://cdn.class101.net/images/0b79b0a3-cb5f-4ba1-8c30-a2decc0baddd",
+          "klassId": "5e12e76ff64bca0d985bb2e8",
+          "likedCount": 14568,
+          "firestoreId": "Ukf3kg0HRhgsL4shU7Fy",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00375"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e0ddbf189df210dafd6751f"
+          }
+        },
+        "User:5e5874f9efc6fb0d9b7625ce": {
+          "__typename": "User",
+          "_id": "5e5874f9efc6fb0d9b7625ce",
+          "displayName": "물리치료사 권도수"
+        },
+        "ProductV3:62b2ade189359000159e107f": {
+          "__typename": "ProductV3",
+          "_id": "62b2ade189359000159e107f",
+          "title": "권도수의 [목,어깨 집중 프로젝트] : 망가진 자세로 하루를 보내는 나를 위한 셀프 관리",
+          "coverImageUrl": "https://cdn.class101.net/images/0f25f15c-dfba-4ba1-979f-24a88809e665",
+          "klassId": "62b2ade189359000159e107c",
+          "likedCount": 13408,
+          "firestoreId": "3Nv93F5Ki7WMORqmGwdj",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00378"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e5874f9efc6fb0d9b7625ce"
+          }
+        },
+        "User:5fa913cf18a5eb001313fa05": {
+          "__typename": "User",
+          "_id": "5fa913cf18a5eb001313fa05",
+          "displayName": "스트레칭조이"
+        },
+        "ProductV3:5fc4be03d41cf9000d9b4b96": {
+          "__typename": "ProductV3",
+          "_id": "5fc4be03d41cf9000d9b4b96",
+          "title": "오프라인 누적 수강생 7천여명이 선택한 '스트레칭조이'의 다리찢기 프로젝트",
+          "coverImageUrl": "https://cdn.class101.net/images/458e1b38-4b3f-42b7-86aa-e6ec769213b8",
+          "klassId": "5fc4be03d41cf9000d9b4b95",
+          "likedCount": 13206,
+          "firestoreId": "MeWbxFNvpDjWA67CWylo",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00377"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fa913cf18a5eb001313fa05"
+          }
+        },
+        "User:5ea159a33bf0b776737e31c4": {
+          "__typename": "User",
+          "_id": "5ea159a33bf0b776737e31c4",
+          "displayName": "라라 다이어트"
+        },
+        "ProductV3:5ea912844c30e92daebf00b4": {
+          "__typename": "ProductV3",
+          "_id": "5ea912844c30e92daebf00b4",
+          "title": "하체 비만 탈출을 위한 모든 것!, 라라쌤의 실패없는 100일 하체 다이어트",
+          "coverImageUrl": "https://cdn.class101.net/images/9681986f-32be-40e6-8e16-0cf07c82c8c3",
+          "klassId": "5ea912844c30e92daebf00b3",
+          "likedCount": 12408,
+          "firestoreId": "8gHUPtoSEVp41qglC9e5",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00379"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ea159a33bf0b776737e31c4"
+          }
+        },
+        "User:5ea6423767be5d18ed2f7ca0": {
+          "__typename": "User",
+          "_id": "5ea6423767be5d18ed2f7ca0",
+          "displayName": "양치승"
+        },
+        "ProductV3:5eafd7c4e609cc592f13432b": {
+          "__typename": "ProductV3",
+          "_id": "5eafd7c4e609cc592f13432b",
+          "title": "양치승의 지옥 헬스 PT 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/cb925995-cae6-413c-a154-5c888d02f296",
+          "klassId": "5eafd7c4e609cc592f13432a",
+          "likedCount": 12065,
+          "firestoreId": "tMpS2UDOhHbbxevGMOi5",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00379"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ea6423767be5d18ed2f7ca0"
+          }
+        },
+        "User:621e57928ccdd7000ddde811": {
+          "__typename": "User",
+          "_id": "621e57928ccdd7000ddde811",
+          "displayName": "운동하는데이브"
+        },
+        "ProductV3:621e57c87a7723000dc724e0": {
+          "__typename": "ProductV3",
+          "_id": "621e57c87a7723000dc724e0",
+          "title": "통증의 원인은 골반 틀어짐? 하루 10분, <골반 바로잡기 프로젝트>",
+          "coverImageUrl": "https://cdn.class101.net/images/f3e6ce87-9561-4a1b-bc7b-0ec6f47c38f4",
+          "klassId": "621e57c87a7723000dc724dd",
+          "likedCount": 10476,
+          "firestoreId": "fY9Pl0H4Xx2Wkb6dcrJA",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00378"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:621e57928ccdd7000ddde811"
+          }
+        },
+        "User:5f08351919e366d0b49fa0cc": {
+          "__typename": "User",
+          "_id": "5f08351919e366d0b49fa0cc",
+          "displayName": "벨라 (이민진)"
+        },
+        "ProductV3:63bccdd9dbf5c6001622d8a6": {
+          "__typename": "ProductV3",
+          "_id": "63bccdd9dbf5c6001622d8a6",
+          "title": "여리탄탄! 체형을 바꾸는 바디라인 재창조 프로젝트",
+          "coverImageUrl": "https://cdn.class101.net/images/c3afe39b-01f8-4654-8af2-187f4e0f72a3",
+          "klassId": "63bccdd9dbf5c6001622d8a3",
+          "likedCount": 9513,
+          "firestoreId": "pwW00ywUjeHFtPVS7imY",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00378"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f08351919e366d0b49fa0cc"
+          }
+        },
+        "User:5c5d623f74eabcfdafcb015e": {
+          "__typename": "User",
+          "_id": "5c5d623f74eabcfdafcb015e",
+          "displayName": "요가소년"
+        },
+        "ProductV3:5c5d780a74eabcfdafd39c32": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780a74eabcfdafd39c32",
+          "title": "하루 10분, 요가로 찾은 내 몸의 선",
+          "coverImageUrl": "https://cdn.class101.net/images/e2dd99ba-8156-4196-9352-1e9efff40706",
+          "klassId": "5c514d80d30c532c44694695",
+          "likedCount": 9143,
+          "firestoreId": "yoga",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00374"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d623f74eabcfdafcb015e"
+          }
+        },
+        "User:5eafa3b967be5d18ed7704e2": {
+          "__typename": "User",
+          "_id": "5eafa3b967be5d18ed7704e2",
+          "displayName": "렛츠발레핏 푸름샘"
+        },
+        "ProductV3:5eafa4a08489290daa4576eb": {
+          "__typename": "ProductV3",
+          "_id": "5eafa4a08489290daa4576eb",
+          "title": "바른 자세와 다이어트를 한번에! 발레 홈트레이닝",
+          "coverImageUrl": "https://cdn.class101.net/images/c519f1df-5697-4899-ad3b-cb9daffa9b4d",
+          "klassId": "5eafa4a08489290daa4576ea",
+          "likedCount": 9090,
+          "firestoreId": "0pbOf6GDGRj2Anb7v4FP",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00376"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5eafa3b967be5d18ed7704e2"
+          }
+        },
+        "User:60a638afee1114000e0cf84b": {
+          "__typename": "User",
+          "_id": "60a638afee1114000e0cf84b",
+          "displayName": "강하나 스트레칭"
+        },
+        "ProductV3:6412720928827300157e0586": {
+          "__typename": "ProductV3",
+          "_id": "6412720928827300157e0586",
+          "title": "2023 개정판 국내 1위 강하나 스트레칭 : 군살 제거 편",
+          "coverImageUrl": "https://cdn.class101.net/images/e2b9d9a5-1ec3-4a99-a474-52e961dea8c9",
+          "klassId": "6412720928827300157e0583",
+          "likedCount": 6908,
+          "firestoreId": "lSjfg5JgQVywJQxffsIJ",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00377"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60a638afee1114000e0cf84b"
+          }
+        },
+        "ProductV3:64127229934b5e000e2f3fd0": {
+          "__typename": "ProductV3",
+          "_id": "64127229934b5e000e2f3fd0",
+          "title": "2023 개정판 국내 1위 강하나 스트레칭 : 다이어트 편",
+          "coverImageUrl": "https://cdn.class101.net/images/3bdab6d7-3878-45de-9ed1-63b487f5cb2c",
+          "klassId": "64127229934b5e000e2f3fcd",
+          "likedCount": 6026,
+          "firestoreId": "T2evEiWoOfVdA8scNm0r",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00377"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60a638afee1114000e0cf84b"
+          }
+        },
+        "User:61c4609c376f81000dce3fb0": {
+          "__typename": "User",
+          "_id": "61c4609c376f81000dce3fb0",
+          "displayName": "스튜디오 뉘"
+        },
+        "ProductV3:61f637c9d69c7000142bd522": {
+          "__typename": "ProductV3",
+          "_id": "61f637c9d69c7000142bd522",
+          "title": "거북목, 굽은 등, 말린 어깨를 장착한 운동 초보를 위한 인지 스트레칭 '뉘트'",
+          "coverImageUrl": "https://cdn.class101.net/images/140acbcb-a374-4154-8aae-c82ac8f2ddfa",
+          "klassId": "61f637c9d69c7000142bd51f",
+          "likedCount": 5916,
+          "firestoreId": "PcmBm0ggvv5d3zzIrU7A",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00377"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61c4609c376f81000dce3fb0"
+          }
+        },
+        "User:61122eb9b1bad5001475b123": {
+          "__typename": "User",
+          "_id": "61122eb9b1bad5001475b123",
+          "displayName": "피지오수지"
+        },
+        "ProductV3:61122f389692b60014bedbb5": {
+          "__typename": "ProductV3",
+          "_id": "61122f389692b60014bedbb5",
+          "title": "하루 10분, 바른 골반 만들기 : 피지오 수지의 골반 셀프케어",
+          "coverImageUrl": "https://cdn.class101.net/images/81a4eb5e-4ac6-4fb9-a551-d6628a599077",
+          "klassId": "61122f389692b60014bedbb0",
+          "likedCount": 5700,
+          "firestoreId": "sCXS3EHq0xDRqD8w86pu",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00378"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61122eb9b1bad5001475b123"
+          }
+        },
+        "User:5efeb44619e366d0b4232af9": {
+          "__typename": "User",
+          "_id": "5efeb44619e366d0b4232af9",
+          "displayName": "SNPE"
+        },
+        "ProductV3:602f017b33e90e000df27131": {
+          "__typename": "ProductV3",
+          "_id": "602f017b33e90e000df27131",
+          "title": "역대 최다 수강! 앵콜 기록! SNPE 2탄 고강도 인텐시브 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/fcf5aa66-6061-4bbd-a4e6-24e737c6ba6f",
+          "klassId": "602f017a33e90e000df2710c",
+          "likedCount": 5439,
+          "firestoreId": "PWaZfk0q6JOI8wpoClyC",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00378"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5efeb44619e366d0b4232af9"
+          }
+        },
+        "User:5d6106e11f169307e6d5c7fc": {
+          "__typename": "User",
+          "_id": "5d6106e11f169307e6d5c7fc",
+          "displayName": "옴 고묵 따"
+        },
+        "ProductV3:5d61084f1f169307e6e43931": {
+          "__typename": "ProductV3",
+          "_id": "5d61084f1f169307e6e43931",
+          "title": "내 안의 우주를 만나는 차크라 요가와 명상",
+          "coverImageUrl": "https://cdn.class101.net/images/6b8d53ca-447c-4b3b-aba2-9f5f897cd8a2",
+          "klassId": "5d635ae96c006d0ce3e7fb7c",
+          "likedCount": 5415,
+          "firestoreId": "appi2asmnnurRpIJygIt",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00374"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d6106e11f169307e6d5c7fc"
+          }
+        },
+        "User:5d1988fafd2c83e2ee3c1973": {
+          "__typename": "User",
+          "_id": "5d1988fafd2c83e2ee3c1973",
+          "displayName": "정유승"
+        },
+        "ProductV3:5f560ee5038e44000c4a2dac": {
+          "__typename": "ProductV3",
+          "_id": "5f560ee5038e44000c4a2dac",
+          "title": "누워만 있어도 피로가 풀리는 \"스파인코렉터\" 홈필라테스 배우기",
+          "coverImageUrl": "https://cdn.class101.net/images/82819d98-2b6a-4c0a-af11-c11d967b86ce/2880xauto.webp",
+          "klassId": "5f560ee4038e44000c4a2dab",
+          "likedCount": 5365,
+          "firestoreId": "7YYMWKH6TvFVE5kaHmOt",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00375"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d1988fafd2c83e2ee3c1973"
+          }
+        },
+        "User:5f9025696608700013ef51e3": {
+          "__typename": "User",
+          "_id": "5f9025696608700013ef51e3",
+          "displayName": "발레테라핏"
+        },
+        "ProductV3:5f902593b9a682000db512f7": {
+          "__typename": "ProductV3",
+          "_id": "5f902593b9a682000db512f7",
+          "title": "체중 감량부터 라인 정리까지! 내 체형에 딱 맞춘 '발레 피트니스'",
+          "coverImageUrl": "https://cdn.class101.net/images/b6ccfb7f-8ef4-41d0-9857-50e9abd61a41",
+          "klassId": "5f902591b9a682000db51235",
+          "likedCount": 5094,
+          "firestoreId": "vAmF1hkY1EgZzzkqtzup",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00379"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f9025696608700013ef51e3"
+          }
+        },
+        "ProductV3:641272b604aabf00162648e9": {
+          "__typename": "ProductV3",
+          "_id": "641272b604aabf00162648e9",
+          "title": "2023 개정판 국내 1위 강하나 스트레칭 : 통증제거 편",
+          "coverImageUrl": "https://cdn.class101.net/images/877cbc2e-20ec-4ad8-ac5b-8aebc425917c",
+          "klassId": "641272b604aabf00162648e6",
+          "likedCount": 4808,
+          "firestoreId": "ZNuuL75tRRznZos5F32K",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00377"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60a638afee1114000e0cf84b"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed00373"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

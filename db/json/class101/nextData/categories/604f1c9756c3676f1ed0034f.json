@@ -1,0 +1,819 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed0034f"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed0034f\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed0034f\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVjMGQwM2MzMWEwMjMyNzgxZTI2ODU1X19DVVJTT1JfREVMSU1JVEVSX18yMDc3MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ec0d03c31a0232781e26855"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MGE3NGVhYmNmZGFmZDM5YjFjX19DVVJTT1JfREVMSU1JVEVSX18xNTM1NF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780a74eabcfdafd39b1c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU1NTkwYThjMTYxZTY1M2VhMjcyYjczX19DVVJTT1JfREVMSU1JVEVSX18xNDE5M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e5590a8c161e653ea272b73"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWViZmZiODFkNTA1YzAyNzhlOWQzYWEzX19DVVJTT1JfREVMSU1JVEVSX18xMTY2NF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ebffb81d505c0278e9d3aa3"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MGE3NGVhYmNmZGFmZDM5YjQ0X19DVVJTT1JfREVMSU1JVEVSX184NjI2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5c5d780a74eabcfdafd39b44"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY1ZjEyOTg3ZWUzMGQwMDA3MzM4M2YxX19DVVJTT1JfREVMSU1JVEVSX183NTUyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f5f12987ee30d00073383f1"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU3MWFiM2VkZDEzZjQ2YWExYmJlMWZmX19DVVJTT1JfREVMSU1JVEVSX183MjM2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e71ab3edd13f46aa1bbe1ff"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYzNjMyMmRmNjdiYzkwMDBjNTBlZGY4X19DVVJTT1JfREVMSU1JVEVSX182NzU4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f36322df67bc9000c50edf8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUwMzU0ZjljMmVmNzAzYjU4N2IxZTA1X19DVVJTT1JfREVMSU1JVEVSX182NzIxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e0354f9c2ef703b587b1e05"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZhZDJiY2E0YzliYTMwMDBkYjMwMzcyX19DVVJTT1JfREVMSU1JVEVSX182NjM2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5fad2bca4c9ba3000db30372"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVjNTM1NjNkNzdhNDYwZDk3ZmFmMmQyX19DVVJTT1JfREVMSU1JVEVSX182NTcwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ec53563d77a460d97faf2d2"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDc3NGVhYmNmZGFmZDM5MGZlX19DVVJTT1JfREVMSU1JVEVSX182NTEwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5c5d780774eabcfdafd390fe"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjMyYmJkNWU2ZDMzN2QwMDBmZmNiYWMxX19DVVJTT1JfREVMSU1JVEVSX182NDQ2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:632bbd5e6d337d000ffcbac1"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDc3NGVhYmNmZGFmZDM5MWRhX19DVVJTT1JfREVMSU1JVEVSX182MzkxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5c5d780774eabcfdafd391da"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY1NmVjYzgwNmU4NWUwMDE0ZmI4MTNjX19DVVJTT1JfREVMSU1JVEVSX182MDkyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f56ecc806e85e0014fb813c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUyNzA3ZGJlMmY4YWUyMjA0YjlhOGU4X19DVVJTT1JfREVMSU1JVEVSX181NzczX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e2707dbe2f8ae2204b9a8e8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY5ZmJhZGU3ODVlZjUwMDEzYzFmZWZkX19DVVJTT1JfREVMSU1JVEVSX181NTIzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f9fbade785ef50013c1fefd"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA1MWY2MzUxMmY2YmQwMDBkYTMyYjg5X19DVVJTT1JfREVMSU1JVEVSX181Mzk0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6051f63512f6bd000da32b89"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVjYjY3OGNlZDgzODYyOGVkZmE4NTI2X19DVVJTT1JfREVMSU1JVEVSX181MzMzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ecb678ced838628edfa8526"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDk3NGVhYmNmZGFmZDM5ODU1X19DVVJTT1JfREVMSU1JVEVSX181MjQwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5c5d780974eabcfdafd39855"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NWM1ZDc4MDk3NGVhYmNmZGFmZDM5ODU1X19DVVJTT1JfREVMSU1JVEVSX181MjQwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NWVjMGQwM2MzMWEwMjMyNzgxZTI2ODU1X19DVVJTT1JfREVMSU1JVEVSX18yMDc3MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:605c3db737b977e02654405e": {
+          "__typename": "CategoryV2",
+          "id": "605c3db737b977e02654405e",
+          "title": "크리에이티브",
+          "depth": 0
+        },
+        "CategoryV2:613070fa5b76158cac88345a": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac88345a",
+          "title": "한식",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac88345b": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac88345b",
+          "title": "일식 · 중식",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00351": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00351",
+          "title": "양식",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac88345c": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac88345c",
+          "title": "세계요리",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00356": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00356",
+          "title": "건강 · 다이어트식",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00357": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00357",
+          "title": "비건 · 채소",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac88345d": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac88345d",
+          "title": "도시락 · 케이터링",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0035a": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0035a",
+          "title": "음료 · 술",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00355": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00355",
+          "title": "더 새로운 요리 · 음료",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0034f"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0034f": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0034f",
+          "title": "요리 · 음료",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac88345a"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac88345b"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00351"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac88345c"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00356"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00357"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac88345d"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0035a"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00355"
+            }
+          ]
+        },
+        "User:5e47966fd33444bf3ced5680": {
+          "__typename": "User",
+          "_id": "5e47966fd33444bf3ced5680",
+          "displayName": "리화쌤"
+        },
+        "ProductV3:5ec0d03c31a0232781e26855": {
+          "__typename": "ProductV3",
+          "_id": "5ec0d03c31a0232781e26855",
+          "title": "샐러드만으로 맛과 양 모두 즐기는 샐러드 레시피 & 드레싱 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/ee905c4f-0c4e-4373-baec-189fd0d70ead",
+          "klassId": "5ec0d03c31a0232781e26854",
+          "likedCount": 20770,
+          "firestoreId": "rmnOGYTnVwFJQqStdAig",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00357"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e47966fd33444bf3ced5680"
+          }
+        },
+        "User:5c5d687f74eabcfdafcdf731": {
+          "__typename": "User",
+          "_id": "5c5d687f74eabcfdafcdf731",
+          "displayName": "송셰프"
+        },
+        "ProductV3:5c5d780a74eabcfdafd39b1c": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780a74eabcfdafd39b1c",
+          "title": "혼자서도 잘해요! 송송송 송셰프와 함께하는 혼밥 요리교실",
+          "coverImageUrl": "https://cdn.class101.net/images/71930068-ffb1-44a2-8037-760159c2ccc0",
+          "klassId": "5c514d81d30c532c44694761",
+          "likedCount": 15354,
+          "firestoreId": "smile-cooking",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00355"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d687f74eabcfdafcdf731"
+          }
+        },
+        "User:5cd2100980f6734acec56261": {
+          "__typename": "User",
+          "_id": "5cd2100980f6734acec56261",
+          "displayName": "소자본창업 강사 메이랩"
+        },
+        "ProductV3:5e5590a8c161e653ea272b73": {
+          "__typename": "ProductV3",
+          "_id": "5e5590a8c161e653ea272b73",
+          "title": "피크닉을 부르는 홈 샌드위치, 전문점의 비법을 가득 담아요!",
+          "coverImageUrl": "https://cdn.class101.net/images/98aab32a-896f-4754-aead-b637902f4315/autoxauto.webp",
+          "klassId": "5e5590a8c161e653ea272b72",
+          "likedCount": 14193,
+          "firestoreId": "yvDjDtP359DdbfPleIUf",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88345d"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cd2100980f6734acec56261"
+          }
+        },
+        "User:5ebffab667be5d18ed6da2ec": {
+          "__typename": "User",
+          "_id": "5ebffab667be5d18ed6da2ec",
+          "displayName": "커픽처스"
+        },
+        "ProductV3:5ebffb81d505c0278e9d3aa3": {
+          "__typename": "ProductV3",
+          "_id": "5ebffb81d505c0278e9d3aa3",
+          "title": "취미부터 창업까지, 카페 음료는 '커픽처스'에게 쉽고 꼼꼼하게 배우세요.",
+          "coverImageUrl": "https://cdn.class101.net/images/b3e503b9-f024-4b8d-8d46-989a57fe9a57",
+          "klassId": "5ebffb80d505c0278e9d3aa2",
+          "likedCount": 11664,
+          "firestoreId": "yNr1JKLAIOSfH2qKFDMQ",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0035a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ebffab667be5d18ed6da2ec"
+          }
+        },
+        "User:5c5d60ee74eabcfdafc9d0d6": {
+          "__typename": "User",
+          "_id": "5c5d60ee74eabcfdafc9d0d6",
+          "displayName": "솜솜"
+        },
+        "ProductV3:5c5d780a74eabcfdafd39b44": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780a74eabcfdafd39b44",
+          "title": "어서오세요! 여기는 솜솜네 홈카페입니다.",
+          "coverImageUrl": "https://cdn.class101.net/images/632f230d-abf9-457b-8bcd-7eed2247ccbf",
+          "klassId": "5c514d81d30c532c446947a6",
+          "likedCount": 8626,
+          "firestoreId": "somsom-homecafe",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0035a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d60ee74eabcfdafc9d0d6"
+          }
+        },
+        "User:5f5f12828bca6c0006281ba4": {
+          "__typename": "User",
+          "_id": "5f5f12828bca6c0006281ba4",
+          "displayName": "코우지"
+        },
+        "ProductV3:5f5f12987ee30d00073383f1": {
+          "__typename": "ProductV3",
+          "_id": "5f5f12987ee30d00073383f1",
+          "title": "미슐랭3스타 '칸다' 출신 '코우지 셰프'에게 배우는 스시 오마카세",
+          "coverImageUrl": "https://cdn.class101.net/images/503465de-178e-41cb-85f9-9adc632df214",
+          "klassId": "5f5f12977ee30d00073383f0",
+          "likedCount": 7552,
+          "firestoreId": "gMFZkdSdUWJdRkZSnKC5",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88345b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f5f12828bca6c0006281ba4"
+          }
+        },
+        "User:5e5f40da53b45b0dc5a34e1a": {
+          "__typename": "User",
+          "_id": "5e5f40da53b45b0dc5a34e1a",
+          "displayName": "취미로 요리하는 남자"
+        },
+        "ProductV3:5e71ab3edd13f46aa1bbe1ff": {
+          "__typename": "ProductV3",
+          "_id": "5e71ab3edd13f46aa1bbe1ff",
+          "title": "취미로 요리하는 남자의 취미로 하는 수비드 고기 요리",
+          "coverImageUrl": "https://cdn.class101.net/images/2fb3ce5e-d03d-49fd-a0df-5264518dc6bc",
+          "klassId": "5e71ab3edd13f46aa1bbe1fe",
+          "likedCount": 7236,
+          "firestoreId": "4f7x5BrM4d5LRLCTliO1",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00351"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e5f40da53b45b0dc5a34e1a"
+          }
+        },
+        "User:5f3632190e6cae0021228b9c": {
+          "__typename": "User",
+          "_id": "5f3632190e6cae0021228b9c",
+          "displayName": "써니브래드"
+        },
+        "ProductV3:5f36322df67bc9000c50edf8": {
+          "__typename": "ProductV3",
+          "_id": "5f36322df67bc9000c50edf8",
+          "title": "도둑이 빵만 먹다가 돌아간 그 곳! 써니브레드의 글루텐프리 베이킹 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/d05c5002-6f2a-4b21-b0fc-889950e1748e",
+          "klassId": "5f36322df67bc9000c50edf7",
+          "likedCount": 6758,
+          "firestoreId": "Aol6pkq3H7aNT2ULxjpw",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00357"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f3632190e6cae0021228b9c"
+          }
+        },
+        "User:5c5d6fdb74eabcfdafd08765": {
+          "__typename": "User",
+          "_id": "5c5d6fdb74eabcfdafd08765",
+          "displayName": "yona"
+        },
+        "ProductV3:5e0354f9c2ef703b587b1e05": {
+          "__typename": "ProductV3",
+          "_id": "5e0354f9c2ef703b587b1e05",
+          "title": "삶의 요령이 쌓이는 채소반찬 요리",
+          "coverImageUrl": "https://cdn.class101.net/images/c1435956-a8fa-466a-920b-b7492fedb333",
+          "klassId": "5e0354f9c2ef703b587b1e04",
+          "likedCount": 6721,
+          "firestoreId": "VqcVY2vTVI26PwzOmVU5",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00357"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d6fdb74eabcfdafd08765"
+          }
+        },
+        "User:5ec3f85c67be5d18edf3f79b": {
+          "__typename": "User",
+          "_id": "5ec3f85c67be5d18edf3f79b",
+          "displayName": "김밀란"
+        },
+        "ProductV3:5fad2bca4c9ba3000db30372": {
+          "__typename": "ProductV3",
+          "_id": "5fad2bca4c9ba3000db30372",
+          "title": "이탈리아 현지 미슐랭 요리사에게 배우는 파스타, 뇨끼, 리조또! 프리미 피아띠 정복하기",
+          "coverImageUrl": "https://cdn.class101.net/images/4721b28c-b625-4039-9583-f792e2d4461d",
+          "klassId": "5fad2bc94c9ba3000db30340",
+          "likedCount": 6636,
+          "firestoreId": "bzLQxWmgQwSyuLPVVSgT",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00351"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ec3f85c67be5d18edf3f79b"
+          }
+        },
+        "ProductV3:5ec53563d77a460d97faf2d2": {
+          "__typename": "ProductV3",
+          "_id": "5ec53563d77a460d97faf2d2",
+          "title": "미슐랭 요리사, 김밀란과 함께 하는 이탈리아 가정식 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/a66e1737-c1b3-41eb-8790-03d35011e0ab",
+          "klassId": "5ec53563d77a460d97faf2d1",
+          "likedCount": 6570,
+          "firestoreId": "RUO08sqBEkoQRHEXVYq1",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00351"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ec3f85c67be5d18edf3f79b"
+          }
+        },
+        "ProductV3:5c5d780774eabcfdafd390fe": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780774eabcfdafd390fe",
+          "title": "요나와 함께하는 재료의 산책, 봄과 여름의 채소 요리",
+          "coverImageUrl": "https://cdn.class101.net/images/a2baed74-85b0-4688-a3ff-1db6595cc06c",
+          "klassId": "5ca591086008dd782aa151c6",
+          "likedCount": 6510,
+          "firestoreId": "HtEba9WtklDYfPxzqCHB",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00357"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d6fdb74eabcfdafd08765"
+          }
+        },
+        "User:63214fbd8bd9050015ffb209": {
+          "__typename": "User",
+          "_id": "63214fbd8bd9050015ffb209",
+          "displayName": "쿠니쿠니"
+        },
+        "ProductV3:632bbd5e6d337d000ffcbac1": {
+          "__typename": "ProductV3",
+          "_id": "632bbd5e6d337d000ffcbac1",
+          "title": "하루 10분! 맛과 건강을 모두 챙긴 초간단 다이어트 요리 ",
+          "coverImageUrl": "https://cdn.class101.net/images/158881aa-a5b3-4df2-aad2-e0be9b45abb4",
+          "klassId": "632bbd5e6d337d000ffcbabe",
+          "likedCount": 6446,
+          "firestoreId": "MsSxdD4zXzbwslFSv2tL",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00356"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:63214fbd8bd9050015ffb209"
+          }
+        },
+        "User:5c5d60c574eabcfdafc98166": {
+          "__typename": "User",
+          "_id": "5c5d60c574eabcfdafc98166",
+          "displayName": "chobchop"
+        },
+        "ProductV3:5c5d780774eabcfdafd391da": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780774eabcfdafd391da",
+          "title": "찹찹테이블의 눈과 입이 행복한 건강식 레시피",
+          "coverImageUrl": "https://cdn.class101.net/images/4579b052-cb88-428c-9067-897004bffafb",
+          "klassId": "5c6f91d174eabcfdafa1e57c",
+          "likedCount": 6391,
+          "firestoreId": "ORyv8X6Gbni7CqT3USqr",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00356"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d60c574eabcfdafc98166"
+          }
+        },
+        "User:5eca6d31724acc42a469fcfe": {
+          "__typename": "User",
+          "_id": "5eca6d31724acc42a469fcfe",
+          "displayName": "무니키친"
+        },
+        "ProductV3:5f56ecc806e85e0014fb813c": {
+          "__typename": "ProductV3",
+          "_id": "5f56ecc806e85e0014fb813c",
+          "title": "먹으면서 살빠지는 저탄수화물 레시피, 전세계 가정식으로 만나보세요.",
+          "coverImageUrl": "https://cdn.class101.net/images/5113a76d-bfea-47e9-8444-5dadd0b6ed38",
+          "klassId": "5f56ecc706e85e0014fb813b",
+          "likedCount": 6092,
+          "firestoreId": "WhSpqO9qMxOq9Zaf0DxV",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00356"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5eca6d31724acc42a469fcfe"
+          }
+        },
+        "User:5d8afd0dead47c70514ccc6e": {
+          "__typename": "User",
+          "_id": "5d8afd0dead47c70514ccc6e",
+          "displayName": "티애나"
+        },
+        "ProductV3:5e2707dbe2f8ae2204b9a8e8": {
+          "__typename": "ProductV3",
+          "_id": "5e2707dbe2f8ae2204b9a8e8",
+          "title": "전문 티블렌더와 함께하는 일상 속 Tea Life 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/a35d121a-4a85-4ff8-9b8e-b6a8e1b43bfa",
+          "klassId": "5e2707dbe2f8ae2204b9a8e7",
+          "likedCount": 5773,
+          "firestoreId": "lnKRBrPsu8LQN5EaQvAO",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0035a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d8afd0dead47c70514ccc6e"
+          }
+        },
+        "User:5f642796c8f4b40006f3f8e8": {
+          "__typename": "User",
+          "_id": "5f642796c8f4b40006f3f8e8",
+          "displayName": "올띵스그린"
+        },
+        "ProductV3:5f9fbade785ef50013c1fefd": {
+          "__typename": "ProductV3",
+          "_id": "5f9fbade785ef50013c1fefd",
+          "title": "우리집도 브런치 맛집! 요리의 기초부터 빠르고 간단하게 [호주 Le Cordon Bleu]",
+          "coverImageUrl": "https://cdn.class101.net/images/c677aed9-1794-4e6e-aa81-d117bbe93914",
+          "klassId": "5f9fbadd785ef50013c1f9bf",
+          "likedCount": 5523,
+          "firestoreId": "HAsBhyypaBqQ7DIj3SuK",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00351"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f642796c8f4b40006f3f8e8"
+          }
+        },
+        "ProductV3:6051f63512f6bd000da32b89": {
+          "__typename": "ProductV3",
+          "_id": "6051f63512f6bd000da32b89",
+          "title": "샐러드를 무궁무진하게 확장하는 법! 이 모든 걸 샐러드로 만들 수 있다고?",
+          "coverImageUrl": "https://cdn.class101.net/images/f608ea2d-7bce-43f7-b496-3d823c6162bf",
+          "klassId": "6051f63512f6bd000da32b88",
+          "likedCount": 5394,
+          "firestoreId": "4IRFvYQUJIJ3f2ePxUkh",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00356"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e47966fd33444bf3ced5680"
+          }
+        },
+        "User:5ec4b0aa67be5d18edcd360b": {
+          "__typename": "User",
+          "_id": "5ec4b0aa67be5d18edcd360b",
+          "displayName": "후니아재"
+        },
+        "ProductV3:5ecb678ced838628edfa8526": {
+          "__typename": "ProductV3",
+          "_id": "5ecb678ced838628edfa8526",
+          "title": "일본 현지의 프로 요리사에게 배우는, 누구나 만들 수 있는 일본가정식",
+          "coverImageUrl": "https://cdn.class101.net/images/70d3e20b-0c66-4321-be69-6b4f682017d6",
+          "klassId": "5ecb678bed838628edfa8525",
+          "likedCount": 5333,
+          "firestoreId": "9mXllMSB5OiRgIhkt5YA",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88345b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ec4b0aa67be5d18edcd360b"
+          }
+        },
+        "User:63565b10bd4d373237b3355e": {
+          "__typename": "User",
+          "_id": "63565b10bd4d373237b3355e",
+          "displayName": "어바웃 마스"
+        },
+        "ProductV3:5c5d780974eabcfdafd39855": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780974eabcfdafd39855",
+          "title": "Make your own rainbow, 어바웃 마스의 홈 카페 기초",
+          "coverImageUrl": "https://cdn.class101.net/images/1a4d438b-ae7c-442b-acaa-0fa26ccd69cd",
+          "klassId": "5c514d81d30c532c44694795",
+          "likedCount": 5240,
+          "firestoreId": "nZQhUGSIHc9Z397AheNS",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0035a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:63565b10bd4d373237b3355e"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed0034f"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

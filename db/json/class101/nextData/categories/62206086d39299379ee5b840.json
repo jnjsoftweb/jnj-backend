@@ -1,0 +1,717 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "62206086d39299379ee5b840"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"62206086d39299379ee5b840\"})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b840"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"62206086d39299379ee5b840\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNkNTNhNWM4MGY2NzM0YWNlN2Y3MmQ3X19DVVJTT1JfREVMSU1JVEVSX180MjU2Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5cd53a5c80f6734ace7f72d7"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU3OWFkMzdjMjQ5MmExY2VkNDU4ZTA0X19DVVJTT1JfREVMSU1JVEVSX18yNTMzN19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e79ad37c2492a1ced458e04"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI1ODA2YzU1NGM5NzQwMDBlMDUyMDAwX19DVVJTT1JfREVMSU1JVEVSX18yNDgwM19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:625806c554c974000e052000"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU2NzZkOGFlZDQzYmE1NThkNDg4MGQwX19DVVJTT1JfREVMSU1JVEVSX18yMTgwNF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e676d8aed43ba558d4880d0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA2YmNlZGZhYmNiYjIwMDE0NGJlMmEzX19DVVJTT1JfREVMSU1JVEVSX18xNTg0N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:606bcedfabcbb200144be2a3"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY4MmJjNDA4NjU3ZmUwMDc5YjA4ZTYxX19DVVJTT1JfREVMSU1JVEVSX18xMzM4Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f82bc408657fe0079b08e61"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAyZTNkMmI3ZjM1ZjMwMDE1OTU1NzhjX19DVVJTT1JfREVMSU1JVEVSX18xMjUyMl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:602e3d2b7f35f3001595578c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRkYmE3OWYxZjRkNGU0YTg0NzlkYjhkX19DVVJTT1JfREVMSU1JVEVSX18xMjM4N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ddba79f1f4d4e4a8479db8d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAxZTJkZTM4NTk0NmEwMDBkNTUzNDExX19DVVJTT1JfREVMSU1JVEVSX18xMDM0NV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:601e2de385946a000d553411"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjIwOWQ2OTUyYTkwYzYzMmRkNzUzNzhjX19DVVJTT1JfREVMSU1JVEVSX18xMDE3NV9fQ1VSU09SX0RFTElNSVRFUl9fZW4=",
+                "node": {
+                  "__ref": "ProductV3:6209d6952a90c632dd75378c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM4ZjRjNTJlZGIyZDViNWFmNjIzYTAwX19DVVJTT1JfREVMSU1JVEVSX185MDQyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5c8f4c52edb2d5b5af623a00"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWViYTM2MWMwYTkxZTcwZGE3MjAzMDAyX19DVVJTT1JfREVMSU1JVEVSX184NzMwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5eba361c0a91e70da7203002"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJkMWFlZTcyM2M4NjAwMDBlMzk2NjE1X19DVVJTT1JfREVMSU1JVEVSX184MjYwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62d1aee723c860000e396615"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYyM2Q1MTY0MDhiZWMwMDBjZTdiNjJmX19DVVJTT1JfREVMSU1JVEVSX183MTM4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f23d516408bec000ce7b62f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFmYjczMmMxYjYyOTUwMDE0NjgwZGZlX19DVVJTT1JfREVMSU1JVEVSX182OTI5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61fb732c1b62950014680dfe"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYzZjQ4ODRjZWNlZGQwMDEzZDg4ZTczX19DVVJTT1JfREVMSU1JVEVSX182NTU3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f3f4884cecedd0013d88e73"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBmYTcwOTI3YzY4ZWUwMDE0ZDI2MjkxX19DVVJTT1JfREVMSU1JVEVSX182NDI3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60fa70927c68ee0014d26291"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVmMzU5NjgyZWE4NGEwZDc0NzhlZTVhX19DVVJTT1JfREVMSU1JVEVSX182MTY0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ef359682ea84a0d7478ee5a"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBmZDZhNWNiYTIxMTYwMDE0MDE5ZTAzX19DVVJTT1JfREVMSU1JVEVSX182MDYyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60fd6a5cba21160014019e03"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZlNjAxZWY3NWFlNmIwMDE0NDAwM2ZjX19DVVJTT1JfREVMSU1JVEVSX182MDE1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5fe601ef75ae6b00144003fc"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NWZlNjAxZWY3NWFlNmIwMDE0NDAwM2ZjX19DVVJTT1JfREVMSU1JVEVSX182MDE1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NWNkNTNhNWM4MGY2NzM0YWNlN2Y3MmQ3X19DVVJTT1JfREVMSU1JVEVSX180MjU2Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:6220606c1cb1cf4841dbdf8e": {
+          "__typename": "CategoryV2",
+          "id": "6220606c1cb1cf4841dbdf8e",
+          "title": "직무",
+          "depth": 0
+        },
+        "CategoryV2:6220895c9dede0214b0783df": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783df",
+          "title": "영상편집",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b840"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b840"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783e0": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783e0",
+          "title": "모션그래픽",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b840"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b840"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783e1": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783e1",
+          "title": "게임그래픽",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b840"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783e3": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783e3",
+          "title": "3D",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b840"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b840"
+            }
+          ]
+        },
+        "CategoryV2:62206086d39299379ee5b840": {
+          "__typename": "CategoryV2",
+          "id": "62206086d39299379ee5b840",
+          "title": "영상/3D",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783df"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783e0"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783e1"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783e3"
+            }
+          ]
+        },
+        "User:5cc16ebe2cac7d06118b15f3": {
+          "__typename": "User",
+          "_id": "5cc16ebe2cac7d06118b15f3",
+          "displayName": "존코바"
+        },
+        "ProductV3:5cd53a5c80f6734ace7f72d7": {
+          "__typename": "ProductV3",
+          "_id": "5cd53a5c80f6734ace7f72d7",
+          "title": "당신도 할 수 있다! 베테랑 실무자가 알려주는 모션그래픽의 모든 것",
+          "coverImageUrl": "https://cdn.class101.net/images/ef24e009-f592-485e-955d-ed07221fc0bc",
+          "klassId": "5cd53a5c80f6734ace7f7278",
+          "likedCount": 42566,
+          "firestoreId": "euWprzr7oOp0CpidXfEF",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cc16ebe2cac7d06118b15f3"
+          }
+        },
+        "ProductV3:5e79ad37c2492a1ced458e04": {
+          "__typename": "ProductV3",
+          "_id": "5e79ad37c2492a1ced458e04",
+          "title": "더 심화된 모션그래픽, 영상에 전문가처럼 디테일 더하기",
+          "coverImageUrl": "https://cdn.class101.net/images/15a827d3-e309-4215-81e3-a9a6f4e916a6",
+          "klassId": "5e79ad37c2492a1ced458e03",
+          "likedCount": 25337,
+          "firestoreId": "tk9ZcndBfpAWMkcSuln9",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cc16ebe2cac7d06118b15f3"
+          }
+        },
+        "User:6256d2e4b08819000e1e1573": {
+          "__typename": "User",
+          "_id": "6256d2e4b08819000e1e1573",
+          "displayName": "미켈란즈 Mekelranz"
+        },
+        "ProductV3:625806c554c974000e052000": {
+          "__typename": "ProductV3",
+          "_id": "625806c554c974000e052000",
+          "title": "2시간이면 초보 탈출! 300만 채널 PD의 프리미어프로 입문 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/dcdbc949-9c3d-4f65-84a1-a8cd04bb4bc1",
+          "klassId": "625806c554c974000e051ffd",
+          "likedCount": 24803,
+          "firestoreId": "i8x0IrisCNpj1aK0hcXD",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783df"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6256d2e4b08819000e1e1573"
+          }
+        },
+        "User:5d3553b8afd0c40c92d71c5a": {
+          "__typename": "User",
+          "_id": "5d3553b8afd0c40c92d71c5a",
+          "displayName": "박소영"
+        },
+        "ProductV3:5e676d8aed43ba558d4880d0": {
+          "__typename": "ProductV3",
+          "_id": "5e676d8aed43ba558d4880d0",
+          "title": "모션그래픽 훈련! 소스 제작을 포함한 다양한 영상 만들어보기",
+          "coverImageUrl": "https://cdn.class101.net/images/b0910024-e39b-449f-9477-fcce9c3d1fb6",
+          "klassId": "5e676d8aed43ba558d4880cf",
+          "likedCount": 21804,
+          "firestoreId": "kyUf5Ly1YgfPp5KFcH8k",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d3553b8afd0c40c92d71c5a"
+          }
+        },
+        "ProductV3:606bcedfabcbb200144be2a3": {
+          "__typename": "ProductV3",
+          "_id": "606bcedfabcbb200144be2a3",
+          "title": "[템플릿 증정] 29만 명이 인정한 존코바의 모션그래픽 마스터 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/b17623d6-5e56-4ce4-9a89-842e41e458bf",
+          "klassId": "606bcedfabcbb200144be2a2",
+          "likedCount": 15847,
+          "firestoreId": "GknZovLMgdn2kaQfhHDW",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cc16ebe2cac7d06118b15f3"
+          }
+        },
+        "User:5f1c42f219e366d0b41514aa": {
+          "__typename": "User",
+          "_id": "5f1c42f219e366d0b41514aa",
+          "displayName": "띵준이"
+        },
+        "ProductV3:5f82bc408657fe0079b08e61": {
+          "__typename": "ProductV3",
+          "_id": "5f82bc408657fe0079b08e61",
+          "title": "당신의 상상을 현실로! 블렌더로 시작하는 3D 배경 디자인",
+          "coverImageUrl": "https://cdn.class101.net/images/e21702b3-9ebf-414d-89a9-f57f2d1a2021",
+          "klassId": "5f82bc3f8657fe0079b08e55",
+          "likedCount": 13382,
+          "firestoreId": "Nl3FICmR5yj9gDBY3JHt",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f1c42f219e366d0b41514aa"
+          }
+        },
+        "User:602e3d216aba0a000ebf53d3": {
+          "__typename": "User",
+          "_id": "602e3d216aba0a000ebf53d3",
+          "displayName": "호야초"
+        },
+        "ProductV3:602e3d2b7f35f3001595578c": {
+          "__typename": "ProductV3",
+          "_id": "602e3d2b7f35f3001595578c",
+          "title": "현직 10년차 디자이너의 블렌더로 완성하는 3D 애니메이션",
+          "coverImageUrl": "https://cdn.class101.net/images/bb549ac0-36ab-467b-9109-e2aff549aa55",
+          "klassId": "602e3d297f35f30015955588",
+          "likedCount": 12522,
+          "firestoreId": "DnBwkpXT4J3iLHOiTcV8",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e3"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:602e3d216aba0a000ebf53d3"
+          }
+        },
+        "User:5c5d647a74eabcfdafcc43c4": {
+          "__typename": "User",
+          "_id": "5c5d647a74eabcfdafcc43c4",
+          "displayName": "사이"
+        },
+        "ProductV3:5ddba79f1f4d4e4a8479db8d": {
+          "__typename": "ProductV3",
+          "_id": "5ddba79f1f4d4e4a8479db8d",
+          "title": "움직임을 통해 메세지를 전달하는 모션 그래픽",
+          "coverImageUrl": "https://cdn.class101.net/images/b60bf418-5dce-493a-b88c-bd65e970ccf8",
+          "klassId": "5ddba79f1f4d4e4a8479db8c",
+          "likedCount": 12387,
+          "firestoreId": "Jc2kteYpGUvjZR5QT3GS",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d647a74eabcfdafcc43c4"
+          }
+        },
+        "User:5df19c36068cfb0d91f23970": {
+          "__typename": "User",
+          "_id": "5df19c36068cfb0d91f23970",
+          "displayName": "RYU Russell 러셀"
+        },
+        "ProductV3:601e2de385946a000d553411": {
+          "__typename": "ProductV3",
+          "_id": "601e2de385946a000d553411",
+          "title": "섭스턴스 페인터, 클릭 한 번으로 고퀄리티 3D 완성!",
+          "coverImageUrl": "https://cdn.class101.net/images/4d3d25d0-cdd9-40b6-a682-896310a679f5",
+          "klassId": "601e2de285946a000d5530ff",
+          "likedCount": 10345,
+          "firestoreId": "0bTKRwIRLn6b1xp47FB0",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5df19c36068cfb0d91f23970"
+          }
+        },
+        "User:61c7a3b199578400144a008d": {
+          "__typename": "User",
+          "_id": "61c7a3b199578400144a008d",
+          "displayName": "P Kelen"
+        },
+        "ProductV3:6209d6952a90c632dd75378c": {
+          "__typename": "ProductV3",
+          "_id": "6209d6952a90c632dd75378c",
+          "title": "블렌더로 귀여운 3D 일러스트레이션 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/f1ef9d8b-c05c-4798-93bf-97eb5890a1c0",
+          "klassId": "6209d6952a90c632dd753789",
+          "likedCount": 10175,
+          "firestoreId": "0NJWONq5b8QVuWZnQbuJ",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61c7a3b199578400144a008d"
+          }
+        },
+        "User:5c6e3bce74eabcfdaf5a9e86": {
+          "__typename": "User",
+          "_id": "5c6e3bce74eabcfdaf5a9e86",
+          "displayName": "휘핑"
+        },
+        "ProductV3:5c8f4c52edb2d5b5af623a00": {
+          "__typename": "ProductV3",
+          "_id": "5c8f4c52edb2d5b5af623a00",
+          "title": "휘핑의 모션그래픽 꿈나무를 위한 애프터이펙트의 기초",
+          "coverImageUrl": "https://cdn.class101.net/images/177dd305-74e3-47be-8e7d-7b3272806c70",
+          "klassId": "5caa9fc36008dd782a361de6",
+          "likedCount": 9042,
+          "firestoreId": "NsCdQi8TezSVzUP7rcOA",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c6e3bce74eabcfdaf5a9e86"
+          }
+        },
+        "ProductV3:5eba361c0a91e70da7203002": {
+          "__typename": "ProductV3",
+          "_id": "5eba361c0a91e70da7203002",
+          "title": "러셀과 함께 언리얼 엔진으로 나만의 가상 세계 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/b6d21137-4e62-4d6a-9dd6-71cb1bcddf3f",
+          "klassId": "5eba361c0a91e70da7203001",
+          "likedCount": 8730,
+          "firestoreId": "vTjLq98ER90iEgEn5XXf",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e3"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:5df19c36068cfb0d91f23970"
+          }
+        },
+        "User:62d11f1996dea5000e5b1832": {
+          "__typename": "User",
+          "_id": "62d11f1996dea5000e5b1832",
+          "displayName": "김렌더"
+        },
+        "ProductV3:62d1aee723c860000e396615": {
+          "__typename": "ProductV3",
+          "_id": "62d1aee723c860000e396615",
+          "title": "Blender로 배우는 완전 초보자도 쉽게 따라하는 3D 기초",
+          "coverImageUrl": "https://cdn.class101.net/images/8137d95a-e086-462a-a1db-1c6f928952e3",
+          "klassId": "62d1aee723c860000e396612",
+          "likedCount": 8260,
+          "firestoreId": "HhOiDKzqvrs6MxiDuNbG",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62d11f1996dea5000e5b1832"
+          }
+        },
+        "User:5f21a1caa1b9a02eb598ca7a": {
+          "__typename": "User",
+          "_id": "5f21a1caa1b9a02eb598ca7a",
+          "displayName": "레블디자인"
+        },
+        "ProductV3:5f23d516408bec000ce7b62f": {
+          "__typename": "ProductV3",
+          "_id": "5f23d516408bec000ce7b62f",
+          "title": "극강의 리얼리즘 구현, Cinema 4D+Octane 3D 입문클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/3a523966-deca-4a15-a2fc-d90e1c079d02",
+          "klassId": "5f23d515408bec000ce7b45d",
+          "likedCount": 7138,
+          "firestoreId": "po0RnlDQqjZmSqf6Qs11",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e3"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:5f21a1caa1b9a02eb598ca7a"
+          }
+        },
+        "User:61e7b43121a2a30015143efb": {
+          "__typename": "User",
+          "_id": "61e7b43121a2a30015143efb",
+          "displayName": "Adobe"
+        },
+        "ProductV3:61fb732c1b62950014680dfe": {
+          "__typename": "ProductV3",
+          "_id": "61fb732c1b62950014680dfe",
+          "title": "브이로그 제작부터 공모전 수상까지! 프리미어 프로와 애프터 이펙트 활용법",
+          "coverImageUrl": "https://cdn.class101.net/images/6015ed78-8792-4a58-ba14-562aaedef409",
+          "klassId": "61fb732c1b62950014680dfb",
+          "likedCount": 6929,
+          "firestoreId": "wJCpBMYaHiiyFdchkkVS",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783df"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61e7b43121a2a30015143efb"
+          }
+        },
+        "User:5f3f486ececedd0013d8811b": {
+          "__typename": "User",
+          "_id": "5f3f486ececedd0013d8811b",
+          "displayName": "셈프레블루"
+        },
+        "ProductV3:5f3f4884cecedd0013d88e73": {
+          "__typename": "ProductV3",
+          "_id": "5f3f4884cecedd0013d88e73",
+          "title": "웹툰 배경 제작의 필수! 스케치업 첫걸음",
+          "coverImageUrl": "https://cdn.class101.net/images/e21cec94-d415-4c50-92bb-d9580d56d5f3/2048xauto.webp",
+          "klassId": "5f3f4884cecedd0013d88e72",
+          "likedCount": 6557,
+          "firestoreId": "F6xgvoP9kluwjSvpHkV5",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f3f486ececedd0013d8811b"
+          }
+        },
+        "User:60fa707e9c514500148cdf94": {
+          "__typename": "User",
+          "_id": "60fa707e9c514500148cdf94",
+          "displayName": "로펨디"
+        },
+        "ProductV3:60fa70927c68ee0014d26291": {
+          "__typename": "ProductV3",
+          "_id": "60fa70927c68ee0014d26291",
+          "title": "애니메이션, 1인 제작 프로세스 한 번에 끝내기",
+          "coverImageUrl": "https://cdn.class101.net/images/0a07582b-570b-4dc3-939a-94a2a47a9c0e",
+          "klassId": "60fa70927c68ee0014d26290",
+          "likedCount": 6427,
+          "firestoreId": "fGucBxtZ5QOFLq2eDReE",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60fa707e9c514500148cdf94"
+          }
+        },
+        "User:5ef35953c8e0ff351e4a1c86": {
+          "__typename": "User",
+          "_id": "5ef35953c8e0ff351e4a1c86",
+          "displayName": "애니메이터 남"
+        },
+        "ProductV3:5ef359682ea84a0d7478ee5a": {
+          "__typename": "ProductV3",
+          "_id": "5ef359682ea84a0d7478ee5a",
+          "title": "마야로 만드는 피규어 스타일 3D 캐릭터",
+          "coverImageUrl": "https://cdn.class101.net/images/10159a16-91a6-4871-85ae-507e95a2afa7",
+          "klassId": "5ef359682ea84a0d7478ee59",
+          "likedCount": 6164,
+          "firestoreId": "EQSsaPauoSmWnPoDP7ld",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ef35953c8e0ff351e4a1c86"
+          }
+        },
+        "User:60fbd0ab34a07e00151f1fe0": {
+          "__typename": "User",
+          "_id": "60fbd0ab34a07e00151f1fe0",
+          "displayName": "Solongos"
+        },
+        "ProductV3:60fd6a5cba21160014019e03": {
+          "__typename": "ProductV3",
+          "_id": "60fd6a5cba21160014019e03",
+          "title": "초보자도 쉽게 메타버스 탑승! 무료 소프트웨어로 제페토 크리에이터 되기",
+          "coverImageUrl": "https://cdn.class101.net/images/7c9a63ba-68c9-4ad7-b2e7-fa8652c2bbef",
+          "klassId": "60fd6a5cba21160014019e02",
+          "likedCount": 6062,
+          "firestoreId": "CEiXCoBHGHPW0LBLlzrd",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e3"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:60fbd0ab34a07e00151f1fe0"
+          }
+        },
+        "User:5fe601e054739a000d2c6d5c": {
+          "__typename": "User",
+          "_id": "5fe601e054739a000d2c6d5c",
+          "displayName": "윤동규"
+        },
+        "ProductV3:5fe601ef75ae6b00144003fc": {
+          "__typename": "ProductV3",
+          "_id": "5fe601ef75ae6b00144003fc",
+          "title": "지속가능한 유튜브를 위하여, 가볍게 시작하는 촬영과 편집",
+          "coverImageUrl": "https://cdn.class101.net/images/8f123f17-3310-4b1d-bbf7-9a122d4a134c",
+          "klassId": "5fe601ee75ae6b00144003f8",
+          "likedCount": 6015,
+          "firestoreId": "0ofDird72EX7KEA2VxSu",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783df"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fe601e054739a000d2c6d5c"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "62206086d39299379ee5b840"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

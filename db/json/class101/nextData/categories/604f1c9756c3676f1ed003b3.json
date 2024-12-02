@@ -1,0 +1,714 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed003b3"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "CategoryV2:604f1c9756c3676f1ed003b3": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003b3",
+          "title": "금융 · 재테크",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b4"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b5"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b6"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003b5": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003b5",
+          "title": "부동산",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b3"
+          },
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b3"
+            }
+          ]
+        },
+        "User:5e3d47139f7a53052c177e49": {
+          "__typename": "User",
+          "_id": "5e3d47139f7a53052c177e49",
+          "displayName": "부동산읽어주는남자"
+        },
+        "ProductV3:602df2ffd88cc70014fd92cb": {
+          "__typename": "ProductV3",
+          "_id": "602df2ffd88cc70014fd92cb",
+          "title": "똑똑한 부동산 투자 방법, 내 집 마련으로 안정적인 삶까지 한 번에 130만 유튜버 부읽남",
+          "coverImageUrl": "https://cdn.class101.net/images/003012c8-a9e5-4a01-9008-4330ddce7ca9",
+          "klassId": "602df2fed88cc70014fd926e",
+          "likedCount": 48015,
+          "firestoreId": "iE1dNfJsdt0q8AFJ1XpH",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e3d47139f7a53052c177e49"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed003b4": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003b4",
+          "title": "주식",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b3"
+          },
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b3"
+            }
+          ]
+        },
+        "User:5dcd6f52fa49141ab1f5fa52": {
+          "__typename": "User",
+          "_id": "5dcd6f52fa49141ab1f5fa52",
+          "displayName": "JB 김종봉"
+        },
+        "ProductV3:602a6e4f3b950d0014898495": {
+          "__typename": "ProductV3",
+          "_id": "602a6e4f3b950d0014898495",
+          "title": "[리뉴얼] JB김종봉의 2천만원으로 경제적 자유를 달성한 진짜 이야기",
+          "coverImageUrl": "https://cdn.class101.net/images/9c470a20-ea3c-415a-96f1-3c65ff66254b",
+          "klassId": "602a6e4e3b950d001489840e",
+          "likedCount": 38940,
+          "firestoreId": "ydfUVfkzx7lChv3ylmlF",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5dcd6f52fa49141ab1f5fa52"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed003b6": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003b6",
+          "title": "더 새로운 금융 · 재테크",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b3"
+          },
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b3"
+            }
+          ]
+        },
+        "User:5d9de71f74373102abed747f": {
+          "__typename": "User",
+          "_id": "5d9de71f74373102abed747f",
+          "displayName": "쿠자"
+        },
+        "ProductV3:622628c08c1abf001447c5e7": {
+          "__typename": "ProductV3",
+          "_id": "622628c08c1abf001447c5e7",
+          "title": "내가 찍은 스마트폰 사진으로 블루오션에서 부수입 만드는 법 : NFT제작/마케팅/투자노하우",
+          "coverImageUrl": "https://cdn.class101.net/images/143d88e5-41ad-41c3-a95f-014235148819",
+          "klassId": "622628c08c1abf001447c5e4",
+          "likedCount": 34019,
+          "firestoreId": "dGZZYjDvTZrWM5CvylYz",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b6"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d9de71f74373102abed747f"
+          }
+        },
+        "User:5eb0d97567be5d18eddc8ed1": {
+          "__typename": "User",
+          "_id": "5eb0d97567be5d18eddc8ed1",
+          "displayName": "미주부"
+        },
+        "ProductV3:5f0fb1af76fe157cec057097": {
+          "__typename": "ProductV3",
+          "_id": "5f0fb1af76fe157cec057097",
+          "title": "왕초보도 할 수 있는 미국주식 투자, 배당금으로 제2의 월급 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/b6ca97e2-e9bb-4cec-b860-dff1359bef6d",
+          "klassId": "5f0fb1af76fe157cec057096",
+          "likedCount": 33602,
+          "firestoreId": "kl0DdlkkXGyssJdqUHeK",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5eb0d97567be5d18eddc8ed1"
+          }
+        },
+        "User:5e254591712bb70dbc0099f0": {
+          "__typename": "User",
+          "_id": "5e254591712bb70dbc0099f0",
+          "displayName": "타임퍼센트"
+        },
+        "ProductV3:5e2556a44ba7b950bbd46bb5": {
+          "__typename": "ProductV3",
+          "_id": "5e2556a44ba7b950bbd46bb5",
+          "title": "AI 자동 투자 봇 만들기, 노트북으로 월급을 두 배 불리는 법",
+          "coverImageUrl": "https://cdn.class101.net/images/7f3caf7e-bf62-4342-9e09-54ef31851ec7",
+          "klassId": "5e2556a44ba7b950bbd46bb4",
+          "likedCount": 27315,
+          "firestoreId": "Xl3FzgGJCzgid7nsKIjE",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e254591712bb70dbc0099f0"
+          }
+        },
+        "User:5e6f41496857e60d8e3386ca": {
+          "__typename": "User",
+          "_id": "5e6f41496857e60d8e3386ca",
+          "displayName": "송사무장"
+        },
+        "ProductV3:5e68a4fb9829954d96f26e1c": {
+          "__typename": "ProductV3",
+          "_id": "5e68a4fb9829954d96f26e1c",
+          "title": "[2023 리뉴얼] 평범한 삶을 벗어나 부자의 길로 탈출하는 송사무장의 부동산 투자 노하우",
+          "coverImageUrl": "https://cdn.class101.net/images/a8f381d6-dba4-4469-a4ce-77c2d95ecfc5/2880xauto.webp",
+          "klassId": "5e68a4fb9829954d96f26e1b",
+          "likedCount": 23740,
+          "firestoreId": "daxSCmVcskQEKjGoU1tm",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e6f41496857e60d8e3386ca"
+          }
+        },
+        "User:60c4565197b677000d10163e": {
+          "__typename": "User",
+          "_id": "60c4565197b677000d10163e",
+          "displayName": "트레이딩랩"
+        },
+        "ProductV3:60c705a4e4f358000d671381": {
+          "__typename": "ProductV3",
+          "_id": "60c705a4e4f358000d671381",
+          "title": "트레이딩랩 주식단타 전문강의",
+          "coverImageUrl": "https://cdn.class101.net/images/d1ad379c-e5a1-47df-8a68-b1b0b5d27266",
+          "klassId": "60c705a4e4f358000d671380",
+          "likedCount": 17172,
+          "firestoreId": "PE9h8IRVjxJiGZ8WGTqb",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60c4565197b677000d10163e"
+          }
+        },
+        "User:5df6ed1f81c473773663bff6": {
+          "__typename": "User",
+          "_id": "5df6ed1f81c473773663bff6",
+          "displayName": "유비"
+        },
+        "ProductV3:5df6ed61bf78c90d866914cc": {
+          "__typename": "ProductV3",
+          "_id": "5df6ed61bf78c90d866914cc",
+          "title": "뜬구름 잡지 않는 부동산 경매 투자법! 월급쟁이 부자는 없다.",
+          "coverImageUrl": "https://cdn.class101.net/images/3678a579-8198-4407-be2a-7be99ffe2f05",
+          "klassId": "5df6ed61bf78c90d866914cb",
+          "likedCount": 14861,
+          "firestoreId": "G5d5eWqidj6YeThpjftd",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5df6ed1f81c473773663bff6"
+          }
+        },
+        "User:5d7a05114ec0f9eda312f759": {
+          "__typename": "User",
+          "_id": "5d7a05114ec0f9eda312f759",
+          "displayName": "거상쌤"
+        },
+        "ProductV3:5dcb80880903af0da0dc8ac0": {
+          "__typename": "ProductV3",
+          "_id": "5dcb80880903af0da0dc8ac0",
+          "title": "20대,30대를 위한 내 집 마련의 첫걸음,부동산 공부는 빠를수록 좋다",
+          "coverImageUrl": "https://cdn.class101.net/images/6d6b5e96-8b2d-4633-a327-790e67110e7d",
+          "klassId": "5dcb80880903af0da0dc8abf",
+          "likedCount": 13403,
+          "firestoreId": "qHydQ5APqqT0vWR77tlO",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d7a05114ec0f9eda312f759"
+          }
+        },
+        "User:5cf7837ef48520f37cdc3c74": {
+          "__typename": "User",
+          "_id": "5cf7837ef48520f37cdc3c74",
+          "displayName": "클래스101"
+        },
+        "ProductV3:6384aa98891bdc000e31ed78": {
+          "__typename": "ProductV3",
+          "_id": "6384aa98891bdc000e31ed78",
+          "title": "[단독 공개] 전문가들만 알고 있는 2023 재테크 전망",
+          "coverImageUrl": "https://cdn.class101.net/images/93c8a9dc-d54e-444f-88e9-07c748406542",
+          "klassId": "6384aa98891bdc000e31ed75",
+          "likedCount": 12438,
+          "firestoreId": "14msYUdD7Tl5K4TJaWr7",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b6"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cf7837ef48520f37cdc3c74"
+          }
+        },
+        "User:5ed57da4724acc42a4cc4d69": {
+          "__typename": "User",
+          "_id": "5ed57da4724acc42a4cc4d69",
+          "displayName": "세라 이현정"
+        },
+        "ProductV3:615b001f05e576000d44b201": {
+          "__typename": "ProductV3",
+          "_id": "615b001f05e576000d44b201",
+          "title": "천 만원으로 대학생도 할 수 있는 <내집마련 왕초보 부동산 경매>",
+          "coverImageUrl": "https://cdn.class101.net/images/6c526f79-d1b0-48ff-a6df-b39ef338eda8",
+          "klassId": "615b001f05e576000d44b1fc",
+          "likedCount": 10790,
+          "firestoreId": "tdTAxBqMdRmKUHwcEEsy",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ed57da4724acc42a4cc4d69"
+          }
+        },
+        "User:5e0dc8edebe65a0d90b0b40d": {
+          "__typename": "User",
+          "_id": "5e0dc8edebe65a0d90b0b40d",
+          "displayName": "알머리 제이슨"
+        },
+        "ProductV3:5e0dc90e5041a04f719f9bc4": {
+          "__typename": "ProductV3",
+          "_id": "5e0dc90e5041a04f719f9bc4",
+          "title": "주식투자, 운도 감도 아닌 학습입니다",
+          "coverImageUrl": "https://cdn.class101.net/images/edb39ad8-c855-46c7-8c62-0bf77343b070",
+          "klassId": "5e0dc90d5041a04f719f9bc3",
+          "likedCount": 10547,
+          "firestoreId": "t4Hd40M9hjRMGLsBFL4H",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e0dc8edebe65a0d90b0b40d"
+          }
+        },
+        "User:6656c9cfa4b884000e21902a": {
+          "__typename": "User",
+          "_id": "6656c9cfa4b884000e21902a",
+          "displayName": "소수몽키"
+        },
+        "ProductV3:5f54f4c556dc5b0024d3f51e": {
+          "__typename": "ProductV3",
+          "_id": "5f54f4c556dc5b0024d3f51e",
+          "title": "[입문] 소수몽키와 함께하는 미국주식 기초 클래스(A to Z)",
+          "coverImageUrl": "https://cdn.class101.net/images/41ada991-2090-4241-92cd-28c7468fefd3",
+          "klassId": "5f54f4c556dc5b0024d3f51d",
+          "likedCount": 9755,
+          "firestoreId": "ahZk6lmlzJqhUhdPzjxm",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b4"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:6656c9cfa4b884000e21902a"
+          }
+        },
+        "User:618db849d716fb0014c76616": {
+          "__typename": "User",
+          "_id": "618db849d716fb0014c76616",
+          "displayName": "재테크는스크루지"
+        },
+        "ProductV3:61ae12313a2713000d6c6efc": {
+          "__typename": "ProductV3",
+          "_id": "61ae12313a2713000d6c6efc",
+          "title": "[엑셀시트 제공] 7년간 순자산 10배! 돈관리 부터 주식 포트폴리오까지 A to Z ",
+          "coverImageUrl": "https://cdn.class101.net/images/f679f88d-b644-4265-9ec4-ee1a899e2442",
+          "klassId": "61ae12313a2713000d6c6ef7",
+          "likedCount": 9139,
+          "firestoreId": "iZEwn2pgTRBXkm95RVYX",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b6"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:618db849d716fb0014c76616"
+          }
+        },
+        "User:5fc079ffc6f4cd000df91bc3": {
+          "__typename": "User",
+          "_id": "5fc079ffc6f4cd000df91bc3",
+          "displayName": "게만아"
+        },
+        "ProductV3:60dab8da41daac0014f1d4fb": {
+          "__typename": "ProductV3",
+          "_id": "60dab8da41daac0014f1d4fb",
+          "title": "하락장에도 수익나는 '코인 자동매매 봇' 만들기!(feat.업비트 현물•바이낸스 선물)",
+          "coverImageUrl": "https://cdn.class101.net/images/15c16501-f662-41cc-a66d-9859763281cc",
+          "klassId": "60dab8da41daac0014f1d4fa",
+          "likedCount": 8996,
+          "firestoreId": "tNz2DjOtssir4wjKcztP",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b6"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fc079ffc6f4cd000df91bc3"
+          }
+        },
+        "User:5f22cea1a1b9a02eb5bf3345": {
+          "__typename": "User",
+          "_id": "5f22cea1a1b9a02eb5bf3345",
+          "displayName": "닥터퀀트"
+        },
+        "ProductV3:5fded9ae8a833a009f4115a5": {
+          "__typename": "ProductV3",
+          "_id": "5fded9ae8a833a009f4115a5",
+          "title": "코딩 없이 주식 자동매매하기, 평범한 사람이 시장을 이기는 방법",
+          "coverImageUrl": "https://cdn.class101.net/images/c06ce200-2e37-4fcd-9ddc-90e26abe4b47",
+          "klassId": "5fded9ad8a833a009f41159b",
+          "likedCount": 7707,
+          "firestoreId": "j2cqasKulOEI8EtcgWmd",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f22cea1a1b9a02eb5bf3345"
+          }
+        },
+        "User:61d3dc39a4740900149c2457": {
+          "__typename": "User",
+          "_id": "61d3dc39a4740900149c2457",
+          "displayName": "얼음공장"
+        },
+        "ProductV3:61df568d1625f1000d621f73": {
+          "__typename": "ProductV3",
+          "_id": "61df568d1625f1000d621f73",
+          "title": "올해는 꼭 집을 사야 합니다. 어디를 어떻게 사는지 알려드립니다.",
+          "coverImageUrl": "https://cdn.class101.net/images/0a735682-470b-4e58-afa3-a611ed70a86f",
+          "klassId": "61df568d1625f1000d621f76",
+          "likedCount": 7463,
+          "firestoreId": "zZTpdmlKcXJI6jZYq5GC",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61d3dc39a4740900149c2457"
+          }
+        },
+        "User:6124b1d95d4b690014e6402b": {
+          "__typename": "User",
+          "_id": "6124b1d95d4b690014e6402b",
+          "displayName": "윤타"
+        },
+        "ProductV3:616e6283efe8c1000d8fc85b": {
+          "__typename": "ProductV3",
+          "_id": "616e6283efe8c1000d8fc85b",
+          "title": "주식 단타:스마트폰으로 하루 단 1시간 투자해서 월 1,000만원 수익내기",
+          "coverImageUrl": "https://cdn.class101.net/images/838083d0-2034-4354-ae96-bd3ac2dc449b",
+          "klassId": "616e6283efe8c1000d8fc856",
+          "likedCount": 7326,
+          "firestoreId": "nrq78z5dlemybd1fG0id",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6124b1d95d4b690014e6402b"
+          }
+        },
+        "User:5faaf69e68ff18000dd29171": {
+          "__typename": "User",
+          "_id": "5faaf69e68ff18000dd29171",
+          "displayName": "세빛희"
+        },
+        "ProductV3:613b102601e5cf000dbe47d8": {
+          "__typename": "ProductV3",
+          "_id": "613b102601e5cf000dbe47d8",
+          "title": "생애 첫 부동산 투자, 3천만원 투자로 수익률 200%이상 버는 방법 ",
+          "coverImageUrl": "https://cdn.class101.net/images/91e486cf-d8ff-42b3-9898-23c137514f2e",
+          "klassId": "613b102601e5cf000dbe47d3",
+          "likedCount": 6968,
+          "firestoreId": "hOaWmPtk21PGjjVjMBKV",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5faaf69e68ff18000dd29171"
+          }
+        },
+        "User:5c5d613074eabcfdafca2672": {
+          "__typename": "User",
+          "_id": "5c5d613074eabcfdafca2672",
+          "displayName": "요니나"
+        },
+        "ProductV3:5c5d780a74eabcfdafd3997f": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780a74eabcfdafd3997f",
+          "title": "경제적 자유를 위한 첫 시작, 요니나의 가계부 작성법",
+          "coverImageUrl": "https://cdn.class101.net/images/71adbfda-95fd-4cf8-98fe-da4599861cbf",
+          "klassId": "5c514d81d30c532c446946e7",
+          "likedCount": 6606,
+          "firestoreId": "q9jLjJxBlYK2ZydzbIMx",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b6"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d613074eabcfdafca2672"
+          }
+        },
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed003b3\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAyZGYyZmZkODhjYzcwMDE0ZmQ5MmNiX19DVVJTT1JfREVMSU1JVEVSX180ODAxNV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:602df2ffd88cc70014fd92cb"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAyYTZlNGYzYjk1MGQwMDE0ODk4NDk1X19DVVJTT1JfREVMSU1JVEVSX18zODk0MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:602a6e4f3b950d0014898495"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjIyNjI4YzA4YzFhYmYwMDE0NDdjNWU3X19DVVJTT1JfREVMSU1JVEVSX18zNDAxOV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:622628c08c1abf001447c5e7"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYwZmIxYWY3NmZlMTU3Y2VjMDU3MDk3X19DVVJTT1JfREVMSU1JVEVSX18zMzYwMl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f0fb1af76fe157cec057097"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUyNTU2YTQ0YmE3Yjk1MGJiZDQ2YmI1X19DVVJTT1JfREVMSU1JVEVSX18yNzMxNV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e2556a44ba7b950bbd46bb5"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU2OGE0ZmI5ODI5OTU0ZDk2ZjI2ZTFjX19DVVJTT1JfREVMSU1JVEVSX18yMzc0MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e68a4fb9829954d96f26e1c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBjNzA1YTRlNGYzNTgwMDBkNjcxMzgxX19DVVJTT1JfREVMSU1JVEVSX18xNzE3Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:60c705a4e4f358000d671381"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRmNmVkNjFiZjc4YzkwZDg2NjkxNGNjX19DVVJTT1JfREVMSU1JVEVSX18xNDg2MV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5df6ed61bf78c90d866914cc"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRjYjgwODgwOTAzYWYwZGEwZGM4YWMwX19DVVJTT1JfREVMSU1JVEVSX18xMzQwM19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5dcb80880903af0da0dc8ac0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM4NGFhOTg4OTFiZGMwMDBlMzFlZDc4X19DVVJTT1JfREVMSU1JVEVSX18xMjQzOF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:6384aa98891bdc000e31ed78"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE1YjAwMWYwNWU1NzYwMDBkNDRiMjAxX19DVVJTT1JfREVMSU1JVEVSX18xMDc5MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:615b001f05e576000d44b201"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUwZGM5MGU1MDQxYTA0ZjcxOWY5YmM0X19DVVJTT1JfREVMSU1JVEVSX18xMDU0N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e0dc90e5041a04f719f9bc4"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY1NGY0YzU1NmRjNWIwMDI0ZDNmNTFlX19DVVJTT1JfREVMSU1JVEVSX185NzU1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f54f4c556dc5b0024d3f51e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFhZTEyMzEzYTI3MTMwMDBkNmM2ZWZjX19DVVJTT1JfREVMSU1JVEVSX185MTM5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61ae12313a2713000d6c6efc"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBkYWI4ZGE0MWRhYWMwMDE0ZjFkNGZiX19DVVJTT1JfREVMSU1JVEVSX184OTk2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60dab8da41daac0014f1d4fb"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZkZWQ5YWU4YTgzM2EwMDlmNDExNWE1X19DVVJTT1JfREVMSU1JVEVSX183NzA3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5fded9ae8a833a009f4115a5"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFkZjU2OGQxNjI1ZjEwMDBkNjIxZjczX19DVVJTT1JfREVMSU1JVEVSX183NDYzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61df568d1625f1000d621f73"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE2ZTYyODNlZmU4YzEwMDBkOGZjODViX19DVVJTT1JfREVMSU1JVEVSX183MzI2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:616e6283efe8c1000d8fc85b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjEzYjEwMjYwMWU1Y2YwMDBkYmU0N2Q4X19DVVJTT1JfREVMSU1JVEVSX182OTY4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:613b102601e5cf000dbe47d8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MGE3NGVhYmNmZGFmZDM5OTdmX19DVVJTT1JfREVMSU1JVEVSX182NjA2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5c5d780a74eabcfdafd3997f"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NWM1ZDc4MGE3NGVhYmNmZGFmZDM5OTdmX19DVVJTT1JfREVMSU1JVEVSX182NjA2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NjAyZGYyZmZkODhjYzcwMDE0ZmQ5MmNiX19DVVJTT1JfREVMSU1JVEVSX180ODAxNV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          },
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed003b3\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b3"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed003b2": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003b2",
+          "title": "수익 창출",
+          "depth": 0
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed003b3"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

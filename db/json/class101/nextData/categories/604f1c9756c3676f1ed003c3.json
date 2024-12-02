@@ -1,0 +1,636 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed003c3"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed003c3\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed003c3\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU0ZDE0Yzk5NjEwMmYwZGFjMTk5MzFmX19DVVJTT1JfREVMSU1JVEVSX18xNzMwMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e4d14c996102f0dac19931f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU2OGEzYTlmMGViZDcwZGE0YmY4NTVmX19DVVJTT1JfREVMSU1JVEVSX184OTY5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e68a3a9f0ebd70da4bf855f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVmOWU1M2IxOTA2ZjA3MDkyYjBlYzA0X19DVVJTT1JfREVMSU1JVEVSX184MjQzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ef9e53b1906f07092b0ec04"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU1MWQzMmJjMTM1NzUzM2YyZWMxNTk4X19DVVJTT1JfREVMSU1JVEVSX184MTA5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e51d32bc1357533f2ec1598"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVmMWVmZjI2ZWJkYjkxMWQwZmQxYjc3X19DVVJTT1JfREVMSU1JVEVSX182NjY1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ef1eff26ebdb911d0fd1b77"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE0ZDQyZjE0YzM4MzYwMDE0ZTg3ZmNhX19DVVJTT1JfREVMSU1JVEVSX180Mjg3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:614d42f14c38360014e87fca"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY1MWEzMzM2NjFmODkwMDIyZjk4OThiX19DVVJTT1JfREVMSU1JVEVSX18zODIyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f51a333661f890022f9898b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJiZTYzODhkMjNiMWUwMDE1NThkMWMyX19DVVJTT1JfREVMSU1JVEVSX18yNTcxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62be6388d23b1e001558d1c2"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjQwYjBkYjE1NWQzMDIwMDBmNzI1ZDVlX19DVVJTT1JfREVMSU1JVEVSX18yNTA3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:640b0db155d302000f725d5e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZkNDkzYTIwMTgzYWYwMDE1MmQ1MzlmX19DVVJTT1JfREVMSU1JVEVSX18yMzI1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5fd493a20183af00152d539f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJmYzg3MjE4MGZlMDYwMDE2MTgyYzM1X19DVVJTT1JfREVMSU1JVEVSX18yMzE4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62fc872180fe060016182c35"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI1NDJjZDVlNzYwMDgwMDNjYzliZjU4X19DVVJTT1JfREVMSU1JVEVSX18yMzAwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62542cd5e76008003cc9bf58"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVkM2U3MGNiNjNjZTE0ODUxNzc0MmY5X19DVVJTT1JfREVMSU1JVEVSX18yMDgyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ed3e70cb63ce148517742f9"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFmN2I5YWJhMmExZmEwMDE0OTg1MmYyX19DVVJTT1JfREVMSU1JVEVSX18yMDE5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61f7b9aba2a1fa00149852f2"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjNkOWMyNmMwZGQ2NDEwMDE1OWNjYjcwX19DVVJTT1JfREVMSU1JVEVSX18xOTkyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:63d9c26c0dd64100159ccb70"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjMwMzgwMTE5YWE0MzMwMDBlNDMwNDZlX19DVVJTT1JfREVMSU1JVEVSX18xNzQzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:630380119aa433000e43046e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjRhMzY0Yjk3NWQ1ZDYwMDBlNTBkMjA3X19DVVJTT1JfREVMSU1JVEVSX18xNTI4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:64a364b975d5d6000e50d207"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJlN2JiYmRmYWVlZjUwMDBlY2RjNTI3X19DVVJTT1JfREVMSU1JVEVSX18xNDk2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62e7bbbdfaeef5000ecdc527"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFlN2Y5OTkzM2E0Y2QwMDE0YzU3MzU1X19DVVJTT1JfREVMSU1JVEVSX18xMDI5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61e7f99933a4cd0014c57355"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjQyZDRhZDMzMDA4MmQwMGQxZWQ2MjdmX19DVVJTT1JfREVMSU1JVEVSX183MTlfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+                "node": {
+                  "__ref": "ProductV3:642d4ad330082d00d1ed627f"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjQyZDRhZDMzMDA4MmQwMGQxZWQ2MjdmX19DVVJTT1JfREVMSU1JVEVSX183MTlfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+              "startCursor": "NWU0ZDE0Yzk5NjEwMmYwZGFjMTk5MzFmX19DVVJTT1JfREVMSU1JVEVSX18xNzMwMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed003b2": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003b2",
+          "title": "수익 창출",
+          "depth": 0
+        },
+        "CategoryV2:604f1c9756c3676f1ed003c3": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003c3",
+          "title": "성공 마인드",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            }
+          ],
+          "children": [],
+          "ancestor({\"depth\":1})": null
+        },
+        "User:60e3ab80a6384a0015d0c62c": {
+          "__typename": "User",
+          "_id": "60e3ab80a6384a0015d0c62c",
+          "displayName": "실전심리 전문가 박세니"
+        },
+        "ProductV3:5e4d14c996102f0dac19931f": {
+          "__typename": "ProductV3",
+          "_id": "5e4d14c996102f0dac19931f",
+          "title": "멘탈이 바뀌면 인생도 바뀐다, 박세니의 실전 응용 심리학",
+          "coverImageUrl": "https://cdn.class101.net/images/686070d9-0d49-4bd2-afe8-75986d5983df",
+          "klassId": "5e4d14c996102f0dac19931e",
+          "likedCount": 17300,
+          "firestoreId": "3aGZnRt6i9pdS2m6NTYr",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60e3ab80a6384a0015d0c62c"
+          }
+        },
+        "User:5c5d737274eabcfdafd1a74c": {
+          "__typename": "User",
+          "_id": "5c5d737274eabcfdafd1a74c",
+          "displayName": "김새해"
+        },
+        "ProductV3:5e68a3a9f0ebd70da4bf855f": {
+          "__typename": "ProductV3",
+          "_id": "5e68a3a9f0ebd70da4bf855f",
+          "title": "평범한 사람이 돈 만드는 생각의 비밀, 머니 시크릿 ",
+          "coverImageUrl": "https://cdn.class101.net/images/3facbb7b-5c3f-4d7c-988d-e2a86bc46e81",
+          "klassId": "5e68a3a9f0ebd70da4bf855e",
+          "likedCount": 8969,
+          "firestoreId": "vypjq3fD3nXUumomKbKU",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d737274eabcfdafd1a74c"
+          }
+        },
+        "User:5e4777cf9312d24dda441752": {
+          "__typename": "User",
+          "_id": "5e4777cf9312d24dda441752",
+          "displayName": "안대장"
+        },
+        "ProductV3:5ef9e53b1906f07092b0ec04": {
+          "__typename": "ProductV3",
+          "_id": "5ef9e53b1906f07092b0ec04",
+          "title": "30만 유튜버 안대장의 영업 노하우 - 개척방법부터 마케팅, 멘트, 시스템까지!",
+          "coverImageUrl": "https://cdn.class101.net/images/35e754fe-41e7-45ac-aa15-1ebea0e83951",
+          "klassId": "5ef9e53b1906f07092b0ec03",
+          "likedCount": 8243,
+          "firestoreId": "Cq3m48LfN6ueObRfaxwe",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e4777cf9312d24dda441752"
+          }
+        },
+        "User:5e51d30d9bf5bb0dd89f68d0": {
+          "__typename": "User",
+          "_id": "5e51d30d9bf5bb0dd89f68d0",
+          "displayName": "마인드파워고수 조성희"
+        },
+        "ProductV3:5e51d32bc1357533f2ec1598": {
+          "__typename": "ProductV3",
+          "_id": "5e51d32bc1357533f2ec1598",
+          "title": "행복한 부자들만 알던 마인드파워시크릿, 그들만의 부자되는 노하우대공개",
+          "coverImageUrl": "https://cdn.class101.net/images/067098db-ff15-4beb-85d1-4613a843e4fb",
+          "klassId": "5e51d32bc1357533f2ec1597",
+          "likedCount": 8109,
+          "firestoreId": "JViNFMqAETG4rdq5RDm2",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:5e51d30d9bf5bb0dd89f68d0"
+          }
+        },
+        "ProductV3:5ef1eff26ebdb911d0fd1b77": {
+          "__typename": "ProductV3",
+          "_id": "5ef1eff26ebdb911d0fd1b77",
+          "title": "마음 먹은대로 진짜 이루어 지도록, 박세니의 실전 입문 심리학 ",
+          "coverImageUrl": "https://cdn.class101.net/images/90cbdd3d-d2e8-4c2a-9a51-8744b413a5e8",
+          "klassId": "5ef1eff26ebdb911d0fd1b76",
+          "likedCount": 6665,
+          "firestoreId": "gTMaIPskP1BRMcP2oSe0",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60e3ab80a6384a0015d0c62c"
+          }
+        },
+        "User:621495bd5e7e3d000d059c99": {
+          "__typename": "User",
+          "_id": "621495bd5e7e3d000d059c99",
+          "displayName": "김주하"
+        },
+        "ProductV3:614d42f14c38360014e87fca": {
+          "__typename": "ProductV3",
+          "_id": "614d42f14c38360014e87fca",
+          "title": "말 한마디로 평범한 사람도 월 1,000만원 달성! 돈도 얻고 사람도 얻는 말센스  ",
+          "coverImageUrl": "https://cdn.class101.net/images/1cd80bb8-7eb2-4b11-b242-a5427276eded",
+          "klassId": "614d42f14c38360014e87fc5",
+          "likedCount": 4287,
+          "firestoreId": "sjPcsPA0zmwoKeH9qwUR",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:621495bd5e7e3d000d059c99"
+          }
+        },
+        "ProductV3:5f51a333661f890022f9898b": {
+          "__typename": "ProductV3",
+          "_id": "5f51a333661f890022f9898b",
+          "title": "1% 부와 행운의 최단거리, 더플러스 17가지 법칙!",
+          "coverImageUrl": "https://cdn.class101.net/images/081bd71b-510b-4643-aa62-bf5969387890",
+          "klassId": "5f51a332661f890022f98964",
+          "likedCount": 3822,
+          "firestoreId": "S6BQuT9S7nwgAoSMRcCR",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:5e51d30d9bf5bb0dd89f68d0"
+          }
+        },
+        "User:5ff5032ada41de0015a6087d": {
+          "__typename": "User",
+          "_id": "5ff5032ada41de0015a6087d",
+          "displayName": "심리전문가 송새인"
+        },
+        "ProductV3:62be6388d23b1e001558d1c2": {
+          "__typename": "ProductV3",
+          "_id": "62be6388d23b1e001558d1c2",
+          "title": "삶이 유리해지는 설득과 협상의 스킬",
+          "coverImageUrl": "https://cdn.class101.net/images/6d4dfe89-540c-4a90-8e15-5e847df57317",
+          "klassId": "62be6388d23b1e001558d1bf",
+          "likedCount": 2571,
+          "firestoreId": "TtITZ3WIFmqRHHObP96S",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ff5032ada41de0015a6087d"
+          }
+        },
+        "User:62e76232dce47d000ee3a797": {
+          "__typename": "User",
+          "_id": "62e76232dce47d000ee3a797",
+          "displayName": "티엔티 스피치"
+        },
+        "ProductV3:640b0db155d302000f725d5e": {
+          "__typename": "ProductV3",
+          "_id": "640b0db155d302000f725d5e",
+          "title": "인생이 바뀌는 목소리 : 말투편",
+          "coverImageUrl": "https://cdn.class101.net/images/3f0fe5b0-5911-46b6-99dc-f9db365da0da",
+          "klassId": "640b0db155d302000f725d5b",
+          "likedCount": 2507,
+          "firestoreId": "q7gblpVk1ErdzAFJfS6U",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62e76232dce47d000ee3a797"
+          }
+        },
+        "User:5f99865a10aa5e0015882941": {
+          "__typename": "User",
+          "_id": "5f99865a10aa5e0015882941",
+          "displayName": "한준영"
+        },
+        "ProductV3:5fd493a20183af00152d539f": {
+          "__typename": "ProductV3",
+          "_id": "5fd493a20183af00152d539f",
+          "title": "평범한 나를 성공형 인간으로 변화시키는 법 !",
+          "coverImageUrl": "https://cdn.class101.net/images/ed0bdd15-3432-42cc-bb88-278049a96681",
+          "klassId": "5fd493a10183af00152d52fa",
+          "likedCount": 2325,
+          "firestoreId": "WX8jygr4SWiJEQ5ZnnDf",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f99865a10aa5e0015882941"
+          }
+        },
+        "User:62e253b76232ae0015d5e7ea": {
+          "__typename": "User",
+          "_id": "62e253b76232ae0015d5e7ea",
+          "displayName": "매너도서관 이정민"
+        },
+        "ProductV3:62fc872180fe060016182c35": {
+          "__typename": "ProductV3",
+          "_id": "62fc872180fe060016182c35",
+          "title": "직장과 비즈니스에서 성공하는 상위 1% 매너의 품격",
+          "coverImageUrl": "https://cdn.class101.net/images/e8e0de4a-234e-4fbd-baf6-e766da5d5650",
+          "klassId": "62fc872180fe060016182c32",
+          "likedCount": 2318,
+          "firestoreId": "nYUrZDgLaowFe7NgRXYm",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62e253b76232ae0015d5e7ea"
+          }
+        },
+        "User:5ebe0f2767be5d18edb47ce5": {
+          "__typename": "User",
+          "_id": "5ebe0f2767be5d18edb47ce5",
+          "displayName": "행동심리전문가 이상은"
+        },
+        "ProductV3:62542cd5e76008003cc9bf58": {
+          "__typename": "ProductV3",
+          "_id": "62542cd5e76008003cc9bf58",
+          "title": "행동심리 전문가의 <부와 성공이 따라오는 사람들의 행동패턴에 숨겨진 비밀>",
+          "coverImageUrl": "https://cdn.class101.net/images/f4a39557-0a8b-468d-a087-e2458fea8221",
+          "klassId": "62542cd5e76008003cc9bf55",
+          "likedCount": 2300,
+          "firestoreId": "OE2AGPmsOdk0gxVH7vZo",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ebe0f2767be5d18edb47ce5"
+          }
+        },
+        "User:5e638c8d04361c78f437c5d8": {
+          "__typename": "User",
+          "_id": "5e638c8d04361c78f437c5d8",
+          "displayName": "김유라"
+        },
+        "ProductV3:5ed3e70cb63ce148517742f9": {
+          "__typename": "ProductV3",
+          "_id": "5ed3e70cb63ce148517742f9",
+          "title": "월 500만원 버는 파이프라인 시스템, 돈과 운을 끌어당기는 프로젝트",
+          "coverImageUrl": "https://cdn.class101.net/images/4b057a0a-6045-4b63-8f4d-837db6efff71",
+          "klassId": "5ed3e70cb63ce148517742f8",
+          "likedCount": 2082,
+          "firestoreId": "mthP9AQWpLu8Cw1UfEym",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:5e638c8d04361c78f437c5d8"
+          }
+        },
+        "User:605fa954c5ea64001542011f": {
+          "__typename": "User",
+          "_id": "605fa954c5ea64001542011f",
+          "displayName": "28년 피티쟁이"
+        },
+        "ProductV3:61f7b9aba2a1fa00149852f2": {
+          "__typename": "ProductV3",
+          "_id": "61f7b9aba2a1fa00149852f2",
+          "title": "발표에서 1등 하는 비법 - 스피치 강의 아닙니다. 발표 강의 입니다. ",
+          "coverImageUrl": "https://cdn.class101.net/images/1d0d20f4-ca21-44e1-afd5-4908d87a335a",
+          "klassId": "61f7b9aaa2a1fa00149852ee",
+          "likedCount": 2019,
+          "firestoreId": "YejjECPjA",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:605fa954c5ea64001542011f"
+          }
+        },
+        "ProductV3:63d9c26c0dd64100159ccb70": {
+          "__typename": "ProductV3",
+          "_id": "63d9c26c0dd64100159ccb70",
+          "title": "마음을 움직이는 목소리 : 발음편",
+          "coverImageUrl": "https://cdn.class101.net/images/788ca12f-80cd-48cd-b667-053cdda5c09b",
+          "klassId": "63d9c26c0dd64100159ccb6d",
+          "likedCount": 1992,
+          "firestoreId": "TePcVJJbyd0gDqzWSl4A",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62e76232dce47d000ee3a797"
+          }
+        },
+        "User:5fa74df54a87f20013100869": {
+          "__typename": "User",
+          "_id": "5fa74df54a87f20013100869",
+          "displayName": "연봉 20억 최민형"
+        },
+        "ProductV3:630380119aa433000e43046e": {
+          "__typename": "ProductV3",
+          "_id": "630380119aa433000e43046e",
+          "title": "연봉 20억을 만드는 특별한 비법! 상위 0.1%가 말하는 <성공학개론>",
+          "coverImageUrl": "https://cdn.class101.net/images/fbfc7692-b5c1-41b7-be69-6e585325ddaf",
+          "klassId": "630380119aa433000e43046b",
+          "likedCount": 1743,
+          "firestoreId": "1rePowxay2xgxoskUOkG",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fa74df54a87f20013100869"
+          }
+        },
+        "User:5cf7837ef48520f37cdc3c74": {
+          "__typename": "User",
+          "_id": "5cf7837ef48520f37cdc3c74",
+          "displayName": "클래스101"
+        },
+        "ProductV3:64a364b975d5d6000e50d207": {
+          "__typename": "ProductV3",
+          "_id": "64a364b975d5d6000e50d207",
+          "title": "1년간 200권을 완독할 수 있었던 독서 습관 관리법",
+          "coverImageUrl": "https://cdn.class101.net/images/47e1d589-0382-4c40-8779-e6ec683bd705",
+          "klassId": "64a364b975d5d6000e50d204",
+          "likedCount": 1528,
+          "firestoreId": "vgktdsx1etCuTJzWrNkX",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cf7837ef48520f37cdc3c74"
+          }
+        },
+        "User:62dfdf027ff8c2000e5db8c1": {
+          "__typename": "User",
+          "_id": "62dfdf027ff8c2000e5db8c1",
+          "displayName": "구본진 변호사"
+        },
+        "ProductV3:62e7bbbdfaeef5000ecdc527": {
+          "__typename": "ProductV3",
+          "_id": "62e7bbbdfaeef5000ecdc527",
+          "title": "[6주면 바뀝니다] '유퀴즈' 출연 \"글씨만 바꿔도 부자될 수 있다!?\"",
+          "coverImageUrl": "https://cdn.class101.net/images/2c96c7be-5cf0-4adb-b6f1-106d0209aa0a",
+          "klassId": "62e7bbbdfaeef5000ecdc524",
+          "likedCount": 1496,
+          "firestoreId": "O0Ier1xTPBk49i5Ne3BV",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62dfdf027ff8c2000e5db8c1"
+          }
+        },
+        "User:5fb77fc82a3166000d97aac4": {
+          "__typename": "User",
+          "_id": "5fb77fc82a3166000d97aac4",
+          "displayName": "셀아빠"
+        },
+        "ProductV3:61e7f99933a4cd0014c57355": {
+          "__typename": "ProductV3",
+          "_id": "61e7f99933a4cd0014c57355",
+          "title": "영업 실적을 높이는 8가지 방법",
+          "coverImageUrl": "https://cdn.class101.net/images/fa9e89fc-fc23-4182-8c78-0d329339fafc",
+          "klassId": "61e7f99933a4cd0014c57352",
+          "likedCount": 1029,
+          "firestoreId": "D8ko1_c-J",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fb77fc82a3166000d97aac4"
+          }
+        },
+        "User:6417b6c58e136c001645afef": {
+          "__typename": "User",
+          "_id": "6417b6c58e136c001645afef",
+          "displayName": "세일즈헬퍼 김코치"
+        },
+        "ProductV3:642d4ad330082d00d1ed627f": {
+          "__typename": "ProductV3",
+          "_id": "642d4ad330082d00d1ed627f",
+          "title": "고객을 팬으로 만드는 실전 영업 강의",
+          "coverImageUrl": "https://cdn.class101.net/images/78eeb4aa-be70-4e40-a0d8-e07f56a1e4d3",
+          "klassId": "642d4ad330082d00d1ed627c",
+          "likedCount": 719,
+          "firestoreId": "QjM0HNhO5IDZGyzANiJI",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6417b6c58e136c001645afef"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed003c3"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

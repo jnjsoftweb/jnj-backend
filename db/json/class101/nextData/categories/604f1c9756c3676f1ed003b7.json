@@ -1,0 +1,821 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed003b7"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed003b7\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed003b7\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ5MTgyNjI1ODVmODk3OTlhNjlkNDA0X19DVVJTT1JfREVMSU1JVEVSX185NDEwMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d918262585f89799a69d404"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRkZmFkYzQ4OWI4YzQxN2Q1ZTgzY2M3X19DVVJTT1JfREVMSU1JVEVSX184Mjc4Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ddfadc489b8c417d5e83cc7"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRjZDJjMWYwYmRlZmM0ZTQ5OGFmNzNlX19DVVJTT1JfREVMSU1JVEVSX182MTYyOV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5dcd2c1f0bdefc4e498af73e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFmNjhmMWNmM2EyZTEwMDBkNzgwZmRhX19DVVJTT1JfREVMSU1JVEVSX182MTU3NF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:61f68f1cf3a2e1000d780fda"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRmMjNiZWQzZGI1ZjA0NzlhYzI3MTI4X19DVVJTT1JfREVMSU1JVEVSX181NTU0Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5df23bed3db5f0479ac27128"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA1OWY1YTVkZjBkNjYwMDBlMmQxZTNlX19DVVJTT1JfREVMSU1JVEVSX181MjUwOF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:6059f5a5df0d66000e2d1e3e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUwMWM2MTA0NzI5YmM1MWU4NDJiM2M1X19DVVJTT1JfREVMSU1JVEVSX180OTczNF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e01c6104729bc51e842b3c5"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUzM2QyMmZlODlmOTQwZTdmMGM5ZGJiX19DVVJTT1JfREVMSU1JVEVSX18zMTI2NV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e33d22fe89f940e7f0c9dbb"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU4NTRhZjU0NWM0NzY3MjJkMWVkN2M3X19DVVJTT1JfREVMSU1JVEVSX18zMDc5Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e854af545c476722d1ed7c7"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI0YTQyYjM4MjVmOWYwMDBlNjQ0M2YyX19DVVJTT1JfREVMSU1JVEVSX18yODM5OF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:624a42b3825f9f000e6443f2"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYyZDcxM2NiNWViYmQwMDE1NDMxNzEyX19DVVJTT1JfREVMSU1JVEVSX18yMDA5Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f2d713cb5ebbd0015431712"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA4MTI3YWUxZjYwMzYwMDE1OTEwYzhiX19DVVJTT1JfREVMSU1JVEVSX18xODQ3MV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:608127ae1f60360015910c8b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRkMThhOGI5ZTFjOTg1Njc2MjA5OTFiX19DVVJTT1JfREVMSU1JVEVSX18xODI2M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5dd18a8b9e1c98567620991b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ4ZTI1YzU5Y2QwNmUwNjExMmUwMzQ0X19DVVJTT1JfREVMSU1JVEVSX18xNjc2M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d8e25c59cd06e06112e0344"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA4OGNiYTdmYWYxNDkwMDE1NDIzZTliX19DVVJTT1JfREVMSU1JVEVSX18xNTA1M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:6088cba7faf1490015423e9b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZlMTAyNTY2M2Y1Y2UwMDE0NDhhNWI3X19DVVJTT1JfREVMSU1JVEVSX18xNDE4M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5fe1025663f5ce001448a5b7"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI2MTVmMzFkODMxNGQwMDBlMGJiNzJiX19DVVJTT1JfREVMSU1JVEVSX18xMjg0Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:62615f31d8314d000e0bb72b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRhZDE2NDk0YmUzNGEwY2VmYTdjMDExX19DVVJTT1JfREVMSU1JVEVSX18xMjQ5OV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5dad16494be34a0cefa7c011"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRjOGQwMDM5ZWViNTQzZDNlMDRkOTg2X19DVVJTT1JfREVMSU1JVEVSX18xMjM0N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5dc8d0039eeb543d3e04d986"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFkYmUwZjBmNGNiYzIwMDBkMGI0N2Y2X19DVVJTT1JfREVMSU1JVEVSX18xMDkyNV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:61dbe0f0f4cbc2000d0b47f6"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjFkYmUwZjBmNGNiYzIwMDBkMGI0N2Y2X19DVVJTT1JfREVMSU1JVEVSX18xMDkyNV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "startCursor": "NWQ5MTgyNjI1ODVmODk3OTlhNjlkNDA0X19DVVJTT1JfREVMSU1JVEVSX185NDEwMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed003b2": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003b2",
+          "title": "수익 창출",
+          "depth": 0
+        },
+        "CategoryV2:604f1c9756c3676f1ed003bc": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003bc",
+          "title": "국내 쇼핑몰",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003bd": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003bd",
+          "title": "해외 쇼핑몰",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003ba": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003ba",
+          "title": "블로그",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003b9": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003b9",
+          "title": "유튜브",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003b8": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003b8",
+          "title": "SNS",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003be": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003be",
+          "title": "전자책 · 디지털파일",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003bf": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003bf",
+          "title": "쉐어하우스 · 숙박업",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003c0": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003c0",
+          "title": "요식업",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003c2": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003c2",
+          "title": "더 새로운 창업 · 부업",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b7"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003b7": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003b7",
+          "title": "창업 · 부업",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b2"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003bc"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003bd"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003ba"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b9"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003b8"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003be"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003bf"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003c0"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003c2"
+            }
+          ]
+        },
+        "User:5d9182298226550c00c077a9": {
+          "__typename": "User",
+          "_id": "5d9182298226550c00c077a9",
+          "displayName": "주언규PD"
+        },
+        "ProductV3:5d918262585f89799a69d404": {
+          "__typename": "ProductV3",
+          "_id": "5d918262585f89799a69d404",
+          "title": "최신 개정판! 스마트스토어로 월 100만원 만들기, 평범한 사람이 돈을 만드는 비법",
+          "coverImageUrl": "https://cdn.class101.net/images/28f76544-6d51-4054-86e7-ba7bbb75e615",
+          "klassId": "5d91826171dcdf0c19dd4486",
+          "likedCount": 94100,
+          "firestoreId": "nE3Rka3C8quVUg6sJTXu",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003bc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d9182298226550c00c077a9"
+          }
+        },
+        "User:5ddf5e185d1f501648e2ffb8": {
+          "__typename": "User",
+          "_id": "5ddf5e185d1f501648e2ffb8",
+          "displayName": "라이프해커 자청"
+        },
+        "ProductV3:5ddfadc489b8c417d5e83cc7": {
+          "__typename": "ProductV3",
+          "_id": "5ddfadc489b8c417d5e83cc7",
+          "title": "월 999만원 자동수익, 경제적 자유 얻는 구체적 가이드라인",
+          "coverImageUrl": "https://cdn.class101.net/images/5a2fa316-b5e9-4e0a-8cb6-87fbfc5cc5df",
+          "klassId": "5ddfadc489b8c417d5e83cc6",
+          "likedCount": 82782,
+          "firestoreId": "tc4HO2QBtuOlHPYWUILG",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ddf5e185d1f501648e2ffb8"
+          }
+        },
+        "User:5dcd2bb0660eb41aa33dbb2f": {
+          "__typename": "User",
+          "_id": "5dcd2bb0660eb41aa33dbb2f",
+          "displayName": "리뷰요정리남"
+        },
+        "ProductV3:5dcd2c1f0bdefc4e498af73e": {
+          "__typename": "ProductV3",
+          "_id": "5dcd2c1f0bdefc4e498af73e",
+          "title": "블로그 기초과정 ❘ 블로그로 하루 2시간 투자해서 직장인만큼 수익내기!",
+          "coverImageUrl": "https://cdn.class101.net/images/6c9cd231-48e2-43d9-b558-2329fd81fb21",
+          "klassId": "5dcd2c1f0bdefc4e498af73d",
+          "likedCount": 61629,
+          "firestoreId": "vXcO1iZbdpyZoLH2Aq4S",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003ba"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5dcd2bb0660eb41aa33dbb2f"
+          }
+        },
+        "User:66da66aeee7693aec5e465dd": {
+          "__typename": "User",
+          "_id": "66da66aeee7693aec5e465dd",
+          "displayName": "선한부자 오가닉"
+        },
+        "ProductV3:61f68f1cf3a2e1000d780fda": {
+          "__typename": "ProductV3",
+          "_id": "61f68f1cf3a2e1000d780fda",
+          "title": "노트북 하나로 평생 돈 버는 <구글 온라인 자동화수익 만들기>",
+          "coverImageUrl": "https://cdn.class101.net/images/b89faa9d-c22c-4592-9363-0a622622c8ef",
+          "klassId": "61f68f1cf3a2e1000d780fd7",
+          "likedCount": 61574,
+          "firestoreId": "v4biBdYz5wIqcIikubdL",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003ba"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:66da66aeee7693aec5e465dd"
+          }
+        },
+        "User:5df23b85ba82af40a6afc49b": {
+          "__typename": "User",
+          "_id": "5df23b85ba82af40a6afc49b",
+          "displayName": "이상한김팀장"
+        },
+        "ProductV3:5df23bed3db5f0479ac27128": {
+          "__typename": "ProductV3",
+          "_id": "5df23bed3db5f0479ac27128",
+          "title": "돈 되는 글쓰기의 비밀, 브랜드 블로그의 모든 것",
+          "coverImageUrl": "https://cdn.class101.net/images/ff33aea3-fa4b-4b49-b3a2-0e96d14d27dc",
+          "klassId": "5df23bec3db5f0479ac27127",
+          "likedCount": 55546,
+          "firestoreId": "LDsDoEsreKNcS6GUq3H1",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003ba"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5df23b85ba82af40a6afc49b"
+          }
+        },
+        "User:5e9794753bf0b77673d9c102": {
+          "__typename": "User",
+          "_id": "5e9794753bf0b77673d9c102",
+          "displayName": "아로스"
+        },
+        "ProductV3:6059f5a5df0d66000e2d1e3e": {
+          "__typename": "ProductV3",
+          "_id": "6059f5a5df0d66000e2d1e3e",
+          "title": "[24년 New]구글 애드센스로 평생 월 100만원 만드는 방법+돈버는 핵심 키워드 패키지",
+          "coverImageUrl": "https://cdn.class101.net/images/19f5ac3b-9941-4378-9aaf-7acd0fb75945",
+          "klassId": "6059f5a5df0d66000e2d1e3d",
+          "likedCount": 52508,
+          "firestoreId": "moYKLXDrO2k0QXOK4dip",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003ba"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e9794753bf0b77673d9c102"
+          }
+        },
+        "User:5e01c5e4e0832b1911da4656": {
+          "__typename": "User",
+          "_id": "5e01c5e4e0832b1911da4656",
+          "displayName": "드로우앤드류"
+        },
+        "ProductV3:5e01c6104729bc51e842b3c5": {
+          "__typename": "ProductV3",
+          "_id": "5e01c6104729bc51e842b3c5",
+          "title": "인스타그램으로 세상에 나의 가치를 알려보자. 인스타그램 퍼스널 브랜딩",
+          "coverImageUrl": "https://cdn.class101.net/images/e81c253c-5f30-4419-970a-c4e14d7343f2",
+          "klassId": "5e01c6104729bc51e842b3c4",
+          "likedCount": 49734,
+          "firestoreId": "BjkCb7AJ62j1x7nZ0yaM",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b8"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e01c5e4e0832b1911da4656"
+          }
+        },
+        "User:5e33d21a76820d0da736ab10": {
+          "__typename": "User",
+          "_id": "5e33d21a76820d0da736ab10",
+          "displayName": "노마드 그레이쓰"
+        },
+        "ProductV3:5e33d22fe89f940e7f0c9dbb": {
+          "__typename": "ProductV3",
+          "_id": "5e33d22fe89f940e7f0c9dbb",
+          "title": "나만의 취미로 돈 버는 방법, 디지털 파일 판매의 모든 것!",
+          "coverImageUrl": "https://cdn.class101.net/images/1f37098a-806a-41a7-8693-01006b4b9f35",
+          "klassId": "5e33d22fe89f940e7f0c9dba",
+          "likedCount": 31265,
+          "firestoreId": "esw88imFlbeHxlWTxbVZ",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003be"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e33d21a76820d0da736ab10"
+          }
+        },
+        "User:5e854ac8d597510f4b0af4aa": {
+          "__typename": "User",
+          "_id": "5e854ac8d597510f4b0af4aa",
+          "displayName": "GMC"
+        },
+        "ProductV3:5e854af545c476722d1ed7c7": {
+          "__typename": "ProductV3",
+          "_id": "5e854af545c476722d1ed7c7",
+          "title": "쿠팡+스마트스토어, 무엇이든 팔 수 있는 쇼핑몰 창업가이드",
+          "coverImageUrl": "https://cdn.class101.net/images/ed71263d-8fe8-40b6-abdd-e1ca9e0e4e5c",
+          "klassId": "5e854af445c476722d1ed7c6",
+          "likedCount": 30792,
+          "firestoreId": "AKwX4czUR18hIyk1A8gk",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003bc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e854ac8d597510f4b0af4aa"
+          }
+        },
+        "User:5f7d07985ef8020013ff9fb7": {
+          "__typename": "User",
+          "_id": "5f7d07985ef8020013ff9fb7",
+          "displayName": "브랜더루시"
+        },
+        "ProductV3:624a42b3825f9f000e6443f2": {
+          "__typename": "ProductV3",
+          "_id": "624a42b3825f9f000e6443f2",
+          "title": "파워블로거가 아니여도 가능한 월급 버는 <돈 되는 블로그 수익화> 노하우",
+          "coverImageUrl": "https://cdn.class101.net/images/6ea96e7a-bd86-4b4f-9dde-d45ebf612c65",
+          "klassId": "624a42b3825f9f000e6443ef",
+          "likedCount": 28398,
+          "firestoreId": "EJ84exFP62bA2df0R69R",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003ba"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f7d07985ef8020013ff9fb7"
+          }
+        },
+        "User:5f191c6d19e366d0b483000c": {
+          "__typename": "User",
+          "_id": "5f191c6d19e366d0b483000c",
+          "displayName": "돈많은언니"
+        },
+        "ProductV3:5f2d713cb5ebbd0015431712": {
+          "__typename": "ProductV3",
+          "_id": "5f2d713cb5ebbd0015431712",
+          "title": "급부상 중인 블루오션 <인스타 마켓> 월 매출 4000만원 팔이피플에게 배우기",
+          "coverImageUrl": "https://cdn.class101.net/images/1afb4ff4-3d97-43af-9385-adc131338ca1",
+          "klassId": "5f2d713cb5ebbd0015431711",
+          "likedCount": 20096,
+          "firestoreId": "QmOX26yYRlL6GTmH4UOA",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b8"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f191c6d19e366d0b483000c"
+          }
+        },
+        "User:5cfbcc11f48520f37caf2f7c": {
+          "__typename": "User",
+          "_id": "5cfbcc11f48520f37caf2f7c",
+          "displayName": "혜님"
+        },
+        "ProductV3:608127ae1f60360015910c8b": {
+          "__typename": "ProductV3",
+          "_id": "608127ae1f60360015910c8b",
+          "title": "100% 돈만 보고 시작하는 <월 1,000만 원 버는 인스타그램 운영법>",
+          "coverImageUrl": "https://cdn.class101.net/images/c328ecae-8508-4ca3-97b6-d165346271da",
+          "klassId": "608127ae1f60360015910c8a",
+          "likedCount": 18471,
+          "firestoreId": "qnLvPlac6SDvq9dLEFwy",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003b8"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cfbcc11f48520f37caf2f7c"
+          }
+        },
+        "ProductV3:5dd18a8b9e1c98567620991b": {
+          "__typename": "ProductV3",
+          "_id": "5dd18a8b9e1c98567620991b",
+          "title": "블로그 심화과정 ❘ 블로그로 월 1,000만 원까지 버는 핵심 비법!",
+          "coverImageUrl": "https://cdn.class101.net/images/ecb59b7d-0dbf-47d3-8923-86b52ed957fa",
+          "klassId": "5dd18a8a9e1c98567620991a",
+          "likedCount": 18263,
+          "firestoreId": "SwUgMr0MDAPXSPgLsD01",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003ba"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5dcd2bb0660eb41aa33dbb2f"
+          }
+        },
+        "User:5d8e2559d242f010805f7249": {
+          "__typename": "User",
+          "_id": "5d8e2559d242f010805f7249",
+          "displayName": "온라인탑셀러"
+        },
+        "ProductV3:5d8e25c59cd06e06112e0344": {
+          "__typename": "ProductV3",
+          "_id": "5d8e25c59cd06e06112e0344",
+          "title": "[최신개정판] 재고 걱정 없이 중국 구매 대행 사업/부업 시작하기",
+          "coverImageUrl": "https://cdn.class101.net/images/20dd83fd-67de-4134-8d0c-b211b470837e",
+          "klassId": "5d8e25c44758bd3a934e0845",
+          "likedCount": 16763,
+          "firestoreId": "fINpivvXH1bOjgCjJuRd",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003bd"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d8e2559d242f010805f7249"
+          }
+        },
+        "User:5ded0a6687d7a97428c2df96": {
+          "__typename": "User",
+          "_id": "5ded0a6687d7a97428c2df96",
+          "displayName": "웹사이트해커"
+        },
+        "ProductV3:6088cba7faf1490015423e9b": {
+          "__typename": "ProductV3",
+          "_id": "6088cba7faf1490015423e9b",
+          "title": "코딩 없는 홈페이지 제작으로 월 300만원 부수익 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/d53fdce0-e31e-4ee0-ad85-b5aeeb3261ae",
+          "klassId": "6088cba7faf1490015423e9a",
+          "likedCount": 15053,
+          "firestoreId": "8CVQwC9qfUyDEhs97z82",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ded0a6687d7a97428c2df96"
+          }
+        },
+        "User:5d9e4b8274373102ab913257": {
+          "__typename": "User",
+          "_id": "5d9e4b8274373102ab913257",
+          "displayName": "원더로이"
+        },
+        "ProductV3:5fe1025663f5ce001448a5b7": {
+          "__typename": "ProductV3",
+          "_id": "5fe1025663f5ce001448a5b7",
+          "title": "[2024리뉴얼] 전자책 판매누적 3억 노하우, 24시간 돈버는 전자책 재택부업",
+          "coverImageUrl": "https://cdn.class101.net/images/ce2965db-ea27-4cdc-8ada-73229889d8ea",
+          "klassId": "5fe1025563f5ce001448a5b6",
+          "likedCount": 14183,
+          "firestoreId": "5ZM6PJSd31Wkbpg2G6W7",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003be"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d9e4b8274373102ab913257"
+          }
+        },
+        "User:62615f0d376d3a000f35cc0e": {
+          "__typename": "User",
+          "_id": "62615f0d376d3a000f35cc0e",
+          "displayName": "블루밍테일"
+        },
+        "ProductV3:62615f31d8314d000e0bb72b": {
+          "__typename": "ProductV3",
+          "_id": "62615f31d8314d000e0bb72b",
+          "title": "아이돌도 쓰는 굿즈! 블루밍테일의 감성 굿즈 제작의 모든 것",
+          "coverImageUrl": "https://cdn.class101.net/images/557d1f39-6b27-4340-a636-7f224cead818",
+          "klassId": "62615f31d8314d000e0bb71d",
+          "likedCount": 12846,
+          "firestoreId": "4biBMJbHxMa8l916lnBz",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003c2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62615f0d376d3a000f35cc0e"
+          }
+        },
+        "User:5da7d2ab38be621a5539270d": {
+          "__typename": "User",
+          "_id": "5da7d2ab38be621a5539270d",
+          "displayName": "로꾸미"
+        },
+        "ProductV3:5dad16494be34a0cefa7c011": {
+          "__typename": "ProductV3",
+          "_id": "5dad16494be34a0cefa7c011",
+          "title": "월급으로 만족하지 못하는 분들을 위한 아마존/이베이 입문",
+          "coverImageUrl": "https://cdn.class101.net/images/8c0bfd95-6769-4b50-ad69-b06a5c4e91f6",
+          "klassId": "5dad16494be34a0cefa7c010",
+          "likedCount": 12499,
+          "firestoreId": "xC20zjTXOU1fhT12lrKj",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003bd"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5da7d2ab38be621a5539270d"
+          }
+        },
+        "User:5c5d61b374eabcfdafca9cb4": {
+          "__typename": "User",
+          "_id": "5c5d61b374eabcfdafca9cb4",
+          "displayName": "단아쌤"
+        },
+        "ProductV3:5dc8d0039eeb543d3e04d986": {
+          "__typename": "ProductV3",
+          "_id": "5dc8d0039eeb543d3e04d986",
+          "title": "월 100만원 수익! 아이디어스, 스마트스토어에서 월급 외 수익 벌기",
+          "coverImageUrl": "https://cdn.class101.net/images/c55ae6f7-08ee-4000-a1ea-8dcf72ad564f",
+          "klassId": "5dc8d0013098e819d831a2e2",
+          "likedCount": 12347,
+          "firestoreId": "xjBeoGTGberc8nWWGECs",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003bc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d61b374eabcfdafca9cb4"
+          }
+        },
+        "ProductV3:61dbe0f0f4cbc2000d0b47f6": {
+          "__typename": "ProductV3",
+          "_id": "61dbe0f0f4cbc2000d0b47f6",
+          "title": "<월 매출 4000만원 매출 소싱법> 소싱 공포증 탈출! 잘 팔리는 상품 소싱의 모든것",
+          "coverImageUrl": "https://cdn.class101.net/images/c1129e9c-d5b9-4dba-a9db-24c26809ac10",
+          "klassId": "61dbe0f0f4cbc2000d0b47f3",
+          "likedCount": 10925,
+          "firestoreId": "HYgFVlaaCL3sD2VaWngx",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003bc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f191c6d19e366d0b483000c"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed003b7"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

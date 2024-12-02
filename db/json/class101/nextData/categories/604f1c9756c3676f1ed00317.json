@@ -1,0 +1,1745 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed00317"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed00317\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed00317\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU0YjQyYmIzODg3ZDMwNzZlZTU5NzZiX19DVVJTT1JfREVMSU1JVEVSX18xNjc2MV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e4b42bb3887d3076ee5976b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZhMDAxZTczNmM3MmYwMDEzNTdhOGQwX19DVVJTT1JfREVMSU1JVEVSX18xNjA5M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5fa001e736c72f001357a8d0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRkMjZlN2U3NTA2NDY3ZDIxMTA2ZTY0X19DVVJTT1JfREVMSU1JVEVSX18xNTQ3MV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5dd26e7e7506467d21106e64"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVlMDRjN2ZkZGQyOWMwZGYwYjJjMDBlX19DVVJTT1JfREVMSU1JVEVSX18xNDEzOV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ee04c7fddd29c0df0b2c00e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDg3NGVhYmNmZGFmZDM5NDI3X19DVVJTT1JfREVMSU1JVEVSX18xNDAzN19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780874eabcfdafd39427"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDc3NGVhYmNmZGFmZDM5MmJiX19DVVJTT1JfREVMSU1JVEVSX18xMzE4OV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780774eabcfdafd392bb"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDc3NGVhYmNmZGFmZDM5MTAzX19DVVJTT1JfREVMSU1JVEVSX18xMjY5MV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780774eabcfdafd39103"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYwZmE3N2UyNTk0Y2YwZGJjNGM1NjJjX19DVVJTT1JfREVMSU1JVEVSX18xMjU2N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f0fa77e2594cf0dbc4c562c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNlYjk4YjQ4MGY2NzM0YWNlMWFkMzNkX19DVVJTT1JfREVMSU1JVEVSX18xMjU0N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ceb98b480f6734ace1ad33d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU2ZjlmYTNhMTFjMGI0NzZhNWNlNmFjX19DVVJTT1JfREVMSU1JVEVSX18xMTk2MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e6f9fa3a11c0b476a5ce6ac"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNlMzZmNTQ4MGY2NzM0YWNlNjMxZmMxX19DVVJTT1JfREVMSU1JVEVSX18xMTY0MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ce36f5480f6734ace631fc1"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNhZGI1MjVjYjI3MjhlYmU5ODg4YjM4X19DVVJTT1JfREVMSU1JVEVSX18xMTYwNF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5cadb525cb2728ebe9888b38"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYwNTQ2NDJlMWQwNjMwZGI0YTFmOWZhX19DVVJTT1JfREVMSU1JVEVSX18xMTM0M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f054642e1d0630db4a1f9fa"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM2NjVjOTg3NGVhYmNmZGFmMjA3NTU4X19DVVJTT1JfREVMSU1JVEVSX18xMTM0MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c665c9874eabcfdaf207558"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDk3NGVhYmNmZGFmZDM5ODdkX19DVVJTT1JfREVMSU1JVEVSX18xMTIyNl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780974eabcfdafd3987d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNjMjhhYmYyY2FjN2QwNjExMGU4M2I0X19DVVJTT1JfREVMSU1JVEVSX18xMTE5MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5cc28abf2cac7d06110e83b4"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ2MzYyYTYxZjE2OTMwN2U2YjcxOTJiX19DVVJTT1JfREVMSU1JVEVSX18xMDE3N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d6362a61f169307e6b7192b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVhN2ZiNDUzY2RmOWI2ZGU2ZjM2NWMzX19DVVJTT1JfREVMSU1JVEVSX185OTcyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ea7fb453cdf9b6de6f365c3"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY1N2ViZGFkMmMzZDIwMDFjMDQ4ZGQyX19DVVJTT1JfREVMSU1JVEVSX185OTI5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f57ebdad2c3d2001c048dd2"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZmNDc4ZjY3ZmFiMjMwMDBkMGYwODUwX19DVVJTT1JfREVMSU1JVEVSX185NjI0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ff478f67fab23000d0f0850"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NWZmNDc4ZjY3ZmFiMjMwMDBkMGYwODUwX19DVVJTT1JfREVMSU1JVEVSX185NjI0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NWU0YjQyYmIzODg3ZDMwNzZlZTU5NzZiX19DVVJTT1JfREVMSU1JVEVSX18xNjc2MV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:605c3db737b977e02654405e": {
+          "__typename": "CategoryV2",
+          "id": "605c3db737b977e02654405e",
+          "title": "크리에이티브",
+          "depth": 0
+        },
+        "CategoryV2:604f1c9756c3676f1ed00321": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00321",
+          "title": "대바늘 뜨개",
+          "depth": 2,
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00323"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00322"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00324"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00325"
+            }
+          ],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00326": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00326",
+          "title": "코바늘 뜨개",
+          "depth": 2,
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00327"
+            },
+            {
+              "__ref": "CategoryV2:6130748cf680958d45647b93"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0032b"
+            }
+          ],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00319": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00319",
+          "title": "자수",
+          "depth": 2,
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0031a"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883451"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0031c"
+            }
+          ],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00318": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00318",
+          "title": "실 공예",
+          "depth": 2,
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0031e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0031f"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0031d"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0031b"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00320"
+            }
+          ],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0032c": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0032c",
+          "title": "패브릭 공예",
+          "depth": 2,
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00332"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0032d"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883452"
+            }
+          ],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00342": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00342",
+          "title": "비누﹒캔들﹒향",
+          "depth": 2,
+          "children": [
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883453"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883454"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00344"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00345"
+            }
+          ],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac883455": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac883455",
+          "title": "나무﹒라탄 공예",
+          "depth": 2,
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0033d"
+            },
+            {
+              "__ref": "CategoryV2:6130748cf680958d45647b94"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0033b"
+            },
+            {
+              "__ref": "CategoryV2:6130748cf680958d45647b95"
+            }
+          ],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0033c": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0033c",
+          "title": "가죽 공예",
+          "depth": 2,
+          "children": [
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883456"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883457"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883458"
+            }
+          ],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00337": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00337",
+          "title": "종이 공예",
+          "depth": 2,
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00339"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00338"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0033a"
+            }
+          ],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0033e": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0033e",
+          "title": "레진 공예",
+          "depth": 2,
+          "children": [
+            {
+              "__ref": "CategoryV2:613618726f60d41066db368a"
+            },
+            {
+              "__ref": "CategoryV2:613618726f60d41066db368b"
+            }
+          ],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00341": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00341",
+          "title": "도예",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00346": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00346",
+          "title": "플라워 공예",
+          "depth": 2,
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00347"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00348"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00349"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0034a"
+            }
+          ],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0034e": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0034e",
+          "title": "더 새로운 공예",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00317": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00317",
+          "title": "공예",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00321"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00326"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00319"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00318"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0032c"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00342"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883455"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0033c"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00337"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0033e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00341"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00346"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0034e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00324": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00324",
+          "title": "대바늘 소품",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00321"
+            }
+          ]
+        },
+        "User:5e4b429032f35f3cf46f6f14": {
+          "__typename": "User",
+          "_id": "5e4b429032f35f3cf46f6f14",
+          "displayName": "LOOOP"
+        },
+        "ProductV3:5e4b42bb3887d3076ee5976b": {
+          "__typename": "ProductV3",
+          "_id": "5e4b42bb3887d3076ee5976b",
+          "title": "지친 하루를 다정하게 감싸줄 사계절 니트 양말 뜨기",
+          "coverImageUrl": "https://cdn.class101.net/images/861f4757-b256-4d3b-b7c3-a17cad0fd199",
+          "klassId": "5e4b42bb3887d3076ee5976a",
+          "likedCount": 16761,
+          "firestoreId": "Ntb24i5h8F7D2l2MqmhI",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00324"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e4b429032f35f3cf46f6f14"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed0033a": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0033a",
+          "title": "더 새로운 종이 공예",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00337"
+            }
+          ]
+        },
+        "User:5d0249e2f48520f37ccaab52": {
+          "__typename": "User",
+          "_id": "5d0249e2f48520f37ccaab52",
+          "displayName": "밝음토퍼"
+        },
+        "ProductV3:5fa001e736c72f001357a8d0": {
+          "__typename": "ProductV3",
+          "_id": "5fa001e736c72f001357a8d0",
+          "title": "[2024년 개정판] 종이로 전하는 메세지, 토퍼 만들기부터 창업과 판매까지!",
+          "coverImageUrl": "https://cdn.class101.net/images/ed3f81e0-a2ef-4935-b567-bc06011d9c28",
+          "klassId": "5fa001e636c72f001357a8cf",
+          "likedCount": 16093,
+          "firestoreId": "O2F7ZPnUiUyzO9CDvRLK",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0033a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d0249e2f48520f37ccaab52"
+          }
+        },
+        "CategoryV2:613070fa5b76158cac883457": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac883457",
+          "title": "가죽 소품",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0033c"
+            }
+          ]
+        },
+        "User:5d27fbd0125d26d5fbcb37e9": {
+          "__typename": "User",
+          "_id": "5d27fbd0125d26d5fbcb37e9",
+          "displayName": "스튜디오 랩딥"
+        },
+        "ProductV3:5dd26e7e7506467d21106e64": {
+          "__typename": "ProductV3",
+          "_id": "5dd26e7e7506467d21106e64",
+          "title": "퇴근 후 만나는 나의 가죽 공방, 가죽공예 기초부터 완성까지!",
+          "coverImageUrl": "https://cdn.class101.net/images/5016ace4-1eea-4951-8dfb-02d631333881",
+          "klassId": "5dd26e7e7506467d21106e63",
+          "likedCount": 15471,
+          "firestoreId": "EE9WltzGqF2ufPsqSlUA",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac883457"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d27fbd0125d26d5fbcb37e9"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed0034a": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0034a",
+          "title": "더 새로운 플라워 공예",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00346"
+            }
+          ]
+        },
+        "User:5ee04c66724acc42a48c0e1d": {
+          "__typename": "User",
+          "_id": "5ee04c66724acc42a48c0e1d",
+          "displayName": "수아레벌룬"
+        },
+        "ProductV3:5ee04c7fddd29c0df0b2c00e": {
+          "__typename": "ProductV3",
+          "_id": "5ee04c7fddd29c0df0b2c00e",
+          "title": "<2024 개정판> 취미로 시작해서 창업까지, 투잡을 위한 꽃풍선 + 헬륨레터링풍선 기초",
+          "coverImageUrl": "https://cdn.class101.net/images/4ed3dca2-ce45-432b-a0ea-3f8d764ba474",
+          "klassId": "5ee04c7fddd29c0df0b2c00d",
+          "likedCount": 14139,
+          "firestoreId": "XfXQYt5h0edCw8qjtlYI",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0034a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ee04c66724acc42a48c0e1d"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed0031d": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0031d",
+          "title": "전통매듭",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00318"
+            }
+          ]
+        },
+        "User:5c5d634174eabcfdafcba1c1": {
+          "__typename": "User",
+          "_id": "5c5d634174eabcfdafcba1c1",
+          "displayName": "비밀장신구"
+        },
+        "ProductV3:5c5d780874eabcfdafd39427": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780874eabcfdafd39427",
+          "title": "전통의 현대적 재해석, 비밀장신구와 함께 엮는 전통 매듭 액세서리",
+          "coverImageUrl": "https://cdn.class101.net/images/a8bdd39e-0cd3-4c3b-a7ec-d01a9d8f9b32",
+          "klassId": "5c6f91cf74eabcfdafa1e383",
+          "likedCount": 14037,
+          "firestoreId": "WWjv7W4Oz7YAYuUi0Iat",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0031d"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d634174eabcfdafcba1c1"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed0032b": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0032b",
+          "title": "더 새로운 코바늘 뜨개",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00326"
+            }
+          ]
+        },
+        "User:5c5d6d0474eabcfdafcf9c43": {
+          "__typename": "User",
+          "_id": "5c5d6d0474eabcfdafcf9c43",
+          "displayName": "서진"
+        },
+        "ProductV3:5c5d780774eabcfdafd392bb": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780774eabcfdafd392bb",
+          "title": "직접 만들고 선물하는 재미! 서진과 함께 뜨는 코바늘 수세미",
+          "coverImageUrl": "https://cdn.class101.net/images/eaaf7c33-fafa-44bf-bc5a-a1b426923df1",
+          "klassId": "5c9136502ff0ef122c91d233",
+          "likedCount": 13189,
+          "firestoreId": "Q21xnlPbaRtvgAhyFmU6",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0032b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d6d0474eabcfdafcf9c43"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed0031a": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0031a",
+          "title": "프랑스 자수",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00319"
+            }
+          ]
+        },
+        "User:5c5d728f74eabcfdafd1616e": {
+          "__typename": "User",
+          "_id": "5c5d728f74eabcfdafd1616e",
+          "displayName": "멘티자수"
+        },
+        "ProductV3:5c5d780774eabcfdafd39103": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780774eabcfdafd39103",
+          "title": "귀여운 동물로 소품 완성! 멘티자수와 함께하는 프랑스자수",
+          "coverImageUrl": "https://cdn.class101.net/images/4c2eb9c0-380e-41b0-a3dc-6b7e0e6fc537/2880xauto.webp",
+          "klassId": "5c7e664435b52893ceff1db3",
+          "likedCount": 12691,
+          "firestoreId": "LEeMnNZhaFTExbCwqqsz",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0031a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d728f74eabcfdafd1616e"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed00323": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00323",
+          "title": "대바늘 의류",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00321"
+            }
+          ]
+        },
+        "User:5d22d6d6abe479eb88e29e11": {
+          "__typename": "User",
+          "_id": "5d22d6d6abe479eb88e29e11",
+          "displayName": "바늘이야기 김대리"
+        },
+        "ProductV3:5f0fa77e2594cf0dbc4c562c": {
+          "__typename": "ProductV3",
+          "_id": "5f0fa77e2594cf0dbc4c562c",
+          "title": "내 몸에 맞춰 쉽게 뜨는 탑다운 가디건·슬리브리스",
+          "coverImageUrl": "https://cdn.class101.net/images/874b86a5-606d-4395-a3ad-3d60f7d1d960",
+          "klassId": "5f0fa77d2594cf0dbc4c562b",
+          "likedCount": 12567,
+          "firestoreId": "6JR3hVOcfqintrdxDpou",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00323"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d22d6d6abe479eb88e29e11"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed00327": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00327",
+          "title": "코바늘 인형",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00326"
+            }
+          ]
+        },
+        "User:5ceb982a80f6734ace1a7c4b": {
+          "__typename": "User",
+          "_id": "5ceb982a80f6734ace1a7c4b",
+          "displayName": "시은맘"
+        },
+        "ProductV3:5ceb98b480f6734ace1ad33d": {
+          "__typename": "ProductV3",
+          "_id": "5ceb98b480f6734ace1ad33d",
+          "title": "코바늘로 인형을 만들자! 시은맘의 꼼지락 작업실",
+          "coverImageUrl": "https://cdn.class101.net/images/5c22310c-3134-409a-970b-cd092ed183a2",
+          "klassId": "5ceb98b480f6734ace1ad366",
+          "likedCount": 12547,
+          "firestoreId": "WDpY2sHSyfXhIyQAJSz6",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00327"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ceb982a80f6734ace1a7c4b"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed0031f": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0031f",
+          "title": "위빙",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00318"
+            }
+          ]
+        },
+        "User:5e6f9f886dd1247f6fb4f254": {
+          "__typename": "User",
+          "_id": "5e6f9f886dd1247f6fb4f254",
+          "displayName": "N1 2LL"
+        },
+        "ProductV3:5e6f9fa3a11c0b476a5ce6ac": {
+          "__typename": "ProductV3",
+          "_id": "5e6f9fa3a11c0b476a5ce6ac",
+          "title": "실로 그리는 컬러 콜라주, 태피스트리 도형 위빙",
+          "coverImageUrl": "https://cdn.class101.net/images/3678ebfc-fd33-45bc-981a-ddb9e6a0f9e6",
+          "klassId": "5e6f9fa3a11c0b476a5ce6ab",
+          "likedCount": 11960,
+          "firestoreId": "M4vHw0vAk1u8oPIV3gV5",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0031f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e6f9f886dd1247f6fb4f254"
+          }
+        },
+        "CategoryV2:613618726f60d41066db368a": {
+          "__typename": "CategoryV2",
+          "id": "613618726f60d41066db368a",
+          "title": "레진 소품",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0033e"
+            }
+          ]
+        },
+        "User:5ce36f2380f6734ace630deb": {
+          "__typename": "User",
+          "_id": "5ce36f2380f6734ace630deb",
+          "displayName": "쪼만한마을"
+        },
+        "ProductV3:5ce36f5480f6734ace631fc1": {
+          "__typename": "ProductV3",
+          "_id": "5ce36f5480f6734ace631fc1",
+          "title": "쪼만한마을의 레진 공예, 기초부터 민간자격증 발급까지!",
+          "coverImageUrl": "https://cdn.class101.net/images/b588c12c-3a89-4b4f-bc1a-8f8e45398841",
+          "klassId": "5ce36f5480f6734ace631fa2",
+          "likedCount": 11640,
+          "firestoreId": "gMiioxaKiBwa7GVzhOs0",
+          "category": {
+            "__ref": "CategoryV2:613618726f60d41066db368a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ce36f2380f6734ace630deb"
+          }
+        },
+        "User:5c5d647474eabcfdafcc4109": {
+          "__typename": "User",
+          "_id": "5c5d647474eabcfdafcc4109",
+          "displayName": "메종드윤(가능성발명가)"
+        },
+        "ProductV3:5cadb525cb2728ebe9888b38": {
+          "__typename": "ProductV3",
+          "_id": "5cadb525cb2728ebe9888b38",
+          "title": "전통의 아름다움, 메종드윤과 함께 만드는 한복 장신구",
+          "coverImageUrl": "https://cdn.class101.net/images/05b34c52-3710-4aad-9ccd-218683d69a47/2880xauto.webp",
+          "klassId": "5cadb525cb2728ebe9888b0b",
+          "likedCount": 11604,
+          "firestoreId": "ghaWB8YZBB5ACOBRspWV",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0034e"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d647474eabcfdafcc4109"
+          }
+        },
+        "User:5e597b67f5512e20e65b5202": {
+          "__typename": "User",
+          "_id": "5e597b67f5512e20e65b5202",
+          "displayName": "아뜰리에올라"
+        },
+        "ProductV3:5f054642e1d0630db4a1f9fa": {
+          "__typename": "ProductV3",
+          "_id": "5f054642e1d0630db4a1f9fa",
+          "title": "비즈와 프랑스 자수로 만드는 키치하고 특별한 소품들",
+          "coverImageUrl": "https://cdn.class101.net/images/34eaa46a-fc5a-448b-95d3-f3caf979662e",
+          "klassId": "5f054642e1d0630db4a1f9f9",
+          "likedCount": 11343,
+          "firestoreId": "03Y8c5a3ohQb0mUzS87z",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0031a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e597b67f5512e20e65b5202"
+          }
+        },
+        "CategoryV2:6130748cf680958d45647b95": {
+          "__typename": "CategoryV2",
+          "id": "6130748cf680958d45647b95",
+          "title": "더 새로운 나무﹒라탄 공예",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883455"
+            }
+          ]
+        },
+        "User:5c67055f74eabcfdaf31e5df": {
+          "__typename": "User",
+          "_id": "5c67055f74eabcfdaf31e5df",
+          "displayName": "올라라탄"
+        },
+        "ProductV3:5c665c9874eabcfdaf207558": {
+          "__typename": "ProductV3",
+          "_id": "5c665c9874eabcfdaf207558",
+          "title": "자연을 엮는 올라라탄의 라탄공예 입문",
+          "coverImageUrl": "https://cdn.class101.net/images/2d8bdd80-c1f0-4917-a67e-2b52a4032354/2880xauto.webp",
+          "klassId": "5c98c1652ff0ef122c23b370",
+          "likedCount": 11340,
+          "firestoreId": "qQimLOeiWDhccVeuzVNu",
+          "category": {
+            "__ref": "CategoryV2:6130748cf680958d45647b95"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c67055f74eabcfdaf31e5df"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed00320": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00320",
+          "title": "더 새로운 실 공예",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00318"
+            }
+          ]
+        },
+        "User:5c5d696174eabcfdafce4cdb": {
+          "__typename": "User",
+          "_id": "5c5d696174eabcfdafce4cdb",
+          "displayName": "knit whale"
+        },
+        "ProductV3:5c5d780974eabcfdafd3987d": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780974eabcfdafd3987d",
+          "title": "내 손이 뜨개 도구가 되는, 니트웨일의 암니팅",
+          "coverImageUrl": "https://cdn.class101.net/images/f918184f-290f-4211-a100-bce8e2d7d46a/autoxauto.webp",
+          "klassId": "5c514d81d30c532c446947a5",
+          "likedCount": 11226,
+          "firestoreId": "lVrfK9JLCyrRKzauIher",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00320"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d696174eabcfdafce4cdb"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed00344": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00344",
+          "title": "조향",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00342"
+            }
+          ]
+        },
+        "User:5cc28a952cac7d06110e6c25": {
+          "__typename": "User",
+          "_id": "5cc28a952cac7d06110e6c25",
+          "displayName": "블뤼떼 BLUTE"
+        },
+        "ProductV3:5cc28abf2cac7d06110e83b4": {
+          "__typename": "ProductV3",
+          "_id": "5cc28abf2cac7d06110e83b4",
+          "title": "조향사에게 배우는 조향 기초, 나만의 향기를 만들어요.",
+          "coverImageUrl": "https://cdn.class101.net/images/b2d0a936-2206-49fa-adbb-8514d9823204",
+          "klassId": "5cc28abf2cac7d06110e83cc",
+          "likedCount": 11190,
+          "firestoreId": "QlIxKHXIPlihxoXAwgeD",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00344"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cc28a952cac7d06110e6c25"
+          }
+        },
+        "User:5c5d60cb74eabcfdafc98f5f": {
+          "__typename": "User",
+          "_id": "5c5d60cb74eabcfdafc98f5f",
+          "displayName": "바이브리(byBri)"
+        },
+        "ProductV3:5d6362a61f169307e6b7192b": {
+          "__typename": "ProductV3",
+          "_id": "5d6362a61f169307e6b7192b",
+          "title": "보송보송 코바늘 동물 세상! 바이브리와 함께 떠봐요.",
+          "coverImageUrl": "https://cdn.class101.net/images/16b0656e-2c8a-41b8-8199-78525d9501d6",
+          "klassId": "5d6362a44a44e9174dad3816",
+          "likedCount": 10177,
+          "firestoreId": "HNp7Al3dho6rsulvcqs0",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00327"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d60cb74eabcfdafc98f5f"
+          }
+        },
+        "User:5c5d617274eabcfdafca63ab": {
+          "__typename": "User",
+          "_id": "5c5d617274eabcfdafca63ab",
+          "displayName": "블루도프"
+        },
+        "ProductV3:5ea7fb453cdf9b6de6f365c3": {
+          "__typename": "ProductV3",
+          "_id": "5ea7fb453cdf9b6de6f365c3",
+          "title": "일상을 빛나게, 섬세한 금속 공예로 만나는 핸드메이드 주얼리",
+          "coverImageUrl": "https://cdn.class101.net/images/dd605755-fe4f-4e07-aa88-da863ccf7c10",
+          "klassId": "5ea7fb443cdf9b6de6f365c2",
+          "likedCount": 9972,
+          "firestoreId": "PIhKMEDngUpcXi81VkQN",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0034e"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d617274eabcfdafca63ab"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed00322": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00322",
+          "title": "대바늘 인형",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00321"
+            }
+          ]
+        },
+        "User:5ca89b036008dd782a34d211": {
+          "__typename": "User",
+          "_id": "5ca89b036008dd782a34d211",
+          "displayName": "로빈"
+        },
+        "ProductV3:5f57ebdad2c3d2001c048dd2": {
+          "__typename": "ProductV3",
+          "_id": "5f57ebdad2c3d2001c048dd2",
+          "title": "귀여워 너무 귀여워! 로빈을 따라 만드는 뜨개 인형들",
+          "coverImageUrl": "https://cdn.class101.net/images/bc136e41-bd69-4e00-85c9-25b87d70e1c1",
+          "klassId": "5f57ebd9d2c3d2001c048dd1",
+          "likedCount": 9929,
+          "firestoreId": "Fqm9s07w2SClo3Uya3Hu",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00322"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ca89b036008dd782a34d211"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed0031b": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0031b",
+          "title": "펀치니들",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00318"
+            }
+          ]
+        },
+        "User:5f27a28ba1b9a02eb5aeefc6": {
+          "__typename": "User",
+          "_id": "5f27a28ba1b9a02eb5aeefc6",
+          "displayName": "어피스오브애플"
+        },
+        "ProductV3:5ff478f67fab23000d0f0850": {
+          "__typename": "ProductV3",
+          "_id": "5ff478f67fab23000d0f0850",
+          "title": "공간에 생생한 감각을 더해요, 펀치니들을 이용한 터프팅 소품 제작법",
+          "coverImageUrl": "https://cdn.class101.net/images/9a3efc74-4b32-45de-88c7-f8b63df4ce5d",
+          "klassId": "5ff478f57fab23000d0f0788",
+          "likedCount": 9624,
+          "firestoreId": "K3Zo8qnNlSMOm0zOPTI2",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0031b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f27a28ba1b9a02eb5aeefc6"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed00325": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00325",
+          "title": "더 새로운 대바늘 뜨개",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00321"
+            }
+          ]
+        },
+        "CategoryV2:6130748cf680958d45647b93": {
+          "__typename": "CategoryV2",
+          "id": "6130748cf680958d45647b93",
+          "title": "코바늘 가방﹒소품",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00326"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac883451": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac883451",
+          "title": "전통 자수",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00319"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0031c": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0031c",
+          "title": "더 새로운 자수",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00319"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0031e": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0031e",
+          "title": "마크라메",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00318"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00332": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00332",
+          "title": "재봉",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0032c"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0032d": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0032d",
+          "title": "손바느질",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0032c"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac883452": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac883452",
+          "title": "더 새로운 패브릭 공예",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0032c"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac883453": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac883453",
+          "title": "비누",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00342"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac883454": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac883454",
+          "title": "캔들",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00342"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00345": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00345",
+          "title": "더 새로운 향 공예",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00342"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0033d": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0033d",
+          "title": "라탄",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883455"
+            }
+          ]
+        },
+        "CategoryV2:6130748cf680958d45647b94": {
+          "__typename": "CategoryV2",
+          "id": "6130748cf680958d45647b94",
+          "title": "우드카빙",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883455"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0033b": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0033b",
+          "title": "목공예",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883455"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac883456": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac883456",
+          "title": "가죽 가방",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0033c"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac883458": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac883458",
+          "title": "더 새로운 가죽 공예",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0033c"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00339": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00339",
+          "title": "페이퍼 플라워",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00337"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00338": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00338",
+          "title": "북바인딩",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00337"
+            }
+          ]
+        },
+        "CategoryV2:613618726f60d41066db368b": {
+          "__typename": "CategoryV2",
+          "id": "613618726f60d41066db368b",
+          "title": "플루이드 아트",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0033e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00347": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00347",
+          "title": "생화",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00346"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00348": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00348",
+          "title": "드라이 · 프리저버드 플라워",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00346"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00349": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00349",
+          "title": "실크 플라워",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00317"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00346"
+            }
+          ]
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed00317"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

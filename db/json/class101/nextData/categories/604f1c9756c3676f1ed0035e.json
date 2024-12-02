@@ -1,0 +1,777 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed0035e"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed0035e\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed0035e\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFjOTg1ZTg4MWJlZTgwMDE0NWFmNmM2X19DVVJTT1JfREVMSU1JVEVSX18xNTI1M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:61c985e881bee800145af6c6"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQwODk0YmU2YTNiZDEwOTU2YjI5YzAzX19DVVJTT1JfREVMSU1JVEVSX18xMzAxOV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d0894be6a3bd10956b29c03"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY3ZWY1YjBjNmIyMzUwMDIwZjhiNGFhX19DVVJTT1JfREVMSU1JVEVSX18xMjgyMV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f7ef5b0c6b2350020f8b4aa"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQzMWJiNDkxMjVkMjZkNWZiMzcyOTc4X19DVVJTT1JfREVMSU1JVEVSX18xMjU0Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d31bb49125d26d5fb372978"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA1ODU1MzY4YTEyMzUwMDE0NzcwYzllX19DVVJTT1JfREVMSU1JVEVSX18xMDYxMl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:605855368a12350014770c9e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA4Njg4NjZmNzJhYTEwMDBlOGY1NTI1X19DVVJTT1JfREVMSU1JVEVSX185MTgxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60868866f72aa1000e8f5525"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ4YTBhNDEyY2IxYTEwMWZjODVmOTczX19DVVJTT1JfREVMSU1JVEVSX185MDQ0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5d8a0a412cb1a101fc85f973"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY5YjM5YmFjZGM2NGIwMDEzN2Y2MzJiX19DVVJTT1JfREVMSU1JVEVSX184MTI1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f9b39bacdc64b00137f632b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDY3NGVhYmNmZGFmZDM4ZTdmX19DVVJTT1JfREVMSU1JVEVSX183NjQ2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5c5d780674eabcfdafd38e7f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNjOTA3OTg2ZmZiMjAyMGRiZTMwY2ZiX19DVVJTT1JfREVMSU1JVEVSX183NjQ1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5cc907986ffb2020dbe30cfb"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY4MWM4MGRlZWUzZGEwMDEzZGMyZGNkX19DVVJTT1JfREVMSU1JVEVSX182ODYzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f81c80deee3da0013dc2dcd"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNlNDAzYTg4MGY2NzM0YWNlYjk4YTk3X19DVVJTT1JfREVMSU1JVEVSX182Njg3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ce403a880f6734aceb98a97"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MGE3NGVhYmNmZGFmZDM5YmYyX19DVVJTT1JfREVMSU1JVEVSX182MDU5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5c5d780a74eabcfdafd39bf2"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNkMjc1N2M4MGY2NzM0YWNlZjk0NjExX19DVVJTT1JfREVMSU1JVEVSX182MDQzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5cd2757c80f6734acef94611"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA1NDExMWJhMWRhNTcwMDE0OGVjOWZjX19DVVJTT1JfREVMSU1JVEVSX182MDI3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6054111ba1da5700148ec9fc"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVkNGIyYmE1Mzc3YjkyYTEzNjI4OTliX19DVVJTT1JfREVMSU1JVEVSX182MDA0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ed4b2ba5377b92a1362899b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYxN2Q2ODVhNjk2YTQwZDlmMDViNjA3X19DVVJTT1JfREVMSU1JVEVSX181ODk4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f17d685a696a40d9f05b607"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ5NmQzNmU4YjJhZjc4ZDE1MGYyMmRlX19DVVJTT1JfREVMSU1JVEVSX181NTM5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5d96d36e8b2af78d150f22de"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU2ZjMyNTlhNGRjOTkyOTIzNDRmMzVlX19DVVJTT1JfREVMSU1JVEVSX181MzUzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e6f3259a4dc99292344f35e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAzYmI4ODU1NWUzZmIwMDE1ZDYyOGY5X19DVVJTT1JfREVMSU1JVEVSX181MTUxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:603bb88555e3fb0015d628f9"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjAzYmI4ODU1NWUzZmIwMDE1ZDYyOGY5X19DVVJTT1JfREVMSU1JVEVSX181MTUxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NjFjOTg1ZTg4MWJlZTgwMDE0NWFmNmM2X19DVVJTT1JfREVMSU1JVEVSX18xNTI1M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:605c3db737b977e02654405e": {
+          "__typename": "CategoryV2",
+          "id": "605c3db737b977e02654405e",
+          "title": "크리에이티브",
+          "depth": 0
+        },
+        "CategoryV2:604f1c9756c3676f1ed00362": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00362",
+          "title": "케이크",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac88345e": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac88345e",
+          "title": "제과",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac88345f": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac88345f",
+          "title": "제빵",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00363": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00363",
+          "title": "떡 · 전통다과",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac883460": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac883460",
+          "title": "비건",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00364": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00364",
+          "title": "더 새로운 베이킹 · 디저트",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0035e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0035e": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0035e",
+          "title": "베이킹 · 디저트",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00362"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac88345e"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac88345f"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00363"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883460"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00364"
+            }
+          ]
+        },
+        "User:61b83c2e26ae6600149aeb99": {
+          "__typename": "User",
+          "_id": "61b83c2e26ae6600149aeb99",
+          "displayName": "조이앤베이킹"
+        },
+        "ProductV3:61c985e881bee800145af6c6": {
+          "__typename": "ProductV3",
+          "_id": "61c985e881bee800145af6c6",
+          "title": "SNS 후기 100건 이상! 쉽게 배우는 궁극의 베이킹 15가지 레시피",
+          "coverImageUrl": "https://cdn.class101.net/images/d3f52048-c315-4f46-9420-586ec16ce7a7",
+          "klassId": "61c985e881bee800145af6c3",
+          "likedCount": 15253,
+          "firestoreId": "tlv4fPNBAqoqRpYjId2n",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88345e"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61b83c2e26ae6600149aeb99"
+          }
+        },
+        "User:5d06c64c6a3bd109564212e1": {
+          "__typename": "User",
+          "_id": "5d06c64c6a3bd109564212e1",
+          "displayName": "아이라이크케이크"
+        },
+        "ProductV3:5d0894be6a3bd10956b29c03": {
+          "__typename": "ProductV3",
+          "_id": "5d0894be6a3bd10956b29c03",
+          "title": "특별한 날을 더 특별하게! 커스텀 디자인 케이크 마스터 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/a3922dea-eda4-477d-8785-d07ce937d17c/2048xauto.webp",
+          "klassId": "5d0894be6a3bd10956b29d2d",
+          "likedCount": 13019,
+          "firestoreId": "l20zpmgOWoNPBk5PMBaQ",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00362"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d06c64c6a3bd109564212e1"
+          }
+        },
+        "User:5ec365ae67be5d18edc54c24": {
+          "__typename": "User",
+          "_id": "5ec365ae67be5d18edc54c24",
+          "displayName": "브루어스커피"
+        },
+        "ProductV3:5f7ef5b0c6b2350020f8b4aa": {
+          "__typename": "ProductV3",
+          "_id": "5f7ef5b0c6b2350020f8b4aa",
+          "title": "쉽고 재밌게 배우는 브루어스 구움 과자의 맛있는 레시피 비법",
+          "coverImageUrl": "https://cdn.class101.net/images/5a11a298-2d12-4dda-9e3c-caadde6c9e7e",
+          "klassId": "5f7ef5afc6b2350020f8b4a9",
+          "likedCount": 12821,
+          "firestoreId": "CK8pwa8sloNWRkqpMIsi",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88345e"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ec365ae67be5d18edc54c24"
+          }
+        },
+        "User:5cc1403b2cac7d06116dfaaf": {
+          "__typename": "User",
+          "_id": "5cc1403b2cac7d06116dfaaf",
+          "displayName": "이런날케이크"
+        },
+        "ProductV3:5d31bb49125d26d5fb372978": {
+          "__typename": "ProductV3",
+          "_id": "5d31bb49125d26d5fb372978",
+          "title": "일주일 만에 베이커로 거듭나기! 인기폭발 이런날케이크의 <필수 베이킹 6종 레시피>",
+          "coverImageUrl": "https://cdn.class101.net/images/ecff0545-bc94-490e-a4e5-2432b0322315/autoxauto.webp",
+          "klassId": "5d31bb48125d26d5fb37241a",
+          "likedCount": 12542,
+          "firestoreId": "uoGMeXC7t0NOpXMtjeIE",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88345f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cc1403b2cac7d06116dfaaf"
+          }
+        },
+        "User:6058551c8b727c0014104723": {
+          "__typename": "User",
+          "_id": "6058551c8b727c0014104723",
+          "displayName": "제주 잔물결 &오그커피"
+        },
+        "ProductV3:605855368a12350014770c9e": {
+          "__typename": "ProductV3",
+          "_id": "605855368a12350014770c9e",
+          "title": "늘 완판되는 제주 잔물결 & 오그커피의 구움과자와 케이크 배우기",
+          "coverImageUrl": "https://cdn.class101.net/images/b5d568c7-df56-4ce4-bd02-1735176283f4",
+          "klassId": "605855368a12350014770c9d",
+          "likedCount": 10612,
+          "firestoreId": "nMDjkrJSd7bO0KCuvBMj",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88345e"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6058551c8b727c0014104723"
+          }
+        },
+        "User:6003002fc01b0f001431b173": {
+          "__typename": "User",
+          "_id": "6003002fc01b0f001431b173",
+          "displayName": "데이지디저트"
+        },
+        "ProductV3:60868866f72aa1000e8f5525": {
+          "__typename": "ProductV3",
+          "_id": "60868866f72aa1000e8f5525",
+          "title": "소상공인을 위한 납품 전문 온라인 베이커리의 검증된 비밀 디저트 레시피",
+          "coverImageUrl": "https://cdn.class101.net/images/2bfc5433-3be2-409e-b837-ae71598e1532",
+          "klassId": "60868865f72aa1000e8f5524",
+          "likedCount": 9181,
+          "firestoreId": "ZRa5Z0oQjAP69KbjxUKk",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00364"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6003002fc01b0f001431b173"
+          }
+        },
+        "User:5cb082d5cb2728ebe953b5e0": {
+          "__typename": "User",
+          "_id": "5cb082d5cb2728ebe953b5e0",
+          "displayName": "고은케이크"
+        },
+        "ProductV3:5d8a0a412cb1a101fc85f973": {
+          "__typename": "ProductV3",
+          "_id": "5d8a0a412cb1a101fc85f973",
+          "title": "기억하고 싶은 특별한 날을 케이크에 담다, 빈티지 디자인 케이크 ",
+          "coverImageUrl": "https://cdn.class101.net/images/cb2455db-cbd5-4000-9f0b-f4e91ddb369c",
+          "klassId": "5d8a0a3fff6216301c6c433e",
+          "likedCount": 9044,
+          "firestoreId": "bX4Ifvuq0P40A0ffuOAC",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00362"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cb082d5cb2728ebe953b5e0"
+          }
+        },
+        "User:5f9b399c94d42f0013d4007b": {
+          "__typename": "User",
+          "_id": "5f9b399c94d42f0013d4007b",
+          "displayName": "그다이마잇"
+        },
+        "ProductV3:5f9b39bacdc64b00137f632b": {
+          "__typename": "ProductV3",
+          "_id": "5f9b39bacdc64b00137f632b",
+          "title": "인스타 대세! 곰손도 금손되는 미니 도시락케이크 홈베이킹",
+          "coverImageUrl": "https://cdn.class101.net/images/0f379b33-b0cf-4a5a-8437-7ddb0c127e03",
+          "klassId": "5f9b39bacdc64b00137f632a",
+          "likedCount": 8125,
+          "firestoreId": "j5AcPOePuhI1VhZqecGE",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00362"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f9b399c94d42f0013d4007b"
+          }
+        },
+        "User:5c5d62b174eabcfdafcb4c58": {
+          "__typename": "User",
+          "_id": "5c5d62b174eabcfdafcb4c58",
+          "displayName": "Nana"
+        },
+        "ProductV3:5c5d780674eabcfdafd38e7f": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780674eabcfdafd38e7f",
+          "title": "테이블 가득 채워내는 홈베이킹, 나나와 함께 달달함을 나누는 디저트",
+          "coverImageUrl": "https://cdn.class101.net/images/cced28e3-94ac-4c90-a12d-0592f28c7471",
+          "klassId": "5c514d81d30c532c4469477c",
+          "likedCount": 7646,
+          "firestoreId": "BdWtWJodDOYcPiwhhp4c",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88345f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d62b174eabcfdafcb4c58"
+          }
+        },
+        "User:5c5d741f74eabcfdafd1d932": {
+          "__typename": "User",
+          "_id": "5c5d741f74eabcfdafd1d932",
+          "displayName": "dalas다라스"
+        },
+        "ProductV3:5cc907986ffb2020dbe30cfb": {
+          "__typename": "ProductV3",
+          "_id": "5cc907986ffb2020dbe30cfb",
+          "title": "고기는 포기해도, 디저트는 포기 못해! 달콤한 비건 로푸드 디저트 레시피",
+          "coverImageUrl": "https://cdn.class101.net/images/a3dced81-8187-41db-8760-2e7777f2fb14",
+          "klassId": "5cc907986ffb2020dbe30ceb",
+          "likedCount": 7645,
+          "firestoreId": "yeUMbbemjbBiubecR26j",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac883460"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d741f74eabcfdafd1d932"
+          }
+        },
+        "User:5f80317eb58275000d5ec4b8": {
+          "__typename": "User",
+          "_id": "5f80317eb58275000d5ec4b8",
+          "displayName": "찌니빵공장"
+        },
+        "ProductV3:5f81c80deee3da0013dc2dcd": {
+          "__typename": "ProductV3",
+          "_id": "5f81c80deee3da0013dc2dcd",
+          "title": "건강하고 맛있게 즐기는 찌니빵공장의 비건 홈카페 디저트",
+          "coverImageUrl": "https://cdn.class101.net/images/cad684dc-de14-42ed-ad75-777bf0c82f5c",
+          "klassId": "5f81c80ceee3da0013dc2dcc",
+          "likedCount": 6863,
+          "firestoreId": "riwZFwbnXFK6E3dMgPsE",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac883460"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f80317eb58275000d5ec4b8"
+          }
+        },
+        "User:5ccc493d80f6734ace91e458": {
+          "__typename": "User",
+          "_id": "5ccc493d80f6734ace91e458",
+          "displayName": "하이디공방"
+        },
+        "ProductV3:5ce403a880f6734aceb98a97": {
+          "__typename": "ProductV3",
+          "_id": "5ce403a880f6734aceb98a97",
+          "title": "밀가루NO! 쌀가루로 만드는 건강하고 담백한 베이킹",
+          "coverImageUrl": "https://cdn.class101.net/images/902e0afc-f5ee-4dcd-925f-c5656321d0b5",
+          "klassId": "5ce403a880f6734aceb98ae5",
+          "likedCount": 6687,
+          "firestoreId": "svZ7eGielERoohoJh3Jp",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00364"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ccc493d80f6734ace91e458"
+          }
+        },
+        "User:5c5d635674eabcfdafcbacfd": {
+          "__typename": "User",
+          "_id": "5c5d635674eabcfdafcbacfd",
+          "displayName": "오직아뜰리에"
+        },
+        "ProductV3:5c5d780a74eabcfdafd39bf2": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780a74eabcfdafd39bf2",
+          "title": " 독보적인 커리큘럼! 앙금 플라워 케이크와 보자기 케이크 🌼 자격증 발급",
+          "coverImageUrl": "https://cdn.class101.net/images/b54515e1-e5a3-474a-999c-27a61268cd82",
+          "klassId": "5c514d80d30c532c44694652",
+          "likedCount": 6059,
+          "firestoreId": "zLSkcce773cmD6rsSRFP",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00363"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d635674eabcfdafcbacfd"
+          }
+        },
+        "User:5c5f1b3074eabcfdaf0e5a9a": {
+          "__typename": "User",
+          "_id": "5c5f1b3074eabcfdaf0e5a9a",
+          "displayName": "낭만브레드"
+        },
+        "ProductV3:5cd2757c80f6734acef94611": {
+          "__typename": "ProductV3",
+          "_id": "5cd2757c80f6734acef94611",
+          "title": "낭만브레드와 시작하는 행복한 빵 생활!",
+          "coverImageUrl": "https://cdn.class101.net/images/860b79ca-e228-404a-816a-573b69fae710",
+          "klassId": "5cd2757d80f6734acef9465e",
+          "likedCount": 6043,
+          "firestoreId": "eXI9JywPHPa8zryvuwyZ",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88345f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5f1b3074eabcfdaf0e5a9a"
+          }
+        },
+        "User:6029c31ce027b9000d4668bd": {
+          "__typename": "User",
+          "_id": "6029c31ce027b9000d4668bd",
+          "displayName": "밀희"
+        },
+        "ProductV3:6054111ba1da5700148ec9fc": {
+          "__typename": "ProductV3",
+          "_id": "6054111ba1da5700148ec9fc",
+          "title": "집과 카페에서 응용하기 쉬운 바삭한 '밀희' 만의 파이 & 컵케이크 비법",
+          "coverImageUrl": "https://cdn.class101.net/images/2ab85bc1-6d9d-4eb2-b4cd-6063b0d062bc",
+          "klassId": "6054111ba1da5700148ec9fb",
+          "likedCount": 6027,
+          "firestoreId": "dyb419SQkiDbvgg2CdER",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00364"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6029c31ce027b9000d4668bd"
+          }
+        },
+        "User:5ece35e7724acc42a4dc1718": {
+          "__typename": "User",
+          "_id": "5ece35e7724acc42a4dc1718",
+          "displayName": "달비케이크"
+        },
+        "ProductV3:5ed4b2ba5377b92a1362899b": {
+          "__typename": "ProductV3",
+          "_id": "5ed4b2ba5377b92a1362899b",
+          "title": "폭신한 달콤함이 주는 행복, 달비 케이크만의 특별 레시피 비법",
+          "coverImageUrl": "https://cdn.class101.net/images/e7c9abb6-9adc-471f-a5c0-4ccf6cd6169e/autoxauto.webp",
+          "klassId": "5ed4b2ba5377b92a1362899a",
+          "likedCount": 6004,
+          "firestoreId": "1VnUBU3JZUpl2TsePM37",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00362"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ece35e7724acc42a4dc1718"
+          }
+        },
+        "User:5f17d67119e366d0b4e9b748": {
+          "__typename": "User",
+          "_id": "5f17d67119e366d0b4e9b748",
+          "displayName": "꼼므크리제"
+        },
+        "ProductV3:5f17d685a696a40d9f05b607": {
+          "__typename": "ProductV3",
+          "_id": "5f17d685a696a40d9f05b607",
+          "title": "원리부터 이해해요, 감각적인 비건 無밀가루 디저트 베이킹",
+          "coverImageUrl": "https://cdn.class101.net/images/472be596-80b2-4eb0-a4b8-558be3732071",
+          "klassId": "5f17d685a696a40d9f05b606",
+          "likedCount": 5898,
+          "firestoreId": "Opom33jtLyz66DkHU9t6",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac883460"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f17d67119e366d0b4e9b748"
+          }
+        },
+        "User:5d96d344b1746f7876c698d8": {
+          "__typename": "User",
+          "_id": "5d96d344b1746f7876c698d8",
+          "displayName": "라르고팩토리"
+        },
+        "ProductV3:5d96d36e8b2af78d150f22de": {
+          "__typename": "ProductV3",
+          "_id": "5d96d36e8b2af78d150f22de",
+          "title": "돈이 되는 달콤한 취미, 앙금 플라워 떡케이크",
+          "coverImageUrl": "https://cdn.class101.net/images/a3e00c95-04b9-4090-b0f3-c88f35aa060f",
+          "klassId": "5d96d36d3649c5776d6e73ee",
+          "likedCount": 5539,
+          "firestoreId": "aOyJUuqSQVysfO3QpOBq",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00363"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d96d344b1746f7876c698d8"
+          }
+        },
+        "User:5cf245a880f6734ace77584a": {
+          "__typename": "User",
+          "_id": "5cf245a880f6734ace77584a",
+          "displayName": "Table301"
+        },
+        "ProductV3:5e6f3259a4dc99292344f35e": {
+          "__typename": "ProductV3",
+          "_id": "5e6f3259a4dc99292344f35e",
+          "title": "Table301의 특별한 레시피 가득 담긴 수제 카라멜&푸딩 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/e26f7f00-c179-4f0f-b02a-a9c43bd2b2c8",
+          "klassId": "5e6f3259a4dc99292344f35d",
+          "likedCount": 5353,
+          "firestoreId": "KI1xvuH1uSPOEGieI0ma",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00364"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cf245a880f6734ace77584a"
+          }
+        },
+        "User:603bb87d8ebfb4000eae4b18": {
+          "__typename": "User",
+          "_id": "603bb87d8ebfb4000eae4b18",
+          "displayName": "클래스101"
+        },
+        "ProductV3:603bb88555e3fb0015d628f9": {
+          "__typename": "ProductV3",
+          "_id": "603bb88555e3fb0015d628f9",
+          "title": "완판 구움과자 서교동 과자점 '오흐뒤구떼'의 마들렌, 휘낭시에, 비스킷 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/c5656b58-14e5-4023-b575-a1236eaa223c",
+          "klassId": "603bb88555e3fb0015d628f8",
+          "likedCount": 5151,
+          "firestoreId": "6AydCKp82hazh0plxaeD",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88345f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:603bb87d8ebfb4000eae4b18"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed0035e"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

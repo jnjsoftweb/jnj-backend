@@ -1,5 +1,7 @@
+import fs from 'fs';
 import { By } from 'selenium-webdriver';
 import { Chrome } from 'jnj-lib-web';
+import * as cheerio from 'cheerio';
 import { JSDOM } from 'jsdom';
 import {
   YOUTUBE_DEFAULT_USER_ID,
@@ -8,21 +10,33 @@ import {
 } from '../../env.js';
 import { saveFile, loadFile, saveJson, loadJson } from 'jnj-lib-base';
 
+// const YOUTUBE_DEFAULT_USER_EMAIL = "bigwhitekmc@gmail.com"
+
 const URL_CATEGORIES = 'https://class101.net/ko/categories';
 const CLASS101_JSON_ROOT =
   'C:/JnJ-soft/Projects/internal/jnj-backend/db/json/class101';
+const CLASS101_HTML_ROOT =
+  'C:/JnJ-soft/Projects/internal/jnj-backend/db/html/class101';
 const CATEGORIES_JSON_PATH = `${CLASS101_JSON_ROOT}/categories.json`;
 const PRODUCTS_JSON_PATH = `${CLASS101_JSON_ROOT}/products.json`;
 // const CATEGORIES_HTML_PATH = './test.html';
 
+// * 정보
+const flattenedProducts = loadJson(
+  `${CLASS101_JSON_ROOT}/flattened-products.json`
+);
+
+// ** Sub Functions
 // * 페이지 이동 함수
-const goToUrl = async ({
+const goToUrl = async (
   url,
-  email = YOUTUBE_DEFAULT_USER_EMAIL,
-  userDataDir = DEFAULT_USER_DATA_DIR,
-  headless = true,
-  scroll = false,
-}) => {
+  {
+    email = YOUTUBE_DEFAULT_USER_EMAIL,
+    userDataDir = DEFAULT_USER_DATA_DIR,
+    headless = false,
+    scroll = false,
+  } = {} // 빈 객체를 기본값으로 설정
+) => {
   const chrome = new Chrome({
     headless: headless ? 'new' : false,
     email,
@@ -46,285 +60,268 @@ const goToUrl = async ({
   }
 };
 
-const extractMainCatetories = (html) => {
-  const dom = new JSDOM(html, {
-    // CSS 파싱 비활성화
-    features: {
-      QuerySelector: true,
-      ProcessExternalResources: false,
-    },
-  });
-  const doc = dom.window.document;
+const parseNextData = (html) => {
+  try {
+    // cheerio로 HTML 파싱
+    const $ = cheerio.load(html);
+    // __NEXT_DATA__ 스크립트 찾기
+    const nextDataScript = $('#__NEXT_DATA__');
 
-  const categories = [];
+    if (!nextDataScript.length) {
+      throw new Error('__NEXT_DATA__ 스크립트를 찾을 수 없습니다.');
+    }
 
-  // 모든 카테고리 링크 찾기
-  const categoryLinks = doc.querySelectorAll(
-    '#__next > main > div > div.css-zmnfx9 > div > div > div > div > div > a'
-  );
-
-  categoryLinks.forEach((link) => {
-    const href = link.getAttribute('href');
-    if (!href || !href.includes('/categories/')) return;
-
-    const titleElement = link.querySelector('div > h3');
-    if (!titleElement) return;
-
-    const title = titleElement.textContent.trim();
-    const categoryId = href.split('/').pop();
-
-    categories.push({ title, categoryId });
-  });
-
-  return categories;
-};
-
-const extractSubCatetories = (html) => {
-  const dom = new JSDOM(html, {
-    // CSS 파싱 비활성화
-    features: {
-      QuerySelector: true,
-      ProcessExternalResources: false,
-    },
-  });
-  const doc = dom.window.document;
-  const categories = [];
-
-  // 서브카테고리 링크 찾기
-  const subCategoryDivs = doc.querySelectorAll('.css-1d944kd');
-
-  subCategoryDivs.forEach((div) => {
-    const link = div.querySelector('a');
-    if (!link) return;
-
-    const href = link.getAttribute('href');
-    if (!href || !href.includes('/categories/')) return;
-
-    const titleElement = div.querySelector('.css-1h8wj8h');
-    if (!titleElement) return;
-
-    const title = titleElement.textContent.trim();
-    const categoryId = href.split('/').pop();
-
-    categories.push({ title, categoryId });
-  });
-
-  return categories;
-};
-
-const getMainCategoryHtml = async (url = URL_CATEGORIES, headless = false) => {
-  const chrome = await goToUrl({ url, headless });
-  const html = await chrome.driver.getPageSource();
-  await chrome.close();
-  return html;
-};
-
-const getSubCategoryHtml = async (categoryId, scroll = false) => {
-  const url = `${URL_CATEGORIES}/${categoryId}`;
-  const chrome = await goToUrl({ url, headless: false, scroll });
-  const html = await chrome.driver.getPageSource();
-  await chrome.close();
-  return html;
-};
-
-const getMainCategories = async () => {
-  return extractMainCatetories(await getMainCategoryHtml());
-};
-
-// * 전체 카테고리
-const getCategories = async () => {
-  const mainCategories = await getMainCategories();
-  // console.log('메인 카테고리:', mainCategories);
-
-  for (let mc of mainCategories) {
-    // console.log(`서브카테고리 가져오기: ${mc.title}`);
-    const html = await getSubCategoryHtml(mc.categoryId);
-    const subCategories = extractSubCatetories(html);
-    // console.table(subCategories);
-    mc.subcategories = subCategories;
-    // console.log(`- 서브카테고리 수: ${subCategories.length}`);
+    // JSON 파싱
+    return JSON.parse(nextDataScript.html());
+  } catch (error) {
+    console.error('에러 발생:', error);
+    throw error;
   }
-
-  return mainCategories;
 };
 
-const extractProducts = (html) => {
-  const dom = new JSDOM(html, {
-    features: {
-      QuerySelector: true,
-      ProcessExternalResources: false,
-    },
-  });
-  const doc = dom.window.document;
+const saveNextData = (name, html) => {
+  const json = parseNextData(html);
+  saveJson(`${CLASS101_JSON_ROOT}/${name}.json`, json);
+  return json;
+};
 
-  const products = [];
+// const addJsonData = (path, data) => {
+//   saveJson(path, [...loadJson(path), ...data]);
+// }
 
-  // 상품 목록 찾기
-  const productItems = doc.querySelectorAll(
-    'div[data-testid="content-area"] > div > div > div > ul > li'
-  );
+const jsonFromNextData = async (nextData) => {
+  const data = nextData.props.apolloState.data;
+  const data_ = [];
 
-  productItems.forEach((item) => {
-    try {
-      const link = item.querySelector('div > div > a');
-      if (!link) return;
+  Object.values(data).forEach((item) => {
+    if (item.__typename === 'CategoryV2' && item.depth === 0) {
+      const categoryId0 = item.id;
+      const title0 = item.title;
 
-      const href = link.getAttribute('href');
-      if (!href || !href.includes('/products/')) return;
+      // 하위 카테고리 처리
+      item.children.forEach((childRef) => {
+        const childId = childRef.__ref.split(':')[1];
+        const childCategory = data[`CategoryV2:${childId}`];
 
-      const productId = href.split('/').pop();
-
-      // 이미지 찾기
-      const imageElement = link.querySelector('img');
-      const image = imageElement ? imageElement.getAttribute('src') : '';
-
-      // 제목 찾기 (첫 번째 span)
-      const titleElement = link.querySelector('span[data-testid="body"]');
-      const title = titleElement ? titleElement.textContent.trim() : '';
-
-      // 강사명 찾기 (두 번째 span)
-      const spans = link.querySelectorAll('span[data-testid="body"]');
-      const instructor =
-        spans.length > 1 ? spans[1].textContent.split('|').pop().trim() : '';
-
-      // 개별구매 여부 확인 (link의 부모의 형제 div 요소에서)
-      const purchaseDiv = link.parentElement.nextElementSibling;
-      const isIndividual = purchaseDiv
-        ? purchaseDiv.textContent.includes('개별구매')
-        : false;
-
-      if (productId && title) {
-        products.push({
-          productId,
-          image,
-          title,
-          instructor,
-          isIndividual,
+        data_.push({
+          categoryId0,
+          title0,
+          categoryId: childCategory.id,
+          title: childCategory.title,
         });
-      }
-    } catch (error) {
-      console.error('상품 정보 추출 중 오류:', error);
+      });
     }
   });
 
+  return data_;
+};
+
+const existFile = (path) => {
+  return fs.existsSync(path);
+};
+
+// ** Main Functions
+
+// * STEP 1: 메인 카테고리 저장(NextData)
+const saveNextDataCategories = async (
+  url = URL_CATEGORIES,
+  headless = false
+) => {
+  const chrome = await goToUrl(url, { headless });
+  saveNextData('nextData/categories', await chrome.driver.getPageSource());
+  await chrome.close();
+  // return chrome;
+};
+
+// * STEP 2: 메인 카테고리 저장
+const saveMainCategories = async () => {
+  const nextData = loadJson(`${CLASS101_JSON_ROOT}/nextData/categories.json`);
+  const json = await jsonFromNextData(nextData);
+  saveJson(`${CLASS101_JSON_ROOT}/categories.json`, json);
+  return json;
+};
+
+// * 부카테고리
+async function extractSubCategories(nextData, ancestorId) {
+  const data = nextData.props.apolloState.data;
+  let subCategories = [];
+
+  // 데이터 추출
+  Object.entries(data).forEach(([key, value]) => {
+    if (key.startsWith('CategoryV2:')) {
+      const categoryId = value.id;
+      const title = value.title;
+
+      subCategories.push({
+        ancestorId,
+        categoryId,
+        title,
+      });
+    }
+  });
+  return subCategories.length > 1 ? subCategories.slice(1) : subCategories; // 첫번째 요소(전체) 제거
+}
+
+const fetchSubCategories = async (categoryId) => {
+  const url = `https://class101.net/ko/categories/${categoryId}`;
+  const chrome = await goToUrl(url);
+  // const nextData = parseNextData(await chrome.driver.getPageSource());
+  const nextData = saveNextData(
+    `nextData/categories/${categoryId}`,
+    await chrome.driver.getPageSource()
+  );
+  const subCategories = await extractSubCategories(nextData, categoryId);
+
+  await chrome.close();
+  return subCategories;
+};
+
+const saveAllSubCategories = async () => {
+  const categories = loadJson(`${CLASS101_JSON_ROOT}/categories.json`);
+  let subCategories = [];
+  // let chrome;
+
+  for (const category of categories) {
+    if (
+      existFile(
+        `${CLASS101_JSON_ROOT}/nextData/categories/${category.categoryId}.json`
+      )
+    ) {
+      continue;
+    }
+    const url = `https://class101.net/ko/categories/${category.categoryId}`;
+    const chrome = await goToUrl(url);
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    const nextData = saveNextData(
+      `nextData/categories/${category.categoryId}`,
+      await chrome.driver.getPageSource()
+    );
+    console.log(`subCategories: ${category.title}`);
+    subCategories = [
+      ...subCategories,
+      ...(await extractSubCategories(nextData, category.categoryId)),
+    ];
+  }
+
+  // await chrome.close();
+  saveJson(`${CLASS101_JSON_ROOT}/subCategories.json`, subCategories);
+  return subCategories;
+};
+
+const fetchCategoryProducts = async (categoryId, cursor = null) => {
+  const response = await fetch(
+    'https://cdn-production-gateway.class101.net/graphql',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        operationName: 'CategoryProductsV3OnCategoryProductList',
+        variables: {
+          filter: {
+            purchaseOptions: ['Lifetime', 'Rental', 'Subscription'],
+          },
+          categoryId,
+          first: 1000,
+          isLoggedIn: true,
+          sort: 'Popular',
+          originalLanguages: [],
+          ...(cursor && { after: cursor }),
+        },
+        extensions: {
+          persistedQuery: {
+            version: 1,
+            sha256Hash:
+              'de9123f7372649c2874c9939436d6c5417a48b55af12045b7bdaea7de0a079cc',
+          },
+        },
+      }),
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+
+  return await response.json();
+};
+
+const saveAllProducts = async () => {
+  const subCategories = loadJson(`${CLASS101_JSON_ROOT}/subCategories.json`);
+  let products = [];
+
+  for (const subCategory of subCategories) {
+    const response = await fetchCategoryProducts(subCategory.categoryId);
+    if (
+      !response ||
+      !response.data ||
+      !response.data.categoryProductsV3 ||
+      response.data.categoryProductsV3.edges.length === 0
+    ) {
+      console.log(
+        `No products in ${subCategory.title} ${subCategory.categoryId}`
+      );
+      continue;
+    }
+
+    response.data.categoryProductsV3.edges.map((edge) => {
+      const node = edge.node;
+      const [
+        productId,
+        title,
+        imageId,
+        klassId,
+        likedCount,
+        firestoreId,
+        categoryId,
+        categoryTitle,
+        authorId,
+        authorName,
+      ] = [
+        node._id,
+        node.title,
+        node.coverImageUrl.split('/').pop().split('.')[0],
+        node.klassId,
+        node.likedCount,
+        node.firestoreId,
+        node.category.id,
+        node.category.title,
+        node.author._id,
+        node.author.displayName,
+      ];
+      const product = {
+        productId,
+        title,
+        imageId,
+        klassId,
+        likedCount,
+        firestoreId,
+        categoryId,
+        categoryTitle,
+        authorId,
+        authorName,
+      };
+      products.push(product);
+      saveJson(`${CLASS101_JSON_ROOT}/products.json`, products);
+    });
+  }
+
+  // saveJson(`${CLASS101_JSON_ROOT}/products.json`, products);
   return products;
 };
 
-const getProducts = async (categoryId) => {
-  try {
-    const html = loadFile(`./${categoryId}.html`);
-    return extractProducts(html);
-  } catch (error) {
-    console.error('상품 정보 추출 중 오류 발생:', error);
-    throw error;
-  }
-};
+// // ** Main
+// await saveNextDataCategories();
 
-const _getAllProductsByCategories = async (categories) => {
-  const results = [];
+// await saveMainCategories();
 
-  for (const category of categories) {
-    // const categoryWithProducts = { ...category, subcategories: [] };
+// await saveAllSubCategories();
 
-    for (const subcategory of category.subcategories) {
-      try {
-        console.log(
-          `카테고리: ${subcategory.title} (${subcategory.categoryId})`
-        );
+await saveAllProducts();
 
-        const chrome = await goToUrl({
-          url: `${URL_CATEGORIES}/${subcategory.categoryId}`,
-          headless: false,
-          scroll: true,
-        });
-        const html = await chrome.driver.getPageSource();
-        await chrome.close();
-        // saveFile(htmlPath, html, { encoding: 'utf-8' });
-
-        // 연속 요청 방지를 위한 대기
-        await new Promise((resolve) => setTimeout(resolve, 5000));
-
-        const products = extractProducts(html);
-        subcategory.products = products;
-        console.log(`- 상품 수: ${products.length}`);
-
-        // categoryWithProducts.subcategories.push(subcategory);
-      } catch (error) {
-        console.error(`${subcategory.categoryId} 처리 중 오류:`, error);
-      }
-    }
-
-    // results.push(categoryWithProducts);
-  }
-
-  return categories;
-};
-
-const getAllProductsByCategories = async () => {
-  try {
-    const categories = loadJson(CATEGORIES_JSON_PATH);
-    console.log(`카테고리 수: ${categories.length}`);
-
-    const results = await _getAllProductsByCategories(categories);
-
-    // 결과 저장
-    saveJson(PRODUCTS_JSON_PATH, results);
-    console.log('모든 상품 정보 저장 완료');
-
-    return results;
-  } catch (error) {
-    console.error('전체 상품 정보 추출 중 오류 발생:', error);
-    throw error;
-  }
-};
-
-const extractMyClasses = (html) => {
-  const dom = new JSDOM(html, {
-    // CSS 파싱 비활성화
-    features: {
-      QuerySelector: true,
-      ProcessExternalResources: false,
-    },
-  });
-  const doc = dom.window.document;
-
-  const categories = [];
-
-  // 모든 카테고리 링크 찾기
-  const imgs = doc.querySelectorAll('ul[data-testid="grid-list"] img');
-  const image = imageElement ? imageElement.getAttribute('src') : '';
-
-  imgs.forEach((img) => {
-    const image = img.getAttribute('src') ?? '';
-    categories.push({ title, categoryId });
-  });
-
-  return categories;
-};
-
-// ** Account
-// 이어보기
-// https://class101.net/ko/my-classes
-// https://class101.net/ko/my-classes#continue-watching
-
-// 구매 목록
-// https://class101.net/ko/my-classes#purchased-list
-
-// 내 보관함
-// https://class101.net/ko/my-classes#my-library
-
-// ** web => json
-// * getCategories
-// await getCategories();
-
-// await getAllProductsByCategories();
-
-// 실행
-// getAllProductsByCategories().catch(console.error);
-
-// const products = extractProducts(loadFile('./6114891dfe1ca7f7b31b4a23.html'));
-// console.log(products);
-// saveJson('./test1.json', products);
-
-// image: https://cdn.class101.net/images/d65b860f-f84a-47c2-bb55-63836e9d0e34/320xauto.webp
-// src: {image}/320xauto.webp
+// console.log(
+//   existFile(
+//     `${CLASS101_JSON_ROOT}/nextData/categories_62206086d39299379ee5b83b.json`
+//   )
+// );

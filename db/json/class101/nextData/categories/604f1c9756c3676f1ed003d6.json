@@ -1,0 +1,831 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed003d6"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed003d6\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed003d6\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjEyNjAzYWQzMWE0ODMwMDBkMTUyY2ZiX19DVVJTT1JfREVMSU1JVEVSX180Njc3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:612603ad31a483000d152cfb"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJkNGJlMWExZGY2MzUwMDE2NWI1MTJjX19DVVJTT1JfREVMSU1JVEVSX18zOTg5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62d4be1a1df63500165b512c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJkNjVjN2JkZWZhZWMwMDE1MDk4NDhmX19DVVJTT1JfREVMSU1JVEVSX18zNzMzX19DVVJTT1JfREVMSU1JVEVSX19lbg==",
+                "node": {
+                  "__ref": "ProductV3:62d65c7bdefaec001509848f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE4MGVlMzdiZDhlYzYwMDE0NGJkMDA4X19DVVJTT1JfREVMSU1JVEVSX18zMDU1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6180ee37bd8ec600144bd008"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE4MGU0MTBlMzcyMTQwMDE0NmUyNmEzX19DVVJTT1JfREVMSU1JVEVSX18yODUyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6180e410e3721400146e26a3"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVmNDczMWFmYzhhYTVmZmE2ZTRjMjFjX19DVVJTT1JfREVMSU1JVEVSX18yMjg0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5ef4731afc8aa5ffa6e4c21c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE4NzdmYjQzY2VjYWUwMDE1ODc0YzAyX19DVVJTT1JfREVMSU1JVEVSX18yMjY3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61877fb43cecae0015874c02"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFiNzBhYWM1M2Q0NTkwMDBkYTdlZGM2X19DVVJTT1JfREVMSU1JVEVSX18yMjE2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61b70aac53d459000da7edc6"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBkYWJkZTRhMzEwNTAwMDBkZTU2NDQxX19DVVJTT1JfREVMSU1JVEVSX18yMTQ4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60dabde4a31050000de56441"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZlZDU2ZTczZjhmNWYwMDE0ZmU2OTU3X19DVVJTT1JfREVMSU1JVEVSX18yMDk1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5fed56e73f8f5f0014fe6957"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZjZWNiZWEwNzJiNDkwMDBkOTY3NjBlX19DVVJTT1JfREVMSU1JVEVSX18yMDYwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5fcecbea072b49000d96760e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI1NGNmMTBjODlkZTgwMDE1YTM5ZDI2X19DVVJTT1JfREVMSU1JVEVSX18yMDA1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6254cf10c89de80015a39d26"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjIxNTg2YzZkODU2ZmEwMDE0OTk1N2MwX19DVVJTT1JfREVMSU1JVEVSX18xOTE0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:621586c6d856fa00149957c0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBlMThhOWY1NWZiOGYwMDBkM2QyYTI4X19DVVJTT1JfREVMSU1JVEVSX18xODExX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60e18a9f55fb8f000d3d2a28"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAxMTViMGQzODQ1NGUwMDE0MjY3MTA2X19DVVJTT1JfREVMSU1JVEVSX18xODAzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60115b0d38454e0014267106"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAwMTJhOGNiYTI2ODcwMDBkYTljYmNkX19DVVJTT1JfREVMSU1JVEVSX18xNzg5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60012a8cba2687000da9cbcd"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjEzNmRkZjgzNjUwZWQwMDE0NzA3OWM1X19DVVJTT1JfREVMSU1JVEVSX18xNzc2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6136ddf83650ed00147079c5"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBmNTYzNWRjYTdjZGYwMDE1OTM4ZTM1X19DVVJTT1JfREVMSU1JVEVSX18xNzE5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60f5635dca7cdf0015938e35"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjEzNzc4MjI3Njc4NWUwMDE0NmUyOTE4X19DVVJTT1JfREVMSU1JVEVSX18xNjk0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6137782276785e00146e2918"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBjYjA0Zjk4NWIxZmMwMGRjYzY4OWVmX19DVVJTT1JfREVMSU1JVEVSX18xNDg2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60cb04f985b1fc00dcc689ef"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjBjYjA0Zjk4NWIxZmMwMGRjYzY4OWVmX19DVVJTT1JfREVMSU1JVEVSX18xNDg2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NjEyNjAzYWQzMWE0ODMwMDBkMTUyY2ZiX19DVVJTT1JfREVMSU1JVEVSX180Njc3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:605c3db737b977e026544061": {
+          "__typename": "CategoryV2",
+          "id": "605c3db737b977e026544061",
+          "title": "키즈",
+          "depth": 0
+        },
+        "CategoryV2:604f1c9756c3676f1ed003d7": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003d7",
+          "title": "미술 · 공예",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003d8": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003d8",
+          "title": "요리",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003d9": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003d9",
+          "title": "자연 · 과학",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003da": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003da",
+          "title": "수학 · 코딩",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003db": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003db",
+          "title": "사회 · 경제",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003dc": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003dc",
+          "title": "신체 · 건강",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003de": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003de",
+          "title": "언어 · 외국어",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+            }
+          ]
+        },
+        "CategoryV2:62fee7187e7da70bfa57950e": {
+          "__typename": "CategoryV2",
+          "id": "62fee7187e7da70bfa57950e",
+          "title": "음악",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003df": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003df",
+          "title": "특별 활동",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003d6"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed003d6": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed003d6",
+          "title": "아이 교육",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003d7"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003d8"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003d9"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003da"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003db"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003dc"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003de"
+            },
+            {
+              "__ref": "CategoryV2:62fee7187e7da70bfa57950e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed003df"
+            }
+          ]
+        },
+        "User:6096578296554e000dfd623b": {
+          "__typename": "User",
+          "_id": "6096578296554e000dfd623b",
+          "displayName": "소담쌤"
+        },
+        "ProductV3:612603ad31a483000d152cfb": {
+          "__typename": "ProductV3",
+          "_id": "612603ad31a483000d152cfb",
+          "title": "아이템 만들기부터 캐릭터 드로잉까지, 제페토 크리에이터의 모든 것!",
+          "coverImageUrl": "https://cdn.class101.net/images/c6e48e77-a0c6-49dd-838b-115d22a1e182",
+          "klassId": "612603ad31a483000d152cf6",
+          "likedCount": 4677,
+          "firestoreId": "8fGdjI8KZKLFBvZf7j3l",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003df"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6096578296554e000dfd623b"
+          }
+        },
+        "User:6279073b3f198500157ea6e8": {
+          "__typename": "User",
+          "_id": "6279073b3f198500157ea6e8",
+          "displayName": "지나쌤"
+        },
+        "ProductV3:62d4be1a1df63500165b512c": {
+          "__typename": "ProductV3",
+          "_id": "62d4be1a1df63500165b512c",
+          "title": "[수료증 제공] 창의력이 폭발하는 지나쌤의 입체 종이접기",
+          "coverImageUrl": "https://cdn.class101.net/images/79de1cb8-3602-4335-8d20-182fd39d42f0",
+          "klassId": "62d4be1a1df63500165b5129",
+          "likedCount": 3989,
+          "firestoreId": "sPs3IeK0w8xoyuxzTfgK",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6279073b3f198500157ea6e8"
+          }
+        },
+        "User:62c5152fc403980060bf6cd3": {
+          "__typename": "User",
+          "_id": "62c5152fc403980060bf6cd3",
+          "displayName": "앨랜쌤"
+        },
+        "ProductV3:62d65c7bdefaec001509848f": {
+          "__typename": "ProductV3",
+          "_id": "62d65c7bdefaec001509848f",
+          "title": "캐나다 초등교사 앨랜쌤의 그림책으로 배우는 영어",
+          "coverImageUrl": "https://cdn.class101.net/images/f67ac5d1-e91a-4307-9d53-fd5a38c58dac",
+          "klassId": "62d65c7bdefaec001509848c",
+          "likedCount": 3733,
+          "firestoreId": "HedBQZdjxambwP0fCBD2",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003de"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62c5152fc403980060bf6cd3"
+          }
+        },
+        "User:6177ce7fef2a11000d6990b1": {
+          "__typename": "User",
+          "_id": "6177ce7fef2a11000d6990b1",
+          "displayName": "초초쌤"
+        },
+        "ProductV3:6180ee37bd8ec600144bd008": {
+          "__typename": "ProductV3",
+          "_id": "6180ee37bd8ec600144bd008",
+          "title": "놀기만 해도 한글 실력은 쑥쑥! 초초쌤의 <엄마표 몬테소리>",
+          "coverImageUrl": "https://cdn.class101.net/images/305b4e2c-5222-4e76-833f-4363f310fbdb",
+          "klassId": "6180ee37bd8ec600144bd003",
+          "likedCount": 3055,
+          "firestoreId": "bwQrouDR9LwmGcv9nVHO",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003de"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6177ce7fef2a11000d6990b1"
+          }
+        },
+        "User:5ee1584d724acc42a449b39e": {
+          "__typename": "User",
+          "_id": "5ee1584d724acc42a449b39e",
+          "displayName": "미대엄마"
+        },
+        "ProductV3:6180e410e3721400146e26a3": {
+          "__typename": "ProductV3",
+          "_id": "6180e410e3721400146e26a3",
+          "title": "<명화미술놀이>로 키우는 '생각하는 힘' ",
+          "coverImageUrl": "https://cdn.class101.net/images/8e2988ee-8d7a-4590-aaad-188405071f07",
+          "klassId": "6180e410e3721400146e269e",
+          "likedCount": 2852,
+          "firestoreId": "qcRvc63HpyqRDTQ88h36",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ee1584d724acc42a449b39e"
+          }
+        },
+        "User:5ee402fc724acc42a4bc041e": {
+          "__typename": "User",
+          "_id": "5ee402fc724acc42a4bc041e",
+          "displayName": "꿀쌤"
+        },
+        "ProductV3:5ef4731afc8aa5ffa6e4c21c": {
+          "__typename": "ProductV3",
+          "_id": "5ef4731afc8aa5ffa6e4c21c",
+          "title": "아이와 수학의 달콤한 첫 만남! 꿀쌤의 '유아 사고력 수학'",
+          "coverImageUrl": "https://cdn.class101.net/images/435d3ebf-b1c9-4cbd-a0f6-641ce9d8c54d",
+          "klassId": "5ef472f6fc8aa5ffa6e4a8a9",
+          "likedCount": 2284,
+          "firestoreId": "TU3YxwFG6V9DEZqayjvP",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003da"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ee402fc724acc42a4bc041e"
+          }
+        },
+        "User:61877f901d64e90014670eca": {
+          "__typename": "User",
+          "_id": "61877f901d64e90014670eca",
+          "displayName": "채우다 STEAM"
+        },
+        "ProductV3:61877fb43cecae0015874c02": {
+          "__typename": "ProductV3",
+          "_id": "61877fb43cecae0015874c02",
+          "title": "STEAM 융합놀이 포트폴리오로 초등 과학교과 정복하기!",
+          "coverImageUrl": "https://cdn.class101.net/images/1e970a88-ae8e-4c3c-a814-99d673d7d85e",
+          "klassId": "61877fb43cecae0015874bfd",
+          "likedCount": 2267,
+          "firestoreId": "T0cspuSh9PYzV9yIQfa2",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61877f901d64e90014670eca"
+          }
+        },
+        "User:61b70aa539e723000d404939": {
+          "__typename": "User",
+          "_id": "61b70aa539e723000d404939",
+          "displayName": "동화작가 전이수"
+        },
+        "ProductV3:61b70aac53d459000da7edc6": {
+          "__typename": "ProductV3",
+          "_id": "61b70aac53d459000da7edc6",
+          "title": "나도 어린이 동화작가! 전이수 작가와 함께하는 나의 첫 동화책 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/7eca545a-13a3-4057-ba5a-1d78c79e9c67",
+          "klassId": "61b70aac53d459000da7edc1",
+          "likedCount": 2216,
+          "firestoreId": "KzXtQKpVlg7NpagqehIV",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003de"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61b70aa539e723000d404939"
+          }
+        },
+        "User:5db05ce03f444e0db58e1089": {
+          "__typename": "User",
+          "_id": "5db05ce03f444e0db58e1089",
+          "displayName": "정진호작가"
+        },
+        "ProductV3:60dabde4a31050000de56441": {
+          "__typename": "ProductV3",
+          "_id": "60dabde4a31050000de56441",
+          "title": "생각을 도식화하는 완벽한 레시피, '비주얼 씽킹'",
+          "coverImageUrl": "https://cdn.class101.net/images/f582799a-aebb-4daa-b2cd-4bb59528719c",
+          "klassId": "60dabde4a31050000de56440",
+          "likedCount": 2148,
+          "firestoreId": "cnKWMAucNBgycijGnSrD",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003df"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5db05ce03f444e0db58e1089"
+          }
+        },
+        "User:5fab4e6ba6494800438851c6": {
+          "__typename": "User",
+          "_id": "5fab4e6ba6494800438851c6",
+          "displayName": "ACIA 김수연"
+        },
+        "ProductV3:5fed56e73f8f5f0014fe6957": {
+          "__typename": "ProductV3",
+          "_id": "5fed56e73f8f5f0014fe6957",
+          "title": "직접 만들며 배우는 코딩, 나만의 장난감 5개 만들기!",
+          "coverImageUrl": "https://cdn.class101.net/images/e56f8338-c7ad-4f81-a847-238fd7c34af1",
+          "klassId": "5fed56e73f8f5f0014fe6956",
+          "likedCount": 2095,
+          "firestoreId": "SXP7pjCrXulA9fQSUnhY",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003da"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fab4e6ba6494800438851c6"
+          }
+        },
+        "User:5e33f365ee16853cf896107e": {
+          "__typename": "User",
+          "_id": "5e33f365ee16853cf896107e",
+          "displayName": "작가 이윤영(글쓰는한량)"
+        },
+        "ProductV3:5fcecbea072b49000d96760e": {
+          "__typename": "ProductV3",
+          "_id": "5fcecbea072b49000d96760e",
+          "title": "현직작가의 진짜 글쓰기가 만만해지는 '10분 초등완성 메모 글쓰기'",
+          "coverImageUrl": "https://cdn.class101.net/images/555ac41f-6272-420c-aec8-55c2dc6121b3",
+          "klassId": "5fcecbe9072b49000d967267",
+          "likedCount": 2060,
+          "firestoreId": "xUrT4GKnbgI9b9r3Sajx",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003de"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e33f365ee16853cf896107e"
+          }
+        },
+        "User:6162aaff54e6f800145cb8ef": {
+          "__typename": "User",
+          "_id": "6162aaff54e6f800145cb8ef",
+          "displayName": "생각하는박물관"
+        },
+        "ProductV3:6254cf10c89de80015a39d26": {
+          "__typename": "ProductV3",
+          "_id": "6254cf10c89de80015a39d26",
+          "title": "<뮤지엄 클래스> 집에서 배우는 박물관 이야기로 역사 여행을 떠나요!!",
+          "coverImageUrl": "https://cdn.class101.net/images/fe951385-fea1-4774-8e71-03cbb86a60a1",
+          "klassId": "6254cf10c89de80015a39d23",
+          "likedCount": 2005,
+          "firestoreId": "IP0XyMbqZxuLfooHYU1m",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003db"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6162aaff54e6f800145cb8ef"
+          }
+        },
+        "User:601c7fc48d3c16000d4b9232": {
+          "__typename": "User",
+          "_id": "601c7fc48d3c16000d4b9232",
+          "displayName": "전직 초등교사 달콤쌤"
+        },
+        "ProductV3:621586c6d856fa00149957c0": {
+          "__typename": "ProductV3",
+          "_id": "621586c6d856fa00149957c0",
+          "title": "초등교과 배경지식을 풍부하게 하는 독서교육, <인문학독서클럽>",
+          "coverImageUrl": "https://cdn.class101.net/images/d093d8de-4776-4376-934f-09e7ed769064",
+          "klassId": "621586c6d856fa00149957bd",
+          "likedCount": 1914,
+          "firestoreId": "6HnLz4SswY33BPgk2GFL",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003de"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:601c7fc48d3c16000d4b9232"
+          }
+        },
+        "User:5e6d89972304430da46a3b7a": {
+          "__typename": "User",
+          "_id": "5e6d89972304430da46a3b7a",
+          "displayName": "셀라샘 잉글리시"
+        },
+        "ProductV3:60e18a9f55fb8f000d3d2a28": {
+          "__typename": "ProductV3",
+          "_id": "60e18a9f55fb8f000d3d2a28",
+          "title": "영유보다 빠르고 정확한 파닉스 마스터",
+          "coverImageUrl": "https://cdn.class101.net/images/c58a564c-a20e-4f69-a8f5-450fc5b15c3c",
+          "klassId": "60e18a9f55fb8f000d3d2a27",
+          "likedCount": 1811,
+          "firestoreId": "0vKjS1HVROSSydXMoNrc",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003de"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e6d89972304430da46a3b7a"
+          }
+        },
+        "User:60115adc331fa0000d4bb435": {
+          "__typename": "User",
+          "_id": "60115adc331fa0000d4bb435",
+          "displayName": "레고공인작가 JAY"
+        },
+        "ProductV3:60115b0d38454e0014267106": {
+          "__typename": "ProductV3",
+          "_id": "60115b0d38454e0014267106",
+          "title": "[레고 수료증 제공] 레고, 조립을 넘어 설계하다! '어린이 레고 작가 과정'",
+          "coverImageUrl": "https://cdn.class101.net/images/f8c87c20-0ff8-4db1-97bb-4ebbe423f13d",
+          "klassId": "60115b0c38454e00142670f7",
+          "likedCount": 1803,
+          "firestoreId": "rh3lqsqymTsHo6JkNsZC",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60115adc331fa0000d4bb435"
+          }
+        },
+        "User:5f51a37f5734ea00144c7c46": {
+          "__typename": "User",
+          "_id": "5f51a37f5734ea00144c7c46",
+          "displayName": "클래스101 키즈"
+        },
+        "ProductV3:60012a8cba2687000da9cbcd": {
+          "__typename": "ProductV3",
+          "_id": "60012a8cba2687000da9cbcd",
+          "title": "아이의 미래를 바꾼다! 주식으로 이해하는 어린이 경제 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/7911bab2-3100-46fa-bf19-fbaa542bdf1b",
+          "klassId": "60012a8bba2687000da9caa2",
+          "likedCount": 1789,
+          "firestoreId": "yWb00UZQ5AP2NkPlFyrQ",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003db"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f51a37f5734ea00144c7c46"
+          }
+        },
+        "User:604986350d476200157f18ae": {
+          "__typename": "User",
+          "_id": "604986350d476200157f18ae",
+          "displayName": "쥬트! 신유미"
+        },
+        "ProductV3:6136ddf83650ed00147079c5": {
+          "__typename": "ProductV3",
+          "_id": "6136ddf83650ed00147079c5",
+          "title": "생각하는 아이를 만드는 <프랑스 예술 교육의 비밀 by ZUT!> ",
+          "coverImageUrl": "https://cdn.class101.net/images/ec4f1b24-4dcb-4966-a9a1-6572fc8ace87",
+          "klassId": "6136ddf83650ed00147079b3",
+          "likedCount": 1776,
+          "firestoreId": "sIupDWYP77nKMYzPq9Zr",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:604986350d476200157f18ae"
+          }
+        },
+        "User:60f56348076612000d72dd60": {
+          "__typename": "User",
+          "_id": "60f56348076612000d72dd60",
+          "displayName": "Busy Bees"
+        },
+        "ProductV3:60f5635dca7cdf0015938e35": {
+          "__typename": "ProductV3",
+          "_id": "60f5635dca7cdf0015938e35",
+          "title": "STEAM in English! 영어로 배우는 과학 미술",
+          "coverImageUrl": "https://cdn.class101.net/images/1218c62b-8f65-46b5-898e-cd326b016eb4",
+          "klassId": "60f5635dca7cdf0015938e34",
+          "likedCount": 1719,
+          "firestoreId": "zKlH3XPoMAEBdMLfgRKk",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003de"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60f56348076612000d72dd60"
+          }
+        },
+        "User:6135efeb0235f50014b3e5cc": {
+          "__typename": "User",
+          "_id": "6135efeb0235f50014b3e5cc",
+          "displayName": "온새롬교육연구소 온샘"
+        },
+        "ProductV3:6137782276785e00146e2918": {
+          "__typename": "ProductV3",
+          "_id": "6137782276785e00146e2918",
+          "title": "우리 아이 역사 첫걸음! <생각 톡톡 스토리 한국사>",
+          "coverImageUrl": "https://cdn.class101.net/images/4aabfb03-a6c5-48fa-a2b7-e55c22491793",
+          "klassId": "6137782276785e00146e2913",
+          "likedCount": 1694,
+          "firestoreId": "XeHLjY4JJ6HL1tj1bGmw",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003db"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6135efeb0235f50014b3e5cc"
+          }
+        },
+        "User:5ceb982a80f6734ace1a7c4b": {
+          "__typename": "User",
+          "_id": "5ceb982a80f6734ace1a7c4b",
+          "displayName": "시은맘"
+        },
+        "ProductV3:60cb04f985b1fc00dcc689ef": {
+          "__typename": "ProductV3",
+          "_id": "60cb04f985b1fc00dcc689ef",
+          "title": "꼼지락 내손으로 인형 만들기, '어린이 코바늘 교실'",
+          "coverImageUrl": "https://cdn.class101.net/images/a64bddb0-0d13-4946-a569-6c55173f07de",
+          "klassId": "60cb04f985b1fc00dcc689ee",
+          "likedCount": 1486,
+          "firestoreId": "LejltSiHxXUJ0BUGlbVj",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed003d7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ceb982a80f6734ace1a7c4b"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed003d6"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

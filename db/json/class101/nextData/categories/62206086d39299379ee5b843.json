@@ -1,0 +1,709 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "62206086d39299379ee5b843"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"62206086d39299379ee5b843\"})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b843"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"62206086d39299379ee5b843\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY3YzU2MDc1MTE2OTUwMDEzZGJjMTAxX19DVVJTT1JfREVMSU1JVEVSX18yMDc4MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f7c56075116950013dbc101"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY4YmNlNDc1MGM4MDEwMDE0MTJmYjc4X19DVVJTT1JfREVMSU1JVEVSX18xMDQ0OF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f8bce4750c801001412fb78"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRkYmJlNTg1YzEyYzY3NDg3YTM0MDg2X19DVVJTT1JfREVMSU1JVEVSX18xMDI2Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ddbbe585c12c67487a34086"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA0NzcwNWVmNDUyYTQwMDBlNjVkZTQ1X19DVVJTT1JfREVMSU1JVEVSX183NDAxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6047705ef452a4000e65de45"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAxMGJiMWZkNTM3NDkwMDBkNTMyOWU1X19DVVJTT1JfREVMSU1JVEVSX182MTcyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6010bb1fd53749000d5329e5"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY2ODNiZDU3YmQyZDgwMDA3NzBlN2EwX19DVVJTT1JfREVMSU1JVEVSX181OTQzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f683bd57bd2d8000770e7a0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE0ODhmZDllYzQ3MDgwMDBkZDYxZWU4X19DVVJTT1JfREVMSU1JVEVSX18zOTU3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61488fd9ec4708000dd61ee8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAzODVmMmFlZjcyMmIwMDE1MjRmMDJlX19DVVJTT1JfREVMSU1JVEVSX18zNzc0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60385f2aef722b001524f02e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjNkYzUwMTg1MDMzODMwMDBlZmE2YTJlX19DVVJTT1JfREVMSU1JVEVSX18zMjg1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:63dc5018503383000efa6a2e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM2YjkyYTU4YjNmMDIwMDBmMDZkYTBiX19DVVJTT1JfREVMSU1JVEVSX18yNzY1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:636b92a58b3f02000f06da0b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA3OTRiYTE4NDI2ZjkwMDBlMThkNWE4X19DVVJTT1JfREVMSU1JVEVSX18yNjMwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60794ba18426f9000e18d5a8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjNhNzYwNjE3NTRmZTEwMDBlMmVlYTE1X19DVVJTT1JfREVMSU1JVEVSX18yMTAzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:63a76061754fe1000e2eea15"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY1NmYyYzUzNTFiNDIwMDBkMzlhZGY0X19DVVJTT1JfREVMSU1JVEVSX18yMDgyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f56f2c5351b42000d39adf4"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA5YTM2NjBhYjA5MjgwMDE0MTllOTQ0X19DVVJTT1JfREVMSU1JVEVSX18xOTk3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:609a3660ab0928001419e944"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBhNDAwMmZiOTM5YzgwMDBlMTY3ZjMyX19DVVJTT1JfREVMSU1JVEVSX18xOTM5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60a4002fb939c8000e167f32"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA4MzgzYTdlMWVmYWMwMDE1YTQ2NTIyX19DVVJTT1JfREVMSU1JVEVSX18xOTI2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:608383a7e1efac0015a46522"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAzNGRmY2E0NjczNTQwMDE0ZTUwNGY2X19DVVJTT1JfREVMSU1JVEVSX18xOTE3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6034dfca4673540014e504f6"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBmODFhY2RlMDhhYzUwMDE1ZTljMjNiX19DVVJTT1JfREVMSU1JVEVSX18xODc2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60f81acde08ac50015e9c23b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM1NjQ4MjMwNjM4ZTIwMDE1YWEzZDY3X19DVVJTT1JfREVMSU1JVEVSX18xNzY2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:635648230638e20015aa3d67"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA4ZjcyNGM0MDJjN2EwMDBlMDc5ZDMyX19DVVJTT1JfREVMSU1JVEVSX18xNTYxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:608f724c402c7a000e079d32"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjA4ZjcyNGM0MDJjN2EwMDBlMDc5ZDMyX19DVVJTT1JfREVMSU1JVEVSX18xNTYxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NWY3YzU2MDc1MTE2OTUwMDEzZGJjMTAxX19DVVJTT1JfREVMSU1JVEVSX18yMDc4MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:6220606c1cb1cf4841dbdf8f": {
+          "__typename": "CategoryV2",
+          "id": "6220606c1cb1cf4841dbdf8f",
+          "title": "외국어",
+          "depth": 0
+        },
+        "CategoryV2:6220895c9dede0214b0783f1": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783f1",
+          "title": "일본어",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b843"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b843"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783f2": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783f2",
+          "title": "중국어",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b843"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b843"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783f3": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783f3",
+          "title": "기타언어",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b843"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b843"
+            }
+          ]
+        },
+        "CategoryV2:62206086d39299379ee5b843": {
+          "__typename": "CategoryV2",
+          "id": "62206086d39299379ee5b843",
+          "title": "제2 외국어",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783f1"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783f2"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783f3"
+            }
+          ]
+        },
+        "User:5f736ae1b98a2c0014e797e2": {
+          "__typename": "User",
+          "_id": "5f736ae1b98a2c0014e797e2",
+          "displayName": "maru 마루"
+        },
+        "ProductV3:5f7c56075116950013dbc101": {
+          "__typename": "ProductV3",
+          "_id": "5f7c56075116950013dbc101",
+          "title": "실제 네이티브의 이야기로 배우는 일본어 초/중급 회화 ",
+          "coverImageUrl": "https://cdn.class101.net/images/2ed16dc5-4e6e-4543-8a8f-694197a44205",
+          "klassId": "5f7c56065116950013dbc0f6",
+          "likedCount": 20780,
+          "firestoreId": "zO9il2OyxZGRDTi2uzrK",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f736ae1b98a2c0014e797e2"
+          }
+        },
+        "User:5da51c857b3b1920174db8df": {
+          "__typename": "User",
+          "_id": "5da51c857b3b1920174db8df",
+          "displayName": "와카메센세"
+        },
+        "ProductV3:5f8bce4750c801001412fb78": {
+          "__typename": "ProductV3",
+          "_id": "5f8bce4750c801001412fb78",
+          "title": "200문장 끝! 왕초보 일본어 회화, 비즈니스까지 접수",
+          "coverImageUrl": "https://cdn.class101.net/images/c00a84fa-fd34-4da9-8cc4-e7a7aa55d7dd",
+          "klassId": "5f8bce4650c801001412fb77",
+          "likedCount": 10448,
+          "firestoreId": "UCr4cydxaCZxKCyO28Qt",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5da51c857b3b1920174db8df"
+          }
+        },
+        "User:5dafe3c52bb00e044724d462": {
+          "__typename": "User",
+          "_id": "5dafe3c52bb00e044724d462",
+          "displayName": "Daniel"
+        },
+        "ProductV3:5ddbbe585c12c67487a34086": {
+          "__typename": "ProductV3",
+          "_id": "5ddbbe585c12c67487a34086",
+          "title": "[하루 10분] 아무것도 몰라도 배울 수 있는 스페인어",
+          "coverImageUrl": "https://cdn.class101.net/images/5c08d3bd-8e10-4c47-8d10-62a502a23441",
+          "klassId": "5ddbbe585c12c67487a34085",
+          "likedCount": 10266,
+          "firestoreId": "Ozq7WAVczXrc4dskTqSP",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5dafe3c52bb00e044724d462"
+          }
+        },
+        "User:60476e628e7e2b000ea1d6bd": {
+          "__typename": "User",
+          "_id": "60476e628e7e2b000ea1d6bd",
+          "displayName": "프랑스어는 김서현"
+        },
+        "ProductV3:6047705ef452a4000e65de45": {
+          "__typename": "ProductV3",
+          "_id": "6047705ef452a4000e65de45",
+          "title": "[프랑스어 입문] 루이비통과 샤넬 대신, 내면의 가치를 높여줄 품격있는 고급 취미",
+          "coverImageUrl": "https://cdn.class101.net/images/4fd1b316-015d-4e1c-8c9d-21e41d476b27",
+          "klassId": "6047705ef452a4000e65de44",
+          "likedCount": 7401,
+          "firestoreId": "7Hnh8pFKU7FTgZBIEJOu",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60476e628e7e2b000ea1d6bd"
+          }
+        },
+        "User:6010bb1022a56a00155fc9fa": {
+          "__typename": "User",
+          "_id": "6010bb1022a56a00155fc9fa",
+          "displayName": "손사탕"
+        },
+        "ProductV3:6010bb1fd53749000d5329e5": {
+          "__typename": "ProductV3",
+          "_id": "6010bb1fd53749000d5329e5",
+          "title": "왕초보를 위한 실생활 수어 회화로 시작하세요",
+          "coverImageUrl": "https://cdn.class101.net/images/f746d0dd-3ca3-4506-8aa0-1f465223315a",
+          "klassId": "6010bb1ed53749000d5329e4",
+          "likedCount": 6172,
+          "firestoreId": "Czdwjw1EDFgTwER7ZHBa",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6010bb1022a56a00155fc9fa"
+          }
+        },
+        "User:5e2e877106ddb7216efba609": {
+          "__typename": "User",
+          "_id": "5e2e877106ddb7216efba609",
+          "displayName": "홍차는홍차"
+        },
+        "ProductV3:5f683bd57bd2d8000770e7a0": {
+          "__typename": "ProductV3",
+          "_id": "5f683bd57bd2d8000770e7a0",
+          "title": "단기간에 1개국어 추가하는 치트키 중국어 [왕초보에서 중급까지]",
+          "coverImageUrl": "https://cdn.class101.net/images/a09dde48-5797-44d6-8bf8-8371f23d051b",
+          "klassId": "5f683bd47bd2d8000770e76a",
+          "likedCount": 5943,
+          "firestoreId": "0rClhrw0ljNFZMwycbJ6",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e2e877106ddb7216efba609"
+          }
+        },
+        "User:61488f7425b38b000d9b9b74": {
+          "__typename": "User",
+          "_id": "61488f7425b38b000d9b9b74",
+          "displayName": "실비아"
+        },
+        "ProductV3:61488fd9ec4708000dd61ee8": {
+          "__typename": "ProductV3",
+          "_id": "61488fd9ec4708000dd61ee8",
+          "title": "진짜가 왔다! 국립외교원 스페인어 강사, 실비아쌤과 스페인어 입문끝내기",
+          "coverImageUrl": "https://cdn.class101.net/images/13c21dfc-6018-41ef-9c37-60d89d952476",
+          "klassId": "61488fd9ec4708000dd61ee3",
+          "likedCount": 3957,
+          "firestoreId": "H8ohuYYum9Dc6YubYJlW",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61488f7425b38b000d9b9b74"
+          }
+        },
+        "User:5ee5a33ff0d77b636657b436": {
+          "__typename": "User",
+          "_id": "5ee5a33ff0d77b636657b436",
+          "displayName": "제이슐레 주연쌤"
+        },
+        "ProductV3:60385f2aef722b001524f02e": {
+          "__typename": "ProductV3",
+          "_id": "60385f2aef722b001524f02e",
+          "title": "독일어 입문부터 시험까지! 쉽게 배우는 독일어 올인원 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/78f73ba0-a50a-4230-9307-3e1ab013bd3d",
+          "klassId": "60385f2aef722b001524f02d",
+          "likedCount": 3774,
+          "firestoreId": "nUbwGcYZDUdDkAPf0eJ9",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ee5a33ff0d77b636657b436"
+          }
+        },
+        "User:60824a8f3b47c2000d85a848": {
+          "__typename": "User",
+          "_id": "60824a8f3b47c2000d85a848",
+          "displayName": "ECK교육"
+        },
+        "ProductV3:63dc5018503383000efa6a2e": {
+          "__typename": "ProductV3",
+          "_id": "63dc5018503383000efa6a2e",
+          "title": "한 번에 끝내는 일본어 첫걸음",
+          "coverImageUrl": "https://cdn.class101.net/images/1d8a2352-bec0-4640-b62d-a6b4b38c993b",
+          "klassId": "63dc5018503383000efa6a2b",
+          "likedCount": 3285,
+          "firestoreId": "hN11mpS3z8xWtYGEWvMh",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60824a8f3b47c2000d85a848"
+          }
+        },
+        "User:636a38a863ad59000e36eca6": {
+          "__typename": "User",
+          "_id": "636a38a863ad59000e36eca6",
+          "displayName": "본뉘Bonne nuit"
+        },
+        "ProductV3:636b92a58b3f02000f06da0b": {
+          "__typename": "ProductV3",
+          "_id": "636b92a58b3f02000f06da0b",
+          "title": " [나의 첫 프랑스어 수업] Bonne nuit와 지금 바로 떠나는 프랑스행 티켓팅 ",
+          "coverImageUrl": "https://cdn.class101.net/images/db23e39f-506e-4c4c-be84-79953af4047f",
+          "klassId": "636b92a58b3f02000f06da08",
+          "likedCount": 2765,
+          "firestoreId": "iSfDgt7leqaJ1SvqoB83",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:636a38a863ad59000e36eca6"
+          }
+        },
+        "User:5fd6de5db7087f00156b44a8": {
+          "__typename": "User",
+          "_id": "5fd6de5db7087f00156b44a8",
+          "displayName": "소통하는 일본어"
+        },
+        "ProductV3:60794ba18426f9000e18d5a8": {
+          "__typename": "ProductV3",
+          "_id": "60794ba18426f9000e18d5a8",
+          "title": "회화는 문법에서 시작합니다! 소통하는 일본어와 회화 문법 정복하기",
+          "coverImageUrl": "https://cdn.class101.net/images/9a04f3b2-56b8-4479-bb05-c8611653f0d2",
+          "klassId": "60794ba18426f9000e18d5a7",
+          "likedCount": 2630,
+          "firestoreId": "Ofs2MnCZtzNOFp2GWTZN",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fd6de5db7087f00156b44a8"
+          }
+        },
+        "ProductV3:63a76061754fe1000e2eea15": {
+          "__typename": "ProductV3",
+          "_id": "63a76061754fe1000e2eea15",
+          "title": "[와카메센세 2차 클래스] 하루 10분, 일본어 초중급 마스터 ",
+          "coverImageUrl": "https://cdn.class101.net/images/85cd865f-a5e1-40fb-8032-a405f067954a",
+          "klassId": "63a76061754fe1000e2eea12",
+          "likedCount": 2103,
+          "firestoreId": "lvldfYR4kOpPJfiTvpdM",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5da51c857b3b1920174db8df"
+          }
+        },
+        "User:5f51e1ad661f89002212651b": {
+          "__typename": "User",
+          "_id": "5f51e1ad661f89002212651b",
+          "displayName": "제인"
+        },
+        "ProductV3:5f56f2c5351b42000d39adf4": {
+          "__typename": "ProductV3",
+          "_id": "5f56f2c5351b42000d39adf4",
+          "title": "통번역대학원 가지 않고 시작하는 중국어 번역 입문 ",
+          "coverImageUrl": "https://cdn.class101.net/images/4215803e-3640-430f-87a0-d4b38f84c472",
+          "klassId": "5f56f2c4351b42000d39adf3",
+          "likedCount": 2082,
+          "firestoreId": "tKJPgW4YjTBCAMKjkt49",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f51e1ad661f89002212651b"
+          }
+        },
+        "User:609a359754459a000d81c5d1": {
+          "__typename": "User",
+          "_id": "609a359754459a000d81c5d1",
+          "displayName": "이탈리아어 플로리쌤🇮🇹"
+        },
+        "ProductV3:609a3660ab0928001419e944": {
+          "__typename": "ProductV3",
+          "_id": "609a3660ab0928001419e944",
+          "title": "[이탈리아 전문 플로리쌤] 말문이 트이는 이탈리아어 기초회화",
+          "coverImageUrl": "https://cdn.class101.net/images/33d8ae9c-eedc-4aa0-a331-6664694c521a",
+          "klassId": "609a3660ab0928001419e943",
+          "likedCount": 1997,
+          "firestoreId": "YMFND0scxETiYTMIklPR",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f3"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:609a359754459a000d81c5d1"
+          }
+        },
+        "User:5edbaafe724acc42a44d630a": {
+          "__typename": "User",
+          "_id": "5edbaafe724acc42a44d630a",
+          "displayName": "통역사JJ"
+        },
+        "ProductV3:60a4002fb939c8000e167f32": {
+          "__typename": "ProductV3",
+          "_id": "60a4002fb939c8000e167f32",
+          "title": "통역사가 알려주는 일본어 발음과 입문 회화!",
+          "coverImageUrl": "https://cdn.class101.net/images/b1fb7409-16ed-49a7-a215-475a6fd2fb40",
+          "klassId": "60a4002fb939c8000e167f31",
+          "likedCount": 1939,
+          "firestoreId": "KZJtsSZR5RmpmDGYhtzr",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5edbaafe724acc42a44d630a"
+          }
+        },
+        "User:5cb966cecb2728ebe99b3764": {
+          "__typename": "User",
+          "_id": "5cb966cecb2728ebe99b3764",
+          "displayName": "번역가 해밀"
+        },
+        "ProductV3:608383a7e1efac0015a46522": {
+          "__typename": "ProductV3",
+          "_id": "608383a7e1efac0015a46522",
+          "title": "번역가 데뷔부터 수입 창출까지 일본어 출판 번역의 모든 것",
+          "coverImageUrl": "https://cdn.class101.net/images/b1b6dffb-b7ca-4746-b28b-3ccfa322b175",
+          "klassId": "608383a7e1efac0015a46521",
+          "likedCount": 1926,
+          "firestoreId": "qq02eRQdXeKaqkv0Qga4",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f1"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:5cb966cecb2728ebe99b3764"
+          }
+        },
+        "User:5ded0dfa33401634f05f923b": {
+          "__typename": "User",
+          "_id": "5ded0dfa33401634f05f923b",
+          "displayName": "하이니중국어"
+        },
+        "ProductV3:6034dfca4673540014e504f6": {
+          "__typename": "ProductV3",
+          "_id": "6034dfca4673540014e504f6",
+          "title": "나를 위한 10분, 왕초보도 가능한 비즈니스 중국어 회화   ",
+          "coverImageUrl": "https://cdn.class101.net/images/7d65600b-600f-492e-9ab1-7f1c970bac47",
+          "klassId": "6034dfca4673540014e504f5",
+          "likedCount": 1917,
+          "firestoreId": "WxEEhYWIEbVlQLiOjncl",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ded0dfa33401634f05f923b"
+          }
+        },
+        "User:5fd026ea69204d000d4134c8": {
+          "__typename": "User",
+          "_id": "5fd026ea69204d000d4134c8",
+          "displayName": "쯔잉"
+        },
+        "ProductV3:60f81acde08ac50015e9c23b": {
+          "__typename": "ProductV3",
+          "_id": "60f81acde08ac50015e9c23b",
+          "title": "중국어 1타강사 '쯔잉쌤'의 단어가 문장이 되는 마법의 중국어 어법",
+          "coverImageUrl": "https://cdn.class101.net/images/93832af8-e679-4c48-b12c-33c88e244630",
+          "klassId": "60f81acde08ac50015e9c23a",
+          "likedCount": 1876,
+          "firestoreId": "enEls9FmvxckX4JO2v2X",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fd026ea69204d000d4134c8"
+          }
+        },
+        "User:6346d28196ffba0015876746": {
+          "__typename": "User",
+          "_id": "6346d28196ffba0015876746",
+          "displayName": "류리의 공감중국어"
+        },
+        "ProductV3:635648230638e20015aa3d67": {
+          "__typename": "ProductV3",
+          "_id": "635648230638e20015aa3d67",
+          "title": "류리(流利)한 중국어 123문장으로 현지회화 끝내기",
+          "coverImageUrl": "https://cdn.class101.net/images/9ef6581e-1327-42ea-bcbd-ea7a558c23df",
+          "klassId": "635648230638e20015aa3d64",
+          "likedCount": 1766,
+          "firestoreId": "EvswkmY7B3WkNSleMmdj",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6346d28196ffba0015876746"
+          }
+        },
+        "User:60559a8cae98d200140f2e87": {
+          "__typename": "User",
+          "_id": "60559a8cae98d200140f2e87",
+          "displayName": "차라"
+        },
+        "ProductV3:608f724c402c7a000e079d32": {
+          "__typename": "ProductV3",
+          "_id": "608f724c402c7a000e079d32",
+          "title": "현직 번역가에게 배우는 중국어 에세이 번역 입문",
+          "coverImageUrl": "https://cdn.class101.net/images/519d6a89-d0f1-46fb-ab9e-db0ebb382a68",
+          "klassId": "608f724c402c7a000e079d31",
+          "likedCount": 1561,
+          "firestoreId": "hvUCnQz1FeeJ6nSfZoOA",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783f2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60559a8cae98d200140f2e87"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "62206086d39299379ee5b843"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

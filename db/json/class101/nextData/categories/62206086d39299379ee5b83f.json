@@ -1,0 +1,743 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "62206086d39299379ee5b83f"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"62206086d39299379ee5b83f\"})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83f"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"62206086d39299379ee5b83f\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUwMDY3NWU5ZTFmYWI0MDI4OGI4NzU0X19DVVJTT1JfREVMSU1JVEVSX180NTAwNl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e00675e9e1fab40288b8754"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUzYmJlNWNmN2RmZGIwZDg3MTczNmJlX19DVVJTT1JfREVMSU1JVEVSX18zMTIzMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e3bbe5cf7dfdb0d871736be"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjIxNWNmNjI1NzhlZmMwMDBlMzE0ZDg2X19DVVJTT1JfREVMSU1JVEVSX18yOTM0N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:6215cf62578efc000e314d86"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVhMjZmOGEzOWZiMWIxZjJlNTNkZDdjX19DVVJTT1JfREVMSU1JVEVSX18yNDExN19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ea26f8a39fb1b1f2e53dd7c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MGE3NGVhYmNmZGFmZDM5YjI0X19DVVJTT1JfREVMSU1JVEVSX18yMjQzNV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780a74eabcfdafd39b24"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDk3NGVhYmNmZGFmZDM5Nzk5X19DVVJTT1JfREVMSU1JVEVSX18yMjMxOV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780974eabcfdafd39799"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDk3NGVhYmNmZGFmZDM5OTA3X19DVVJTT1JfREVMSU1JVEVSX18yMTMxNF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780974eabcfdafd39907"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjIzMWIzNTg5MzdhYzMwMDEzZWQyNDMyX19DVVJTT1JfREVMSU1JVEVSX18xODA3NV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:6231b358937ac30013ed2432"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVmNGQ1YzBjOTRlNDgwZGNiOWY3ODYzX19DVVJTT1JfREVMSU1JVEVSX18xNTIwOF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ef4d5c0c94e480dcb9f7863"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNkODdlY2I4MGY2NzM0YWNlODM4YmZkX19DVVJTT1JfREVMSU1JVEVSX18xNDk3OV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5cd87ecb80f6734ace838bfd"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA1NWRiZjk0YWJmNTUwMDBlNWJlZDgxX19DVVJTT1JfREVMSU1JVEVSX18xNDk2M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:6055dbf94abf55000e5bed81"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY0M2Y5YTQ5MjIzNmIwMDFiZjFlYjQxX19DVVJTT1JfREVMSU1JVEVSX18xNDU4OF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f43f9a492236b001bf1eb41"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBiZGFkNGJjYTg4YWUwMDE0ZWRjOTRjX19DVVJTT1JfREVMSU1JVEVSX18xMzIzNl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:60bdad4bca88ae0014edc94c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI2ZjkxZDc1NDJjMDgwMDE1NWZlYjc5X19DVVJTT1JfREVMSU1JVEVSX18xMjg1Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:626f91d7542c0800155feb79"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBiODNjNzJiOGZlNWMwMDBlOGY1ZjY1X19DVVJTT1JfREVMSU1JVEVSX18xMjU2N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:60b83c72b8fe5c000e8f5f65"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI2ZjhmZWY0ODNmY2YwMDNjOGE1MjBlX19DVVJTT1JfREVMSU1JVEVSX18xMTg5Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:626f8fef483fcf003c8a520e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU0ODkyNDhlZThmN2UwZGIwNmNjMTc5X19DVVJTT1JfREVMSU1JVEVSX18xMTUyNF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e489248ee8f7e0db06cc179"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRmY2M1OGRhZTM4NTI3MmM1YTYxMmQxX19DVVJTT1JfREVMSU1JVEVSX18xMDgyMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5dfcc58dae385272c5a612d1"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI4MzYzNmVjYjAxN2UwMDBlZGEyOTExX19DVVJTT1JfREVMSU1JVEVSX18xMDYwMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:6283636ecb017e000eda2911"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNiODJiNzNjYjI3MjhlYmU5ZjBmN2U3X19DVVJTT1JfREVMSU1JVEVSX185ODY3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5cb82b73cb2728ebe9f0f7e7"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NWNiODJiNzNjYjI3MjhlYmU5ZjBmN2U3X19DVVJTT1JfREVMSU1JVEVSX185ODY3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NWUwMDY3NWU5ZTFmYWI0MDI4OGI4NzU0X19DVVJTT1JfREVMSU1JVEVSX180NTAwNl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:6220606c1cb1cf4841dbdf8e": {
+          "__typename": "CategoryV2",
+          "id": "6220606c1cb1cf4841dbdf8e",
+          "title": "직무",
+          "depth": 0
+        },
+        "CategoryV2:6220895c9dede0214b0783da": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783da",
+          "title": "디자인툴",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83f"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83f"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783db": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783db",
+          "title": "그래픽디자인",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83f"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83f"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783dc": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783dc",
+          "title": "브랜드디자인",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83f"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83f"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783dd": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783dd",
+          "title": "타이포그래피",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83f"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783de": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783de",
+          "title": "건축디자인",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83f"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83f"
+            }
+          ]
+        },
+        "CategoryV2:62206086d39299379ee5b83f": {
+          "__typename": "CategoryV2",
+          "id": "62206086d39299379ee5b83f",
+          "title": "디자인",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783da"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783db"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783dc"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783dd"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783de"
+            }
+          ]
+        },
+        "User:5d0778ed6a3bd1095673c5b5": {
+          "__typename": "User",
+          "_id": "5d0778ed6a3bd1095673c5b5",
+          "displayName": "두이"
+        },
+        "ProductV3:5e00675e9e1fab40288b8754": {
+          "__typename": "ProductV3",
+          "_id": "5e00675e9e1fab40288b8754",
+          "title": "차근차근 배우는 포토샵 툴과 디자인",
+          "coverImageUrl": "https://cdn.class101.net/images/50bfd304-9ee9-4eef-8497-d3b60d3301fe",
+          "klassId": "5e00675d9e1fab40288b8753",
+          "likedCount": 45006,
+          "firestoreId": "byRtfggXtco39daV97UD",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783da"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d0778ed6a3bd1095673c5b5"
+          }
+        },
+        "User:5e3a79cadfa4ee0d9dfa54f5": {
+          "__typename": "User",
+          "_id": "5e3a79cadfa4ee0d9dfa54f5",
+          "displayName": "큐리"
+        },
+        "ProductV3:5e3bbe5cf7dfdb0d871736be": {
+          "__typename": "ProductV3",
+          "_id": "5e3bbe5cf7dfdb0d871736be",
+          "title": "이성과 감성을 넘나들다. 시선을 사로잡는 브랜드 디자인",
+          "coverImageUrl": "https://cdn.class101.net/images/839416f7-fa90-4ea5-aa3e-435894dfa09b",
+          "klassId": "5e3bbe5cf7dfdb0d871736bd",
+          "likedCount": 31230,
+          "firestoreId": "HqYy7CbUm1E7SdvvT1sh",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783dc"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:5e3a79cadfa4ee0d9dfa54f5"
+          }
+        },
+        "User:5cc16ebe2cac7d06118b15f3": {
+          "__typename": "User",
+          "_id": "5cc16ebe2cac7d06118b15f3",
+          "displayName": "존코바"
+        },
+        "ProductV3:6215cf62578efc000e314d86": {
+          "__typename": "ProductV3",
+          "_id": "6215cf62578efc000e314d86",
+          "title": "26만 유튜버 존코바의 감각까지 더하는 포토샵 배우기",
+          "coverImageUrl": "https://cdn.class101.net/images/a5ea8858-cd86-436e-9bfa-4e81dc313bb4",
+          "klassId": "6215cf62578efc000e314d83",
+          "likedCount": 29347,
+          "firestoreId": "m1ziuFuqLdX3mj8qDw5k",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783da"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cc16ebe2cac7d06118b15f3"
+          }
+        },
+        "User:5c69b6a974eabcfdaf932af8": {
+          "__typename": "User",
+          "_id": "5c69b6a974eabcfdaf932af8",
+          "displayName": "송호종"
+        },
+        "ProductV3:5ea26f8a39fb1b1f2e53dd7c": {
+          "__typename": "ProductV3",
+          "_id": "5ea26f8a39fb1b1f2e53dd7c",
+          "title": "Adobe 디자인 트렌드에 소개된 디자이너와 그래픽 아트웍 스킬업하기",
+          "coverImageUrl": "https://cdn.class101.net/images/fd5ba3b0-a944-40bc-a4d1-f695abd41313/2048xauto.webp",
+          "klassId": "5ea26f8a39fb1b1f2e53dd7b",
+          "likedCount": 24117,
+          "firestoreId": "H6bWZcmBudR2rdQ5qQik",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783db"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c69b6a974eabcfdaf932af8"
+          }
+        },
+        "User:5c5d62e874eabcfdafcb6d42": {
+          "__typename": "User",
+          "_id": "5c5d62e874eabcfdafcb6d42",
+          "displayName": "색다른컬러연구소 유잰"
+        },
+        "ProductV3:5c5d780a74eabcfdafd39b24": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780a74eabcfdafd39b24",
+          "title": "색다른컬러연구소 유잰의 색 감각 키우기",
+          "coverImageUrl": "https://cdn.class101.net/images/c05662fc-a066-4d52-be47-288269e49226",
+          "klassId": "5c514d81d30c532c44694799",
+          "likedCount": 22435,
+          "firestoreId": "sp2L0a0rbvT0Po31dD8b",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783db"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d62e874eabcfdafcb6d42"
+          }
+        },
+        "User:5c5d739b74eabcfdafd1b407": {
+          "__typename": "User",
+          "_id": "5c5d739b74eabcfdafd1b407",
+          "displayName": "크리에이터 좐느"
+        },
+        "ProductV3:5c5d780974eabcfdafd39799": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780974eabcfdafd39799",
+          "title": "크리에이터 좐느의 포토샵의 모든 것",
+          "coverImageUrl": "https://cdn.class101.net/images/2f4d0a5f-1c06-4cda-a5c2-180823fe5b77",
+          "klassId": "5c7cac3335b52893ce1582bd",
+          "likedCount": 22319,
+          "firestoreId": "in1XXV65pI2HESEoqnxd",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783da"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d739b74eabcfdafd1b407"
+          }
+        },
+        "User:5c5d705a74eabcfdafd0b022": {
+          "__typename": "User",
+          "_id": "5c5d705a74eabcfdafd0b022",
+          "displayName": "디자이너 심소연"
+        },
+        "ProductV3:5c5d780974eabcfdafd39907": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780974eabcfdafd39907",
+          "title": "디자인부터 인쇄까지, 심소연의 실무 편집디자인",
+          "coverImageUrl": "https://cdn.class101.net/images/0cf022aa-3e89-49b7-ba30-96459127c336",
+          "klassId": "5c82618235b52893cecc6fe4",
+          "likedCount": 21314,
+          "firestoreId": "pIGuQHV9wh2Np6ysnpfG",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783dc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d705a74eabcfdafd0b022"
+          }
+        },
+        "User:622ecb2f63f45f000dcc6083": {
+          "__typename": "User",
+          "_id": "622ecb2f63f45f000dcc6083",
+          "displayName": "디자이너 디니"
+        },
+        "ProductV3:6231b358937ac30013ed2432": {
+          "__typename": "ProductV3",
+          "_id": "6231b358937ac30013ed2432",
+          "title": "디자인 왕초보도 폭풍성장! 바로 꺼내쓰는 일러스트 노하우",
+          "coverImageUrl": "https://cdn.class101.net/images/8925d0e8-784c-43b1-9a3d-45299b3c5400",
+          "klassId": "6231b358937ac30013ed242f",
+          "likedCount": 18075,
+          "firestoreId": "LxEDNv0rPq7xsFHuPXqr",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783da"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:622ecb2f63f45f000dcc6083"
+          }
+        },
+        "User:5cf3dbed80f6734ace35b175": {
+          "__typename": "User",
+          "_id": "5cf3dbed80f6734ace35b175",
+          "displayName": "위드로고"
+        },
+        "ProductV3:5ef4d5c0c94e480dcb9f7863": {
+          "__typename": "ProductV3",
+          "_id": "5ef4d5c0c94e480dcb9f7863",
+          "title": "부업으로 로고디자이너로 활동하기! (월 100만원 프로젝트)",
+          "coverImageUrl": "https://cdn.class101.net/images/b6839691-e980-4a47-9599-a97d65cd134f",
+          "klassId": "5ef4d5bfc94e480dcb9f7862",
+          "likedCount": 15208,
+          "firestoreId": "MeUQLCfFwuzKxXkU2e91",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783dc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cf3dbed80f6734ace35b175"
+          }
+        },
+        "User:5ca5cebc6008dd782ac2f691": {
+          "__typename": "User",
+          "_id": "5ca5cebc6008dd782ac2f691",
+          "displayName": "로지킴 Rozy Kim"
+        },
+        "ProductV3:5cd87ecb80f6734ace838bfd": {
+          "__typename": "ProductV3",
+          "_id": "5cd87ecb80f6734ace838bfd",
+          "title": "작품에 다채로움을 더해 독창적인 나만의 아트워크만들기 '디지털아트워크'",
+          "coverImageUrl": "https://cdn.class101.net/images/dca3e13b-6fab-419a-be72-8ef315e4a928",
+          "klassId": "5cd87eca80f6734ace838bed",
+          "likedCount": 14979,
+          "firestoreId": "HjGGNJEDjd3fL293k6SK",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783db"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ca5cebc6008dd782ac2f691"
+          }
+        },
+        "User:6055dbe3a3eacd0015016d51": {
+          "__typename": "User",
+          "_id": "6055dbe3a3eacd0015016d51",
+          "displayName": "이디"
+        },
+        "ProductV3:6055dbf94abf55000e5bed81": {
+          "__typename": "ProductV3",
+          "_id": "6055dbf94abf55000e5bed81",
+          "title": "포토샵으로 누구나 만드는 상세페이지",
+          "coverImageUrl": "https://cdn.class101.net/images/88ac1ab1-dbb5-4853-ad9d-72cca9320ce9",
+          "klassId": "6055dbf94abf55000e5bed80",
+          "likedCount": 14963,
+          "firestoreId": "3cAnxh1r9Y316NRaTJtl",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783da"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6055dbe3a3eacd0015016d51"
+          }
+        },
+        "User:5f43f903d732ce001567aae9": {
+          "__typename": "User",
+          "_id": "5f43f903d732ce001567aae9",
+          "displayName": "스튜디오 다솔"
+        },
+        "ProductV3:5f43f9a492236b001bf1eb41": {
+          "__typename": "ProductV3",
+          "_id": "5f43f9a492236b001bf1eb41",
+          "title": "확실한 인포그래픽으로 클라이언트가 만족하는 작업물 만드는 브랜딩 디자인",
+          "coverImageUrl": "https://cdn.class101.net/images/8af59d15-c0ef-4954-8757-3729adb43dd6",
+          "klassId": "5f43f9a392236b001bf1eb40",
+          "likedCount": 14588,
+          "firestoreId": "NB5dmmMr9nmuTX3aCVJi",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783dc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f43f903d732ce001567aae9"
+          }
+        },
+        "User:60b98a66707898000d437ed0": {
+          "__typename": "User",
+          "_id": "60b98a66707898000d437ed0",
+          "displayName": "야우"
+        },
+        "ProductV3:60bdad4bca88ae0014edc94c": {
+          "__typename": "ProductV3",
+          "_id": "60bdad4bca88ae0014edc94c",
+          "title": "전국 교보 핫트랙스/영풍문고/예스24 입점, 디자이너 굿즈 제작의 모든 것",
+          "coverImageUrl": "https://cdn.class101.net/images/8e95a151-ef2f-4933-924a-b578946b91b3",
+          "klassId": "60bdad4bca88ae0014edc94b",
+          "likedCount": 13236,
+          "firestoreId": "KVg7TZtzK33U1urYhnv0",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783db"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60b98a66707898000d437ed0"
+          }
+        },
+        "User:626f8ea0acfb4400166b17ba": {
+          "__typename": "User",
+          "_id": "626f8ea0acfb4400166b17ba",
+          "displayName": "디하라 D.HARA"
+        },
+        "ProductV3:626f91d7542c0800155feb79": {
+          "__typename": "ProductV3",
+          "_id": "626f91d7542c0800155feb79",
+          "title": "[일러스트 : 패키지] 입문자를 위한 일러스트레이터 완전 기초",
+          "coverImageUrl": "https://cdn.class101.net/images/1f104ede-d411-46d2-917e-a06d13211ee7",
+          "klassId": "626f91d7542c0800155feb76",
+          "likedCount": 12852,
+          "firestoreId": "LuKvNUE2MttcmoTO2kfl",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783da"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:626f8ea0acfb4400166b17ba"
+          }
+        },
+        "User:60b83befb9c8b30014ab2200": {
+          "__typename": "User",
+          "_id": "60b83befb9c8b30014ab2200",
+          "displayName": "이반느"
+        },
+        "ProductV3:60b83c72b8fe5c000e8f5f65": {
+          "__typename": "ProductV3",
+          "_id": "60b83c72b8fe5c000e8f5f65",
+          "title": "내 브랜드를 디자인 하다. 감각적인 브랜드 디자인의 기획부터 실무까지",
+          "coverImageUrl": "https://cdn.class101.net/images/5fd34918-3047-4485-aa33-647f8377b1c8",
+          "klassId": "60b83c72b8fe5c000e8f5f64",
+          "likedCount": 12567,
+          "firestoreId": "IGiJCFRBfHQD5a7W21ti",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783dc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60b83befb9c8b30014ab2200"
+          }
+        },
+        "ProductV3:626f8fef483fcf003c8a520e": {
+          "__typename": "ProductV3",
+          "_id": "626f8fef483fcf003c8a520e",
+          "title": "[포토샵 : 패키지] 입문자를 위한 포토샵 완전 기초",
+          "coverImageUrl": "https://cdn.class101.net/images/798012fb-b4a7-4644-bc25-a7e8e4b616f9",
+          "klassId": "626f8fef483fcf003c8a520b",
+          "likedCount": 11896,
+          "firestoreId": "kqXKyFlRtfPJv97hxYj3",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783da"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:626f8ea0acfb4400166b17ba"
+          }
+        },
+        "User:5e1476f39b21f54ac777aa51": {
+          "__typename": "User",
+          "_id": "5e1476f39b21f54ac777aa51",
+          "displayName": "김연디"
+        },
+        "ProductV3:5e489248ee8f7e0db06cc179": {
+          "__typename": "ProductV3",
+          "_id": "5e489248ee8f7e0db06cc179",
+          "title": "실무 디자이너가 알려주는 어필 잘되는 포트폴리오 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/a0724ade-d4a6-43dd-b227-166fe72a1368",
+          "klassId": "5e489248ee8f7e0db06cc178",
+          "likedCount": 11524,
+          "firestoreId": "QDqvqF6BSmfpBZ7ks0EN",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783db"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e1476f39b21f54ac777aa51"
+          }
+        },
+        "User:5d7defd84ec0f9eda3ab43a2": {
+          "__typename": "User",
+          "_id": "5d7defd84ec0f9eda3ab43a2",
+          "displayName": "SNL STUDIO"
+        },
+        "ProductV3:5dfcc58dae385272c5a612d1": {
+          "__typename": "ProductV3",
+          "_id": "5dfcc58dae385272c5a612d1",
+          "title": "건축 디자인 All-in-One 클래스, 건축 모델링부터 렌더링 포토샵까지!",
+          "coverImageUrl": "https://cdn.class101.net/images/26a97a2e-072d-4552-bb61-d1dd9ca142f4",
+          "klassId": "5dfcc58dae385272c5a612d0",
+          "likedCount": 10820,
+          "firestoreId": "ZR3MP6PWrpCFJDy32E7H",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783de"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d7defd84ec0f9eda3ab43a2"
+          }
+        },
+        "ProductV3:6283636ecb017e000eda2911": {
+          "__typename": "ProductV3",
+          "_id": "6283636ecb017e000eda2911",
+          "title": "브랜드, 아트를 만나다. 브랜드 디자인 마스터 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/e29d2a92-fa18-49c3-8fbd-69cb331d87f3",
+          "klassId": "6283636ecb017e000eda290e",
+          "likedCount": 10600,
+          "firestoreId": "a7YCjI5KAKTCRcOoGmpc",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783dc"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:5e3a79cadfa4ee0d9dfa54f5"
+          }
+        },
+        "User:5cb829b9cb2728ebe9efe93f": {
+          "__typename": "User",
+          "_id": "5cb829b9cb2728ebe9efe93f",
+          "displayName": "제이슨"
+        },
+        "ProductV3:5cb82b73cb2728ebe9f0f7e7": {
+          "__typename": "ProductV3",
+          "_id": "5cb82b73cb2728ebe9f0f7e7",
+          "title": "제이슨과 함께, 포토샵으로 만드는 나만의 판타지 세상",
+          "coverImageUrl": "https://cdn.class101.net/images/90dffd27-1552-4164-a611-047614c51389",
+          "klassId": "5cb82b73cb2728ebe9f0f7f4",
+          "likedCount": 9867,
+          "firestoreId": "kl030syt2F2bLPRu1e61",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783db"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cb829b9cb2728ebe9efe93f"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "62206086d39299379ee5b83f"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

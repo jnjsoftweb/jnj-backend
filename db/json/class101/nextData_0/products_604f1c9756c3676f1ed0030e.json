@@ -1,0 +1,813 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed0030e"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed0030e\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed0030e\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBmZTNiNDVjZDU2YTQwMDBkYTcxNzJkX19DVVJTT1JfREVMSU1JVEVSX182OTM4Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:60fe3b45cd56a4000da7172d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE1ZDEwMzViZTFlNTkwMDBkZDIzYWEzX19DVVJTT1JfREVMSU1JVEVSX182NjI4M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:615d1035be1e59000dd23aa3"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZmYWI4ZTgwYTM3NzAwMDBkNDc4NGM2X19DVVJTT1JfREVMSU1JVEVSX180NjQ1M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ffab8e80a3770000d4784c6"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ0YTEzODllNmVjNmY0NTRmYjI1ZjBmX19DVVJTT1JfREVMSU1JVEVSX18zMDc0Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d4a1389e6ec6f454fb25f0f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFhOGU3MWE1MzVmMDIwMDEzMTY4NTAzX19DVVJTT1JfREVMSU1JVEVSX18yODQyMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:61a8e71a535f020013168503"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAxMTExZTJkNTM3NDkwMDBkMTc3YTFjX19DVVJTT1JfREVMSU1JVEVSX18yODA3NV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:601111e2d53749000d177a1c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBiMDdiOGE5NzJhODUwMDBlNzUxNzE5X19DVVJTT1JfREVMSU1JVEVSX18yMzk1Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:60b07b8a972a85000e751719"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYyN2JjZThiYjNkYzEwMDE1MDMyNjVhX19DVVJTT1JfREVMSU1JVEVSX18yMzg2N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f27bce8bb3dc1001503265a"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRlNzU0ZWE1ZDM4MGUwZGE0OTU2NmFmX19DVVJTT1JfREVMSU1JVEVSX18yMzQ3N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5de754ea5d380e0da49566af"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU3YTFiMGYyZDVjOWQ3NGU5YTdmODQzX19DVVJTT1JfREVMSU1JVEVSX18yMjg3M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e7a1b0f2d5c9d74e9a7f843"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYzNGEwNjUwNWE2YTYwMDJiOTFhNmNjX19DVVJTT1JfREVMSU1JVEVSX18yMTQ1OF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f34a06505a6a6002b91a6cc"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVhN2JmMmM3ZmQxZWM2ZWU3OGMxNjIxX19DVVJTT1JfREVMSU1JVEVSX18yMDk3N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ea7bf2c7fd1ec6ee78c1621"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU3MzM0ZDRmOTlmMTYzMTcyMjEzYzVhX19DVVJTT1JfREVMSU1JVEVSX18yMDc4MV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e7334d4f99f163172213c5a"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYwYTgyNzk3NDM4MTQzYTUyYTFjODZjX19DVVJTT1JfREVMSU1JVEVSX18xOTY5OV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f0a82797438143a52a1c86c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU2MjU4ZDcxNDc5ZDk3OTAyODhlMzA1X19DVVJTT1JfREVMSU1JVEVSX18xOTEzN19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e6258d71479d9790288e305"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZmMmQyNTNjMmQxNGEwMDBkNDg3NDEzX19DVVJTT1JfREVMSU1JVEVSX18xODk4N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ff2d253c2d14a000d487413"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQwYzljYTg2YTNiZDEwOTU2MjcxN2E5X19DVVJTT1JfREVMSU1JVEVSX18xODkxOV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d0c9ca86a3bd109562717a9"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI2Nzk2ZjA5OTZkOWQwMDBlZjhiZTYwX19DVVJTT1JfREVMSU1JVEVSX18xNzk4OF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:626796f0996d9d000ef8be60"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ1MmUwMzEyNWU4OWU5ZjQ1NjdiN2QzX19DVVJTT1JfREVMSU1JVEVSX18xNzc5NF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d52e03125e89e9f4567b7d3"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM5NWQzM2IyZmYwZWYxMjJjYzUwNjViX19DVVJTT1JfREVMSU1JVEVSX18xNzIwNF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c95d33b2ff0ef122cc5065b"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NWM5NWQzM2IyZmYwZWYxMjJjYzUwNjViX19DVVJTT1JfREVMSU1JVEVSX18xNzIwNF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "startCursor": "NjBmZTNiNDVjZDU2YTQwMDBkYTcxNzJkX19DVVJTT1JfREVMSU1JVEVSX182OTM4Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:605c3db737b977e02654405e": {
+          "__typename": "CategoryV2",
+          "id": "605c3db737b977e02654405e",
+          "title": "크리에이티브",
+          "depth": 0
+        },
+        "CategoryV2:613070fa5b76158cac88344a": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac88344a",
+          "title": "일러스트",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+            }
+          ]
+        },
+        "CategoryV2:6114891dfe1ca7f7b31b4a23": {
+          "__typename": "CategoryV2",
+          "id": "6114891dfe1ca7f7b31b4a23",
+          "title": "컨셉아트",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac88344b": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac88344b",
+          "title": "캐릭터 드로잉",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac88344c": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac88344c",
+          "title": "인물 드로잉",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac88344d": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac88344d",
+          "title": "굿즈﹒이모티콘",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac88344e": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac88344e",
+          "title": "웹툰",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac88344f": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac88344f",
+          "title": "캘리그라피",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+            }
+          ]
+        },
+        "CategoryV2:613070fa5b76158cac883450": {
+          "__typename": "CategoryV2",
+          "id": "613070fa5b76158cac883450",
+          "title": "더 새로운 디지털 드로잉",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0030e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0030e": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0030e",
+          "title": "디지털 드로잉",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac88344a"
+            },
+            {
+              "__ref": "CategoryV2:6114891dfe1ca7f7b31b4a23"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac88344b"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac88344c"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac88344d"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac88344e"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac88344f"
+            },
+            {
+              "__ref": "CategoryV2:613070fa5b76158cac883450"
+            }
+          ]
+        },
+        "User:60dbffa151710300140e82f6": {
+          "__typename": "User",
+          "_id": "60dbffa151710300140e82f6",
+          "displayName": "콕스"
+        },
+        "ProductV3:60fe3b45cd56a4000da7172d": {
+          "__typename": "ProductV3",
+          "_id": "60fe3b45cd56a4000da7172d",
+          "title": "[선착순 얼리버드]VOD, 라이브, A/S 강의와 커뮤니티까지! 한 번에 즐기는 콕스패스",
+          "coverImageUrl": "https://cdn.class101.net/images/f89405c0-cd5a-4532-bd71-db66aec8e2a7",
+          "klassId": "60fe3b45cd56a4000da7172c",
+          "likedCount": 69382,
+          "firestoreId": "sfCxoddIvlEWDmBXckPt",
+          "category": {
+            "__ref": "CategoryV2:6114891dfe1ca7f7b31b4a23"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:60dbffa151710300140e82f6"
+          }
+        },
+        "User:61567205b8f78400146bbe37": {
+          "__typename": "User",
+          "_id": "61567205b8f78400146bbe37",
+          "displayName": "유랑"
+        },
+        "ProductV3:615d1035be1e59000dd23aa3": {
+          "__typename": "ProductV3",
+          "_id": "615d1035be1e59000dd23aa3",
+          "title": "무명 이모티콘 작가가 인기 작가가 된 비결! 경쟁에서 살아남는 인기 이모티콘 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/8f261743-521e-49a6-bbcd-4f4728601b3e",
+          "klassId": "615d1035be1e59000dd23a9e",
+          "likedCount": 66283,
+          "firestoreId": "EMOZiiQ5mVoydKXdQZYr",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344d"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61567205b8f78400146bbe37"
+          }
+        },
+        "User:5c5d60be74eabcfdafc96b1b": {
+          "__typename": "User",
+          "_id": "5c5d60be74eabcfdafc96b1b",
+          "displayName": "Zipcy"
+        },
+        "ProductV3:5ffab8e80a3770000d4784c6": {
+          "__typename": "ProductV3",
+          "_id": "5ffab8e80a3770000d4784c6",
+          "title": "잊을 수 없는 매혹적인 인물화, 아이패드로 수작업 감성과 감각적인 색감을 그려요",
+          "coverImageUrl": "https://cdn.class101.net/images/b31a764b-9923-4390-a101-1225723276e9",
+          "klassId": "5ffab8e70a3770000d478495",
+          "likedCount": 46453,
+          "firestoreId": "Xl6yK2a732vqL9P09cLq",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344c"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d60be74eabcfdafc96b1b"
+          }
+        },
+        "User:5d4971cee6ec6f454fb938f3": {
+          "__typename": "User",
+          "_id": "5d4971cee6ec6f454fb938f3",
+          "displayName": "김하나"
+        },
+        "ProductV3:5d4a1389e6ec6f454fb25f0f": {
+          "__typename": "ProductV3",
+          "_id": "5d4a1389e6ec6f454fb25f0f",
+          "title": "귀여운 낙서로 돈 버는 법, 캐릭터로 이모티콘 연금 만들기!",
+          "coverImageUrl": "https://cdn.class101.net/images/cb620cfa-5f2f-4503-8783-84ce5b831f2b",
+          "klassId": "5d4a1388e6ec6f454fb25e37",
+          "likedCount": 30746,
+          "firestoreId": "pHIZchR7a0C5hMpVvnp5",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344d"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d4971cee6ec6f454fb938f3"
+          }
+        },
+        "User:5fbe26c69cd9fb00138e9993": {
+          "__typename": "User",
+          "_id": "5fbe26c69cd9fb00138e9993",
+          "displayName": "Seal씰"
+        },
+        "ProductV3:61a8e71a535f020013168503": {
+          "__typename": "ProductV3",
+          "_id": "61a8e71a535f020013168503",
+          "title": "질감이 듬뿍 담긴! 매력적인 아이패드 인물화",
+          "coverImageUrl": "https://cdn.class101.net/images/d9497ea4-e511-420a-9a00-37013efa87b6",
+          "klassId": "61a8e71a535f0200131684fe",
+          "likedCount": 28420,
+          "firestoreId": "QfrBFQE2PNC16wRkp2TH",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344c"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fbe26c69cd9fb00138e9993"
+          }
+        },
+        "User:5f1681f719e366d0b4be4a41": {
+          "__typename": "User",
+          "_id": "5f1681f719e366d0b4be4a41",
+          "displayName": "메밀"
+        },
+        "ProductV3:601111e2d53749000d177a1c": {
+          "__typename": "ProductV3",
+          "_id": "601111e2d53749000d177a1c",
+          "title": "왕초보에서 이모티콘 마스터로! 클립스튜디오로 만드는 카카오톡 이모티콘",
+          "coverImageUrl": "https://cdn.class101.net/images/ce879917-2d7a-4b55-b664-2123890aaa68",
+          "klassId": "601111e1d53749000d1778cf",
+          "likedCount": 28075,
+          "firestoreId": "GM49kSORzFWeGxbtxAdr",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344d"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f1681f719e366d0b4be4a41"
+          }
+        },
+        "User:5f0e877919e366d0b44314b0": {
+          "__typename": "User",
+          "_id": "5f0e877919e366d0b44314b0",
+          "displayName": "지안"
+        },
+        "ProductV3:60b07b8a972a85000e751719": {
+          "__typename": "ProductV3",
+          "_id": "60b07b8a972a85000e751719",
+          "title": "퇴근 후 수익창출, 꼭 필요한 내용만 골라 담은 캐릭터 브랜딩 스토리",
+          "coverImageUrl": "https://cdn.class101.net/images/b1f8807a-1a52-4c76-85d3-ec9ed4bbb773",
+          "klassId": "60b07b8a972a85000e751718",
+          "likedCount": 23952,
+          "firestoreId": "w9CMyWDMsLnH3D0FN0Mp",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344d"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f0e877919e366d0b44314b0"
+          }
+        },
+        "User:5d24431cabe479eb883eeb3d": {
+          "__typename": "User",
+          "_id": "5d24431cabe479eb883eeb3d",
+          "displayName": "BF"
+        },
+        "ProductV3:5f27bce8bb3dc1001503265a": {
+          "__typename": "ProductV3",
+          "_id": "5f27bce8bb3dc1001503265a",
+          "title": "자연을 닮은 색감으로 칠하는 클립스튜디오 캐릭터 일러스트",
+          "coverImageUrl": "https://cdn.class101.net/images/f81d5569-4c39-48f4-9d84-5e2ab4811482",
+          "klassId": "5f27bce8bb3dc10015032652",
+          "likedCount": 23867,
+          "firestoreId": "P7cd3fwjMMUhtqmkekz3",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d24431cabe479eb883eeb3d"
+          }
+        },
+        "User:5cae7db7cb2728ebe9f1b65f": {
+          "__typename": "User",
+          "_id": "5cae7db7cb2728ebe9f1b65f",
+          "displayName": "흐스흐"
+        },
+        "ProductV3:5de754ea5d380e0da49566af": {
+          "__typename": "ProductV3",
+          "_id": "5de754ea5d380e0da49566af",
+          "title": "아이패드 드로잉 기초부터 굿즈 제작까지 흐스흐와 함께해요",
+          "coverImageUrl": "https://cdn.class101.net/images/0d478804-689b-4045-af31-78207f4d90d9",
+          "klassId": "5de754e95d380e0da49566ae",
+          "likedCount": 23477,
+          "firestoreId": "2XmAanyYa7IuDNqtPyve",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cae7db7cb2728ebe9f1b65f"
+          }
+        },
+        "User:5e7a1af93573aa48bee421b6": {
+          "__typename": "User",
+          "_id": "5e7a1af93573aa48bee421b6",
+          "displayName": "유운"
+        },
+        "ProductV3:5e7a1b0f2d5c9d74e9a7f843": {
+          "__typename": "ProductV3",
+          "_id": "5e7a1b0f2d5c9d74e9a7f843",
+          "title": "사랑을 담아 그리는 순정 일러스트, 이야기를 말하는 캐릭터 드로잉",
+          "coverImageUrl": "https://cdn.class101.net/images/3a1ee7b4-91a8-4211-9d08-4c8da12c896f",
+          "klassId": "5e7a1b0f2d5c9d74e9a7f842",
+          "likedCount": 22873,
+          "firestoreId": "AFHngWIXP0Lx5l3l4Cvv",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e7a1af93573aa48bee421b6"
+          }
+        },
+        "User:5f34a01989a8b9001b7e0e0f": {
+          "__typename": "User",
+          "_id": "5f34a01989a8b9001b7e0e0f",
+          "displayName": "곰곰"
+        },
+        "ProductV3:5f34a06505a6a6002b91a6cc": {
+          "__typename": "ProductV3",
+          "_id": "5f34a06505a6a6002b91a6cc",
+          "title": "그림 그린 지 한 달 만에, 공대생이 이모티콘 작가가 될 수 있었던 비법",
+          "coverImageUrl": "https://cdn.class101.net/images/099ecf4b-0a10-4242-9ff1-d94b41034c31",
+          "klassId": "5f34a06505a6a6002b91a6cb",
+          "likedCount": 21458,
+          "firestoreId": "468SsYDBjR62QXNMrEZy",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344d"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f34a01989a8b9001b7e0e0f"
+          }
+        },
+        "User:5e1bf19a8c15b614042334e1": {
+          "__typename": "User",
+          "_id": "5e1bf19a8c15b614042334e1",
+          "displayName": "포그보우"
+        },
+        "ProductV3:5ea7bf2c7fd1ec6ee78c1621": {
+          "__typename": "ProductV3",
+          "_id": "5ea7bf2c7fd1ec6ee78c1621",
+          "title": "나의 첫 굿즈 사업, 일상 사진으로 만드는 굿즈 브랜드",
+          "coverImageUrl": "https://cdn.class101.net/images/4c042b0d-3bab-4855-b269-a98ddbd6dd48/2048xauto.webp",
+          "klassId": "5ea7bf2c7fd1ec6ee78c1620",
+          "likedCount": 20977,
+          "firestoreId": "DtxzbUtxBNp3GDm1tAhj",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344d"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e1bf19a8c15b614042334e1"
+          }
+        },
+        "User:5e7334c408f7fb3186cb2e4e": {
+          "__typename": "User",
+          "_id": "5e7334c408f7fb3186cb2e4e",
+          "displayName": "페사"
+        },
+        "ProductV3:5e7334d4f99f163172213c5a": {
+          "__typename": "ProductV3",
+          "_id": "5e7334d4f99f163172213c5a",
+          "title": "사이툴로 그리는 일러스트레이터 페사의 따뜻한 캐릭터 드로잉",
+          "coverImageUrl": "https://cdn.class101.net/images/e5c94ca3-d542-47c8-ba35-b39aa2fca19b",
+          "klassId": "5e7334d4f99f163172213c59",
+          "likedCount": 20781,
+          "firestoreId": "JIGdVpbXb0NxReO0kDd7",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e7334c408f7fb3186cb2e4e"
+          }
+        },
+        "User:5c8b6af935b52893ce395fb4": {
+          "__typename": "User",
+          "_id": "5c8b6af935b52893ce395fb4",
+          "displayName": "hyunpeach_"
+        },
+        "ProductV3:5f0a82797438143a52a1c86c": {
+          "__typename": "ProductV3",
+          "_id": "5f0a82797438143a52a1c86c",
+          "title": "아이패드 하나로 더 진짜같게, 더 예쁘게! 현피치의 아이패드 인물화",
+          "coverImageUrl": "https://cdn.class101.net/images/ab7a4528-c661-4735-8eef-159dd3ff12cf",
+          "klassId": "5f0a82797438143a52a1c86b",
+          "likedCount": 19699,
+          "firestoreId": "FO3HfVZtXTo23QVhaJFX",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344c"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c8b6af935b52893ce395fb4"
+          }
+        },
+        "User:5cdd8e3580f6734ace661784": {
+          "__typename": "User",
+          "_id": "5cdd8e3580f6734ace661784",
+          "displayName": "규멩"
+        },
+        "ProductV3:5e6258d71479d9790288e305": {
+          "__typename": "ProductV3",
+          "_id": "5e6258d71479d9790288e305",
+          "title": "캐릭터를 살아 숨쉬게 하기, 프로 애니메이션 감독의 스토리 비주얼 라이징",
+          "coverImageUrl": "https://cdn.class101.net/images/fab0b1c6-273f-4c39-aca3-59d516ce7d2c",
+          "klassId": "5e6258d71479d9790288e304",
+          "likedCount": 19137,
+          "firestoreId": "RmrRJPjdU6BjCduu6ZUN",
+          "category": {
+            "__ref": "CategoryV2:6114891dfe1ca7f7b31b4a23"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cdd8e3580f6734ace661784"
+          }
+        },
+        "User:5cd92af180f6734aceccf718": {
+          "__typename": "User",
+          "_id": "5cd92af180f6734aceccf718",
+          "displayName": "하리"
+        },
+        "ProductV3:5ff2d253c2d14a000d487413": {
+          "__typename": "ProductV3",
+          "_id": "5ff2d253c2d14a000d487413",
+          "title": "서랍 속 아이패드로 시작하는 하리의 프로크리에이트 A to Z",
+          "coverImageUrl": "https://cdn.class101.net/images/9831db09-a31b-4c6a-9f8e-c6fcca84324c",
+          "klassId": "5ff2d252c2d14a000d487068",
+          "likedCount": 18987,
+          "firestoreId": "k0HphWKX8QdxbqDaRCye",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac883450"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cd92af180f6734aceccf718"
+          }
+        },
+        "User:5d0c9c8b6a3bd1095626a269": {
+          "__typename": "User",
+          "_id": "5d0c9c8b6a3bd1095626a269",
+          "displayName": "그림바지"
+        },
+        "ProductV3:5d0c9ca86a3bd109562717a9": {
+          "__typename": "ProductV3",
+          "_id": "5d0c9ca86a3bd109562717a9",
+          "title": "새로운 드로잉 기법의 설렘, 레트로 픽셀아트 드로잉",
+          "coverImageUrl": "https://cdn.class101.net/images/2897cf87-e75e-4f7a-b9ff-a33800066b55/autoxauto.webp",
+          "klassId": "5d0c9ca86a3bd1095627173c",
+          "likedCount": 18919,
+          "firestoreId": "inwD7u6VzqH1zoUFEeQb",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac883450"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d0c9c8b6a3bd1095626a269"
+          }
+        },
+        "User:5f61b332d82724000683c8c7": {
+          "__typename": "User",
+          "_id": "5f61b332d82724000683c8c7",
+          "displayName": "이걸누가사"
+        },
+        "ProductV3:626796f0996d9d000ef8be60": {
+          "__typename": "ProductV3",
+          "_id": "626796f0996d9d000ef8be60",
+          "title": "대충 만든 이모티콘으로 돈을 벌어보자",
+          "coverImageUrl": "https://cdn.class101.net/images/3303ffd3-9cab-4b27-bc73-889efff83a56",
+          "klassId": "626796f0996d9d000ef8be5d",
+          "likedCount": 17988,
+          "firestoreId": "8g4FzCqJG7m6dAeXDJAI",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344d"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f61b332d82724000683c8c7"
+          }
+        },
+        "User:5d52ded6ad7f5e11ae2ad7da": {
+          "__typename": "User",
+          "_id": "5d52ded6ad7f5e11ae2ad7da",
+          "displayName": "귀찮"
+        },
+        "ProductV3:5d52e03125e89e9f4567b7d3": {
+          "__typename": "ProductV3",
+          "_id": "5d52e03125e89e9f4567b7d3",
+          "title": "단순하고 정확하게! 일기 쓰듯 쉽게 기록하는 귀찮의 아이패드 일상 드로잉",
+          "coverImageUrl": "https://cdn.class101.net/images/90d1f51e-4d61-4452-a8ff-c40c2fb9a9a9",
+          "klassId": "5d52e03125e89e9f4567a838",
+          "likedCount": 17794,
+          "firestoreId": "7LOaDa9y7IB6DiiFyMF3",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d52ded6ad7f5e11ae2ad7da"
+          }
+        },
+        "User:5c878d2c35b52893ce32ed53": {
+          "__typename": "User",
+          "_id": "5c878d2c35b52893ce32ed53",
+          "displayName": "캣빵"
+        },
+        "ProductV3:5c95d33b2ff0ef122cc5065b": {
+          "__typename": "ProductV3",
+          "_id": "5c95d33b2ff0ef122cc5065b",
+          "title": "아이패드로 시작하는 캣빵의 귀여운 굿즈 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/56781a1f-e574-40ac-8934-b28c7ae58afa",
+          "klassId": "5c95d33c2ff0ef122cc5067a",
+          "likedCount": 17204,
+          "firestoreId": "1PvhxmiNCaLhsInxs0xv",
+          "category": {
+            "__ref": "CategoryV2:613070fa5b76158cac88344d"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c878d2c35b52893ce32ed53"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed0030e"
+  },
+  "buildId": "6db1b35a771d75fe6bd9d04f4c0af77ca5c76812",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

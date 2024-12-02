@@ -1,0 +1,784 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "62206086d39299379ee5b83c"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"62206086d39299379ee5b83c\"})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83c"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"62206086d39299379ee5b83c\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM4MTI5NjIzNWI1Mjg5M2NlNDVhMzYzX19DVVJTT1JfREVMSU1JVEVSX18xNDMwMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c81296235b52893ce45a363"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAzYzk0MzZlNTBhZDkwMDE1N2M4NmVkX19DVVJTT1JfREVMSU1JVEVSX183NDkyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:603c9436e50ad900157c86ed"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYxN2E2Y2JlY2UwMTMxMWNlYjExNTJkX19DVVJTT1JfREVMSU1JVEVSX183MjY4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f17a6cbece01311ceb1152d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjIzNDY3NzQzNzlhOTAwMDEzNTU0YjgzX19DVVJTT1JfREVMSU1JVEVSX181NTA5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62346774379a900013554b83"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJkMDE3ZjQ0Mjg1Y2YwMDBlMWViZmY4X19DVVJTT1JfREVMSU1JVEVSX181MTYzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62d017f44285cf000e1ebff8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNjODM2ZGE2ZmZiMjAyMGRiNzM5N2IwX19DVVJTT1JfREVMSU1JVEVSX180ODEzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5cc836da6ffb2020db7397b0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM4ZDg3OGMxZjAyZTcwMDE1ODEyNTI0X19DVVJTT1JfREVMSU1JVEVSX180NjIzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:638d878c1f02e70015812524"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRlY2JmZjBmMmQwODU3MTUwNWE1ZjQ3X19DVVJTT1JfREVMSU1JVEVSX180MzA3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5decbff0f2d08571505a5f47"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM3ZjExNmYzZjlkNGUwMDE2ZDU2YzE5X19DVVJTT1JfREVMSU1JVEVSX180MTQ0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:637f116f3f9d4e0016d56c19"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA3ZWZmNTgyM2Q2ZjYwMDE0NTk4YmM2X19DVVJTT1JfREVMSU1JVEVSX18zOTY1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:607eff5823d6f60014598bc6"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI5YWIyOGQ1ZGE1ODgwMDE2MjBlODgyX19DVVJTT1JfREVMSU1JVEVSX18zODEzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:629ab28d5da588001620e882"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAxMTFmZjE1YjM4MWEwMDBkYzUxOGU4X19DVVJTT1JfREVMSU1JVEVSX18zMTE4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60111ff15b381a000dc518e8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA0ZjM3NDc4MjRhMTIwMDE0MWNiNjk5X19DVVJTT1JfREVMSU1JVEVSX18zMDM5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:604f3747824a1200141cb699"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM3ZWQxNjUzOTI3M2EwMDE1OWRjZDg1X19DVVJTT1JfREVMSU1JVEVSX18yNjQ3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:637ed16539273a00159dcd85"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAwOWFkZjZlM2YwMGYwMDE0OTI3YTJiX19DVVJTT1JfREVMSU1JVEVSX18yNjI2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6009adf6e3f00f0014927a2b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAxY2MyZTUzOGE2OTIwMDE0Mzk1MmViX19DVVJTT1JfREVMSU1JVEVSX18yNTQyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:601cc2e538a69200143952eb"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJlMWQ4YmYyMmZmNTAwMDE1OTM3YWRhX19DVVJTT1JfREVMSU1JVEVSX18yNDA5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62e1d8bf22ff500015937ada"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjNlNjA1YTZmNjI0NDcwMDBlMjcxMDA4X19DVVJTT1JfREVMSU1JVEVSX18yMjg5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:63e605a6f62447000e271008"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM0N2NiM2JlOWZmYzIwMDE1OTZlMDAzX19DVVJTT1JfREVMSU1JVEVSX18yMjY3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6347cb3be9ffc2001596e003"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjEzZjY3ZWQyOGVhNjgwMDE0ODMwYzAxX19DVVJTT1JfREVMSU1JVEVSX18yMjE1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:613f67ed28ea680014830c01"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjEzZjY3ZWQyOGVhNjgwMDE0ODMwYzAxX19DVVJTT1JfREVMSU1JVEVSX18yMjE1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NWM4MTI5NjIzNWI1Mjg5M2NlNDVhMzYzX19DVVJTT1JfREVMSU1JVEVSX18xNDMwMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:6220606c1cb1cf4841dbdf8e": {
+          "__typename": "CategoryV2",
+          "id": "6220606c1cb1cf4841dbdf8e",
+          "title": "직무",
+          "depth": 0
+        },
+        "CategoryV2:6220895c9dede0214b0783ca": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783ca",
+          "title": "사업기획 · 전략",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83c"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783cb": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783cb",
+          "title": "리더십",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83c"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83c"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783cc": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783cc",
+          "title": "취업 · 이직",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83c"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83c"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783cd": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783cd",
+          "title": "인사관리",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83c"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783ce": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783ce",
+          "title": "노하우",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83c"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83c"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783cf": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783cf",
+          "title": "자격증",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83c"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783d0": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783d0",
+          "title": "재무 · 회계",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83c"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83c"
+            }
+          ]
+        },
+        "CategoryV2:62206086d39299379ee5b83c": {
+          "__typename": "CategoryV2",
+          "id": "62206086d39299379ee5b83c",
+          "title": "비즈니스",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783ca"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783cb"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783cc"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783cd"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783ce"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783cf"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783d0"
+            }
+          ]
+        },
+        "User:5c7e498f35b52893ceebd34a": {
+          "__typename": "User",
+          "_id": "5c7e498f35b52893ceebd34a",
+          "displayName": "김현경"
+        },
+        "ProductV3:5c81296235b52893ce45a363": {
+          "__typename": "ProductV3",
+          "_id": "5c81296235b52893ce45a363",
+          "title": "기획에서 편집 디자인, 유통까지, 독립출판!",
+          "coverImageUrl": "https://cdn.class101.net/images/85eb5915-c17e-449b-9bad-e6152b93a13f",
+          "klassId": "5d0090d3f48520f37c32a964",
+          "likedCount": 14300,
+          "firestoreId": "LycGtxiZEAZB9gXZcbNx",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ce"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c7e498f35b52893ceebd34a"
+          }
+        },
+        "User:5ef69439417b6e2e50962326": {
+          "__typename": "User",
+          "_id": "5ef69439417b6e2e50962326",
+          "displayName": "마케터 정혜윤"
+        },
+        "ProductV3:603c9436e50ad900157c86ed": {
+          "__typename": "ProductV3",
+          "_id": "603c9436e50ad900157c86ed",
+          "title": "[워크북 제공] 회사 안에서도 밖에서도, 나를 브랜딩하며 독립적으로 일하는 법",
+          "coverImageUrl": "https://cdn.class101.net/images/434d7a4f-5158-484d-ba35-ec9a18fac6a1",
+          "klassId": "603c9436e50ad900157c86ec",
+          "likedCount": 7492,
+          "firestoreId": "hgZhjkHZ2KaSwgqi6ZTF",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ce"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ef69439417b6e2e50962326"
+          }
+        },
+        "User:63565b0fbd4d373237b332b5": {
+          "__typename": "User",
+          "_id": "63565b0fbd4d373237b332b5",
+          "displayName": "표창원"
+        },
+        "ProductV3:5f17a6cbece01311ceb1152d": {
+          "__typename": "ProductV3",
+          "_id": "5f17a6cbece01311ceb1152d",
+          "title": "표창원 프로파일링 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/a0f5e70d-24db-496c-bf36-cd9ac3c47581",
+          "klassId": "5f17a6caece01311ceb1152c",
+          "likedCount": 7268,
+          "firestoreId": "7FVmZW619IUBtp7aLFVE",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ce"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:63565b0fbd4d373237b332b5"
+          }
+        },
+        "User:6204b29e51290d00146972eb": {
+          "__typename": "User",
+          "_id": "6204b29e51290d00146972eb",
+          "displayName": "Joy"
+        },
+        "ProductV3:62346774379a900013554b83": {
+          "__typename": "ProductV3",
+          "_id": "62346774379a900013554b83",
+          "title": "스타트업 CEO를 위한 회계, 세무, 재무 기초강의",
+          "coverImageUrl": "https://cdn.class101.net/images/60e53813-9390-400a-a156-334d522607f3",
+          "klassId": "62346774379a900013554b80",
+          "likedCount": 5509,
+          "firestoreId": "JiX25h9pCcPVz4HtNrfX",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6204b29e51290d00146972eb"
+          }
+        },
+        "User:5c61d4ae74eabcfdaf78aefd": {
+          "__typename": "User",
+          "_id": "5c61d4ae74eabcfdaf78aefd",
+          "displayName": "폴앤니나"
+        },
+        "ProductV3:62d017f44285cf000e1ebff8": {
+          "__typename": "ProductV3",
+          "_id": "62d017f44285cf000e1ebff8",
+          "title": "작고 귀여운 내 책 출판, 텀블벅에서 교보, 밀리의서재까지",
+          "coverImageUrl": "https://cdn.class101.net/images/8d73e5d2-da0e-4892-9afe-3a3f34f27aeb",
+          "klassId": "62d017f44285cf000e1ebff5",
+          "likedCount": 5163,
+          "firestoreId": "NdhrIrf8U4TYqqckxP6R",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ce"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c61d4ae74eabcfdaf78aefd"
+          }
+        },
+        "User:5c5d621974eabcfdafcae6b3": {
+          "__typename": "User",
+          "_id": "5c5d621974eabcfdafcae6b3",
+          "displayName": "코스모지나"
+        },
+        "ProductV3:5cc836da6ffb2020db7397b0": {
+          "__typename": "ProductV3",
+          "_id": "5cc836da6ffb2020db7397b0",
+          "title": "회사없이 프리랜서로 자신의 커리어와 수익을 성장시키는 방법!",
+          "coverImageUrl": "https://cdn.class101.net/images/1a44973d-80c2-4f13-9e08-5f531c57e49e",
+          "klassId": "5cc836da6ffb2020db7397a5",
+          "likedCount": 4813,
+          "firestoreId": "TcLEui8KyV9EaYnMiKDK",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ce"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d621974eabcfdafcae6b3"
+          }
+        },
+        "User:5f20c349a1b9a02eb5beb6f9": {
+          "__typename": "User",
+          "_id": "5f20c349a1b9a02eb5beb6f9",
+          "displayName": "아나운썬"
+        },
+        "ProductV3:638d878c1f02e70015812524": {
+          "__typename": "ProductV3",
+          "_id": "638d878c1f02e70015812524",
+          "title": "인생을 바꾸는 스피치 훈련! 현직 아나운서가 알려주는 목소리의 비밀",
+          "coverImageUrl": "https://cdn.class101.net/images/68684650-4dff-4858-a59c-700f441b6e6e",
+          "klassId": "638d878c1f02e70015812521",
+          "likedCount": 4623,
+          "firestoreId": "leaXhVzcxh173mcgm643",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ce"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f20c349a1b9a02eb5beb6f9"
+          }
+        },
+        "User:5decbfd68648297441867971": {
+          "__typename": "User",
+          "_id": "5decbfd68648297441867971",
+          "displayName": "생각정리스킬 운영팀"
+        },
+        "ProductV3:5decbff0f2d08571505a5f47": {
+          "__typename": "ProductV3",
+          "_id": "5decbff0f2d08571505a5f47",
+          "title": "일 잘하는 사람들의 생각법, 복주환의 생각 정리 스킬",
+          "coverImageUrl": "https://cdn.class101.net/images/1d049f07-385e-4ff6-979d-a21a6a010ba8",
+          "klassId": "5decbff0f2d08571505a5f46",
+          "likedCount": 4307,
+          "firestoreId": "8NQRWkNWm4ifIMuk9Qph",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ce"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:5decbfd68648297441867971"
+          }
+        },
+        "User:62fb3b5c74327a0015d5d533": {
+          "__typename": "User",
+          "_id": "62fb3b5c74327a0015d5d533",
+          "displayName": "백하나"
+        },
+        "ProductV3:637f116f3f9d4e0016d56c19": {
+          "__typename": "ProductV3",
+          "_id": "637f116f3f9d4e0016d56c19",
+          "title": "프리랜서 시작을 쉽게하는 첫걸음 가이드",
+          "coverImageUrl": "https://cdn.class101.net/images/bdd79d2a-5d9a-4c37-974e-f5cb430c0c02",
+          "klassId": "637f116f3f9d4e0016d56c16",
+          "likedCount": 4144,
+          "firestoreId": "urYzLenYO2n1WigAqeFj",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783cc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62fb3b5c74327a0015d5d533"
+          }
+        },
+        "User:60ebfb2c1d43f600144a5e5f": {
+          "__typename": "User",
+          "_id": "60ebfb2c1d43f600144a5e5f",
+          "displayName": "박동익 회계사"
+        },
+        "ProductV3:607eff5823d6f60014598bc6": {
+          "__typename": "ProductV3",
+          "_id": "607eff5823d6f60014598bc6",
+          "title": "나만 몰랐어? 세계 1위 투자자도 반드시 배우라고 하는 이것, [ 회계 ]",
+          "coverImageUrl": "https://cdn.class101.net/images/75425cc7-cb2d-4bbd-9278-b152ece37003",
+          "klassId": "607eff5823d6f60014598a0d",
+          "likedCount": 3965,
+          "firestoreId": "TZPHYjEI8Y8igDpyFgeW",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60ebfb2c1d43f600144a5e5f"
+          }
+        },
+        "User:5f4b006fac43f800a2f409ff": {
+          "__typename": "User",
+          "_id": "5f4b006fac43f800a2f409ff",
+          "displayName": "휴스피치 박민영"
+        },
+        "ProductV3:629ab28d5da588001620e882": {
+          "__typename": "ProductV3",
+          "_id": "629ab28d5da588001620e882",
+          "title": "탁월한 리더는 이렇게 \"말\"합니다",
+          "coverImageUrl": "https://cdn.class101.net/images/7c1067d3-4ed8-430f-a0fb-30093f84df4e",
+          "klassId": "629ab28d5da588001620e87f",
+          "likedCount": 3813,
+          "firestoreId": "7Gofi0RVDglhd5YZQ15D",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783cb"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f4b006fac43f800a2f409ff"
+          }
+        },
+        "User:60111f5516cdc500149ce144": {
+          "__typename": "User",
+          "_id": "60111f5516cdc500149ce144",
+          "displayName": "김지원 아나운서"
+        },
+        "ProductV3:60111ff15b381a000dc518e8": {
+          "__typename": "ProductV3",
+          "_id": "60111ff15b381a000dc518e8",
+          "title": "KBS 합격을 만든 1분 자기소개, 김지원이 알려주는 자소서부터 면접까지!",
+          "coverImageUrl": "https://cdn.class101.net/images/c60e8eea-61a7-44a0-b3fa-0d64eb469a6e",
+          "klassId": "60111ff05b381a000dc51599",
+          "likedCount": 3118,
+          "firestoreId": "SWbBkMrglkJFdvwvxydw",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783cc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60111f5516cdc500149ce144"
+          }
+        },
+        "User:5eaa412b67be5d18ed7902b2": {
+          "__typename": "User",
+          "_id": "5eaa412b67be5d18ed7902b2",
+          "displayName": "성호쌤"
+        },
+        "ProductV3:604f3747824a1200141cb699": {
+          "__typename": "ProductV3",
+          "_id": "604f3747824a1200141cb699",
+          "title": "ACTING 101 : 모두를 위한 연기레슨",
+          "coverImageUrl": "https://cdn.class101.net/images/b67afb35-d9e2-4178-a1a2-37570d1ccb95",
+          "klassId": "604f3747824a1200141cb698",
+          "likedCount": 3039,
+          "firestoreId": "r1PMovoqubsIs0rQFgAa",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ce"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5eaa412b67be5d18ed7902b2"
+          }
+        },
+        "ProductV3:637ed16539273a00159dcd85": {
+          "__typename": "ProductV3",
+          "_id": "637ed16539273a00159dcd85",
+          "title": "내가 사랑하는 일을 하며 사는 방법",
+          "coverImageUrl": "https://cdn.class101.net/images/df0ef8a4-82c0-4e7f-bb8d-9ac3a95784c1",
+          "klassId": "637ed16539273a00159dcd82",
+          "likedCount": 2647,
+          "firestoreId": "9befuVrwFmFBTBNyN2lh",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783cc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62fb3b5c74327a0015d5d533"
+          }
+        },
+        "User:5e3b5cc38690140d99b658eb": {
+          "__typename": "User",
+          "_id": "5e3b5cc38690140d99b658eb",
+          "displayName": "사하라"
+        },
+        "ProductV3:6009adf6e3f00f0014927a2b": {
+          "__typename": "ProductV3",
+          "_id": "6009adf6e3f00f0014927a2b",
+          "title": "내가 진짜 하고 싶은 일을 찾는 인생 여행, 라이프 워크",
+          "coverImageUrl": "https://cdn.class101.net/images/fab2876a-6902-424e-a568-160863ed0ab6",
+          "klassId": "6009adf5e3f00f00149278d8",
+          "likedCount": 2626,
+          "firestoreId": "eMzhRmPYAZmMalLTl6DT",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783cc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e3b5cc38690140d99b658eb"
+          }
+        },
+        "User:601cc2d5d4a4a2000da6df78": {
+          "__typename": "User",
+          "_id": "601cc2d5d4a4a2000da6df78",
+          "displayName": "NANUM"
+        },
+        "ProductV3:601cc2e538a69200143952eb": {
+          "__typename": "ProductV3",
+          "_id": "601cc2e538a69200143952eb",
+          "title": "진로설계를 위한 자기이해 ; 퍼스널 포트폴리오",
+          "coverImageUrl": "https://cdn.class101.net/images/5a568026-7d20-4318-92a3-99d41953d3d2",
+          "klassId": "601cc2e438a6920014394fc9",
+          "likedCount": 2542,
+          "firestoreId": "YHiHPC72FSSeHrKaP2F2",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783cc"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:601cc2d5d4a4a2000da6df78"
+          }
+        },
+        "User:627a7a437fc3cb0015609343": {
+          "__typename": "User",
+          "_id": "627a7a437fc3cb0015609343",
+          "displayName": "재무제표 읽는 남자"
+        },
+        "ProductV3:62e1d8bf22ff500015937ada": {
+          "__typename": "ProductV3",
+          "_id": "62e1d8bf22ff500015937ada",
+          "title": "직장인이여, 회계하라! 재무제표 숫자를 무기로 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/a9807426-0b0b-48ad-9529-916058fe2f11",
+          "klassId": "62e1d8bf22ff500015937ad7",
+          "likedCount": 2409,
+          "firestoreId": "jts8I1142mzvuQ3S7Kia",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:627a7a437fc3cb0015609343"
+          }
+        },
+        "User:5f26dcf9a1b9a02eb50de64d": {
+          "__typename": "User",
+          "_id": "5f26dcf9a1b9a02eb50de64d",
+          "displayName": "김현주 세무사"
+        },
+        "ProductV3:63e605a6f62447000e271008": {
+          "__typename": "ProductV3",
+          "_id": "63e605a6f62447000e271008",
+          "title": "돈 벌었으면 세금 내야지? 종합소득세 대비 세금 벼락치기!",
+          "coverImageUrl": "https://cdn.class101.net/images/588ec802-e7fc-417a-ae3e-3518addf8f54",
+          "klassId": "63e605a6f62447000e271005",
+          "likedCount": 2289,
+          "firestoreId": "BcWfuWyZ7jMOC400uasO",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d0"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f26dcf9a1b9a02eb50de64d"
+          }
+        },
+        "User:612917295bdf0c000dc594c1": {
+          "__typename": "User",
+          "_id": "612917295bdf0c000dc594c1",
+          "displayName": "건쌤"
+        },
+        "ProductV3:6347cb3be9ffc2001596e003": {
+          "__typename": "ProductV3",
+          "_id": "6347cb3be9ffc2001596e003",
+          "title": "스토리 기법 :: 앞서가는 사람들의 비밀은 스토리텔링에 있다",
+          "coverImageUrl": "https://cdn.class101.net/images/30d4453d-c890-4ae8-9c5a-39e228f86e0a",
+          "klassId": "6347cb3be9ffc2001596e000",
+          "likedCount": 2267,
+          "firestoreId": "WBBW88HaSxO8WEY8dwTK",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ce"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:612917295bdf0c000dc594c1"
+          }
+        },
+        "User:60c78397bc285d0014441254": {
+          "__typename": "User",
+          "_id": "60c78397bc285d0014441254",
+          "displayName": "러니"
+        },
+        "ProductV3:613f67ed28ea680014830c01": {
+          "__typename": "ProductV3",
+          "_id": "613f67ed28ea680014830c01",
+          "title": "강아지옷 자체제작 브랜드 창업 교육 <2달만에 나의 브랜드 런칭하기>",
+          "coverImageUrl": "https://cdn.class101.net/images/89f8dc5a-8fd0-4cd2-92c7-c750782e8850",
+          "klassId": "613f67ed28ea680014830bfc",
+          "likedCount": 2215,
+          "firestoreId": "Rbl1VRGmiI614ZK9W7ff",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783ce"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60c78397bc285d0014441254"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "62206086d39299379ee5b83c"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

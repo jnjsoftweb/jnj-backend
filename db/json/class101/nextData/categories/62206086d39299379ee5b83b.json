@@ -1,0 +1,709 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "62206086d39299379ee5b83b"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"62206086d39299379ee5b83b\"})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83b"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"62206086d39299379ee5b83b\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI3Y2Y5YzMwMGNhOTAwMDQwMzIyZDg1X19DVVJTT1JfREVMSU1JVEVSX18xNTA5M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:627cf9c300ca900040322d85"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZjZWViYTNmMzI1NzcwMDE1ZDNjYTViX19DVVJTT1JfREVMSU1JVEVSX18xMDM2M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5fceeba3f325770015d3ca5b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI1N2I3ZjdhMTZiYWQwMDBlMjBkNDkxX19DVVJTT1JfREVMSU1JVEVSX182MTM5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6257b7f7a16bad000e20d491"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRmMWQ0NGY0NDY0NjM2NTVkMGI5NDZhX19DVVJTT1JfREVMSU1JVEVSX182MDAzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5df1d44f446463655d0b946a"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFhNDc1ZjBkMmI0YTYwMDBkZjBkZjk4X19DVVJTT1JfREVMSU1JVEVSX180NjA5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61a475f0d2b4a6000df0df98"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI5NzExZmY5NDY4NjIwMDE1ZDY5NWJhX19DVVJTT1JfREVMSU1JVEVSX180MTcxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:629711ff9468620015d695ba"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZiMjZjZWUyOWMyZmQwMDEzNTFmOGIxX19DVVJTT1JfREVMSU1JVEVSX18zMzYxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5fb26cee29c2fd001351f8b1"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQzMDNhMGUxMjVkMjZkNWZiMzY1MzhkX19DVVJTT1JfREVMSU1JVEVSX18zMzAyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5d303a0e125d26d5fb36538d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI0ZmUyZjc4ZmE3MGEwMDBmMGIyOTEwX19DVVJTT1JfREVMSU1JVEVSX18yNDU2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:624fe2f78fa70a000f0b2910"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFhOTk2YWQ4MWM5MGIwMDBkNzIwOWJhX19DVVJTT1JfREVMSU1JVEVSX18yNDA4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61a996ad81c90b000d7209ba"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYxNDQ1ODMzNTBjYWM0OTRmNTg1MDI4X19DVVJTT1JfREVMSU1JVEVSX18yMzkxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f144583350cac494f585028"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAzMGFiMzVkMTRkOWQwMDBkYjFlMWQ0X19DVVJTT1JfREVMSU1JVEVSX18yMDYyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6030ab35d14d9d000db1e1d4"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI2MjljOTI2OWYyNmMwMDE1NjM0OWU0X19DVVJTT1JfREVMSU1JVEVSX18yMDMxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62629c9269f26c00156349e4"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjMwMTllZmMyNmE0ZjgwMDBmNDY2NTA5X19DVVJTT1JfREVMSU1JVEVSX18xOTY0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:63019efc26a4f8000f466509"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjUyNjc2ZjdjNDVlMTYwMDBlYjQxYmVjX19DVVJTT1JfREVMSU1JVEVSX18xNjA5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:652676f7c45e16000eb41bec"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjEyNWQ1OWI0NjNlYjAwMDBlNWQ3YWM5X19DVVJTT1JfREVMSU1JVEVSX18xMzQ4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6125d59b463eb0000e5d7ac9"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjNkYjVhOWE5YjZlMTcwMDBlYzQ1ZDE3X19DVVJTT1JfREVMSU1JVEVSX18xMzEyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:63db5a9a9b6e17000ec45d17"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJmYjcyY2JkZjgwNTQwMDE2MmIwZjA0X19DVVJTT1JfREVMSU1JVEVSX18xMjQxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62fb72cbdf805400162b0f04"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI1OTIxYWM2OWI4ZTIwMDE1NmNkMzM3X19DVVJTT1JfREVMSU1JVEVSX18xMTkxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:625921ac69b8e200156cd337"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjNlNjBmZTM4NTZkNmIwMDE1NGQ0ODdkX19DVVJTT1JfREVMSU1JVEVSX185MzdfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+                "node": {
+                  "__ref": "ProductV3:63e60fe3856d6b00154d487d"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjNlNjBmZTM4NTZkNmIwMDE1NGQ0ODdkX19DVVJTT1JfREVMSU1JVEVSX185MzdfX0NVUlNPUl9ERUxJTUlURVJfX2tv",
+              "startCursor": "NjI3Y2Y5YzMwMGNhOTAwMDQwMzIyZDg1X19DVVJTT1JfREVMSU1JVEVSX18xNTA5M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:6220606c1cb1cf4841dbdf8e": {
+          "__typename": "CategoryV2",
+          "id": "6220606c1cb1cf4841dbdf8e",
+          "title": "직무",
+          "depth": 0
+        },
+        "CategoryV2:6220895c9dede0214b0783c7": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783c7",
+          "title": "디자인 씽킹",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83b"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83b"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783c8": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783c8",
+          "title": "PM · PO",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83b"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83b"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783c9": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783c9",
+          "title": "UI · UX",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83b"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83b"
+            }
+          ]
+        },
+        "CategoryV2:62206086d39299379ee5b83b": {
+          "__typename": "CategoryV2",
+          "id": "62206086d39299379ee5b83b",
+          "title": "제품 기획",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783c7"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783c8"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+            }
+          ]
+        },
+        "User:5f56e324bc87cd000d80d765": {
+          "__typename": "User",
+          "_id": "5f56e324bc87cd000d80d765",
+          "displayName": "스무"
+        },
+        "ProductV3:627cf9c300ca900040322d85": {
+          "__typename": "ProductV3",
+          "_id": "627cf9c300ca900040322d85",
+          "title": "[입문] 실무 프로세스를 따라 직접 만들며 배우는, 스무의 실전 피그마 A to Z",
+          "coverImageUrl": "https://cdn.class101.net/images/bfe277d8-aa66-4a30-9c67-989f0d957851",
+          "klassId": "627cf9c300ca900040322d82",
+          "likedCount": 15093,
+          "firestoreId": "SAmDAmWGc8oWyznVvnPd",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f56e324bc87cd000d80d765"
+          }
+        },
+        "User:5fcee975072b49000dd19597": {
+          "__typename": "User",
+          "_id": "5fcee975072b49000dd19597",
+          "displayName": "정영호"
+        },
+        "ProductV3:5fceeba3f325770015d3ca5b": {
+          "__typename": "ProductV3",
+          "_id": "5fceeba3f325770015d3ca5b",
+          "title": "UIUX 디자인이 쉬워지는 디자인 시스템의 모든것",
+          "coverImageUrl": "https://cdn.class101.net/images/9981547a-42e2-4731-9581-2ffbecb7f2c5/2048xauto.webp",
+          "klassId": "5fceeba1f325770015d3c9be",
+          "likedCount": 10363,
+          "firestoreId": "sSzCszj1znoZXtkowFFh",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fcee975072b49000dd19597"
+          }
+        },
+        "User:61c00d35fdaf3f000da008c3": {
+          "__typename": "User",
+          "_id": "61c00d35fdaf3f000da008c3",
+          "displayName": "스노우"
+        },
+        "ProductV3:6257b7f7a16bad000e20d491": {
+          "__typename": "ProductV3",
+          "_id": "6257b7f7a16bad000e20d491",
+          "title": "클래스101 프로덕트 디자이너에게 배우는 피그마 활용 실무 UI/UX",
+          "coverImageUrl": "https://cdn.class101.net/images/2e495bbb-e6a6-4d1e-a14f-58201fa4ecb3",
+          "klassId": "6257b7f7a16bad000e20d48e",
+          "likedCount": 6139,
+          "firestoreId": "90XWGos7ipWepjKKxCZt",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61c00d35fdaf3f000da008c3"
+          }
+        },
+        "User:5d7a41794ec0f9eda38236a1": {
+          "__typename": "User",
+          "_id": "5d7a41794ec0f9eda38236a1",
+          "displayName": "홍석희(킹홍)"
+        },
+        "ProductV3:5df1d44f446463655d0b946a": {
+          "__typename": "ProductV3",
+          "_id": "5df1d44f446463655d0b946a",
+          "title": "IT 주니어를 위한 실전 UX 디자인 개론",
+          "coverImageUrl": "https://cdn.class101.net/images/965baef5-dd52-464a-8bba-9b32e5cac765",
+          "klassId": "5df1d44f446463655d0b9468",
+          "likedCount": 6003,
+          "firestoreId": "w4kR4oRmasTTisdiOi02",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d7a41794ec0f9eda38236a1"
+          }
+        },
+        "User:6166c26e6402d200149a101b": {
+          "__typename": "User",
+          "_id": "6166c26e6402d200149a101b",
+          "displayName": "박성희"
+        },
+        "ProductV3:61a475f0d2b4a6000df0df98": {
+          "__typename": "ProductV3",
+          "_id": "61a475f0d2b4a6000df0df98",
+          "title": "[스킬업] 클래스101 브랜드 디자이너가 알려주는  피그마 실무 노하우",
+          "coverImageUrl": "https://cdn.class101.net/images/aac42cf1-1154-4bc7-8e2d-46fabbe08dde",
+          "klassId": "61a475f0d2b4a6000df0df93",
+          "likedCount": 4609,
+          "firestoreId": "TbvdhbleFM9ZAlL65DPY",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6166c26e6402d200149a101b"
+          }
+        },
+        "User:60482c8bf16912000ee86a0e": {
+          "__typename": "User",
+          "_id": "60482c8bf16912000ee86a0e",
+          "displayName": "바이블"
+        },
+        "ProductV3:629711ff9468620015d695ba": {
+          "__typename": "ProductV3",
+          "_id": "629711ff9468620015d695ba",
+          "title": " <UXUI 디자이너 취업>, 취업은 이걸로 끝!",
+          "coverImageUrl": "https://cdn.class101.net/images/11bc7a9e-e689-48db-a746-a9a41064a4c1",
+          "klassId": "629711ff9468620015d695b7",
+          "likedCount": 4171,
+          "firestoreId": "GKMxc75bcVxBB7fNtsEB",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60482c8bf16912000ee86a0e"
+          }
+        },
+        "User:5fb26886f08eb8000e937aa4": {
+          "__typename": "User",
+          "_id": "5fb26886f08eb8000e937aa4",
+          "displayName": "박정근(Ain)"
+        },
+        "ProductV3:5fb26cee29c2fd001351f8b1": {
+          "__typename": "ProductV3",
+          "_id": "5fb26cee29c2fd001351f8b1",
+          "title": "개발 지식 없어도 OK, 내가 생각하는 앱 서비스 기획하기",
+          "coverImageUrl": "https://cdn.class101.net/images/971287ad-a36f-4607-9c07-6843ce40394b",
+          "klassId": "5fb26ced29c2fd001351f897",
+          "likedCount": 3361,
+          "firestoreId": "TX8KPYb1lr2fA68Akeax",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c8"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fb26886f08eb8000e937aa4"
+          }
+        },
+        "User:5c9285872ff0ef122c208bad": {
+          "__typename": "User",
+          "_id": "5c9285872ff0ef122c208bad",
+          "displayName": "박창선"
+        },
+        "ProductV3:5d303a0e125d26d5fb36538d": {
+          "__typename": "ProductV3",
+          "_id": "5d303a0e125d26d5fb36538d",
+          "title": "디자이너가 무조건 알아야 하는 '현장의 언어'",
+          "coverImageUrl": "https://cdn.class101.net/images/b009538b-6ac5-42a3-8bc2-0587214ce8a9",
+          "klassId": "5d303a0f125d26d5fb3656d8",
+          "likedCount": 3302,
+          "firestoreId": "MPQ79EBeIeyx7qdkzmmr",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c9285872ff0ef122c208bad"
+          }
+        },
+        "User:621cdef0415eb6000dbddf88": {
+          "__typename": "User",
+          "_id": "621cdef0415eb6000dbddf88",
+          "displayName": "서점직원"
+        },
+        "ProductV3:624fe2f78fa70a000f0b2910": {
+          "__typename": "ProductV3",
+          "_id": "624fe2f78fa70a000f0b2910",
+          "title": "서점직원의 실전 UI/UX 방법론 - 기초부터 로그인, 회원가입, 메뉴까지",
+          "coverImageUrl": "https://cdn.class101.net/images/33d490f1-7892-44ad-8fd4-02f2948a62fe",
+          "klassId": "624fe2f78fa70a000f0b290d",
+          "likedCount": 2456,
+          "firestoreId": "RrR6jgxqQHGhRJD2rqBC",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:621cdef0415eb6000dbddf88"
+          }
+        },
+        "User:600e01e1f27693000da32104": {
+          "__typename": "User",
+          "_id": "600e01e1f27693000da32104",
+          "displayName": "광스"
+        },
+        "ProductV3:61a996ad81c90b000d7209ba": {
+          "__typename": "ProductV3",
+          "_id": "61a996ad81c90b000d7209ba",
+          "title": "프로토파이로 하루 만에 생동감 넘치는 UXUI 인터랙션 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/d1766850-b404-4b89-88ec-67783eb0e5c7",
+          "klassId": "61a996ad81c90b000d7209b5",
+          "likedCount": 2408,
+          "firestoreId": "bxibuQNVnTYBms2AUrzt",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:600e01e1f27693000da32104"
+          }
+        },
+        "User:5e965ba63bf0b77673e1950a": {
+          "__typename": "User",
+          "_id": "5e965ba63bf0b77673e1950a",
+          "displayName": "퍼스널브랜딩 고수 조연심"
+        },
+        "ProductV3:5f144583350cac494f585028": {
+          "__typename": "ProductV3",
+          "_id": "5f144583350cac494f585028",
+          "title": "누구에게나 브랜드가 필요한 시대, 조연심의 퍼스널브랜딩 입문 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/12c6fc48-9598-4860-ad65-76bc6c401f48",
+          "klassId": "5f144583350cac494f585027",
+          "likedCount": 2391,
+          "firestoreId": "zE1ZRO2Jip1gR9ExFjcs",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e965ba63bf0b77673e1950a"
+          }
+        },
+        "User:5e54a2372288960dcb16841c": {
+          "__typename": "User",
+          "_id": "5e54a2372288960dcb16841c",
+          "displayName": "YB"
+        },
+        "ProductV3:6030ab35d14d9d000db1e1d4": {
+          "__typename": "ProductV3",
+          "_id": "6030ab35d14d9d000db1e1d4",
+          "title": "IT 프로덕트 매니저(PM)로 성공적인 커리어 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/4da97e3d-8ba8-428d-a3b4-9128f848ae76",
+          "klassId": "6030ab35d14d9d000db1e1d3",
+          "likedCount": 2062,
+          "firestoreId": "NXpRhb2pPrDl57JqL134",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c8"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e54a2372288960dcb16841c"
+          }
+        },
+        "User:603c7727e9fef60015937c3c": {
+          "__typename": "User",
+          "_id": "603c7727e9fef60015937c3c",
+          "displayName": "기획자J"
+        },
+        "ProductV3:62629c9269f26c00156349e4": {
+          "__typename": "ProductV3",
+          "_id": "62629c9269f26c00156349e4",
+          "title": "단 3주 완성, 200%의 합격률을 만드는 <서비스 기획자 포트폴리오 제작>",
+          "coverImageUrl": "https://cdn.class101.net/images/e889f557-078c-4bb6-8b33-2f4d47d58c3c",
+          "klassId": "62629c9269f26c00156349e1",
+          "likedCount": 2031,
+          "firestoreId": "o2N012s0I5Xl9kFkQxWl",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:603c7727e9fef60015937c3c"
+          }
+        },
+        "User:5f443860b7c753001a3f314a": {
+          "__typename": "User",
+          "_id": "5f443860b7c753001a3f314a",
+          "displayName": "유르"
+        },
+        "ProductV3:63019efc26a4f8000f466509": {
+          "__typename": "ProductV3",
+          "_id": "63019efc26a4f8000f466509",
+          "title": "실무에서 바로 적용가능한 GUI 디자인 트레이닝",
+          "coverImageUrl": "https://cdn.class101.net/images/aebef5b1-b5e0-4377-8665-50b7fc80e349",
+          "klassId": "63019efb26a4f8000f466506",
+          "likedCount": 1964,
+          "firestoreId": "6M7SHIaMfDmrbtxQ2l21",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f443860b7c753001a3f314a"
+          }
+        },
+        "User:60b228f0f640f20014745c5b": {
+          "__typename": "User",
+          "_id": "60b228f0f640f20014745c5b",
+          "displayName": "겨울이불"
+        },
+        "ProductV3:652676f7c45e16000eb41bec": {
+          "__typename": "ProductV3",
+          "_id": "652676f7c45e16000eb41bec",
+          "title": "스타트업 PM을 위한 Notion 톺아쓰기",
+          "coverImageUrl": "https://cdn.class101.net/images/d82b6e3d-7a14-4d42-a32e-25646f941ef5",
+          "klassId": "652676f7c45e16000eb41be8",
+          "likedCount": 1609,
+          "firestoreId": "FTA2RYn2i6JAFllfCHNS",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c8"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60b228f0f640f20014745c5b"
+          }
+        },
+        "User:6125d586fb6196000d1f4855": {
+          "__typename": "User",
+          "_id": "6125d586fb6196000d1f4855",
+          "displayName": "박종하"
+        },
+        "ProductV3:6125d59b463eb0000e5d7ac9": {
+          "__typename": "ProductV3",
+          "_id": "6125d59b463eb0000e5d7ac9",
+          "title": "21세기 생존력, 수학적 사고 (feat. 비판, 논리, 창의, 그리고 메타인지)",
+          "coverImageUrl": "https://cdn.class101.net/images/d3edc6fc-8429-412c-8725-51df48d166ba",
+          "klassId": "6125d59b463eb0000e5d7ac4",
+          "likedCount": 1348,
+          "firestoreId": "3Rge1kzy7f6rXs8HGTqV",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6125d586fb6196000d1f4855"
+          }
+        },
+        "User:63db5a6951dcdc000e5478d0": {
+          "__typename": "User",
+          "_id": "63db5a6951dcdc000e5478d0",
+          "displayName": "꽁꽁이"
+        },
+        "ProductV3:63db5a9a9b6e17000ec45d17": {
+          "__typename": "ProductV3",
+          "_id": "63db5a9a9b6e17000ec45d17",
+          "title": "비전공자가 PM/서비스 기획자 되는 법",
+          "coverImageUrl": "https://cdn.class101.net/images/022881f0-c9e9-4aa1-ae4f-158955a03814",
+          "klassId": "63db5a9a9b6e17000ec45d14",
+          "likedCount": 1312,
+          "firestoreId": "8XNKLo9RoH6NKJO1gCL7",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c8"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:63db5a6951dcdc000e5478d0"
+          }
+        },
+        "User:62f77510833221000ede596a": {
+          "__typename": "User",
+          "_id": "62f77510833221000ede596a",
+          "displayName": "UX Writer 박수현"
+        },
+        "ProductV3:62fb72cbdf805400162b0f04": {
+          "__typename": "ProductV3",
+          "_id": "62fb72cbdf805400162b0f04",
+          "title": "한국 기업들의 UX Writing",
+          "coverImageUrl": "https://cdn.class101.net/images/171ed8fb-acca-4f5e-a179-0112560d84e3",
+          "klassId": "62fb72cbdf805400162b0f01",
+          "likedCount": 1241,
+          "firestoreId": "aM5q1sLr9uMWCneOV1SK",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62f77510833221000ede596a"
+          }
+        },
+        "User:6256d560e705b6000e8077d1": {
+          "__typename": "User",
+          "_id": "6256d560e705b6000e8077d1",
+          "displayName": "리서처리"
+        },
+        "ProductV3:625921ac69b8e200156cd337": {
+          "__typename": "ProductV3",
+          "_id": "625921ac69b8e200156cd337",
+          "title": "User Research: 사용자 인사이트 발굴에 최적화된 유저 리서치 실무의 모든 것",
+          "coverImageUrl": "https://cdn.class101.net/images/ac2f963a-36a6-4880-817d-7d5c896346b9",
+          "klassId": "625921ac69b8e200156cd334",
+          "likedCount": 1191,
+          "firestoreId": "ctFxy1VNZLkzXIuPMcD8",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c9"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6256d560e705b6000e8077d1"
+          }
+        },
+        "ProductV3:63e60fe3856d6b00154d487d": {
+          "__typename": "ProductV3",
+          "_id": "63e60fe3856d6b00154d487d",
+          "title": "PM/서비스 기획 포트폴리오와 면접",
+          "coverImageUrl": "https://cdn.class101.net/images/bdc0cf6a-bef0-4e6d-8dff-0291f532e9eb",
+          "klassId": "63e60fe3856d6b00154d487a",
+          "likedCount": 937,
+          "firestoreId": "1ysnYu2SHZkWQw2ooRrE",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783c8"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:63db5a6951dcdc000e5478d0"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "62206086d39299379ee5b83b"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

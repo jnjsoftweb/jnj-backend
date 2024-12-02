@@ -1,0 +1,746 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "62206086d39299379ee5b841"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"62206086d39299379ee5b841\"})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b841"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"62206086d39299379ee5b841\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY1ZjM4NmUzNGNkNGYwMDA2NzJkZDhiX19DVVJTT1JfREVMSU1JVEVSX181OTI0Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f5f386e34cd4f000672dd8b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFlYTQwZmNiMzJkY2YwMDBlZDUxMGNjX19DVVJTT1JfREVMSU1JVEVSX18yNDUyOV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:61ea40fcb32dcf000ed510cc"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBiZGM5MWNjMTU5Y2QwMDBkYWIxNjA5X19DVVJTT1JfREVMSU1JVEVSX18yMzY3Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:60bdc91cc159cd000dab1609"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZiMjNhNGY1NTU3YzUwMDEzODdkNDlhX19DVVJTT1JfREVMSU1JVEVSX18xODM0OF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5fb23a4f5557c5001387d49a"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYxN2M1NmVjZWRjZWYwNTY5YjU0NmEyX19DVVJTT1JfREVMSU1JVEVSX18xMDgxMl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f17c56ecedcef0569b546a2"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjMwNDc0YmY1YmVlY2UwMDE1OTg0YjE0X19DVVJTT1JfREVMSU1JVEVSX18xMDUyM19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:630474bf5beece0015984b14"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM3NmU4YTk4OWIwYTYwMDBlODQ4NDY0X19DVVJTT1JfREVMSU1JVEVSX183Nzk0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6376e8a989b0a6000e848464"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZhZGY5ODdkZTBiZDIwMDBkZDVmY2VhX19DVVJTT1JfREVMSU1JVEVSX182ODc1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5fadf987de0bd2000dd5fcea"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBiNGE3ZTVjMTAzMDUwMDE0NThlYjE1X19DVVJTT1JfREVMSU1JVEVSX181OTU3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60b4a7e5c10305001458eb15"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYyY2QzZGU2M2QyNWEwMDJmNjY5MTQ4X19DVVJTT1JfREVMSU1JVEVSX181MjM5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f2cd3de63d25a002f669148"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI4NzJjNGYyMDYwYmYwMDBlYzEyNWUzX19DVVJTT1JfREVMSU1JVEVSX180NjM0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62872c4f2060bf000ec125e3"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY5OTNjOWI2YTNkZjEwMDEzMjE3NGY4X19DVVJTT1JfREVMSU1JVEVSX180NDExX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f993c9b6a3df100132174f8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI1NjRhMmEwZWE2NzcwMDBlMGNiZDc1X19DVVJTT1JfREVMSU1JVEVSX180MDUxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62564a2a0ea677000e0cbd75"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjJkNzUyZTE1YjA4NjYwMDBlZTJhMjA0X19DVVJTT1JfREVMSU1JVEVSX18zODkzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62d752e15b0866000ee2a204"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjQyMjQ0NGYzNThkYTYwMDNkMDI2OTY5X19DVVJTT1JfREVMSU1JVEVSX18zNzY5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6422444f358da6003d026969"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA1MTVkZTc4ZjIyOWUwMDBkYjRiYjY3X19DVVJTT1JfREVMSU1JVEVSX18zNDUxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60515de78f229e000db4bb67"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY1YmE1ODA2MzFkZWEwMDBkNTIxNjcyX19DVVJTT1JfREVMSU1JVEVSX18zMzI3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f5ba580631dea000d521672"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY4ZmIzMTkwZTA2MGMwMDFhYmU0MTQ1X19DVVJTT1JfREVMSU1JVEVSX18zMTU4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f8fb3190e060c001abe4145"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFjOWRiZDEzNDZjNzQwMDE0YjdkYWYwX19DVVJTT1JfREVMSU1JVEVSX18yOTExX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61c9dbd1346c740014b7daf0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE1MjQzNDQ2N2ZmNDMwMDE1MjEzMGUxX19DVVJTT1JfREVMSU1JVEVSX18yODAxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6152434467ff4300152130e1"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjE1MjQzNDQ2N2ZmNDMwMDE1MjEzMGUxX19DVVJTT1JfREVMSU1JVEVSX18yODAxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NWY1ZjM4NmUzNGNkNGYwMDA2NzJkZDhiX19DVVJTT1JfREVMSU1JVEVSX181OTI0Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:6220606c1cb1cf4841dbdf8f": {
+          "__typename": "CategoryV2",
+          "id": "6220606c1cb1cf4841dbdf8f",
+          "title": "외국어",
+          "depth": 0
+        },
+        "CategoryV2:6220895c9dede0214b0783e4": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783e4",
+          "title": "영어회화",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b841"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b841"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783e5": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783e5",
+          "title": "문법 · 독해",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b841"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b841"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783e6": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783e6",
+          "title": "발음 · 소리",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b841"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b841"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783e7": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783e7",
+          "title": "비즈니스",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b841"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b841"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783e8": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783e8",
+          "title": "통역 · 번역",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b841"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b841"
+            }
+          ]
+        },
+        "CategoryV2:62206086d39299379ee5b841": {
+          "__typename": "CategoryV2",
+          "id": "62206086d39299379ee5b841",
+          "title": "영어",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8f"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783e5"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783e6"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783e7"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783e8"
+            }
+          ]
+        },
+        "User:5e871277d597510f4bbd1a56": {
+          "__typename": "User",
+          "_id": "5e871277d597510f4bbd1a56",
+          "displayName": "근영쌤"
+        },
+        "ProductV3:5f5f386e34cd4f000672dd8b": {
+          "__typename": "ProductV3",
+          "_id": "5f5f386e34cd4f000672dd8b",
+          "title": "유학 없이도 유창한 영어 회화, 나 혼자서 100% 말이 트이는 영어 독학법",
+          "coverImageUrl": "https://cdn.class101.net/images/ccc8b7e2-5230-43d5-a014-3a0a74064798",
+          "klassId": "5f5f386d34cd4f000672dd6e",
+          "likedCount": 59246,
+          "firestoreId": "LZAZUXDzMoShLGBX6BAP",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e871277d597510f4bbd1a56"
+          }
+        },
+        "User:5cf7837ef48520f37cdc3c74": {
+          "__typename": "User",
+          "_id": "5cf7837ef48520f37cdc3c74",
+          "displayName": "클래스101"
+        },
+        "ProductV3:61ea40fcb32dcf000ed510cc": {
+          "__typename": "ProductV3",
+          "_id": "61ea40fcb32dcf000ed510cc",
+          "title": "[얼리버드 완판] 2024 영어 [101학습지] 하루10분, 하루1장으로 끝내는 영어회화 ",
+          "coverImageUrl": "https://cdn.class101.net/images/5cf6db14-5258-41ec-b83d-4409f1d46c73",
+          "klassId": "61ea40fcb32dcf000ed510c9",
+          "likedCount": 24529,
+          "firestoreId": "5NI9ErVzezsORFbx6YDk",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cf7837ef48520f37cdc3c74"
+          }
+        },
+        "User:5dc923a87a5cc337297c8dc1": {
+          "__typename": "User",
+          "_id": "5dc923a87a5cc337297c8dc1",
+          "displayName": "박세진"
+        },
+        "ProductV3:60bdc91cc159cd000dab1609": {
+          "__typename": "ProductV3",
+          "_id": "60bdc91cc159cd000dab1609",
+          "title": "초급자 영어 고민 해결! 평생의 회화를 책임질 스피킹 시드 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/a787a840-b0c1-4ea5-b8f2-d280c954fc4e",
+          "klassId": "60bdc91cc159cd000dab1608",
+          "likedCount": 23672,
+          "firestoreId": "Kqbhe4NLY6NMFxBHnk6x",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5dc923a87a5cc337297c8dc1"
+          }
+        },
+        "User:5d00a9a0f48520f37c6d26ae": {
+          "__typename": "User",
+          "_id": "5d00a9a0f48520f37c6d26ae",
+          "displayName": "손성은"
+        },
+        "ProductV3:5fb23a4f5557c5001387d49a": {
+          "__typename": "ProductV3",
+          "_id": "5fb23a4f5557c5001387d49a",
+          "title": "8천 명을 만족시킨 손성은 공부법, 쉐도잉으로 정복하는 영어 회화",
+          "coverImageUrl": "https://cdn.class101.net/images/106465f4-58c2-41a0-a737-7295a7c609ef",
+          "klassId": "5fb23a4f5557c5001387d499",
+          "likedCount": 18348,
+          "firestoreId": "JyhcR2opa0d8kwH9B60E",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d00a9a0f48520f37c6d26ae"
+          }
+        },
+        "User:5c5d762874eabcfdafd275c5": {
+          "__typename": "User",
+          "_id": "5c5d762874eabcfdafd275c5",
+          "displayName": "서메리(서유라)"
+        },
+        "ProductV3:5f17c56ecedcef0569b546a2": {
+          "__typename": "ProductV3",
+          "_id": "5f17c56ecedcef0569b546a2",
+          "title": "영어 원서 직접 번역하고 수입 만들기!",
+          "coverImageUrl": "https://cdn.class101.net/images/9fa6a384-4ee5-4f2b-bc5d-f853a2e0d3ac",
+          "klassId": "5f17c56dcedcef0569b546a1",
+          "likedCount": 10812,
+          "firestoreId": "UMAgzvWg1Yy1DJFfYPs4",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e8"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d762874eabcfdafd275c5"
+          }
+        },
+        "User:5f13789b19e366d0b4af1e41": {
+          "__typename": "User",
+          "_id": "5f13789b19e366d0b4af1e41",
+          "displayName": "집영{영어귀뚫기}"
+        },
+        "ProductV3:630474bf5beece0015984b14": {
+          "__typename": "ProductV3",
+          "_id": "630474bf5beece0015984b14",
+          "title": "[구독] 영어가 한국말처럼 들리는: 1년 7개월 만에 귀 뚫린 노하우 100% 대공개!",
+          "coverImageUrl": "https://cdn.class101.net/images/f25b0eb5-3981-4717-adb9-bf2cd54486a4",
+          "klassId": "630474bf5beece0015984b11",
+          "likedCount": 10523,
+          "firestoreId": "v3e8OLWvMrLhtTl9yUXs",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e6"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f13789b19e366d0b4af1e41"
+          }
+        },
+        "User:61b84b5616f56f0013b658c4": {
+          "__typename": "User",
+          "_id": "61b84b5616f56f0013b658c4",
+          "displayName": "리얼컨버세이션"
+        },
+        "ProductV3:6376e8a989b0a6000e848464": {
+          "__typename": "ProductV3",
+          "_id": "6376e8a989b0a6000e848464",
+          "title": "[애니메이션 영어법]30일 왕초보 탈출 보장! ",
+          "coverImageUrl": "https://cdn.class101.net/images/047dd541-58a7-435b-8f5d-d58fc214acfd",
+          "klassId": "6376e8a989b0a6000e848461",
+          "likedCount": 7794,
+          "firestoreId": "GU1wDI4JlCIrRaVWPazr",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61b84b5616f56f0013b658c4"
+          }
+        },
+        "User:5fb1cfbed4af75000ddc9e7b": {
+          "__typename": "User",
+          "_id": "5fb1cfbed4af75000ddc9e7b",
+          "displayName": "영화번역가 황석희"
+        },
+        "ProductV3:5fadf987de0bd2000dd5fcea": {
+          "__typename": "ProductV3",
+          "_id": "5fadf987de0bd2000dd5fcea",
+          "title": "황석희 영화번역 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/8c401e61-cfa9-48c5-a182-3d33ceaa1cd7",
+          "klassId": "5fadf985de0bd2000dd5f458",
+          "likedCount": 6875,
+          "firestoreId": "46XGCJBSgZ9kkLVfnxXg",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e8"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fb1cfbed4af75000ddc9e7b"
+          }
+        },
+        "User:60b4a7cdf640f20014796dff": {
+          "__typename": "User",
+          "_id": "60b4a7cdf640f20014796dff",
+          "displayName": "원잉글리시 지원쌤"
+        },
+        "ProductV3:60b4a7e5c10305001458eb15": {
+          "__typename": "ProductV3",
+          "_id": "60b4a7e5c10305001458eb15",
+          "title": "하루10분, 한달만에 영초보 탈출하는 기적의 4STEP 영어회화",
+          "coverImageUrl": "https://cdn.class101.net/images/c632ba5a-1e7a-4711-bc09-45ba13aba087",
+          "klassId": "60b4a7e5c10305001458eb14",
+          "likedCount": 5957,
+          "firestoreId": "qLic0w6v3z44ZISurYxr",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60b4a7cdf640f20014796dff"
+          }
+        },
+        "User:5f2978e6a1b9a02eb5d1f3d6": {
+          "__typename": "User",
+          "_id": "5f2978e6a1b9a02eb5d1f3d6",
+          "displayName": "Namingle 나밍글"
+        },
+        "ProductV3:5f2cd3de63d25a002f669148": {
+          "__typename": "ProductV3",
+          "_id": "5f2cd3de63d25a002f669148",
+          "title": "영어는 자연스럽게 스며드는 거야! 마음으로 이해하는 영어 회화",
+          "coverImageUrl": "https://cdn.class101.net/images/73486c2a-a7fd-4d02-8272-a455378630ed",
+          "klassId": "5f72e305c6d9af0013fdf723",
+          "likedCount": 5239,
+          "firestoreId": "oh5gWRd0tvp65OaQ9rpT",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f2978e6a1b9a02eb5d1f3d6"
+          }
+        },
+        "ProductV3:62872c4f2060bf000ec125e3": {
+          "__typename": "ProductV3",
+          "_id": "62872c4f2060bf000ec125e3",
+          "title": "영어 회화 1위 근영쌤의 '유창한 회화로 바로 뱉는 100% 진짜 단어 공부법'",
+          "coverImageUrl": "https://cdn.class101.net/images/86ee1927-a156-41f3-a513-ff915d2ab83f",
+          "klassId": "62872c4f2060bf000ec125d5",
+          "likedCount": 4634,
+          "firestoreId": "7ZsjrDnO2ABPr9Np0p3Z",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e871277d597510f4bbd1a56"
+          }
+        },
+        "User:5f97838e167a35001c4585ee": {
+          "__typename": "User",
+          "_id": "5f97838e167a35001c4585ee",
+          "displayName": "토리코나"
+        },
+        "ProductV3:5f993c9b6a3df100132174f8": {
+          "__typename": "ProductV3",
+          "_id": "5f993c9b6a3df100132174f8",
+          "title": "영어는 못하지만 원서는 읽고 싶어 <동물농장> 편 완강하면 완독!",
+          "coverImageUrl": "https://cdn.class101.net/images/327d24fe-992c-414b-a585-9816789b1902",
+          "klassId": "5f993c9a6a3df100132174f7",
+          "likedCount": 4411,
+          "firestoreId": "xVYqd2NYQ5KIfx3Hyh0y",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f97838e167a35001c4585ee"
+          }
+        },
+        "User:621b76d932d197000d844ecd": {
+          "__typename": "User",
+          "_id": "621b76d932d197000d844ecd",
+          "displayName": "영어해용"
+        },
+        "ProductV3:62564a2a0ea677000e0cbd75": {
+          "__typename": "ProductV3",
+          "_id": "62564a2a0ea677000e0cbd75",
+          "title": "영문법은 이걸로 시작하고 끝내세요! 입문자 영문법 클래스, 영어해용",
+          "coverImageUrl": "https://cdn.class101.net/images/947d945c-844a-44c5-bcb5-cfa504dd0d03",
+          "klassId": "62564a2a0ea677000e0cbd72",
+          "likedCount": 4051,
+          "firestoreId": "owSMK6XOT7Kft1PEpb4z",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e5"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:621b76d932d197000d844ecd"
+          }
+        },
+        "User:62d74e350ee5d9000ed086c6": {
+          "__typename": "User",
+          "_id": "62d74e350ee5d9000ed086c6",
+          "displayName": "민지킴"
+        },
+        "ProductV3:62d752e15b0866000ee2a204": {
+          "__typename": "ProductV3",
+          "_id": "62d752e15b0866000ee2a204",
+          "title": "24살 첫 영어공부, 현 뉴욕 직장인의 원어민으로 오해받는 체화 공부법",
+          "coverImageUrl": "https://cdn.class101.net/images/b45cb3b1-06e2-4897-9a2a-d174c9a6fa37",
+          "klassId": "62d752e15b0866000ee2a201",
+          "likedCount": 3893,
+          "firestoreId": "JxznW6VH5VcVdKNBJiHI",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62d74e350ee5d9000ed086c6"
+          }
+        },
+        "User:61e788be6661b7000d7fc62f": {
+          "__typename": "User",
+          "_id": "61e788be6661b7000d7fc62f",
+          "displayName": "유황규"
+        },
+        "ProductV3:6422444f358da6003d026969": {
+          "__typename": "ProductV3",
+          "_id": "6422444f358da6003d026969",
+          "title": "[PART1] 24시간 나만의 무료 영어 과외 선생님 ChatGPT ",
+          "coverImageUrl": "https://cdn.class101.net/images/36bc4a54-15fc-40b2-87f2-11fdee837adc",
+          "klassId": "6422444f358da6003d02695b",
+          "likedCount": 3769,
+          "firestoreId": "FHezsT7SitNze03wBe39",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61e788be6661b7000d7fc62f"
+          }
+        },
+        "User:601211addade1d000db7f7b4": {
+          "__typename": "User",
+          "_id": "601211addade1d000db7f7b4",
+          "displayName": "이지영 Grace"
+        },
+        "ProductV3:60515de78f229e000db4bb67": {
+          "__typename": "ProductV3",
+          "_id": "60515de78f229e000db4bb67",
+          "title": "영어 미팅 / PT / 콘퍼런스콜에 바로 써먹는 실전 비즈니스 영어 회화",
+          "coverImageUrl": "https://cdn.class101.net/images/e51c8545-06d5-48eb-b3a4-f27c92888269",
+          "klassId": "60515de78f229e000db4bb66",
+          "likedCount": 3451,
+          "firestoreId": "8fIFlTg7DnFvxInO4MFf",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e7"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:601211addade1d000db7f7b4"
+          }
+        },
+        "User:5f3a4020b2d5f60016f0b41a": {
+          "__typename": "User",
+          "_id": "5f3a4020b2d5f60016f0b41a",
+          "displayName": "최통"
+        },
+        "ProductV3:5f5ba580631dea000d521672": {
+          "__typename": "ProductV3",
+          "_id": "5f5ba580631dea000d521672",
+          "title": "대한민국 대표 통역사가 알려주는 통역 ‧ 번역 101",
+          "coverImageUrl": "https://cdn.class101.net/images/069797a8-ecb5-4746-bbc0-0fd1a51130db",
+          "klassId": "5f5ba57f631dea000d521671",
+          "likedCount": 3327,
+          "firestoreId": "5l7NBhgZc8f31346BXfd",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e8"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f3a4020b2d5f60016f0b41a"
+          }
+        },
+        "ProductV3:5f8fb3190e060c001abe4145": {
+          "__typename": "ProductV3",
+          "_id": "5f8fb3190e060c001abe4145",
+          "title": "영화 <Her> 한 편으로 영어 회화 시작! 자유롭게 표현하는 영어",
+          "coverImageUrl": "https://cdn.class101.net/images/6174b867-53c6-4c4e-b977-0fd003e5c86a",
+          "klassId": "5f367f11b8731b0022bb1bc7",
+          "likedCount": 3158,
+          "firestoreId": "pBKPi79NrvxlEdy85pGG",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f2978e6a1b9a02eb5d1f3d6"
+          }
+        },
+        "User:63a0016b275f490015e63b07": {
+          "__typename": "User",
+          "_id": "63a0016b275f490015e63b07",
+          "displayName": "써머"
+        },
+        "ProductV3:61c9dbd1346c740014b7daf0": {
+          "__typename": "ProductV3",
+          "_id": "61c9dbd1346c740014b7daf0",
+          "title": "영어회화와 쓰기가 동시에 되는, 어른들의 영어일기",
+          "coverImageUrl": "https://cdn.class101.net/images/96b82c4d-37bb-4d8b-b1ce-96606015d74c",
+          "klassId": "61c9dbd1346c740014b7daed",
+          "likedCount": 2911,
+          "firestoreId": "R95PeDbJPvJ2z6yfMRoL",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:63a0016b275f490015e63b07"
+          }
+        },
+        "User:614b79be40514700149923b3": {
+          "__typename": "User",
+          "_id": "614b79be40514700149923b3",
+          "displayName": "헤이민지"
+        },
+        "ProductV3:6152434467ff4300152130e1": {
+          "__typename": "ProductV3",
+          "_id": "6152434467ff4300152130e1",
+          "title": "성인이 되어 시작한 영어로 원어민과 대화하기까지! 영어 회화 101챌린지",
+          "coverImageUrl": "https://cdn.class101.net/images/f863f54c-30d8-4365-86c6-b480699b8a3c",
+          "klassId": "6152434467ff4300152130dc",
+          "likedCount": 2801,
+          "firestoreId": "6mto6yHb6ETzclP0NL5f",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783e4"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:614b79be40514700149923b3"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "62206086d39299379ee5b841"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

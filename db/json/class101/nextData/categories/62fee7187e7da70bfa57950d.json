@@ -1,0 +1,693 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "62fee7187e7da70bfa57950d"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"62fee7187e7da70bfa57950d\"})": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950d"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"62fee7187e7da70bfa57950d\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFjNDBkYzIzNzJmMjQwMDBkY2ViNmFkX19DVVJTT1JfREVMSU1JVEVSX183NDQ5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61c40dc2372f24000dceb6ad"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE4YWIzODUxNWJjZmMwMDE0MWY5Y2FkX19DVVJTT1JfREVMSU1JVEVSX180NTk1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:618ab38515bcfc00141f9cad"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU2MzJkZjQwOTM5YTI0Mzg2NjkyNmM3X19DVVJTT1JfREVMSU1JVEVSX18yNjQ0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e632df40939a243866926c7"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBhMjc0MzViNDNlNjcwMDBlNDQwM2E1X19DVVJTT1JfREVMSU1JVEVSX18yMjIyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60a27435b43e67000e4403a5"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE1OTViNDkzZjM4OGYwMDE0NmYzNjkwX19DVVJTT1JfREVMSU1JVEVSX18yMTQ1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61595b493f388f00146f3690"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFlNTRhYTg2ZjViMzYwMDBkNGY3N2IzX19DVVJTT1JfREVMSU1JVEVSX18yMDI1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61e54aa86f5b36000d4f77b3"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE4M2Y4ZDg4ZDczMTkwMDBkZWRkOTU2X19DVVJTT1JfREVMSU1JVEVSX18xODQyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6183f8d88d7319000dedd956"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjMxNmVmYjg1ZjFlOTcwMDBlN2IyZDg4X19DVVJTT1JfREVMSU1JVEVSX18xNzk0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6316efb85f1e97000e7b2d88"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM0Y2ZkYTVhZDNjOTAwMDE1OGI4YTUyX19DVVJTT1JfREVMSU1JVEVSX18xNjQ2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:634cfda5ad3c9000158b8a52"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjNlNDQyNTBjNzA4OTEwMDBlZGRiNjliX19DVVJTT1JfREVMSU1JVEVSX18xNTkxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:63e44250c70891000eddb69b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY5YWEwNzQ1ZWI5ZjUwMDFiNGM2MzBlX19DVVJTT1JfREVMSU1JVEVSX18xNTgxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f9aa0745eb9f5001b4c630e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjEzNWEzZmUwNzE2MGQwMDBkMGU5ZmYyX19DVVJTT1JfREVMSU1JVEVSX18xNTI4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6135a3fe07160d000d0e9ff2"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI1N2RlZjQ2NzBjZDcwMDE1MzExYTA1X19DVVJTT1JfREVMSU1JVEVSX18xNTI3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6257def4670cd70015311a05"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjMwMmYzOTdkOTk2MjkwMDBlNDkzZTAwX19DVVJTT1JfREVMSU1JVEVSX18xNTA5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6302f397d99629000e493e00"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjExMWY4ZWNmZGI2ZDEwMDE0YzE5MDQ1X19DVVJTT1JfREVMSU1JVEVSX18xNDg3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6111f8ecfdb6d10014c19045"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM2MGU4ZTkyZGUyMTUwMDBlZjNjZmMxX19DVVJTT1JfREVMSU1JVEVSX18xNDUwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6360e8e92de215000ef3cfc1"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI4MGM4YzViMWUzY2QwMDBlOTVhNzg2X19DVVJTT1JfREVMSU1JVEVSX18xNDMwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6280c8c5b1e3cd000e95a786"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjExMTFiZGQ2ZTM3N2IwMDBkOTJlNjIzX19DVVJTT1JfREVMSU1JVEVSX18xMzkwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61111bdd6e377b000d92e623"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjEzZWYyOGZiY2VkY2IwMDBkZTgzNDA4X19DVVJTT1JfREVMSU1JVEVSX18xMzY2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:613ef28fbcedcb000de83408"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE4MjNmNDVjZDUzNGIwMDBkN2RhYzNlX19DVVJTT1JfREVMSU1JVEVSX18xMTk3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61823f45cd534b000d7dac3e"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjE4MjNmNDVjZDUzNGIwMDBkN2RhYzNlX19DVVJTT1JfREVMSU1JVEVSX18xMTk3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NjFjNDBkYzIzNzJmMjQwMDBkY2ViNmFkX19DVVJTT1JfREVMSU1JVEVSX183NDQ5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:605c3db737b977e026544061": {
+          "__typename": "CategoryV2",
+          "id": "605c3db737b977e026544061",
+          "title": "키즈",
+          "depth": 0
+        },
+        "CategoryV2:62fee7187e7da70bfa57950f": {
+          "__typename": "CategoryV2",
+          "id": "62fee7187e7da70bfa57950f",
+          "title": "육아",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950d"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            },
+            {
+              "__ref": "CategoryV2:62fee7187e7da70bfa57950d"
+            }
+          ]
+        },
+        "CategoryV2:62fee7187e7da70bfa579510": {
+          "__typename": "CategoryV2",
+          "id": "62fee7187e7da70bfa579510",
+          "title": "학습",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950d"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            },
+            {
+              "__ref": "CategoryV2:62fee7187e7da70bfa57950d"
+            }
+          ]
+        },
+        "CategoryV2:62fee7187e7da70bfa57950d": {
+          "__typename": "CategoryV2",
+          "id": "62fee7187e7da70bfa57950d",
+          "title": "부모 교육",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e026544061"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:62fee7187e7da70bfa57950f"
+            },
+            {
+              "__ref": "CategoryV2:62fee7187e7da70bfa579510"
+            }
+          ]
+        },
+        "User:6139c5c63bd5440014532af2": {
+          "__typename": "User",
+          "_id": "6139c5c63bd5440014532af2",
+          "displayName": "아들연구소 최민준"
+        },
+        "ProductV3:61c40dc2372f24000dceb6ad": {
+          "__typename": "ProductV3",
+          "_id": "61c40dc2372f24000dceb6ad",
+          "title": "<최민준 교육의기술> 화내지 않고 가르치는 아들교육 핵심방법론",
+          "coverImageUrl": "https://cdn.class101.net/images/41d31556-e9c4-49a0-bfd6-7b3b8cbb07a2",
+          "klassId": "61c40dc2372f24000dceb6aa",
+          "likedCount": 7449,
+          "firestoreId": "dJyb8oRckEZVMxgAc7UG",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6139c5c63bd5440014532af2"
+          }
+        },
+        "User:60ea7787ae01f90015e33ca6": {
+          "__typename": "User",
+          "_id": "60ea7787ae01f90015e33ca6",
+          "displayName": "뇌과학자 엄마 김보경"
+        },
+        "ProductV3:618ab38515bcfc00141f9cad": {
+          "__typename": "ProductV3",
+          "_id": "618ab38515bcfc00141f9cad",
+          "title": "뇌를 알면 훈육이 쉬워져요! 뇌과학자 엄마의 <훈육과 습관> ",
+          "coverImageUrl": "https://cdn.class101.net/images/53ee9dde-39d3-44c4-a543-09c219d0e53f",
+          "klassId": "618ab38515bcfc00141f9ca8",
+          "likedCount": 4595,
+          "firestoreId": "5N93e3j1vFz4Ej4GbbXt",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60ea7787ae01f90015e33ca6"
+          }
+        },
+        "User:5e5cad845ac26e01850dfeee": {
+          "__typename": "User",
+          "_id": "5e5cad845ac26e01850dfeee",
+          "displayName": "상처치유 전문가 최희수"
+        },
+        "ProductV3:5e632df40939a243866926c7": {
+          "__typename": "ProductV3",
+          "_id": "5e632df40939a243866926c7",
+          "title": "나를 치유하고, 더 나은 부모 되기 - 최희수의 상처받은 내면아이 치유법",
+          "coverImageUrl": "https://cdn.class101.net/images/0b67fff4-420c-479d-ad64-54feeda1c262",
+          "klassId": "5e632df40939a243866926c6",
+          "likedCount": 2644,
+          "firestoreId": "aUEkjwER2dFjrEZNEpWW",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e5cad845ac26e01850dfeee"
+          }
+        },
+        "User:603b983540e4ea0015c9b61e": {
+          "__typename": "User",
+          "_id": "603b983540e4ea0015c9b61e",
+          "displayName": "뉴미디어 영어 김도현"
+        },
+        "ProductV3:60a27435b43e67000e4403a5": {
+          "__typename": "ProductV3",
+          "_id": "60a27435b43e67000e4403a5",
+          "title": "[2차 매진] 21세기 엄마표 영어 <마인크래프트 영어 프로젝트> ",
+          "coverImageUrl": "https://cdn.class101.net/images/b1f01196-3084-4530-9315-f5bc01098768",
+          "klassId": "60a27435b43e67000e4403a4",
+          "likedCount": 2222,
+          "firestoreId": "9dvE90RSyIZERMwl7L57",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa579510"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:603b983540e4ea0015c9b61e"
+          }
+        },
+        "User:613d711c4672930014eb319c": {
+          "__typename": "User",
+          "_id": "613d711c4672930014eb319c",
+          "displayName": "이민주 육아상담소"
+        },
+        "ProductV3:61595b493f388f00146f3690": {
+          "__typename": "ProductV3",
+          "_id": "61595b493f388f00146f3690",
+          "title": "책 좋아하는 아이로 성장시키는 첫 걸음! <이민주육아상담소> 책 육아 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/66c09dc6-43ca-4006-aa07-9b7c2d1df2dd",
+          "klassId": "61595b493f388f00146f368b",
+          "likedCount": 2145,
+          "firestoreId": "5DAI6ho8ydIuWha4nwi3",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:613d711c4672930014eb319c"
+          }
+        },
+        "User:5e6ec0796635ad2f61d3c205": {
+          "__typename": "User",
+          "_id": "5e6ec0796635ad2f61d3c205",
+          "displayName": "슬기로운초등생활 이은경"
+        },
+        "ProductV3:61e54aa86f5b36000d4f77b3": {
+          "__typename": "ProductV3",
+          "_id": "61e54aa86f5b36000d4f77b3",
+          "title": "휩쓸리지 않는 <초등 6년의 문해력 공부법> 로드맵 세우기",
+          "coverImageUrl": "https://cdn.class101.net/images/95f03cbf-7576-4b4d-b3b2-46dca7978e97",
+          "klassId": "61e54aa86f5b36000d4f77b0",
+          "likedCount": 2025,
+          "firestoreId": "UiB3vp7qQhBitt6ukiee",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa579510"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e6ec0796635ad2f61d3c205"
+          }
+        },
+        "User:6183f829efac63000db4a1e5": {
+          "__typename": "User",
+          "_id": "6183f829efac63000db4a1e5",
+          "displayName": "황진이쌤"
+        },
+        "ProductV3:6183f8d88d7319000dedd956": {
+          "__typename": "ProductV3",
+          "_id": "6183f8d88d7319000dedd956",
+          "title": "0-3세 우리 아이 언어 잠재력을 깨워주는 일상 속 언어자극법",
+          "coverImageUrl": "https://cdn.class101.net/images/1e7c0e1b-1b43-490e-a3a4-c0acd7f4634f",
+          "klassId": "6183f8d88d7319000dedd951",
+          "likedCount": 1842,
+          "firestoreId": "IPq3dd4jC1urbFttN3w3",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6183f829efac63000db4a1e5"
+          }
+        },
+        "User:61ff6e7ac13329000d4c79f7": {
+          "__typename": "User",
+          "_id": "61ff6e7ac13329000d4c79f7",
+          "displayName": "김경희"
+        },
+        "ProductV3:6316efb85f1e97000e7b2d88": {
+          "__typename": "ProductV3",
+          "_id": "6316efb85f1e97000e7b2d88",
+          "title": "집에 있는 도구로 뚝딱 만들어내는 엄마표 캐릭터 도시락",
+          "coverImageUrl": "https://cdn.class101.net/images/7acc8411-a342-46cd-8151-5e471395b1b6",
+          "klassId": "6316efb85f1e97000e7b2d85",
+          "likedCount": 1794,
+          "firestoreId": "6cuc5nf6XZgdELQhMgFl",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61ff6e7ac13329000d4c79f7"
+          }
+        },
+        "User:5f5604cf00c6c4001ad06a87": {
+          "__typename": "User",
+          "_id": "5f5604cf00c6c4001ad06a87",
+          "displayName": "분당강쌤"
+        },
+        "ProductV3:634cfda5ad3c9000158b8a52": {
+          "__typename": "ProductV3",
+          "_id": "634cfda5ad3c9000158b8a52",
+          "title": "SKY BUS 명문 대학으로 진학하는 초등 공부법",
+          "coverImageUrl": "https://cdn.class101.net/images/eaf58304-52ee-44a1-a644-fde48a72df8a",
+          "klassId": "634cfda5ad3c9000158b8a4f",
+          "likedCount": 1646,
+          "firestoreId": "T1erL9rTAfXlIZkdJuo4",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa579510"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f5604cf00c6c4001ad06a87"
+          }
+        },
+        "User:63ae8c815a738f00165ca425": {
+          "__typename": "User",
+          "_id": "63ae8c815a738f00165ca425",
+          "displayName": "우리동네 어린이병원"
+        },
+        "ProductV3:63e44250c70891000eddb69b": {
+          "__typename": "ProductV3",
+          "_id": "63e44250c70891000eddb69b",
+          "title": "떠먹여주는 소아과 X 소아정신과 육아 의학 상식",
+          "coverImageUrl": "https://cdn.class101.net/images/a9779431-cde2-4179-8da1-e053e0bed475",
+          "klassId": "63e44250c70891000eddb698",
+          "likedCount": 1591,
+          "firestoreId": "Cpl0RDMBUUYsikpA4h1j",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:63ae8c815a738f00165ca425"
+          }
+        },
+        "User:5f9a9f86ada3d400219e2c79": {
+          "__typename": "User",
+          "_id": "5f9a9f86ada3d400219e2c79",
+          "displayName": "리드해라"
+        },
+        "ProductV3:5f9aa0745eb9f5001b4c630e": {
+          "__typename": "ProductV3",
+          "_id": "5f9aa0745eb9f5001b4c630e",
+          "title": "내 아이 영어는 내가 책임진다. 소중한 자녀를 위한 육아 영어!",
+          "coverImageUrl": "https://cdn.class101.net/images/9d8b43dc-630b-4d0b-874d-c06fe907f481",
+          "klassId": "5f9aa0735eb9f5001b4c630d",
+          "likedCount": 1581,
+          "firestoreId": "lLJQ4h0jqngu2bOAud4K",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa579510"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f9a9f86ada3d400219e2c79"
+          }
+        },
+        "User:5ed287bc724acc42a4a8d96a": {
+          "__typename": "User",
+          "_id": "5ed287bc724acc42a4a8d96a",
+          "displayName": "김성효샘"
+        },
+        "ProductV3:6135a3fe07160d000d0e9ff2": {
+          "__typename": "ProductV3",
+          "_id": "6135a3fe07160d000d0e9ff2",
+          "title": "평생성적을 만드는 20분 초등공부법(독서부터 글쓰기, 과목별 학습법까지)",
+          "coverImageUrl": "https://cdn.class101.net/images/55142862-8fd2-414f-b451-800ac0c2bf7a",
+          "klassId": "6135a3fe07160d000d0e9fed",
+          "likedCount": 1528,
+          "firestoreId": "pZPFRf2tWSGTiTSXk4kf",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa579510"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ed287bc724acc42a4a8d96a"
+          }
+        },
+        "User:6257aedf86d13b003c47e439": {
+          "__typename": "User",
+          "_id": "6257aedf86d13b003c47e439",
+          "displayName": "오안쌤"
+        },
+        "ProductV3:6257def4670cd70015311a05": {
+          "__typename": "ProductV3",
+          "_id": "6257def4670cd70015311a05",
+          "title": "수학 문제집 큐레이터 오안쌤의 맘 편한 <유아 수학 로드맵>",
+          "coverImageUrl": "https://cdn.class101.net/images/bbccd77c-3654-4c88-a920-1f02ee4ad9ee",
+          "klassId": "6257def4670cd70015311a02",
+          "likedCount": 1527,
+          "firestoreId": "c1TnGjTWUY5n8xKHKFUn",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa579510"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6257aedf86d13b003c47e439"
+          }
+        },
+        "User:612dbabcf74ac300140134af": {
+          "__typename": "User",
+          "_id": "612dbabcf74ac300140134af",
+          "displayName": "단아맘 김가희"
+        },
+        "ProductV3:6302f397d99629000e493e00": {
+          "__typename": "ProductV3",
+          "_id": "6302f397d99629000e493e00",
+          "title": "0세부터 6세까지! 단아맘의 초간단 두뇌발달 홈문센 놀이",
+          "coverImageUrl": "https://cdn.class101.net/images/4bdbacc3-e842-41d7-8811-89eef44e7f70",
+          "klassId": "6302f397d99629000e493dfd",
+          "likedCount": 1509,
+          "firestoreId": "2KutakDtdXy5gRgXoSYF",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:612dbabcf74ac300140134af"
+          }
+        },
+        "User:5f3a4020b2d5f60016f0b41a": {
+          "__typename": "User",
+          "_id": "5f3a4020b2d5f60016f0b41a",
+          "displayName": "최통"
+        },
+        "ProductV3:6111f8ecfdb6d10014c19045": {
+          "__typename": "ProductV3",
+          "_id": "6111f8ecfdb6d10014c19045",
+          "title": "대한민국 대표 통역사와 함께 하는 엄마표 영어 101 챌린지",
+          "coverImageUrl": "https://cdn.class101.net/images/66237ab3-3ae6-42e3-b997-4d1fa07c3177",
+          "klassId": "6111f8ecfdb6d10014c19040",
+          "likedCount": 1487,
+          "firestoreId": "Wdq6asZGBi3c6tQUMl2d",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa579510"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f3a4020b2d5f60016f0b41a"
+          }
+        },
+        "User:631d8a5d8df0fe001591ed06": {
+          "__typename": "User",
+          "_id": "631d8a5d8df0fe001591ed06",
+          "displayName": "교육대기자 방종임"
+        },
+        "ProductV3:6360e8e92de215000ef3cfc1": {
+          "__typename": "ProductV3",
+          "_id": "6360e8e92de215000ef3cfc1",
+          "title": "교육대기자가 알려주는 자녀교육에서 해방되는 구체적인 가이드",
+          "coverImageUrl": "https://cdn.class101.net/images/7e35f479-5082-40fb-af14-a5e89f2ff9ab",
+          "klassId": "6360e8e92de215000ef3cfbd",
+          "likedCount": 1450,
+          "firestoreId": "vroyaKCRzAloQXdmen1A",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa579510"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:631d8a5d8df0fe001591ed06"
+          }
+        },
+        "User:5e9bf4f63bf0b77673ac1175": {
+          "__typename": "User",
+          "_id": "5e9bf4f63bf0b77673ac1175",
+          "displayName": "노우리"
+        },
+        "ProductV3:6280c8c5b1e3cd000e95a786": {
+          "__typename": "ProductV3",
+          "_id": "6280c8c5b1e3cd000e95a786",
+          "title": "세상에 질문하는 아이로 키우는 <하브루타 스피치>",
+          "coverImageUrl": "https://cdn.class101.net/images/717700ea-1447-4130-9a61-30e0e21190b3",
+          "klassId": "6280c8c5b1e3cd000e95a783",
+          "likedCount": 1430,
+          "firestoreId": "S5JyQ7WlLCIHjI0dYzqd",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa579510"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e9bf4f63bf0b77673ac1175"
+          }
+        },
+        "User:5faa28048b6f170013bd86d6": {
+          "__typename": "User",
+          "_id": "5faa28048b6f170013bd86d6",
+          "displayName": "리틀마누"
+        },
+        "ProductV3:61111bdd6e377b000d92e623": {
+          "__typename": "ProductV3",
+          "_id": "61111bdd6e377b000d92e623",
+          "title": "엄마의 심리학, 우리 아이 마음 전문가 과정    ",
+          "coverImageUrl": "https://cdn.class101.net/images/6bed794f-5499-49ee-a7bb-d306a0895b62",
+          "klassId": "61111bdd6e377b000d92e61e",
+          "likedCount": 1390,
+          "firestoreId": "6gs5JXgtvSQn2jzgAYGX",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5faa28048b6f170013bd86d6"
+          }
+        },
+        "User:613ef1e8189f7a000df0905f": {
+          "__typename": "User",
+          "_id": "613ef1e8189f7a000df0905f",
+          "displayName": "그로잉맘"
+        },
+        "ProductV3:613ef28fbcedcb000de83408": {
+          "__typename": "ProductV3",
+          "_id": "613ef28fbcedcb000de83408",
+          "title": "아이의 말, 모르겠다 싶을 땐 아이마음번역기 <그로잉맘>의 기질육아!",
+          "coverImageUrl": "https://cdn.class101.net/images/bb6d3a76-655d-4ebb-9a49-af101b8d1808",
+          "klassId": "613ef28fbcedcb000de83403",
+          "likedCount": 1366,
+          "firestoreId": "uomyqklq2tjWfuCmueAg",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa57950f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:613ef1e8189f7a000df0905f"
+          }
+        },
+        "User:630331e7c122150015f02504": {
+          "__typename": "User",
+          "_id": "630331e7c122150015f02504",
+          "displayName": "쑥샘"
+        },
+        "ProductV3:61823f45cd534b000d7dac3e": {
+          "__typename": "ProductV3",
+          "_id": "61823f45cd534b000d7dac3e",
+          "title": "4~8세 부모님들 주목! 수포자 엄마도 할 수 있는 하루 30분 엄마표 수학",
+          "coverImageUrl": "https://cdn.class101.net/images/86f85e19-a021-4a2d-a5d9-f5a8d10cb92e",
+          "klassId": "61823f45cd534b000d7dac39",
+          "likedCount": 1197,
+          "firestoreId": "qRwykpJN0PXr1z3saHtt",
+          "category": {
+            "__ref": "CategoryV2:62fee7187e7da70bfa579510"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:630331e7c122150015f02504"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "62fee7187e7da70bfa57950d"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

@@ -1,0 +1,889 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed00365"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed00365\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed00365\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDk3NGVhYmNmZGFmZDM5NjBhX19DVVJTT1JfREVMSU1JVEVSX18yMDg0Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780974eabcfdafd3960a"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNkYzIyNTU4MGY2NzM0YWNlZGI2OTFjX19DVVJTT1JfREVMSU1JVEVSX18xNzc0NV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5cdc225580f6734acedb691c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY3ZGE0N2NjNzBkZmEwMDE0NzFmNWRjX19DVVJTT1JfREVMSU1JVEVSX18xNjU5Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f7da47cc70dfa001471f5dc"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDk3NGVhYmNmZGFmZDM5NjE5X19DVVJTT1JfREVMSU1JVEVSX18xNTczMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780974eabcfdafd39619"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU2MjA1M2ZmMzgxNjMxMGY5NDU1M2E3X19DVVJTT1JfREVMSU1JVEVSX18xNTY1NF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e62053ff3816310f94553a7"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU4MWUxMDY2YzAwODA0NDVjZjkzZDVlX19DVVJTT1JfREVMSU1JVEVSX18xNDQ3NV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e81e1066c0080445cf93d5e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU1OTQ1MjZiYjM2NzgwZGQ0MWE1YzZkX19DVVJTT1JfREVMSU1JVEVSX185NDc3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e594526bb36780dd41a5c6d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ2NTU0OTJhNzcxNDkwNmFjN2NmYTcxX19DVVJTT1JfREVMSU1JVEVSX184ODkzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5d655492a7714906ac7cfa71"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjNiZDIyNjgxZWRkNzIwMDE1MzRlMmQ5X19DVVJTT1JfREVMSU1JVEVSX184NTEzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:63bd22681edd72001534e2d9"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDk3NGVhYmNmZGFmZDM5Nzc0X19DVVJTT1JfREVMSU1JVEVSX184NTA3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5c5d780974eabcfdafd39774"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU1YzkzOGQ2NzE0OGUwZGRiNWY3MGVlX19DVVJTT1JfREVMSU1JVEVSX182MDM4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e5c938d67148e0ddb5f70ee"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUwOWE5MjhmZjk4NTA2ZTg5ZmYyNDA4X19DVVJTT1JfREVMSU1JVEVSX181ODQ5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e09a928ff98506e89ff2408"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZkMjIyNGE5MjMwMzEwMDE0ZTUxN2ZmX19DVVJTT1JfREVMSU1JVEVSX181Nzg0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5fd2224a9230310014e517ff"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjAwMDk2MGRjOGVmNWMwMDBkZTYxYTU5X19DVVJTT1JfREVMSU1JVEVSX181Njg2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6000960dc8ef5c000de61a59"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU0ZGRlMDZjYjZhZTExZWZjNmZmNDRmX19DVVJTT1JfREVMSU1JVEVSX181NDk2X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e4dde06cb6ae11efc6ff44f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUxMDlmZmFhOTE5OTEwZDkzMjU4MTMxX19DVVJTT1JfREVMSU1JVEVSX181MzQ1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e109ffaa919910d93258131"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYzYTcxNWRiZTEzYmYwMDJkM2I5Nzk3X19DVVJTT1JfREVMSU1JVEVSX181MDcxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f3a715dbe13bf002d3b9797"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBmNTM5NTdkMTI0MTYwMDE1N2JmMjliX19DVVJTT1JfREVMSU1JVEVSX180OTUzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60f53957d1241600157bf29b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjU4MjkzMzIyNWM1NTcwMDBlZjcwOTI1X19DVVJTT1JfREVMSU1JVEVSX180OTEwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6582933225c557000ef70925"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUxNmNmZjMyOWY1MzgwZGRlMzM5ODAzX19DVVJTT1JfREVMSU1JVEVSX180ODg4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e16cff329f5380dde339803"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NWUxNmNmZjMyOWY1MzgwZGRlMzM5ODAzX19DVVJTT1JfREVMSU1JVEVSX180ODg4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NWM1ZDc4MDk3NGVhYmNmZGFmZDM5NjBhX19DVVJTT1JfREVMSU1JVEVSX18yMDg0Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:605c3db737b977e02654405e": {
+          "__typename": "CategoryV2",
+          "id": "605c3db737b977e02654405e",
+          "title": "크리에이티브",
+          "depth": 0
+        },
+        "CategoryV2:604f1c9756c3676f1ed00366": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00366",
+          "title": "악기",
+          "depth": 2,
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00367"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00368"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0036b"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0036c"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0036d"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0036e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0036f"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00370"
+            }
+          ],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00371": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00371",
+          "title": "보컬 · 랩",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00372": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00372",
+          "title": "작곡 · 프로듀싱",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00365": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00365",
+          "title": "음악",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00366"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00371"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00372"
+            }
+          ]
+        },
+        "User:5c5d633474eabcfdafcb9982": {
+          "__typename": "User",
+          "_id": "5c5d633474eabcfdafcb9982",
+          "displayName": "보컬트레이너임선호"
+        },
+        "ProductV3:5c5d780974eabcfdafd3960a": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780974eabcfdafd3960a",
+          "title": "'마O무 보컬트레이너' 임선호에게 배우는 보컬 트레이닝",
+          "coverImageUrl": "https://cdn.class101.net/images/69ff27e6-6aa5-4321-9a77-f8a26de79813",
+          "klassId": "5ca31f9b6008dd782a50fc02",
+          "likedCount": 20842,
+          "firestoreId": "dkMg6nDVjR5F70sjjzRJ",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00371"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d633474eabcfdafcb9982"
+          }
+        },
+        "User:63565b10bd4d373237b3340e": {
+          "__typename": "User",
+          "_id": "63565b10bd4d373237b3340e",
+          "displayName": "그루비룸"
+        },
+        "ProductV3:5cdc225580f6734acedb691c": {
+          "__typename": "ProductV3",
+          "_id": "5cdc225580f6734acedb691c",
+          "title": "그루비룸의 새로운 음악 만드는 법",
+          "coverImageUrl": "https://cdn.class101.net/images/0aaa5605-2c47-4ca4-b468-3be9535bee46",
+          "klassId": "5d22fe98abe479eb885a3d69",
+          "likedCount": 17745,
+          "firestoreId": "0384462CF31FEA26AF51A2",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00372"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:63565b10bd4d373237b3340e"
+          }
+        },
+        "User:5ce7af2780f6734aced338a3": {
+          "__typename": "User",
+          "_id": "5ce7af2780f6734aced338a3",
+          "displayName": "인메이"
+        },
+        "ProductV3:5f7da47cc70dfa001471f5dc": {
+          "__typename": "ProductV3",
+          "_id": "5f7da47cc70dfa001471f5dc",
+          "title": "재능 없이도 할 수 있는 노래 한 곡 만들기! 악기 없이 노트북 하나로!",
+          "coverImageUrl": "https://cdn.class101.net/images/8d0c055a-40bc-41ef-8684-65c28260ae84",
+          "klassId": "5f7da47bc70dfa001471f587",
+          "likedCount": 16592,
+          "firestoreId": "PsCHFCudtitMyxsreXBt",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00372"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ce7af2780f6734aced338a3"
+          }
+        },
+        "User:5c5d60c674eabcfdafc983ec": {
+          "__typename": "User",
+          "_id": "5c5d60c674eabcfdafc983ec",
+          "displayName": "주니"
+        },
+        "ProductV3:5c5d780974eabcfdafd39619": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780974eabcfdafd39619",
+          "title": "홈레코딩 101 : 작사, 작곡부터 싱글발매까지 내 방에서 끝내기",
+          "coverImageUrl": "https://cdn.class101.net/images/bed54703-cce2-417f-83c7-3a8d4b1b3394",
+          "klassId": "5c808a5935b52893cefb8b03",
+          "likedCount": 15730,
+          "firestoreId": "eNPlsv7j5Gm9N2V18iYE",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00372"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d60c674eabcfdafc983ec"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed0036b": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0036b",
+          "title": "피아노",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00366"
+            }
+          ]
+        },
+        "User:5e60f1966205760da2e0c588": {
+          "__typename": "User",
+          "_id": "5e60f1966205760da2e0c588",
+          "displayName": "박터틀"
+        },
+        "ProductV3:5e62053ff3816310f94553a7": {
+          "__typename": "ProductV3",
+          "_id": "5e62053ff3816310f94553a7",
+          "title": "누구나 손쉽게 따라 하는 재즈피아노 입문 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/dce75382-0965-41ba-9182-73ecae0c8ba5",
+          "klassId": "5e62053ff3816310f94553a6",
+          "likedCount": 15654,
+          "firestoreId": "S5oUiefI5TBm8bHy8Hfb",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0036b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e60f1966205760da2e0c588"
+          }
+        },
+        "User:5dc8fa9cd21d360d73d50313": {
+          "__typename": "User",
+          "_id": "5dc8fa9cd21d360d73d50313",
+          "displayName": "그레이스 킴"
+        },
+        "ProductV3:5e81e1066c0080445cf93d5e": {
+          "__typename": "ProductV3",
+          "_id": "5e81e1066c0080445cf93d5e",
+          "title": "목 안 아프고 노래하기! 나쁜 노래 습관 고치고 편안하게 노래하는 법",
+          "coverImageUrl": "https://cdn.class101.net/images/64f734c7-8397-49f7-8248-935aceb89c37",
+          "klassId": "5e81e1056c0080445cf93d5d",
+          "likedCount": 14475,
+          "firestoreId": "tW7BhlmXWzwYWQ6v9b4T",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00371"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5dc8fa9cd21d360d73d50313"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed00367": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00367",
+          "title": "기타 · 우쿨렐레",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00366"
+            }
+          ]
+        },
+        "User:5c93a2e92ff0ef122cc1ab72": {
+          "__typename": "User",
+          "_id": "5c93a2e92ff0ef122cc1ab72",
+          "displayName": "해성쌤"
+        },
+        "ProductV3:5e594526bb36780dd41a5c6d": {
+          "__typename": "ProductV3",
+          "_id": "5e594526bb36780dd41a5c6d",
+          "title": "기타를  전혀 모르는 왕초보도 기타를 연주할 수 있게 되는 \"해성쌤의 베이직 통기타 수업\"",
+          "coverImageUrl": "https://cdn.class101.net/images/49f1a556-fb86-4884-bdc6-4434137dfb29",
+          "klassId": "5e594525bb36780dd41a5c6c",
+          "likedCount": 9477,
+          "firestoreId": "5IVAebanGfPmrhqhdXDq",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00367"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c93a2e92ff0ef122cc1ab72"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed0036c": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0036c",
+          "title": "칼림바",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+          },
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00366"
+            }
+          ]
+        },
+        "User:5c5d65ad74eabcfdafccd1b1": {
+          "__typename": "User",
+          "_id": "5c5d65ad74eabcfdafccd1b1",
+          "displayName": "알찬ALCHAN"
+        },
+        "ProductV3:5d655492a7714906ac7cfa71": {
+          "__typename": "ProductV3",
+          "_id": "5d655492a7714906ac7cfa71",
+          "title": "언제 어디서나 힐링악기 칼림바와 함께 마음을 두드려요",
+          "coverImageUrl": "https://cdn.class101.net/images/20aad48e-cf72-4bf3-bc06-f35a4a4d562a",
+          "klassId": "5d655491ea39db0c0930f551",
+          "likedCount": 8893,
+          "firestoreId": "QOCyh9HeAKsHzSdVAKct",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0036c"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d65ad74eabcfdafccd1b1"
+          }
+        },
+        "User:63bd2144f396c0001600e1e1": {
+          "__typename": "User",
+          "_id": "63bd2144f396c0001600e1e1",
+          "displayName": "Tido Kang"
+        },
+        "ProductV3:63bd22681edd72001534e2d9": {
+          "__typename": "ProductV3",
+          "_id": "63bd22681edd72001534e2d9",
+          "title": "161만 작곡가 시도강이 알려주는 <음악 유튜브 수익화>",
+          "coverImageUrl": "https://cdn.class101.net/images/817e746e-0245-4107-bbb7-23102c779b64",
+          "klassId": "63bd22681edd72001534e2d6",
+          "likedCount": 8513,
+          "firestoreId": "Edu7tnyUNOqMXfcqr0Td",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00372"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:63bd2144f396c0001600e1e1"
+          }
+        },
+        "User:5c5d773174eabcfdafd2c0c2": {
+          "__typename": "User",
+          "_id": "5c5d773174eabcfdafd2c0c2",
+          "displayName": "정완JEONGWAN"
+        },
+        "ProductV3:5c5d780974eabcfdafd39774": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780974eabcfdafd39774",
+          "title": "기타로 일상으로 채색해봐요, 최정완과 함께 배우는 어쿠스틱 기타",
+          "coverImageUrl": "https://cdn.class101.net/images/286db79b-8e1a-40ad-b40c-954e3b9ce0a5/2880xauto.webp",
+          "klassId": "5c9a10ae2ff0ef122cd74587",
+          "likedCount": 8507,
+          "firestoreId": "kGtI3fY2gupwYBiIz60V",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00367"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d773174eabcfdafd2c0c2"
+          }
+        },
+        "User:5e5c9371cb4b3c70eddcd1e7": {
+          "__typename": "User",
+          "_id": "5e5c9371cb4b3c70eddcd1e7",
+          "displayName": "태경이삼촌"
+        },
+        "ProductV3:5e5c938d67148e0ddb5f70ee": {
+          "__typename": "ProductV3",
+          "_id": "5e5c938d67148e0ddb5f70ee",
+          "title": "태경이 삼촌의 도 몰라도 미칠 수 있는 코드 피아노 반주법",
+          "coverImageUrl": "https://cdn.class101.net/images/e99dc7d1-4559-472e-a450-1730c29b41f9",
+          "klassId": "5e5c938d67148e0ddb5f70ed",
+          "likedCount": 6038,
+          "firestoreId": "QKw8hXqf50TCyrdEsp2R",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0036b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e5c9371cb4b3c70eddcd1e7"
+          }
+        },
+        "User:5e09a8ced0400f7d97d3e9d1": {
+          "__typename": "User",
+          "_id": "5e09a8ced0400f7d97d3e9d1",
+          "displayName": "성지훈"
+        },
+        "ProductV3:5e09a928ff98506e89ff2408": {
+          "__typename": "ProductV3",
+          "_id": "5e09a928ff98506e89ff2408",
+          "title": "성지훈의 믹싱 & 마스터링 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/50b6522b-cb52-42ad-b765-226bd0671988",
+          "klassId": "5e09a927ff98506e89ff2407",
+          "likedCount": 5849,
+          "firestoreId": "jfs-mastering",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00372"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e09a8ced0400f7d97d3e9d1"
+          }
+        },
+        "User:5ff434875f2c250014bf70c9": {
+          "__typename": "User",
+          "_id": "5ff434875f2c250014bf70c9",
+          "displayName": "이음쌤"
+        },
+        "ProductV3:5fd2224a9230310014e517ff": {
+          "__typename": "ProductV3",
+          "_id": "5fd2224a9230310014e517ff",
+          "title": "[성인피아노] 입문자를 위한 하루 20분 피아노 취미 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/80dfca43-3e02-4eb6-8cfe-2bc463a7e2e4",
+          "klassId": "5fd222499230310014e517fd",
+          "likedCount": 5784,
+          "firestoreId": "Uem90wMm4yWjNDXlxWED",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0036b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ff434875f2c250014bf70c9"
+          }
+        },
+        "User:5ffe9cf49a2f82000d4391eb": {
+          "__typename": "User",
+          "_id": "5ffe9cf49a2f82000d4391eb",
+          "displayName": "KASS"
+        },
+        "ProductV3:6000960dc8ef5c000de61a59": {
+          "__typename": "ProductV3",
+          "_id": "6000960dc8ef5c000de61a59",
+          "title": "BTS, 트와이스, ITZY 타이틀 프로듀서에게 배우는 K-POP 핵심 장르 작곡 노하우",
+          "coverImageUrl": "https://cdn.class101.net/images/1d9f8f30-7fda-4a41-8dbb-e53ab1849183",
+          "klassId": "6000960cc8ef5c000de61a02",
+          "likedCount": 5686,
+          "firestoreId": "4HnR334bO0qnhHUF1rFI",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00372"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ffe9cf49a2f82000d4391eb"
+          }
+        },
+        "User:5c5d625974eabcfdafcb136b": {
+          "__typename": "User",
+          "_id": "5c5d625974eabcfdafcb136b",
+          "displayName": "최제니"
+        },
+        "ProductV3:5e4dde06cb6ae11efc6ff44f": {
+          "__typename": "ProductV3",
+          "_id": "5e4dde06cb6ae11efc6ff44f",
+          "title": "아이패드로 홈레코딩 A to Z : 커버영상까지 한번에!",
+          "coverImageUrl": "https://cdn.class101.net/images/f3e2dbd5-54a2-4777-9aff-b2e045e07e12",
+          "klassId": "5e4dde06cb6ae11efc6ff44e",
+          "likedCount": 5496,
+          "firestoreId": "iOaUx6bXHRozgGgcbx0Z",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00372"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d625974eabcfdafcb136b"
+          }
+        },
+        "User:5e109fe80f40cd0dc4786059": {
+          "__typename": "User",
+          "_id": "5e109fe80f40cd0dc4786059",
+          "displayName": "DINO$OUL"
+        },
+        "ProductV3:5e109ffaa919910d93258131": {
+          "__typename": "ProductV3",
+          "_id": "5e109ffaa919910d93258131",
+          "title": "미디 작곡, 가장 쉽고 빠르게 : 싱어송라이터 디노소울의 큐베이스 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/c97f012a-e542-4f21-b8e6-1aca3debc686",
+          "klassId": "5e109ffaa919910d93258130",
+          "likedCount": 5345,
+          "firestoreId": "W3ksS1pTaDLop754JLhs",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00372"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e109fe80f40cd0dc4786059"
+          }
+        },
+        "User:63565b10bd4d373237b33461": {
+          "__typename": "User",
+          "_id": "63565b10bd4d373237b33461",
+          "displayName": "믹싱&마스터링 Signature"
+        },
+        "ProductV3:5f3a715dbe13bf002d3b9797": {
+          "__typename": "ProductV3",
+          "_id": "5f3a715dbe13bf002d3b9797",
+          "title": "Mix & Mastering Class",
+          "coverImageUrl": "https://cdn.class101.net/images/1681a606-ccae-4909-9b28-1db653fd076e",
+          "klassId": "5f3a715dbe13bf002d3b9796",
+          "likedCount": 5071,
+          "firestoreId": "H27OEGEsYJQ1WwF8tln5",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00372"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:63565b10bd4d373237b33461"
+          }
+        },
+        "User:60f538fdd08fd90015f55e73": {
+          "__typename": "User",
+          "_id": "60f538fdd08fd90015f55e73",
+          "displayName": "곽율"
+        },
+        "ProductV3:60f53957d1241600157bf29b": {
+          "__typename": "ProductV3",
+          "_id": "60f53957d1241600157bf29b",
+          "title": "25만Pick 가수 곽율의 '타고나지 않아도 가수들처럼 고음까지 탄탄하게 만드는 비밀'",
+          "coverImageUrl": "https://cdn.class101.net/images/ce324e00-3cc7-4c3e-888b-c078062c1b59",
+          "klassId": "60f53957d1241600157bf297",
+          "likedCount": 4953,
+          "firestoreId": "uL1n6RLmWy8o2qdwXDg5",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00371"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60f538fdd08fd90015f55e73"
+          }
+        },
+        "User:65827422888336000d75cf8a": {
+          "__typename": "User",
+          "_id": "65827422888336000d75cf8a",
+          "displayName": "김이나"
+        },
+        "ProductV3:6582933225c557000ef70925": {
+          "__typename": "ProductV3",
+          "_id": "6582933225c557000ef70925",
+          "title": "감성과 이성이 조화로운 가사를 쓰는 법, 김이나",
+          "coverImageUrl": "https://cdn.class101.net/images/d5e1e79d-0e9e-42ba-99bb-1890dee37b91",
+          "klassId": "6582933225c557000ef70921",
+          "likedCount": 4910,
+          "firestoreId": "Hs4RdtyUA10KycTpWUa7",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00372"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:65827422888336000d75cf8a"
+          }
+        },
+        "User:63565b10bd4d373237b33381": {
+          "__typename": "User",
+          "_id": "63565b10bd4d373237b33381",
+          "displayName": "팔로알토"
+        },
+        "ProductV3:5e16cff329f5380dde339803": {
+          "__typename": "ProductV3",
+          "_id": "5e16cff329f5380dde339803",
+          "title": "팔로알토의 랩 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/5d0477ea-ff60-477c-a934-320329a0adc2",
+          "klassId": "5e16cff229f5380dde339802",
+          "likedCount": 4888,
+          "firestoreId": "paloalto",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00371"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:63565b10bd4d373237b33381"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed00368": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00368",
+          "title": "바이올린",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00366"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0036d": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0036d",
+          "title": "하모니카",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00366"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0036e": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0036e",
+          "title": "드럼",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00366"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0036f": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0036f",
+          "title": "국악",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00366"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00370": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00370",
+          "title": "더 새로운 악기",
+          "depth": 3,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00365"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00366"
+            }
+          ]
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed00365"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

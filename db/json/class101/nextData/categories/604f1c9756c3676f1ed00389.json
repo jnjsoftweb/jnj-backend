@@ -1,0 +1,688 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed00389"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed00389\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBkZDlhNmJjNTMxMTkwMDE0ZDM2MGM1X19DVVJTT1JfREVMSU1JVEVSX182MTM2Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:60dd9a6bc531190014d360c5"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNjOWQ5ZTM2ZmZiMjAyMGRiOTNiOTRmX19DVVJTT1JfREVMSU1JVEVSX180OTM2Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5cc9d9e36ffb2020db93b94f"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNkMmJkOTg4MGY2NzM0YWNlMjJjZmM3X19DVVJTT1JfREVMSU1JVEVSX180MDg2Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5cd2bd9880f6734ace22cfc7"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE0MWU3ZTY0MGFjNTgwMDBkMzgxODVjX19DVVJTT1JfREVMSU1JVEVSX18zODUyMl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:6141e7e640ac58000d38185c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRlM2I2NTM3OGM0YjQxNGE0NjA3N2Q2X19DVVJTT1JfREVMSU1JVEVSX18yOTYzOF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5de3b65378c4b414a46077d6"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRkNTE4NjIzOTY1OGQxOTY1NThkNTNkX19DVVJTT1JfREVMSU1JVEVSX18yNjQxM19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5dd5186239658d196558d53d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZmMDMwNzJjZDMwZWUwMDBkYWYzODM3X19DVVJTT1JfREVMSU1JVEVSX18yMjA3NV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ff03072cd30ee000daf3837"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVkYWZkODE5OWU5NTUwZGFmYjJlMjA5X19DVVJTT1JfREVMSU1JVEVSX18yMjA1M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5edafd8199e9550dafb2e209"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQzN2U2MTUxMjVkMjZkNWZiYjU3MmE3X19DVVJTT1JfREVMSU1JVEVSX18yMDcwN19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d37e615125d26d5fbb572a7"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYxYzQ2MzA2MmYzOGMwMDFkMGU2NjQ5X19DVVJTT1JfREVMSU1JVEVSX18xOTYxMV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f1c463062f38c001d0e6649"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNlMWVkYTk4MGY2NzM0YWNlZWI1YzU0X19DVVJTT1JfREVMSU1JVEVSX18xNjAyMV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ce1eda980f6734aceeb5c54"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE1MWFjZmM0YTBlMDUwMDE0NDUyYjUzX19DVVJTT1JfREVMSU1JVEVSX18xNDg2NV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:6151acfc4a0e050014452b53"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRmMGE5NWM2YzY1YWQwZGI1MTVkM2Y4X19DVVJTT1JfREVMSU1JVEVSX18xNDcxN19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5df0a95c6c65ad0db515d3f8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNjYTgyNjM2ZmZiMjAyMGRiZTk3M2E3X19DVVJTT1JfREVMSU1JVEVSX18xNDE2Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5cca82636ffb2020dbe973a7"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ4OTY1MmUyY2IxYTEwMWZjNzkwM2NjX19DVVJTT1JfREVMSU1JVEVSX18xMzA5Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d89652e2cb1a101fc7903cc"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjIwYmEyZjVmMDJlN2IwMDE0ZWJhNmQyX19DVVJTT1JfREVMSU1JVEVSX18xMjQ4NF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:620ba2f5f02e7b0014eba6d2"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM3YTNmOWIzNWI1Mjg5M2NlMGZmZjQwX19DVVJTT1JfREVMSU1JVEVSX18xMTI4Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c7a3f9b35b52893ce0fff40"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVkNzZjZDU0YTJjMTEwZDkxMTI0ZjM2X19DVVJTT1JfREVMSU1JVEVSX18xMDYxOV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ed76cd54a2c110d91124f36"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZhMjY2YWRhZDBkYzgwMDBkNDA5ZWQ4X19DVVJTT1JfREVMSU1JVEVSX18xMDUwMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5fa266adad0dc8000d409ed8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBlNTgyZDEyMDJkNGQwMDE0NmJmOTdjX19DVVJTT1JfREVMSU1JVEVSX185NTEyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:60e582d1202d4d00146bf97c"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjBlNTgyZDEyMDJkNGQwMDE0NmJmOTdjX19DVVJTT1JfREVMSU1JVEVSX185NTEyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NjBkZDlhNmJjNTMxMTkwMDE0ZDM2MGM1X19DVVJTT1JfREVMSU1JVEVSX182MTM2Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          },
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed00389\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00389"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed00389": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00389",
+          "title": "사진 · 영상",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0038a"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0038b"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0038b": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0038b",
+          "title": "영상",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00389"
+          },
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00389"
+            }
+          ]
+        },
+        "User:60dd9a3a808f6a001480d6d6": {
+          "__typename": "User",
+          "_id": "60dd9a3a808f6a001480d6d6",
+          "displayName": "마세슾"
+        },
+        "ProductV3:60dd9a6bc531190014d360c5": {
+          "__typename": "ProductV3",
+          "_id": "60dd9a6bc531190014d360c5",
+          "title": "기술보단 감각 배우기, 스마트폰으로 일상을 감성적으로 기록하는 법",
+          "coverImageUrl": "https://cdn.class101.net/images/b7e61312-da33-488b-8ab2-207673574ea0",
+          "klassId": "60dd9a6bc531190014d360c4",
+          "likedCount": 61366,
+          "firestoreId": "QAm5bifGxXMD1jKU6DLv",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60dd9a3a808f6a001480d6d6"
+          }
+        },
+        "User:5cc9d97b6ffb2020db9398a3": {
+          "__typename": "User",
+          "_id": "5cc9d97b6ffb2020db9398a3",
+          "displayName": "슛뚜"
+        },
+        "ProductV3:5cc9d9e36ffb2020db93b94f": {
+          "__typename": "ProductV3",
+          "_id": "5cc9d9e36ffb2020db93b94f",
+          "title": "일상 유튜버 슛뚜의 감성을 그대로. 영화같은 브이로그 제작법",
+          "coverImageUrl": "https://cdn.class101.net/images/9065ec3f-4656-42b0-8b3a-3f20ace7850d",
+          "klassId": "5cc9d9e36ffb2020db93b96d",
+          "likedCount": 49366,
+          "firestoreId": "gPjiSJfMSI6EN6C49vji",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cc9d97b6ffb2020db9398a3"
+          }
+        },
+        "CategoryV2:604f1c9756c3676f1ed0038a": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0038a",
+          "title": "사진",
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00389"
+          },
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00389"
+            }
+          ]
+        },
+        "User:5cd2bd6080f6734ace22ad19": {
+          "__typename": "User",
+          "_id": "5cd2bd6080f6734ace22ad19",
+          "displayName": "MAZECT(마젝)"
+        },
+        "ProductV3:5cd2bd9880f6734ace22cfc7": {
+          "__typename": "ProductV3",
+          "_id": "5cd2bd9880f6734ace22cfc7",
+          "title": "사진 입문자를 위한 쉽게 배우고 빨리 써먹는 사진과 라이트룸",
+          "coverImageUrl": "https://cdn.class101.net/images/3e1377ef-0370-454f-8829-251668e8d7bd",
+          "klassId": "5cd2bd9880f6734ace22d00a",
+          "likedCount": 40866,
+          "firestoreId": "UvOvxfTqwBJ2Tcagydms",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cd2bd6080f6734ace22ad19"
+          }
+        },
+        "User:61404a22add13a000d6a23ee": {
+          "__typename": "User",
+          "_id": "61404a22add13a000d6a23ee",
+          "displayName": "괴짜"
+        },
+        "ProductV3:6141e7e640ac58000d38185c": {
+          "__typename": "ProductV3",
+          "_id": "6141e7e640ac58000d38185c",
+          "title": "스마트폰 카메라 300% 활용법 <기종 상관 없이 DSLR같은 풍경 사진 찍기>",
+          "coverImageUrl": "https://cdn.class101.net/images/480905ca-ebdb-47b8-97ed-09d20b0eb592",
+          "klassId": "6141e7e640ac58000d381857",
+          "likedCount": 38522,
+          "firestoreId": "rmFi3Xc25zjcL9DKdjZl",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61404a22add13a000d6a23ee"
+          }
+        },
+        "User:5d83b006d70cac0c8c484476": {
+          "__typename": "User",
+          "_id": "5d83b006d70cac0c8c484476",
+          "displayName": "경훈"
+        },
+        "ProductV3:5de3b65378c4b414a46077d6": {
+          "__typename": "ProductV3",
+          "_id": "5de3b65378c4b414a46077d6",
+          "title": "스마트폰으로 만들어내는 사진의 모든 것",
+          "coverImageUrl": "https://cdn.class101.net/images/052364fd-f13f-470c-b731-d1ab477edfc4",
+          "klassId": "5de3b65378c4b414a46076c9",
+          "likedCount": 29638,
+          "firestoreId": "xD5JZliYfNJ9PoGXcmPq",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d83b006d70cac0c8c484476"
+          }
+        },
+        "ProductV3:5dd5186239658d196558d53d": {
+          "__typename": "ProductV3",
+          "_id": "5dd5186239658d196558d53d",
+          "title": "핸드폰으로 만드는 영상, 소중한 시간의 기록",
+          "coverImageUrl": "https://cdn.class101.net/images/d610fba0-b7df-4c68-8001-3ad80f80004a",
+          "klassId": "5dd5186239658d196558d53c",
+          "likedCount": 26413,
+          "firestoreId": "O2asKF8nf1ioggNtAAI0",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cc9d97b6ffb2020db9398a3"
+          }
+        },
+        "User:5ff03025497e8a000dc65e06": {
+          "__typename": "User",
+          "_id": "5ff03025497e8a000dc65e06",
+          "displayName": "제이"
+        },
+        "ProductV3:5ff03072cd30ee000daf3837": {
+          "__typename": "ProductV3",
+          "_id": "5ff03072cd30ee000daf3837",
+          "title": "영상편집 ALL-IN-ONE",
+          "coverImageUrl": "https://cdn.class101.net/images/dacf993f-d4e0-445c-8284-bc9820157e0e",
+          "klassId": "5ff03072cd30ee000daf37e1",
+          "likedCount": 22075,
+          "firestoreId": "NrbBnnFXggAakHmMZp8y",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ff03025497e8a000dc65e06"
+          }
+        },
+        "User:5edafd6b724acc42a4e58040": {
+          "__typename": "User",
+          "_id": "5edafd6b724acc42a4e58040",
+          "displayName": "리터치봄"
+        },
+        "ProductV3:5edafd8199e9550dafb2e209": {
+          "__typename": "ProductV3",
+          "_id": "5edafd8199e9550dafb2e209",
+          "title": " 누구나 배우면 가능한 완벽한 인물 보정, 취미부터 수익까지 내보세요",
+          "coverImageUrl": "https://cdn.class101.net/images/eb68ee13-832e-4649-bf28-13c11d05a977",
+          "klassId": "5edafd8199e9550dafb2e208",
+          "likedCount": 22053,
+          "firestoreId": "heQl6vZQkkWeSkrDhsuf",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5edafd6b724acc42a4e58040"
+          }
+        },
+        "User:5d37e54e057c491d7047c553": {
+          "__typename": "User",
+          "_id": "5d37e54e057c491d7047c553",
+          "displayName": "류채우(류필)"
+        },
+        "ProductV3:5d37e615125d26d5fbb572a7": {
+          "__typename": "ProductV3",
+          "_id": "5d37e615125d26d5fbb572a7",
+          "title": "일상을 동화처럼 표현하는 사진, 오직 아이폰으로만",
+          "coverImageUrl": "https://cdn.class101.net/images/c3a14aa9-6fda-4da2-9b71-0917af848543",
+          "klassId": "5d37e615125d26d5fbb56db3",
+          "likedCount": 20707,
+          "firestoreId": "ZVx6m5fSPWQyOKEcGCpy",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d37e54e057c491d7047c553"
+          }
+        },
+        "User:5d48a78b8d309829ffcf5a49": {
+          "__typename": "User",
+          "_id": "5d48a78b8d309829ffcf5a49",
+          "displayName": "디어무이"
+        },
+        "ProductV3:5f1c463062f38c001d0e6649": {
+          "__typename": "ProductV3",
+          "_id": "5f1c463062f38c001d0e6649",
+          "title": "감성 스타일리스트가 알려주는 영상 촬영, 연출, 그리고 편집",
+          "coverImageUrl": "https://cdn.class101.net/images/8f35d3d9-1dcd-4b10-90b3-d15c78a7a33b",
+          "klassId": "5f1c463062f38c001d0e656d",
+          "likedCount": 19611,
+          "firestoreId": "KSsPGW9m9IxJ0kk231zp",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d48a78b8d309829ffcf5a49"
+          }
+        },
+        "User:5c5d632274eabcfdafcb8fa6": {
+          "__typename": "User",
+          "_id": "5c5d632274eabcfdafcb8fa6",
+          "displayName": "An Daihoon"
+        },
+        "ProductV3:5ce1eda980f6734aceeb5c54": {
+          "__typename": "ProductV3",
+          "_id": "5ce1eda980f6734aceeb5c54",
+          "title": "한 편의 뮤직비디오 같은 안대훈의 여행 영상 제작법",
+          "coverImageUrl": "https://cdn.class101.net/images/fc30f587-561a-475a-a4e2-7582e36172cb/2048xauto.webp",
+          "klassId": "5ce1eda880f6734aceeb5c3f",
+          "likedCount": 16021,
+          "firestoreId": "g9VgKuoVdv2cOpQ65ffY",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d632274eabcfdafcb8fa6"
+          }
+        },
+        "User:6151a9410ba217000ebf3d86": {
+          "__typename": "User",
+          "_id": "6151a9410ba217000ebf3d86",
+          "displayName": "한진혁"
+        },
+        "ProductV3:6151acfc4a0e050014452b53": {
+          "__typename": "ProductV3",
+          "_id": "6151acfc4a0e050014452b53",
+          "title": "색감 보정 끝판왕! 자신만의 일상을 영화의 한순간처럼 남겨보기",
+          "coverImageUrl": "https://cdn.class101.net/images/df5dc5ce-23e3-4f40-af05-164d7d804358",
+          "klassId": "6151acfc4a0e050014452b4e",
+          "likedCount": 14865,
+          "firestoreId": "MDmXm0jmYKISHooVeZpr",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6151a9410ba217000ebf3d86"
+          }
+        },
+        "User:5da6b0185c87bd0dad487192": {
+          "__typename": "User",
+          "_id": "5da6b0185c87bd0dad487192",
+          "displayName": "정멜멜"
+        },
+        "ProductV3:5df0a95c6c65ad0db515d3f8": {
+          "__typename": "ProductV3",
+          "_id": "5df0a95c6c65ad0db515d3f8",
+          "title": "사진가 정멜멜의 가까워지고 멀어지며 나의 세계 편집하기 ",
+          "coverImageUrl": "https://cdn.class101.net/images/357ea332-8826-4e29-b761-6119ddaa492f",
+          "klassId": "5df0a95b6c65ad0db515d3f7",
+          "likedCount": 14717,
+          "firestoreId": "0qfjBwNLop9bhoAQqfkg",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5da6b0185c87bd0dad487192"
+          }
+        },
+        "User:5cca82426ffb2020dbe96171": {
+          "__typename": "User",
+          "_id": "5cca82426ffb2020dbe96171",
+          "displayName": "이모씨"
+        },
+        "ProductV3:5cca82636ffb2020dbe973a7": {
+          "__typename": "ProductV3",
+          "_id": "5cca82636ffb2020dbe973a7",
+          "title": "순간을 더 아름답게, 진한 감성을 담는 사진&라이트룸 보정법",
+          "coverImageUrl": "https://cdn.class101.net/images/80403380-76be-49a0-a1b8-da248890f26b",
+          "klassId": "5cca82646ffb2020dbe97414",
+          "likedCount": 14162,
+          "firestoreId": "mymV170llgVBrYDub1ak",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cca82426ffb2020dbe96171"
+          }
+        },
+        "User:5d7855534ec0f9eda344c195": {
+          "__typename": "User",
+          "_id": "5d7855534ec0f9eda344c195",
+          "displayName": "이퀄리"
+        },
+        "ProductV3:5d89652e2cb1a101fc7903cc": {
+          "__typename": "ProductV3",
+          "_id": "5d89652e2cb1a101fc7903cc",
+          "title": "여행을 영화처럼 기록하는 이퀄리의 영상 제작법",
+          "coverImageUrl": "https://cdn.class101.net/images/442c9eda-2198-4fb3-97dc-8445e735ccf0",
+          "klassId": "5d89652c391efe0ca35d5a3a",
+          "likedCount": 13092,
+          "firestoreId": "1bdaTqNQzKtTM0XbV8h3",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d7855534ec0f9eda344c195"
+          }
+        },
+        "User:5ee6dbf8f0d77b6366643d79": {
+          "__typename": "User",
+          "_id": "5ee6dbf8f0d77b6366643d79",
+          "displayName": "민썸 minsome"
+        },
+        "ProductV3:620ba2f5f02e7b0014eba6d2": {
+          "__typename": "ProductV3",
+          "_id": "620ba2f5f02e7b0014eba6d2",
+          "title": "21만명을 사로잡은 감성 보정법, 스마트폰으로 ‘팔로우’를 부르는 색감 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/054fed1b-1fce-4c85-9613-880a22da5594",
+          "klassId": "620ba2f5f02e7b0014eba6cf",
+          "likedCount": 12484,
+          "firestoreId": "5b9UV8LcQnnhkmZwXf6L",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ee6dbf8f0d77b6366643d79"
+          }
+        },
+        "User:5c7a3d1835b52893ce0deaff": {
+          "__typename": "User",
+          "_id": "5c7a3d1835b52893ce0deaff",
+          "displayName": "23iii"
+        },
+        "ProductV3:5c7a3f9b35b52893ce0fff40": {
+          "__typename": "ProductV3",
+          "_id": "5c7a3f9b35b52893ce0fff40",
+          "title": "아날로그 감성, 영화 퀄리티로 완성하는 브이로그와 뮤비 제작",
+          "coverImageUrl": "https://cdn.class101.net/images/66ae3c14-3a35-48a8-9869-2f69a694afec",
+          "klassId": "5c9cb91bf1cd36a21cd70aae",
+          "likedCount": 11286,
+          "firestoreId": "VCgFENneJ7RgkELnBnlv",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c7a3d1835b52893ce0deaff"
+          }
+        },
+        "User:5e95ae393bf0b7767301af3a": {
+          "__typename": "User",
+          "_id": "5e95ae393bf0b7767301af3a",
+          "displayName": "kyung6film"
+        },
+        "ProductV3:5ed76cd54a2c110d91124f36": {
+          "__typename": "ProductV3",
+          "_id": "5ed76cd54a2c110d91124f36",
+          "title": "금손남친 경식스가 알려주는 스마트폰 하나로 영상 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/a30c24b0-f7ff-4d3c-8b6e-811bc4f8a50a/2048xauto.webp",
+          "klassId": "5ed76cd54a2c110d91124f35",
+          "likedCount": 10619,
+          "firestoreId": "ZRiazWXyvpkNodI7CuZg",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038b"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e95ae393bf0b7767301af3a"
+          }
+        },
+        "User:5f5dc68f1a3d9500dc687c0b": {
+          "__typename": "User",
+          "_id": "5f5dc68f1a3d9500dc687c0b",
+          "displayName": "라이트볼드 스튜디오"
+        },
+        "ProductV3:5fa266adad0dc8000d409ed8": {
+          "__typename": "ProductV3",
+          "_id": "5fa266adad0dc8000d409ed8",
+          "title": "쇼핑몰과 SNS를 위한 제품 촬영 : 연출부터 상세페이지까지",
+          "coverImageUrl": "https://cdn.class101.net/images/86081b31-898c-4408-a8d6-9d077cf523cf",
+          "klassId": "5fa266adad0dc8000d409ed7",
+          "likedCount": 10500,
+          "firestoreId": "DZpP1fzSjtL57kY1dQl0",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f5dc68f1a3d9500dc687c0b"
+          }
+        },
+        "User:60daf431fb58fe000dd72ed0": {
+          "__typename": "User",
+          "_id": "60daf431fb58fe000dd72ed0",
+          "displayName": "nmnu(최은영)"
+        },
+        "ProductV3:60e582d1202d4d00146bf97c": {
+          "__typename": "ProductV3",
+          "_id": "60e582d1202d4d00146bf97c",
+          "title": "스마트폰 하나로 감성 가득한 나만의 브랜드 만들기!",
+          "coverImageUrl": "https://cdn.class101.net/images/4b14b976-ab02-4bcc-93a7-f6e73012dc4f",
+          "klassId": "60e582d1202d4d00146bf97b",
+          "likedCount": 9512,
+          "firestoreId": "wcuNPintI1G2HA9z2uI9",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0038a"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60daf431fb58fe000dd72ed0"
+          }
+        },
+        "CategoryV2:605c3db737b977e02654405e": {
+          "__typename": "CategoryV2",
+          "id": "605c3db737b977e02654405e",
+          "title": "크리에이티브",
+          "depth": 0
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed00389"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

@@ -1,0 +1,693 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "62206086d39299379ee5b83d"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"62206086d39299379ee5b83d\"})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83d"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"62206086d39299379ee5b83d\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZlOTc2Yzk3YmMwYTAwMDBkMDc0NThhX19DVVJTT1JfREVMSU1JVEVSX18yNjkxNl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5fe976c97bc0a0000d07458a"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjBmOGZiM2JjMzI5ZDMwMDBkODQyMmM2X19DVVJTT1JfREVMSU1JVEVSX18yMzE2NF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:60f8fb3bc329d3000d8422c6"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ4OTdjMTkyY2IxYTEwMWZjNDE3ZDc5X19DVVJTT1JfREVMSU1JVEVSX18xNjYwNV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d897c192cb1a101fc417d79"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUzYmNhYTlmMTRjMjM3YzcxYTE4NmVjX19DVVJTT1JfREVMSU1JVEVSX18xNDEzMV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e3bcaa9f14c237c71a186ec"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA2ZTJjZTk5NWY1ODAwMDBlMmRhNDM5X19DVVJTT1JfREVMSU1JVEVSX18xMjE2MV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:606e2ce995f580000e2da439"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUzM2YzYjQwMWQ0Y2QwZThiOTBmZWUwX19DVVJTT1JfREVMSU1JVEVSX18xMTk3M19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e33f3b401d4cd0e8b90fee0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZhMTRjODMxZTgxNDAwMDBkODhjYzg5X19DVVJTT1JfREVMSU1JVEVSX18xMTU3N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5fa14c831e8140000d88cc89"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA2MTgwYTBjYjE4ZTUwMDBlNTZlOTkwX19DVVJTT1JfREVMSU1JVEVSX18xMTUxMl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:606180a0cb18e5000e56e990"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDY3NGVhYmNmZGFmZDM4ZjgwX19DVVJTT1JfREVMSU1JVEVSX18xMDk3NF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780674eabcfdafd38f80"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWVlMzhhNTczZWQ1NzgwZGJlNWFmNDZkX19DVVJTT1JfREVMSU1JVEVSX18xMDgxMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ee38a573ed5780dbe5af46d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY0MzYzYTFiMDMxMDUwMDE0NzlmYWE1X19DVVJTT1JfREVMSU1JVEVSX18xMDEzMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f4363a1b03105001479faa5"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY5NTY3MTExODhjZjIwMDFhNjI5OWNkX19DVVJTT1JfREVMSU1JVEVSX185OTY3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f956711188cf2001a6299cd"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ5MGEwODg1ODVmODk3OTlhMGYyNzAwX19DVVJTT1JfREVMSU1JVEVSX185NjcxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5d90a088585f89799a0f2700"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYyNDI0NTFkODJmMmEwMDBjN2M0ZGUxX19DVVJTT1JfREVMSU1JVEVSX185MzA1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f242451d82f2a000c7c4de1"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE0Mjc0Zjc4OGIzNGEwMDE0ZmJhMGY4X19DVVJTT1JfREVMSU1JVEVSX184NTk1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:614274f788b34a0014fba0f8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQyZGJkYTkxMjVkMjZkNWZiZDA2Y2I5X19DVVJTT1JfREVMSU1JVEVSX184NTgwX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5d2dbda9125d26d5fbd06cb9"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDc3NGVhYmNmZGFmZDM5MTNhX19DVVJTT1JfREVMSU1JVEVSX184NDk1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5c5d780774eabcfdafd3913a"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY1ODU0MzNmNzA5NDQwMDBjZGE2ZDE1X19DVVJTT1JfREVMSU1JVEVSX183Nzg1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f585433f70944000cda6d15"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUxZDlkZTUzYzNkYWUwZGIzZjc4NDMwX19DVVJTT1JfREVMSU1JVEVSX183NzA3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5e1d9de53c3dae0db3f78430"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRmZjhkODFhZGY1OGIyMzJiOWRmNzkxX19DVVJTT1JfREVMSU1JVEVSX183MzM1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5dff8d81adf58b232b9df791"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NWRmZjhkODFhZGY1OGIyMzJiOWRmNzkxX19DVVJTT1JfREVMSU1JVEVSX183MzM1X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NWZlOTc2Yzk3YmMwYTAwMDBkMDc0NThhX19DVVJTT1JfREVMSU1JVEVSX18yNjkxNl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:6220606c1cb1cf4841dbdf8e": {
+          "__typename": "CategoryV2",
+          "id": "6220606c1cb1cf4841dbdf8e",
+          "title": "직무",
+          "depth": 0
+        },
+        "CategoryV2:6220895c9dede0214b0783d1": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783d1",
+          "title": "업무생산성 · 자동화",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83d"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83d"
+            }
+          ]
+        },
+        "CategoryV2:6220895c9dede0214b0783d2": {
+          "__typename": "CategoryV2",
+          "id": "6220895c9dede0214b0783d2",
+          "title": "커뮤니케이션 · 글쓰기",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:62206086d39299379ee5b83d"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            },
+            {
+              "__ref": "CategoryV2:62206086d39299379ee5b83d"
+            }
+          ]
+        },
+        "CategoryV2:62206086d39299379ee5b83d": {
+          "__typename": "CategoryV2",
+          "id": "62206086d39299379ee5b83d",
+          "title": "생산성",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:6220606c1cb1cf4841dbdf8e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783d1"
+            },
+            {
+              "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+            }
+          ]
+        },
+        "User:5e854ac8d597510f4b0af4aa": {
+          "__typename": "User",
+          "_id": "5e854ac8d597510f4b0af4aa",
+          "displayName": "GMC"
+        },
+        "ProductV3:5fe976c97bc0a0000d07458a": {
+          "__typename": "ProductV3",
+          "_id": "5fe976c97bc0a0000d07458a",
+          "title": "팔릴 수 밖에 없는 글쓰기, 내 가치를 열 배 이상으로 불리는 방법",
+          "coverImageUrl": "https://cdn.class101.net/images/6e8bb69b-c60e-4f2b-9dd3-1d6e786662e8",
+          "klassId": "5fe976c87bc0a0000d074421",
+          "likedCount": 26916,
+          "firestoreId": "OjfEAu1JAF2d0QObi7Ys",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e854ac8d597510f4b0af4aa"
+          }
+        },
+        "User:60f6b1b3c75f6400156fa33b": {
+          "__typename": "User",
+          "_id": "60f6b1b3c75f6400156fa33b",
+          "displayName": "Peter Kim"
+        },
+        "ProductV3:60f8fb3bc329d3000d8422c6": {
+          "__typename": "ProductV3",
+          "_id": "60f8fb3bc329d3000d8422c6",
+          "title": "노션으로 구축하는 삶의 시스템, 어제의 나보다 더 나은 나 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/76a2d8a1-9ecc-4d14-91fc-bb7e1f3e08d7",
+          "klassId": "60f8fb3bc329d3000d8422c5",
+          "likedCount": 23164,
+          "firestoreId": "w49Vcr0LLiqtOgrdSWRy",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:60f6b1b3c75f6400156fa33b"
+          }
+        },
+        "User:5d897bbe391efe0ca36490f9": {
+          "__typename": "User",
+          "_id": "5d897bbe391efe0ca36490f9",
+          "displayName": "짤막한 강좌"
+        },
+        "ProductV3:5d897c192cb1a101fc417d79": {
+          "__typename": "ProductV3",
+          "_id": "5d897c192cb1a101fc417d79",
+          "title": "실무자를 위한 바로 써먹는 쉽고 빠른 엑셀",
+          "coverImageUrl": "https://cdn.class101.net/images/a556e780-8158-44d0-a5f1-374603fce266",
+          "klassId": "5d897c1348dbe90c9b7bdd10",
+          "likedCount": 16605,
+          "firestoreId": "RO7THQA5Y4eF4iHmdvPd",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d897bbe391efe0ca36490f9"
+          }
+        },
+        "User:5e26a55f59bcb731503a13ab": {
+          "__typename": "User",
+          "_id": "5e26a55f59bcb731503a13ab",
+          "displayName": "리지"
+        },
+        "ProductV3:5e3bcaa9f14c237c71a186ec": {
+          "__typename": "ProductV3",
+          "_id": "5e3bcaa9f14c237c71a186ec",
+          "title": "프로 일잘러를 위한 슬기로운 아이패드 활용법",
+          "coverImageUrl": "https://cdn.class101.net/images/084f4f05-c2f3-48f8-9e3c-7f783b62a4ab",
+          "klassId": "5e3bcaa9f14c237c71a186eb",
+          "likedCount": 14131,
+          "firestoreId": "xfAhZZ943BNafDbEOIHE",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e26a55f59bcb731503a13ab"
+          }
+        },
+        "User:5f859085404111000d08dcc7": {
+          "__typename": "User",
+          "_id": "5f859085404111000d08dcc7",
+          "displayName": "작가 감성필"
+        },
+        "ProductV3:606e2ce995f580000e2da439": {
+          "__typename": "ProductV3",
+          "_id": "606e2ce995f580000e2da439",
+          "title": "🧠 대중의 뇌를 사로잡는 스토리창작의 비밀(웹툰,웹소설,TV드라마,영화,게임시나리오)",
+          "coverImageUrl": "https://cdn.class101.net/images/598e6694-b792-422b-872c-10ceaf478ccf",
+          "klassId": "606e2ce995f580000e2da438",
+          "likedCount": 12161,
+          "firestoreId": "kiQKBQkDH2pOCFJugsoa",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f859085404111000d08dcc7"
+          }
+        },
+        "User:5e33f365ee16853cf896107e": {
+          "__typename": "User",
+          "_id": "5e33f365ee16853cf896107e",
+          "displayName": "작가 이윤영(글쓰는한량)"
+        },
+        "ProductV3:5e33f3b401d4cd0e8b90fee0": {
+          "__typename": "ProductV3",
+          "_id": "5e33f3b401d4cd0e8b90fee0",
+          "title": "20년차 방송작가의 '글 쓰는 게 만만해지는 하루 10분 메모 글쓰기'",
+          "coverImageUrl": "https://cdn.class101.net/images/94e4eda4-d504-4951-8f27-227db8e2b178",
+          "klassId": "5e33f3b401d4cd0e8b90fedf",
+          "likedCount": 11973,
+          "firestoreId": "bcmkBxBBWG7dqfBZ9iUt",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e33f365ee16853cf896107e"
+          }
+        },
+        "User:5e0f0b88afb39c21eb9c9878": {
+          "__typename": "User",
+          "_id": "5e0f0b88afb39c21eb9c9878",
+          "displayName": "엑셀능력자"
+        },
+        "ProductV3:5fa14c831e8140000d88cc89": {
+          "__typename": "ProductV3",
+          "_id": "5fa14c831e8140000d88cc89",
+          "title": "[업무 능률 2배] 기초부터 고급까지 엑셀 실전 강의",
+          "coverImageUrl": "https://cdn.class101.net/images/a3cc4abc-82c0-43e7-bfbd-0f488b6abffb",
+          "klassId": "5fa14c811e8140000d88cb64",
+          "likedCount": 11577,
+          "firestoreId": "27XjxD8ButCvfZ1YuV1k",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e0f0b88afb39c21eb9c9878"
+          }
+        },
+        "User:6061809114f3fe0014af6d1a": {
+          "__typename": "User",
+          "_id": "6061809114f3fe0014af6d1a",
+          "displayName": "성우 이용신"
+        },
+        "ProductV3:606180a0cb18e5000e56e990": {
+          "__typename": "ProductV3",
+          "_id": "606180a0cb18e5000e56e990",
+          "title": "성우 이용신의 인생을 바꿀 [목소리 연기]의 모든 것",
+          "coverImageUrl": "https://cdn.class101.net/images/17472218-454e-42a9-99ce-ea9b68d77a91",
+          "klassId": "606180a0cb18e5000e56e98f",
+          "likedCount": 11512,
+          "firestoreId": "XNts9YT4Vcy6HWyvXpZ4",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6061809114f3fe0014af6d1a"
+          }
+        },
+        "User:5c5d61e774eabcfdafcac37b": {
+          "__typename": "User",
+          "_id": "5c5d61e774eabcfdafcac37b",
+          "displayName": "ㅔㅔㅅ"
+        },
+        "ProductV3:5c5d780674eabcfdafd38f80": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780674eabcfdafd38f80",
+          "title": "ㅔㅔㅅ의 파워포인트 연구소에서 함께 PPT에 입덕해요!",
+          "coverImageUrl": "https://cdn.class101.net/images/4340db2e-3542-42d5-b368-21331b1c78dd",
+          "klassId": "5c78f2b435b52893ce86550f",
+          "likedCount": 10974,
+          "firestoreId": "BlnwTeEnkx9NmBamnvWe",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d61e774eabcfdafcac37b"
+          }
+        },
+        "User:5ed86ad3724acc42a492a563": {
+          "__typename": "User",
+          "_id": "5ed86ad3724acc42a492a563",
+          "displayName": "감통코치"
+        },
+        "ProductV3:5ee38a573ed5780dbe5af46d": {
+          "__typename": "ProductV3",
+          "_id": "5ee38a573ed5780dbe5af46d",
+          "title": "하루 10분 보이스 코칭! 전직 기상캐스터의 목소리 교정 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/6d1242f6-56df-43b3-b885-1dddc08090d3",
+          "klassId": "5ee38a573ed5780dbe5af46c",
+          "likedCount": 10810,
+          "firestoreId": "pucWCh3gdO6ADMgYpNNY",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ed86ad3724acc42a492a563"
+          }
+        },
+        "User:5cac96bccb2728ebe9edc95a": {
+          "__typename": "User",
+          "_id": "5cac96bccb2728ebe9edc95a",
+          "displayName": "김로웰"
+        },
+        "ProductV3:5f4363a1b03105001479faa5": {
+          "__typename": "ProductV3",
+          "_id": "5f4363a1b03105001479faa5",
+          "title": "PPT 디자인 부업으로 월 300만 원 벌기",
+          "coverImageUrl": "https://cdn.class101.net/images/d804ed24-2770-402d-adc7-e6489dafb419",
+          "klassId": "5f4363a1b03105001479faa4",
+          "likedCount": 10130,
+          "firestoreId": "BEs4zGb3nC7GoNhvFlYd",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cac96bccb2728ebe9edc95a"
+          }
+        },
+        "User:5f9566f7b591ff001319631e": {
+          "__typename": "User",
+          "_id": "5f9566f7b591ff001319631e",
+          "displayName": "나은"
+        },
+        "ProductV3:5f956711188cf2001a6299cd": {
+          "__typename": "ProductV3",
+          "_id": "5f956711188cf2001a6299cd",
+          "title": "요즘 작가가 알려 주는 요즘 대본, 공모전 시나리오 완성하기",
+          "coverImageUrl": "https://cdn.class101.net/images/77b7ce16-d3ae-4cb3-b4f3-8cf3c1f48fce",
+          "klassId": "5fabe974fc5edf000d1c94c3",
+          "likedCount": 9967,
+          "firestoreId": "DPoZd4DROSlUcNxYSVlx",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f9566f7b591ff001319631e"
+          }
+        },
+        "User:5cfe221af48520f37c2d4bef": {
+          "__typename": "User",
+          "_id": "5cfe221af48520f37c2d4bef",
+          "displayName": "김도현"
+        },
+        "ProductV3:5d90a088585f89799a0f2700": {
+          "__typename": "ProductV3",
+          "_id": "5d90a088585f89799a0f2700",
+          "title": "8년차 에디터에게 배우는 '잘 팔리는' 콘텐츠 제작법",
+          "coverImageUrl": "https://cdn.class101.net/images/37a75a6a-9bef-45f4-9447-5078c92df4e0",
+          "klassId": "5d90a086f19a690cf3dbfd85",
+          "likedCount": 9671,
+          "firestoreId": "o1WpOzKm5AbRRMUOnRUd",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cfe221af48520f37c2d4bef"
+          }
+        },
+        "User:5f23f23da1b9a02eb56e2245": {
+          "__typename": "User",
+          "_id": "5f23f23da1b9a02eb56e2245",
+          "displayName": "피피티프로"
+        },
+        "ProductV3:5f242451d82f2a000c7c4de1": {
+          "__typename": "ProductV3",
+          "_id": "5f242451d82f2a000c7c4de1",
+          "title": "16만유튜버 피피티프로젝트! 평생, 단 하나의 PPT 강의",
+          "coverImageUrl": "https://cdn.class101.net/images/5be55dff-3730-4c31-9460-ef6e154d7cc4",
+          "klassId": "5f242450d82f2a000c7c4de0",
+          "likedCount": 9305,
+          "firestoreId": "bkI6wZjAHcxoWC4aOy0M",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d1"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f23f23da1b9a02eb56e2245"
+          }
+        },
+        "User:6142746b0e75fc0014df262a": {
+          "__typename": "User",
+          "_id": "6142746b0e75fc0014df262a",
+          "displayName": "천지혜"
+        },
+        "ProductV3:614274f788b34a0014fba0f8": {
+          "__typename": "ProductV3",
+          "_id": "614274f788b34a0014fba0f8",
+          "title": "<금혼령, 조선혼인금지령> 작가에게 배우는 절대 막히지 않는 웹소설 & 플롯 설계",
+          "coverImageUrl": "https://cdn.class101.net/images/48de88dc-a9df-46ec-91c1-c8557ee96dd4",
+          "klassId": "614274f788b34a0014fba0f3",
+          "likedCount": 8595,
+          "firestoreId": "jHN2gG8ubRySvniNbl68",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6142746b0e75fc0014df262a"
+          }
+        },
+        "User:5d090a196a3bd10956046f39": {
+          "__typename": "User",
+          "_id": "5d090a196a3bd10956046f39",
+          "displayName": "iandos"
+        },
+        "ProductV3:5d2dbda9125d26d5fbd06cb9": {
+          "__typename": "ProductV3",
+          "_id": "5d2dbda9125d26d5fbd06cb9",
+          "title": "꾸준한 글쓰기를 도와드립니다 : 지속하는 글쓰기가 책 출간까지 ",
+          "coverImageUrl": "https://cdn.class101.net/images/98ee156f-c1ac-4b91-afe0-b9cda5349ba1",
+          "klassId": "5d2dbda9125d26d5fbd06e7e",
+          "likedCount": 8580,
+          "firestoreId": "SE9SHBs5Wr89SMRmQD0V",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d090a196a3bd10956046f39"
+          }
+        },
+        "User:5c5d628a74eabcfdafcb342d": {
+          "__typename": "User",
+          "_id": "5c5d628a74eabcfdafcb342d",
+          "displayName": "수수진(프로젝트158)"
+        },
+        "ProductV3:5c5d780774eabcfdafd3913a": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780774eabcfdafd3913a",
+          "title": "수수진과 함께 애플 기본프로그램으로 도전하는 독립출판",
+          "coverImageUrl": "https://cdn.class101.net/images/cfefb1ae-2734-4754-9180-6ff37a9fb3eb",
+          "klassId": "5c9044d1edb2d5b5af0e4749",
+          "likedCount": 8495,
+          "firestoreId": "LxSD3pdSvmGoSu3Vk1oi",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d628a74eabcfdafcb342d"
+          }
+        },
+        "User:5f352b8a8405c8000c2bdfd5": {
+          "__typename": "User",
+          "_id": "5f352b8a8405c8000c2bdfd5",
+          "displayName": "북마녀"
+        },
+        "ProductV3:5f585433f70944000cda6d15": {
+          "__typename": "ProductV3",
+          "_id": "5f585433f70944000cda6d15",
+          "title": "잘 팔리는 여성향 웹소설 쓰기! 작가 실전 트레이닝",
+          "coverImageUrl": "https://cdn.class101.net/images/f8c52144-2073-4b39-a8a0-b3efd5b6588c",
+          "klassId": "5f585433f70944000cda6d14",
+          "likedCount": 7785,
+          "firestoreId": "w4aPU5t9U4eaCr0vrL5l",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f352b8a8405c8000c2bdfd5"
+          }
+        },
+        "User:5e1d9ce955bdae6df25cc1bf": {
+          "__typename": "User",
+          "_id": "5e1d9ce955bdae6df25cc1bf",
+          "displayName": "김마라"
+        },
+        "ProductV3:5e1d9de53c3dae0db3f78430": {
+          "__typename": "ProductV3",
+          "_id": "5e1d9de53c3dae0db3f78430",
+          "title": "실무에 바로 쓰는 일잘러의 보고서 작성법",
+          "coverImageUrl": "https://cdn.class101.net/images/34f624b8-bc72-4e50-99b0-01ecc401408a",
+          "klassId": "5e1d9de43c3dae0db3f7842f",
+          "likedCount": 7707,
+          "firestoreId": "LrY28Z9enaqKCnkBdKQz",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e1d9ce955bdae6df25cc1bf"
+          }
+        },
+        "User:5de53a1a2033ad2e0993835a": {
+          "__typename": "User",
+          "_id": "5de53a1a2033ad2e0993835a",
+          "displayName": "하미나 작가"
+        },
+        "ProductV3:5dff8d81adf58b232b9df791": {
+          "__typename": "ProductV3",
+          "_id": "5dff8d81adf58b232b9df791",
+          "title": "매력적인 글이란 무엇일까? 독자를 설득하는 글쓰기",
+          "coverImageUrl": "https://cdn.class101.net/images/d02fa56b-e4ef-435f-b90a-06d1d8750f31",
+          "klassId": "5dff8d80adf58b232b9df790",
+          "likedCount": 7335,
+          "firestoreId": "sCfQBQNixh5mdjueWbwI",
+          "category": {
+            "__ref": "CategoryV2:6220895c9dede0214b0783d2"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5de53a1a2033ad2e0993835a"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "62206086d39299379ee5b83d"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

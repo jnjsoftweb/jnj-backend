@@ -1,0 +1,847 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed00304"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed00304\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed00304\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDY3NGVhYmNmZGFmZDM4ZTg0X19DVVJTT1JfREVMSU1JVEVSX18zNzc4Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780674eabcfdafd38e84"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU0NTEwNzI3NzgzMTAwNmI4NzA2ZWU4X19DVVJTT1JfREVMSU1JVEVSX18yOTg1NF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e45107277831006b8706ee8"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDg3NGVhYmNmZGFmZDM5MzRlX19DVVJTT1JfREVMSU1JVEVSX18yODkxMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780874eabcfdafd3934e"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFlNjIyODQ5NTdkYWQwMDE0YmNiZGU5X19DVVJTT1JfREVMSU1JVEVSX18yNDUzMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:61e62284957dad0014bcbde9"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDY3NGVhYmNmZGFmZDM4ZWVkX19DVVJTT1JfREVMSU1JVEVSX18yMTk5N19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780674eabcfdafd38eed"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQwYjRjMWM2YTNiZDEwOTU2NWM1ZDQ2X19DVVJTT1JfREVMSU1JVEVSX18xNzYzN19fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d0b4c1c6a3bd109565c5d46"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNiZGFiODJjYjI3MjhlYmU5ZDU0NmExX19DVVJTT1JfREVMSU1JVEVSX18xNzUyOV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5cbdab82cb2728ebe9d546a1"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MGE3NGVhYmNmZGFmZDM5OTY1X19DVVJTT1JfREVMSU1JVEVSX18xNzMzNl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780a74eabcfdafd39965"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MGE3NGVhYmNmZGFmZDM5YTQ0X19DVVJTT1JfREVMSU1JVEVSX18xNjc1Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780a74eabcfdafd39a44"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM4NzU0YWUzNWI1Mjg5M2NlMTcxZjBhX19DVVJTT1JfREVMSU1JVEVSX18xNDAyNl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c8754ae35b52893ce171f0a"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY2ODcwYTZhNjhjMTIwMDA3M2UyNDA2X19DVVJTT1JfREVMSU1JVEVSX18xMzQxNV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f6870a6a68c1200073e2406"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDg3NGVhYmNmZGFmZDM5NDNkX19DVVJTT1JfREVMSU1JVEVSX18xMzI0OV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780874eabcfdafd3943d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDk3NGVhYmNmZGFmZDM5NWI1X19DVVJTT1JfREVMSU1JVEVSX18xMjg4MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780974eabcfdafd395b5"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDg3NGVhYmNmZGFmZDM5MzkzX19DVVJTT1JfREVMSU1JVEVSX18xMjMxMl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780874eabcfdafd39393"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWM1ZDc4MDk3NGVhYmNmZGFmZDM5NzU3X19DVVJTT1JfREVMSU1JVEVSX18xMjA5OF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5c5d780974eabcfdafd39757"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQzZWEyYTUxY2NiZTJkZTE2ODM0ZGEwX19DVVJTT1JfREVMSU1JVEVSX18xMTc3MV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d3ea2a51ccbe2de16834da0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNiODE2YzRjYjI3MjhlYmU5ZTM5MGFkX19DVVJTT1JfREVMSU1JVEVSX18xMDcyNl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5cb816c4cb2728ebe9e390ad"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWU3YjIxM2NmODJhYTAyYzllNDM4NWFhX19DVVJTT1JfREVMSU1JVEVSX18xMDYyMF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e7b213cf82aa02c9e4385aa"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjIxNGE0NTVlY2MxOWEwMDE0MjYwYTk3X19DVVJTT1JfREVMSU1JVEVSX185NjYxX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6214a455ecc19a0014260a97"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWNiYzc5ZDJjYjI3MjhlYmU5M2IyMmI2X19DVVJTT1JfREVMSU1JVEVSX185NjAzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5cbc79d2cb2728ebe93b22b6"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NWNiYzc5ZDJjYjI3MjhlYmU5M2IyMmI2X19DVVJTT1JfREVMSU1JVEVSX185NjAzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NWM1ZDc4MDY3NGVhYmNmZGFmZDM4ZTg0X19DVVJTT1JfREVMSU1JVEVSX18zNzc4Nl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:605c3db737b977e02654405e": {
+          "__typename": "CategoryV2",
+          "id": "605c3db737b977e02654405e",
+          "title": "크리에이티브",
+          "depth": 0
+        },
+        "CategoryV2:604f1c9756c3676f1ed00305": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00305",
+          "title": "펜 · 연필",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00306": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00306",
+          "title": "마카",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00307": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00307",
+          "title": "색연필",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00308": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00308",
+          "title": "수채화",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00309": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00309",
+          "title": "오일파스텔",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0030a": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0030a",
+          "title": "과슈 · 아크릴화",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0030b": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0030b",
+          "title": "유화",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0030c": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0030c",
+          "title": "동양화",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00312": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00312",
+          "title": "캘리그라피",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0030d": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0030d",
+          "title": "더 새로운 드로잉",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00304"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00304": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00304",
+          "title": "드로잉",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00305"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00306"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00307"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00308"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00309"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0030a"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0030b"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0030c"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00312"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0030d"
+            }
+          ]
+        },
+        "User:5c5d621274eabcfdafcae222": {
+          "__typename": "User",
+          "_id": "5c5d621274eabcfdafcae222",
+          "displayName": "리니"
+        },
+        "ProductV3:5c5d780674eabcfdafd38e84": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780674eabcfdafd38e84",
+          "title": "어색한 그림은 이제 안녕! 드로잉 기초부터 시작하는 리니의 펜드로잉",
+          "coverImageUrl": "https://cdn.class101.net/images/293fda1f-431c-4b7e-8172-be64352b3c1d",
+          "klassId": "5c514d80d30c532c44694694",
+          "likedCount": 37786,
+          "firestoreId": "6PhjgFl7CldOCg7yv6mX",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00305"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d621274eabcfdafcae222"
+          }
+        },
+        "User:5e45104efb410c7575590fd6": {
+          "__typename": "User",
+          "_id": "5e45104efb410c7575590fd6",
+          "displayName": "조맹"
+        },
+        "ProductV3:5e45107277831006b8706ee8": {
+          "__typename": "ProductV3",
+          "_id": "5e45107277831006b8706ee8",
+          "title": "크로키로 찾아가는 나만의 선, 나만의 드로잉 ",
+          "coverImageUrl": "https://cdn.class101.net/images/738f86bb-38fc-47fd-b9e8-d6c8f035d884",
+          "klassId": "5e45107177831006b8706ee7",
+          "likedCount": 29854,
+          "firestoreId": "oneOsznr5gRHDmFReCPp",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00305"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e45104efb410c7575590fd6"
+          }
+        },
+        "User:5c5d6f9b74eabcfdafd071b4": {
+          "__typename": "User",
+          "_id": "5c5d6f9b74eabcfdafd071b4",
+          "displayName": "핀든아트 Findenart"
+        },
+        "ProductV3:5c5d780874eabcfdafd3934e": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780874eabcfdafd3934e",
+          "title": "여행 드로잉, 꿈만 꾸지 마세요. 핀든아트와 여행, 그리다",
+          "coverImageUrl": "https://cdn.class101.net/images/a8a9621d-203e-4ebf-a568-1b18f086b7c7/autoxauto.webp",
+          "klassId": "5c514d81d30c532c44694764",
+          "likedCount": 28910,
+          "firestoreId": "V8k5c11pRTsTAndDDseq",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00308"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d6f9b74eabcfdafd071b4"
+          }
+        },
+        "User:5c5d778c74eabcfdafd2da38": {
+          "__typename": "User",
+          "_id": "5c5d778c74eabcfdafd2da38",
+          "displayName": "이연"
+        },
+        "ProductV3:61e62284957dad0014bcbde9": {
+          "__typename": "ProductV3",
+          "_id": "61e62284957dad0014bcbde9",
+          "title": "84만 유튜버 이연이 알려주는 스케치 없이 완벽한 실루엣 드로잉",
+          "coverImageUrl": "https://cdn.class101.net/images/013ddaa3-155f-4ef6-963f-f2aa61968dfd",
+          "klassId": "61e62284957dad0014bcbddb",
+          "likedCount": 24530,
+          "firestoreId": "ngBNLJZUFcPrYywuq3tm",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00305"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d778c74eabcfdafd2da38"
+          }
+        },
+        "User:5c5d60be74eabcfdafc96b1b": {
+          "__typename": "User",
+          "_id": "5c5d60be74eabcfdafc96b1b",
+          "displayName": "Zipcy"
+        },
+        "ProductV3:5c5d780674eabcfdafd38eed": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780674eabcfdafd38eed",
+          "title": "인물화 그리기의 베이직 오브 베이직! 이목구비 하나하나 그리는 방법",
+          "coverImageUrl": "https://cdn.class101.net/images/08b0489e-6022-4aea-9e53-7fdf2d44b685/autoxauto.webp",
+          "klassId": "5c6f91d274eabcfdafa1e5ff",
+          "likedCount": 21997,
+          "firestoreId": "EOuli518WG3wwLzt77Yb",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00305"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d60be74eabcfdafc96b1b"
+          }
+        },
+        "ProductV3:5d0b4c1c6a3bd109565c5d46": {
+          "__typename": "ProductV3",
+          "_id": "5d0b4c1c6a3bd109565c5d46",
+          "title": "마카와 펜, 드로잉북만 들고 떠나요! 마카로 담는 여행의 특별한 기억",
+          "coverImageUrl": "https://cdn.class101.net/images/951d2fb1-75aa-499e-a795-46260736ba9a",
+          "klassId": "5d0b4c1c6a3bd109565c5edb",
+          "likedCount": 17637,
+          "firestoreId": "QWih9PRs3Hpi6WveWtxd",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00306"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d621274eabcfdafcae222"
+          }
+        },
+        "User:5cbdab06cb2728ebe9d4f4e1": {
+          "__typename": "User",
+          "_id": "5cbdab06cb2728ebe9d4f4e1",
+          "displayName": "By Sovoro"
+        },
+        "ProductV3:5cbdab82cb2728ebe9d546a1": {
+          "__typename": "ProductV3",
+          "_id": "5cbdab82cb2728ebe9d546a1",
+          "title": "눈으로 맛보는 디저트! 소보루의 색연필 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/4a4a62b6-7c31-4f5e-a7e9-8397703a197b",
+          "klassId": "5cbdab82cb2728ebe9d5466d",
+          "likedCount": 17529,
+          "firestoreId": "ENppV01t0eGcUoEl1TYq",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00307"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cbdab06cb2728ebe9d4f4e1"
+          }
+        },
+        "User:5e8e9bf83bf0b776731c5bb4": {
+          "__typename": "User",
+          "_id": "5e8e9bf83bf0b776731c5bb4",
+          "displayName": "약국"
+        },
+        "ProductV3:5c5d780a74eabcfdafd39965": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780a74eabcfdafd39965",
+          "title": "약국과 함께 펜 하나로 그리는 분위기 있는 인물, 나만의 세계",
+          "coverImageUrl": "https://cdn.class101.net/images/3b790ec2-54a2-45d6-bd45-5b971e776016",
+          "klassId": "5d70f84e1c67c42e5a2da89c",
+          "likedCount": 17336,
+          "firestoreId": "qX5YuvRsls07ucbb9v9O",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00305"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e8e9bf83bf0b776731c5bb4"
+          }
+        },
+        "User:5c5d747e74eabcfdafd1f584": {
+          "__typename": "User",
+          "_id": "5c5d747e74eabcfdafd1f584",
+          "displayName": "펜크래프트"
+        },
+        "ProductV3:5c5d780a74eabcfdafd39a44": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780a74eabcfdafd39a44",
+          "title": "사각사각 손글씨의 낭만, 펜크래프트의 한글 정자체 펜글씨",
+          "coverImageUrl": "https://cdn.class101.net/images/dc531280-2ecd-4812-a6d2-264cb23170f4",
+          "klassId": "5cb9660dcb2728ebe99ac6a6",
+          "likedCount": 16756,
+          "firestoreId": "taAqhVz62rYVn7JFZYY7",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00312"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d747e74eabcfdafd1f584"
+          }
+        },
+        "User:5c5d636374eabcfdafcbb4c7": {
+          "__typename": "User",
+          "_id": "5c5d636374eabcfdafcbb4c7",
+          "displayName": "성립"
+        },
+        "ProductV3:5c8754ae35b52893ce171f0a": {
+          "__typename": "ProductV3",
+          "_id": "5c8754ae35b52893ce171f0a",
+          "title": "선과 여백의 작가 성립, 묵직한 질감과 선명한 색감의 오일파스텔",
+          "coverImageUrl": "https://cdn.class101.net/images/ff45ff37-2c8d-492a-b053-7211d04d02e8",
+          "klassId": "5c99d48d2ff0ef122cae27d4",
+          "likedCount": 14026,
+          "firestoreId": "DchTBy8Vh1PnqojOTRB2",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00309"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d636374eabcfdafcbb4c7"
+          }
+        },
+        "User:5f687024a68c1200073db7b2": {
+          "__typename": "User",
+          "_id": "5f687024a68c1200073db7b2",
+          "displayName": "윤범식"
+        },
+        "ProductV3:5f6870a6a68c1200073e2406": {
+          "__typename": "ProductV3",
+          "_id": "5f6870a6a68c1200073e2406",
+          "title": "부드러운 인체를 그려요, 크로키의 이론과 응용",
+          "coverImageUrl": "https://cdn.class101.net/images/c8f61a75-db4f-4821-a798-7d22786faab5",
+          "klassId": "5f6870a5a68c1200073e2404",
+          "likedCount": 13415,
+          "firestoreId": "JAnbYQ5PiXNUmYDoE8Vx",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00305"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f687024a68c1200073db7b2"
+          }
+        },
+        "User:5c5d648474eabcfdafcc4855": {
+          "__typename": "User",
+          "_id": "5c5d648474eabcfdafcc4855",
+          "displayName": "콰야 Qwaya"
+        },
+        "ProductV3:5c5d780874eabcfdafd3943d": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780874eabcfdafd3943d",
+          "title": "다양한 색으로 과감하게 그려보는 콰야의 오일파스텔 드로잉",
+          "coverImageUrl": "https://cdn.class101.net/images/b4dd7f83-9229-4460-b541-1fcde2825614/autoxauto.webp",
+          "klassId": "5cf602a180f6734ace03ebca",
+          "likedCount": 13249,
+          "firestoreId": "T261fV71ZY9Yx9fXYNvt",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00309"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d648474eabcfdafcc4855"
+          }
+        },
+        "User:5c5d610f74eabcfdafc9ffca": {
+          "__typename": "User",
+          "_id": "5c5d610f74eabcfdafc9ffca",
+          "displayName": "배성규"
+        },
+        "ProductV3:5c5d780974eabcfdafd395b5": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780974eabcfdafd395b5",
+          "title": "마카와 색연필로 그려내는 일상의 기록, 뜻밖의 풍경, 찰나의 순간",
+          "coverImageUrl": "https://cdn.class101.net/images/1db424fc-0092-480b-9070-9b9e169f850b",
+          "klassId": "5c514d81d30c532c446947ff",
+          "likedCount": 12880,
+          "firestoreId": "bae-drawing",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00306"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d610f74eabcfdafc9ffca"
+          }
+        },
+        "User:5c5d68ff74eabcfdafce2823": {
+          "__typename": "User",
+          "_id": "5c5d68ff74eabcfdafce2823",
+          "displayName": "오미아트"
+        },
+        "ProductV3:5c5d780874eabcfdafd39393": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780874eabcfdafd39393",
+          "title": "곰손도 괜찮아! 그림 있는 책,  0원으로 기획부터 출판까지",
+          "coverImageUrl": "https://cdn.class101.net/images/87328e99-e3e8-4c7d-a036-2bf660e1e6dc",
+          "klassId": "5c904f27edb2d5b5af1329e9",
+          "likedCount": 12312,
+          "firestoreId": "XMYMr329uFSQqegoCZpo",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0030d"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d68ff74eabcfdafce2823"
+          }
+        },
+        "User:5c5d747a74eabcfdafd1f4be": {
+          "__typename": "User",
+          "_id": "5c5d747a74eabcfdafd1f4be",
+          "displayName": "필림"
+        },
+        "ProductV3:5c5d780974eabcfdafd39757": {
+          "__typename": "ProductV3",
+          "_id": "5c5d780974eabcfdafd39757",
+          "title": "전하고 싶은 한 줄, 필림의 딥펜 캘리그라피",
+          "coverImageUrl": "https://cdn.class101.net/images/f249f793-2def-4585-a9a2-0f6aca837e74",
+          "klassId": "5c514d81d30c532c446947ba",
+          "likedCount": 12098,
+          "firestoreId": "gWTQtMm5dZp66DgssAtj",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00312"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c5d747a74eabcfdafd1f4be"
+          }
+        },
+        "User:5d3ea2041ccbe2de167ce2e5": {
+          "__typename": "User",
+          "_id": "5d3ea2041ccbe2de167ce2e5",
+          "displayName": "By Aellie"
+        },
+        "ProductV3:5d3ea2a51ccbe2de16834da0": {
+          "__typename": "ProductV3",
+          "_id": "5d3ea2a51ccbe2de16834da0",
+          "title": "따뜻함으로 가득 채운 한 장, 엘리와 함께하는 색연필 드로잉",
+          "coverImageUrl": "https://cdn.class101.net/images/1ccb57d0-d5bb-42a9-a713-969b040b37a8",
+          "klassId": "5d3ea2a51ccbe2de16833e93",
+          "likedCount": 11771,
+          "firestoreId": "rw8m0gSc4vuhQZLlW8C0",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00307"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d3ea2041ccbe2de167ce2e5"
+          }
+        },
+        "User:5cf7837ef48520f37cdc3c74": {
+          "__typename": "User",
+          "_id": "5cf7837ef48520f37cdc3c74",
+          "displayName": "클래스101"
+        },
+        "ProductV3:5cb816c4cb2728ebe9e390ad": {
+          "__typename": "ProductV3",
+          "_id": "5cb816c4cb2728ebe9e390ad",
+          "title": "건축가에게 배우는 남다른 공간감, 어반스케치 펜드로잉 입문",
+          "coverImageUrl": "https://cdn.class101.net/images/802130f2-aada-4d01-be59-788b8d376cab",
+          "klassId": "5cb816c4cb2728ebe9e390c3",
+          "likedCount": 10726,
+          "firestoreId": "gBHRw8qp2iV53SObiLV8",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00305"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5cf7837ef48520f37cdc3c74"
+          }
+        },
+        "User:5e78c79ec0f51c0a27ede6df": {
+          "__typename": "User",
+          "_id": "5e78c79ec0f51c0a27ede6df",
+          "displayName": "골드손"
+        },
+        "ProductV3:5e7b213cf82aa02c9e4385aa": {
+          "__typename": "ProductV3",
+          "_id": "5e7b213cf82aa02c9e4385aa",
+          "title": "유튜버 골드손과 함께 오일파스텔로 그리는 오늘의 한 장면",
+          "coverImageUrl": "https://cdn.class101.net/images/77051f64-43ac-4bb3-b54c-9a2506bc1f24",
+          "klassId": "5e7b213cf82aa02c9e4385a9",
+          "likedCount": 10620,
+          "firestoreId": "XI5Nks9MAzpA3Pqs5ijx",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00309"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e78c79ec0f51c0a27ede6df"
+          }
+        },
+        "User:620334f72f4cf6000d1250c2": {
+          "__typename": "User",
+          "_id": "620334f72f4cf6000d1250c2",
+          "displayName": "래지어"
+        },
+        "ProductV3:6214a455ecc19a0014260a97": {
+          "__typename": "ProductV3",
+          "_id": "6214a455ecc19a0014260a97",
+          "title": "누구나 지금보다 잘 그리게 되는 하루 한 장 크로키 챌린지",
+          "coverImageUrl": "https://cdn.class101.net/images/49ef3ca2-7e50-4384-b308-4c48b8f8e8f2",
+          "klassId": "6214a455ecc19a0014260a94",
+          "likedCount": 9661,
+          "firestoreId": "Mvx1035GY5fpfzr8bgiE",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00305"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:620334f72f4cf6000d1250c2"
+          }
+        },
+        "User:5c65bc0974eabcfdaf05f960": {
+          "__typename": "User",
+          "_id": "5c65bc0974eabcfdaf05f960",
+          "displayName": "nua"
+        },
+        "ProductV3:5cbc79d2cb2728ebe93b22b6": {
+          "__typename": "ProductV3",
+          "_id": "5cbc79d2cb2728ebe93b22b6",
+          "title": "색의 규칙을 만들다 - 색연필 인물화로 나만의 색감을 찾아 떠나는 여정",
+          "coverImageUrl": "https://cdn.class101.net/images/ccddb0c8-63cb-4dcf-af3d-8bf57e97afd5",
+          "klassId": "5cbc79d2cb2728ebe93b2296",
+          "likedCount": 9603,
+          "firestoreId": "U5pMjIoGuCjDHiz83MUW",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00307"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5c65bc0974eabcfdaf05f960"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed00304"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}

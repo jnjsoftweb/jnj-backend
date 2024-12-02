@@ -1,0 +1,846 @@
+{
+  "props": {
+    "pageProps": {
+      "isQueryDefined": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "language": "ko",
+      "universalSegment": {
+        "featureGate": {
+          "homeFeed": false,
+          "subTab": true,
+          "rewriteKoUrl": false
+        },
+        "isLightThemeAvailable": true,
+        "hasAccessToken": true,
+        "hasSubscribed": true
+      },
+      "userPreferences": {
+        "theme": {
+          "preference": "system",
+          "currentTheme": "light"
+        }
+      },
+      "match": {
+        "params": {
+          "lang": "ko",
+          "categoryId": "604f1c9756c3676f1ed0037e"
+        }
+      }
+    },
+    "apolloState": {
+      "data": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "productsCountV3": 5317,
+          "categoryByIdV2({\"id\":\"604f1c9756c3676f1ed0037e\"})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+          },
+          "categoryProductsV3:{\"sort\":\"Popular\",\"categoryId\":\"604f1c9756c3676f1ed0037e\",\"originalLanguages\":[],\"filter\":{\"purchaseOptions\":[\"Lifetime\",\"Rental\",\"Subscription\"]}}": {
+            "__typename": "ProductV3Connection",
+            "edges": [
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjEzNjA2MmFhMzc4NjcwMDE0MzZmYzBiX19DVVJTT1JfREVMSU1JVEVSX18yNTc5OV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:6136062aa37867001436fc0b"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWRiMDVkN2Y5MDEyMTcwZDk4N2MxYWIwX19DVVJTT1JfREVMSU1JVEVSX18yNDczNV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5db05d7f9012170d987c1ab0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWUyNjI4ZGI1YjhiZWQwZGMyYWQ0NDAwX19DVVJTT1JfREVMSU1JVEVSX18xOTc3MF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5e2628db5b8bed0dc2ad4400"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFmNDMyYzhiNTYzMzMwMDE0NmUyNDEwX19DVVJTT1JfREVMSU1JVEVSX18xOTMzMl9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:61f432c8b5633300146e2410"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFhNzE3NDBjZDc1YWYwMDE0MWMzZWU2X19DVVJTT1JfREVMSU1JVEVSX18xNDQ3NF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:61a71740cd75af00141c3ee6"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY1ZjM5OWYzNGNkNGYwMDA2NzRhMzA4X19DVVJTT1JfREVMSU1JVEVSX18xNDE4NV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f5f399f34cd4f000674a308"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQ2ZjEwZWNhNzcxNDkwNmFjNzVhZDY1X19DVVJTT1JfREVMSU1JVEVSX18xNDA1Ml9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5d6f10eca7714906ac75ad65"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjA2NTQ2ZDExYmI1ZTAwMDE0NTc5ZThkX19DVVJTT1JfREVMSU1JVEVSX18xMjUwOV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:606546d11bb5e00014579e8d"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY1ZjE0ZjMzYzRkNzkwMDA2MTZmNmEwX19DVVJTT1JfREVMSU1JVEVSX18xMDY5OV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5f5f14f33c4d79000616f6a0"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWZmMmIyOGMxNDdhMDkwMDE0YTM3YjZjX19DVVJTT1JfREVMSU1JVEVSX18xMDY1OF9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+                "node": {
+                  "__ref": "ProductV3:5ff2b28c147a090014a37b6c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjM1OTMwYTY5NDE4MzIwMDBmYmI5YjE0X19DVVJTT1JfREVMSU1JVEVSX185NzE5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:635930a6941832000fbb9b14"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWYzNzcxZGFiZThiMzMwMDIxNzY4MmM5X19DVVJTT1JfREVMSU1JVEVSX185NDE4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f3771dabe8b3300217682c9"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE0NmE5Nzk5NTU1ZTYwMDE0NGY3OGVmX19DVVJTT1JfREVMSU1JVEVSX185MzcyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:6146a9799555e600144f78ef"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjI4NzNlMjc3MWIyNGEwMDE1MjY2MDBjX19DVVJTT1JfREVMSU1JVEVSX185MDEzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:62873e2771b24a001526600c"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWY3NzI0NjhmNjc4MGMwMDFiMjc0YWFmX19DVVJTT1JfREVMSU1JVEVSX184MzU0X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5f772468f6780c001b274aaf"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NWQzZTgxY2QxY2NiZTJkZTE2NGE4OWUzX19DVVJTT1JfREVMSU1JVEVSX184MjI5X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:5d3e81cd1ccbe2de164a89e3"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFiMGFkNmI0YjEzYmIwMDBkNTk2NmY1X19DVVJTT1JfREVMSU1JVEVSX184MTY4X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61b0ad6b4b13bb000d5966f5"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjE0YzJjNjY3ZmZjZTgwMDBkYzM2M2QzX19DVVJTT1JfREVMSU1JVEVSX184MDQyX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:614c2c667ffce8000dc363d3"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFhNmUyY2FkYjhkOTcwMDEzNDIyMmU2X19DVVJTT1JfREVMSU1JVEVSX183NjM3X19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61a6e2cadb8d9700134222e6"
+                }
+              },
+              {
+                "__typename": "ProductV3Edge",
+                "cursor": "NjFkNjllODhlOTM2ZWEwMDBkYzczM2I1X19DVVJTT1JfREVMSU1JVEVSX183NTIzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+                "node": {
+                  "__ref": "ProductV3:61d69e88e936ea000dc733b5"
+                }
+              }
+            ],
+            "pageInfo": {
+              "__typename": "PageInfo",
+              "hasNextPage": true,
+              "endCursor": "NjFkNjllODhlOTM2ZWEwMDBkYzczM2I1X19DVVJTT1JfREVMSU1JVEVSX183NTIzX19DVVJTT1JfREVMSU1JVEVSX19rbw==",
+              "startCursor": "NjEzNjA2MmFhMzc4NjcwMDE0MzZmYzBiX19DVVJTT1JfREVMSU1JVEVSX18yNTc5OV9fQ1VSU09SX0RFTElNSVRFUl9fa28=",
+              "hasPreviousPage": false
+            }
+          }
+        },
+        "CategoryV2:605c3db737b977e02654405e": {
+          "__typename": "CategoryV2",
+          "id": "605c3db737b977e02654405e",
+          "title": "크리에이티브",
+          "depth": 0
+        },
+        "CategoryV2:604f1c9756c3676f1ed0037f": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0037f",
+          "title": "뷰티",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00380": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00380",
+          "title": "명상",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00381": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00381",
+          "title": "심리",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00382": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00382",
+          "title": "타로 · 사주 · 운세",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00383": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00383",
+          "title": "게임 · e스포츠",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00384": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00384",
+          "title": "라이프 해킹",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00385": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00385",
+          "title": "댄스 · 무용",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00386": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00386",
+          "title": "반려동물",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00387": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00387",
+          "title": "인문학",
+          "depth": 2,
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed00388": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed00388",
+          "title": "더 새로운 라이프",
+          "depth": 2,
+          "ancestor({\"depth\":1})": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+          },
+          "children": [],
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037e"
+            }
+          ]
+        },
+        "CategoryV2:604f1c9756c3676f1ed0037e": {
+          "__typename": "CategoryV2",
+          "id": "604f1c9756c3676f1ed0037e",
+          "title": "라이프스타일",
+          "depth": 1,
+          "ancestors": [
+            {
+              "__ref": "CategoryV2:605c3db737b977e02654405e"
+            }
+          ],
+          "children": [
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed0037f"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00380"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00381"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00382"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00383"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00384"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00385"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00386"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00387"
+            },
+            {
+              "__ref": "CategoryV2:604f1c9756c3676f1ed00388"
+            }
+          ]
+        },
+        "User:6136054de6b7ec0014211dd3": {
+          "__typename": "User",
+          "_id": "6136054de6b7ec0014211dd3",
+          "displayName": "소람"
+        },
+        "ProductV3:6136062aa37867001436fc0b": {
+          "__typename": "ProductV3",
+          "_id": "6136062aa37867001436fc0b",
+          "title": "소람의 아이패드 200% 활용법",
+          "coverImageUrl": "https://cdn.class101.net/images/63b7e673-04be-4e58-9dd9-07d068f6e382",
+          "klassId": "6136062aa37867001436fc06",
+          "likedCount": 25799,
+          "firestoreId": "KDdj1Y6Af9GewNNC430e",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00388"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6136054de6b7ec0014211dd3"
+          }
+        },
+        "User:5db05ce03f444e0db58e1089": {
+          "__typename": "User",
+          "_id": "5db05ce03f444e0db58e1089",
+          "displayName": "정진호작가"
+        },
+        "ProductV3:5db05d7f9012170d987c1ab0": {
+          "__typename": "ProductV3",
+          "_id": "5db05d7f9012170d987c1ab0",
+          "title": "비주얼 씽킹! 생각을 정리하는 탁월한 기술",
+          "coverImageUrl": "https://cdn.class101.net/images/1ec3a20a-10f6-4dde-85b4-87fee44d2592",
+          "klassId": "5db05d7e9012170d987c1aaf",
+          "likedCount": 24735,
+          "firestoreId": "EPi7U2f5vVtb64mPQl8C",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00384"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5db05ce03f444e0db58e1089"
+          }
+        },
+        "User:5ccd253d80f6734acef99bff": {
+          "__typename": "User",
+          "_id": "5ccd253d80f6734acef99bff",
+          "displayName": "이봄"
+        },
+        "ProductV3:5e2628db5b8bed0dc2ad4400": {
+          "__typename": "ProductV3",
+          "_id": "5e2628db5b8bed0dc2ad4400",
+          "title": "🔥클래스101 1위 타로클래스, 이봄의 타로 클래스 ❥ 고민으로 잠 못드는 당신을 위해",
+          "coverImageUrl": "https://cdn.class101.net/images/2ff3f2ba-37f9-4990-86d4-2802dc18f42c",
+          "klassId": "5e2628db5b8bed0dc2ad43ff",
+          "likedCount": 19770,
+          "firestoreId": "aGWkyjGR9BeQnYVYSYPu",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00382"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5ccd253d80f6734acef99bff"
+          }
+        },
+        "User:61f4257fe5352c000ddd7b4d": {
+          "__typename": "User",
+          "_id": "61f4257fe5352c000ddd7b4d",
+          "displayName": "수성일기 이상수"
+        },
+        "ProductV3:61f432c8b5633300146e2410": {
+          "__typename": "ProductV3",
+          "_id": "61f432c8b5633300146e2410",
+          "title": "[다이어트 1위] 폭식증 고치고 46kg 유지하는 다이어트 초고수의 비결 전수",
+          "coverImageUrl": "https://cdn.class101.net/images/b70b13d1-0432-463d-96f5-c58d1c45dc80",
+          "klassId": "61f432c8b5633300146e240d",
+          "likedCount": 19332,
+          "firestoreId": "ffIsCb2BMtm9dT3eIrrj",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0037f"
+          },
+          "isTvodOnly": true,
+          "author": {
+            "__ref": "User:61f4257fe5352c000ddd7b4d"
+          }
+        },
+        "User:5fd8c87827736f001433788e": {
+          "__typename": "User",
+          "_id": "5fd8c87827736f001433788e",
+          "displayName": "이너프엘라"
+        },
+        "ProductV3:61a71740cd75af00141c3ee6": {
+          "__typename": "ProductV3",
+          "_id": "61a71740cd75af00141c3ee6",
+          "title": "<루틴 플래너> 로 선명한 삶 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/63d0884f-06c3-4757-a3bc-dc18beaee2db",
+          "klassId": "61a71740cd75af00141c3ee1",
+          "likedCount": 14474,
+          "firestoreId": "eoZENdKYE5IqYFEkOcyf",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00388"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fd8c87827736f001433788e"
+          }
+        },
+        "User:5f5f39025054f00006ae7bf7": {
+          "__typename": "User",
+          "_id": "5f5f39025054f00006ae7bf7",
+          "displayName": "1MILLION"
+        },
+        "ProductV3:5f5f399f34cd4f000674a308": {
+          "__typename": "ProductV3",
+          "_id": "5f5f399f34cd4f000674a308",
+          "title": " \"원밀리언 댄스 스튜디오 with 리아킴\" 에게 배우는 댄스 입문",
+          "coverImageUrl": "https://cdn.class101.net/images/60b28d67-66e5-4e41-84b3-98cf87e28408",
+          "klassId": "5f5f399e34cd4f000674a2ed",
+          "likedCount": 14185,
+          "firestoreId": "YFKrRC5UOQsTRCut2zqs",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00385"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f5f39025054f00006ae7bf7"
+          }
+        },
+        "User:5d6f10d96db9af0c1b2feb48": {
+          "__typename": "User",
+          "_id": "5d6f10d96db9af0c1b2feb48",
+          "displayName": "인생관리전문가 박소장"
+        },
+        "ProductV3:5d6f10eca7714906ac75ad65": {
+          "__typename": "ProductV3",
+          "_id": "5d6f10eca7714906ac75ad65",
+          "title": "미루는 습관을 없애줄 인생 관리 시스템",
+          "coverImageUrl": "https://cdn.class101.net/images/208ee4c4-c415-456f-9f57-3b7ab39461ef",
+          "klassId": "5d6f10ea27ee890c14c0de96",
+          "likedCount": 14052,
+          "firestoreId": "USeLuKcJUbBjqLSxd3gK",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00384"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5d6f10d96db9af0c1b2feb48"
+          }
+        },
+        "User:606546be1bb5e00014576401": {
+          "__typename": "User",
+          "_id": "606546be1bb5e00014576401",
+          "displayName": "김준표"
+        },
+        "ProductV3:606546d11bb5e00014579e8d": {
+          "__typename": "ProductV3",
+          "_id": "606546d11bb5e00014579e8d",
+          "title": "거리공연 10만회! 10년차 마술사에게 배우는 스트릿 버스킹 매직",
+          "coverImageUrl": "https://cdn.class101.net/images/1938f280-b3ca-4831-8022-b3a5360e59c3",
+          "klassId": "606546d11bb5e00014579e8c",
+          "likedCount": 12509,
+          "firestoreId": "ceUDQJlN1ffNwTCiurIW",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00388"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:606546be1bb5e00014576401"
+          }
+        },
+        "User:5f5f14bc4735d700ce84f5c5": {
+          "__typename": "User",
+          "_id": "5f5f14bc4735d700ce84f5c5",
+          "displayName": "수연쌤"
+        },
+        "ProductV3:5f5f14f33c4d79000616f6a0": {
+          "__typename": "ProductV3",
+          "_id": "5f5f14f33c4d79000616f6a0",
+          "title": "요요 없이, 과한 운동 없이, 일반식 먹으면서 20kg 빼는 내 인생 마지막 다이어트",
+          "coverImageUrl": "https://cdn.class101.net/images/f20c2a7f-fe8e-4ee3-b217-06312e98fe4d",
+          "klassId": "5f5f14f23c4d79000616f69f",
+          "likedCount": 10699,
+          "firestoreId": "AKHRjdEMjYcWsroSX76a",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0037f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f5f14bc4735d700ce84f5c5"
+          }
+        },
+        "User:5f5c40327ca9810013ccf125": {
+          "__typename": "User",
+          "_id": "5f5c40327ca9810013ccf125",
+          "displayName": "도르미"
+        },
+        "ProductV3:5ff2b28c147a090014a37b6c": {
+          "__typename": "ProductV3",
+          "_id": "5ff2b28c147a090014a37b6c",
+          "title": "불렛저널, 노션으로 내작품 만들기",
+          "coverImageUrl": "https://cdn.class101.net/images/89ab976e-c148-4287-b44c-90092ba53f56",
+          "klassId": "5ff2b28b147a090014a37a04",
+          "likedCount": 10658,
+          "firestoreId": "XZfyg4CbrvBjrmHGMt4P",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00384"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f5c40327ca9810013ccf125"
+          }
+        },
+        "User:5f730321fdf79100139c85d4": {
+          "__typename": "User",
+          "_id": "5f730321fdf79100139c85d4",
+          "displayName": "민슈아"
+        },
+        "ProductV3:635930a6941832000fbb9b14": {
+          "__typename": "ProductV3",
+          "_id": "635930a6941832000fbb9b14",
+          "title": "평생 가져온 피부 고민, 시술 없이 꿀피부로 홈케어하는 15가지 비법",
+          "coverImageUrl": "https://cdn.class101.net/images/a3d78281-73be-4639-9e67-2e66cafa861b",
+          "klassId": "635930a6941832000fbb9b11",
+          "likedCount": 9719,
+          "firestoreId": "i5o5uVzFLqCWMdeH9vwP",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0037f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f730321fdf79100139c85d4"
+          }
+        },
+        "User:5e2c0786526d91544c3a6de8": {
+          "__typename": "User",
+          "_id": "5e2c0786526d91544c3a6de8",
+          "displayName": "프리들리 한정훈"
+        },
+        "ProductV3:5f3771dabe8b3300217682c9": {
+          "__typename": "ProductV3",
+          "_id": "5f3771dabe8b3300217682c9",
+          "title": "퍼스널 컬러부터 코디 공식까지 한 번에 알려드리는 올인원 스타일링 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/1bc3a9d9-0589-4278-b406-19704b8049be",
+          "klassId": "5f3771dabe8b3300217682c8",
+          "likedCount": 9418,
+          "firestoreId": "HLf6SJgtMZS33UZKOHRU",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0037f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5e2c0786526d91544c3a6de8"
+          }
+        },
+        "User:6145ada4989574000d8b125f": {
+          "__typename": "User",
+          "_id": "6145ada4989574000d8b125f",
+          "displayName": "오아시스"
+        },
+        "ProductV3:6146a9799555e600144f78ef": {
+          "__typename": "ProductV3",
+          "_id": "6146a9799555e600144f78ef",
+          "title": "SNS 속 그 집! 세상에 하나뿐인 집을 만드는 '셀프 인테리어 바이블'",
+          "coverImageUrl": "https://cdn.class101.net/images/01d1521a-5338-456e-9e03-a0faa9eb3371",
+          "klassId": "6146a9799555e600144f78ea",
+          "likedCount": 9372,
+          "firestoreId": "ccFC0bktj99La1aDs0m4",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00388"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6145ada4989574000d8b125f"
+          }
+        },
+        "User:6285f6124ab62d0015028da5": {
+          "__typename": "User",
+          "_id": "6285f6124ab62d0015028da5",
+          "displayName": "무빙워터"
+        },
+        "ProductV3:62873e2771b24a001526600c": {
+          "__typename": "ProductV3",
+          "_id": "62873e2771b24a001526600c",
+          "title": "2023년, 평생 떨어질 일 없는 자존감 상위 1%되는 법!",
+          "coverImageUrl": "https://cdn.class101.net/images/99c69ac9-8a3d-4b34-ba8e-a56a184075ee",
+          "klassId": "62873e2771b24a0015265ffe",
+          "likedCount": 9013,
+          "firestoreId": "ZeZBiqvKnBXLkLQmmLQs",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00384"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:6285f6124ab62d0015028da5"
+          }
+        },
+        "User:5f77243924ca8e001344377a": {
+          "__typename": "User",
+          "_id": "5f77243924ca8e001344377a",
+          "displayName": "호쌤"
+        },
+        "ProductV3:5f772468f6780c001b274aaf": {
+          "__typename": "ProductV3",
+          "_id": "5f772468f6780c001b274aaf",
+          "title": "더 이상 피부 관리실에 돈 쓰지 마세요. 호쌤 셀프 경락 마사지",
+          "coverImageUrl": "https://cdn.class101.net/images/f308befd-e072-485e-a99c-7348afebd328",
+          "klassId": "5f772468f6780c001b274aae",
+          "likedCount": 8354,
+          "firestoreId": "P0qee9yDoOxrVrddoTFV",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed0037f"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5f77243924ca8e001344377a"
+          }
+        },
+        "User:63565b0fbd4d373237b33315": {
+          "__typename": "User",
+          "_id": "63565b0fbd4d373237b33315",
+          "displayName": "최현우"
+        },
+        "ProductV3:5d3e81cd1ccbe2de164a89e3": {
+          "__typename": "ProductV3",
+          "_id": "5d3e81cd1ccbe2de164a89e3",
+          "title": "최현우에게 배우는 마술의 비밀",
+          "coverImageUrl": "https://cdn.class101.net/images/123b7682-4c58-40f1-83bd-c156c6bc46cb",
+          "klassId": "5d5cd31b09184c3a2cc592ec",
+          "likedCount": 8229,
+          "firestoreId": "magic-choi",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00388"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:63565b0fbd4d373237b33315"
+          }
+        },
+        "User:609cf5c67b94ab001557520e": {
+          "__typename": "User",
+          "_id": "609cf5c67b94ab001557520e",
+          "displayName": "소박"
+        },
+        "ProductV3:61b0ad6b4b13bb000d5966f5": {
+          "__typename": "ProductV3",
+          "_id": "61b0ad6b4b13bb000d5966f5",
+          "title": "똥손도 금손처럼!  굿노트와 프로크리에이트로 정복하는 <아이패드 다꾸>",
+          "coverImageUrl": "https://cdn.class101.net/images/13d8d73c-18d2-4278-bb0a-0f58ae4b2924",
+          "klassId": "61b0ad6b4b13bb000d5966f0",
+          "likedCount": 8168,
+          "firestoreId": "BXRuB8FQTcyCY4d3xT33",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00388"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:609cf5c67b94ab001557520e"
+          }
+        },
+        "User:62a0110775b91d000f9d2e38": {
+          "__typename": "User",
+          "_id": "62a0110775b91d000f9d2e38",
+          "displayName": "홀리뱅"
+        },
+        "ProductV3:614c2c667ffce8000dc363d3": {
+          "__typename": "ProductV3",
+          "_id": "614c2c667ffce8000dc363d3",
+          "title": "최고의 정통힙합 크루 '홀리뱅&허니제이'의 힙합 코레오 댄스 클래스",
+          "coverImageUrl": "https://cdn.class101.net/images/62465d7b-deb2-4d1f-89db-abff30b01768",
+          "klassId": "614c2c667ffce8000dc363ce",
+          "likedCount": 8042,
+          "firestoreId": "LyltDtV5h8ZfgtaoZZe3",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00385"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:62a0110775b91d000f9d2e38"
+          }
+        },
+        "User:61a6e1fdf85e42000e946096": {
+          "__typename": "User",
+          "_id": "61a6e1fdf85e42000e946096",
+          "displayName": "희나 (HiNA-log)"
+        },
+        "ProductV3:61a6e2cadb8d9700134222e6": {
+          "__typename": "ProductV3",
+          "_id": "61a6e2cadb8d9700134222e6",
+          "title": "삶의 질 2배 상승시키는 아이패드 활용 노하우",
+          "coverImageUrl": "https://cdn.class101.net/images/a78da41a-1073-4897-8529-e00c2ea8baba",
+          "klassId": "61a6e2cadb8d9700134222e1",
+          "likedCount": 7637,
+          "firestoreId": "yg82pr1G8lU9caS6QrLS",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00388"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:61a6e1fdf85e42000e946096"
+          }
+        },
+        "User:5fb77fc82a3166000d97aac4": {
+          "__typename": "User",
+          "_id": "5fb77fc82a3166000d97aac4",
+          "displayName": "셀아빠"
+        },
+        "ProductV3:61d69e88e936ea000dc733b5": {
+          "__typename": "ProductV3",
+          "_id": "61d69e88e936ea000dc733b5",
+          "title": "생각 정리 전문가들의 1페이지기법 기본 방법과 활용법 <90%할인>",
+          "coverImageUrl": "https://cdn.class101.net/images/baf7ab7e-eba0-49ef-ab00-694a1574562d",
+          "klassId": "61d69e88e936ea000dc733b2",
+          "likedCount": 7523,
+          "firestoreId": "EpcQ401Xd",
+          "category": {
+            "__ref": "CategoryV2:604f1c9756c3676f1ed00384"
+          },
+          "isTvodOnly": false,
+          "author": {
+            "__ref": "User:5fb77fc82a3166000d97aac4"
+          }
+        }
+      }
+    },
+    "apollo": null
+  },
+  "page": "/[lang]/categories/[categoryId]",
+  "query": {
+    "lang": "ko",
+    "categoryId": "604f1c9756c3676f1ed0037e"
+  },
+  "buildId": "288e2710e438fc542343fc3f4acb407edefc83d5",
+  "isFallback": false,
+  "dynamicIds": [
+    87032,
+    35246,
+    13159,
+    44065,
+    86946
+  ],
+  "customServer": true,
+  "appGip": true,
+  "scriptLoader": []
+}
